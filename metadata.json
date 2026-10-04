@@ -1,0 +1,6 @@
+{
+  "name": "SunuAnnales SN - SaaS Annales Concours Sénégal",
+  "description": "Plateforme SaaS d'annales corrigées et préparation intensive aux concours au Sénégal (Police, Douane, Gendarmerie, ENA, ENSOA, Eaux & Forêts). Paiement sécurisé Wave & Orange Money à 2 000 FCFA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

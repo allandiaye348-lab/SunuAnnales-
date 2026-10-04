@@ -1,0 +1,4927 @@
+// Catalogue complet de secours des 24 annales officielles (garantie d'affichage sur Vercel, GitHub Pages, Netlify et mode hors ligne)
+import { Annale } from "../types";
+
+export const fallbackAnnales: Annale[] = [
+  {
+    "id": "annale-police-sn",
+    "slug": "concours-police-senegal-fascicule-renforce-tome-1",
+    "title": "Concours Police — Sénégal : Fascicule Renforcé Tome 1",
+    "ministry": "Ministère de l'Intérieur — DGPN",
+    "category": "Police",
+    "target_corps": "Élèves Agents de Police, Sous-Officiers et Officiers de Police",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale Concours 2026",
+    "total_exercises": 320,
+    "total_pages": 30,
+    "rating": 4.95,
+    "reviews_count": 342,
+    "cover_gradient": "from-blue-900 via-sky-800 to-indigo-950",
+    "cover_image": "/covers/police.jpg?v=clean-timeless",
+    "accent_color": "#1d4ed8",
+    "badge": "Best-Seller National",
+    "description": "320 exercices originaux corrigés sans répétition, 4 concours blancs complets avec barèmes officiels, préparation physique (Luc-Léger, 100m) et plan d'action intensif sur 30 jours pour intégrer la Police Nationale du Sénégal.",
+    "official_reference": "DGPN — Épreuves écrites d'admission directe : Français, Mathématiques, Histoire & Géographie du Sénégal, Institutions, Droit public et Déontologie policière.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Français & Rédaction administrative",
+        "count": 40,
+        "description": "Grammaire, accord, style administratif, syntaxe et vocabulaire."
+      },
+      {
+        "title": "2. Mathématiques & Raisonnement quantitatif",
+        "count": 35,
+        "description": "Pourcentages, proportions, vitesse moyenne et calculs pratiques."
+      },
+      {
+        "title": "3. Histoire du Sénégal et de l'Afrique",
+        "count": 30,
+        "description": "Repères, décolonisation, 1960, royaumes précoloniaux et Cheikh Anta Diop."
+      },
+      {
+        "title": "4. Géographie du Sénégal et de l'Afrique",
+        "count": 25,
+        "description": "Territoire, fleuves, mangroves, Sahel et dynamiques urbaines."
+      },
+      {
+        "title": "5. Culture générale, citoyenneté et déontologie",
+        "count": 25,
+        "description": "Valeurs républicaines, intérêt général, probité et service public."
+      },
+      {
+        "title": "6. Institutions, droit public et organisation administrative",
+        "count": 35,
+        "description": "Constitution, séparation des pouvoirs, police administrative et judiciaire."
+      },
+      {
+        "title": "7. Logique et tests psychotechniques",
+        "count": 30,
+        "description": "Suites numériques, déductions logiques, dominos et classements."
+      },
+      {
+        "title": "8. Police nationale, sécurité, déontologie et missions",
+        "count": 45,
+        "description": "Protection des biens et des personnes, discrétion professionnelle, légalité."
+      },
+      {
+        "title": "9. Mises en situation professionnelles",
+        "count": 20,
+        "description": "Gestion des conflits, accueil d'usagers, transmission d'ordres."
+      },
+      {
+        "title": "10. Anglais professionnel",
+        "count": 10,
+        "description": "Vocabulaire, traduction et compréhension pour agents de sécurité."
+      },
+      {
+        "title": "11. Préparation physique",
+        "count": 10,
+        "description": "Gestion de l'endurance, vitesse, récupération et hydratation."
+      },
+      {
+        "title": "12. Oral et entretien avec le jury",
+        "count": 15,
+        "description": "Motivation en 60 secondes, gestion du stress, posture et éthique."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours Blanc 1 — Écrit équilibré",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours Blanc 2 — Droit, institutions et logique",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours Blanc 3 — Culture, police et expression",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours Blanc 4 — Simulation finale intégrale",
+        "duration": "3h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Français",
+        "question": "Corrigez : « Les candidats doit remettre leurs dossiers avant la date limite. »",
+        "answer_preview": "Correction : « Les candidats doivent remettre leurs dossiers avant la date limite. » Le sujet pluriel impose le verbe au pluriel."
+      },
+      {
+        "id": 41,
+        "section": "Mathématiques",
+        "question": "Un candidat obtient 18 points sur 27. Calculez son pourcentage de réussite.",
+        "answer_preview": "Correction : (18 / 27) × 100 = 66,7 % de réussite."
+      },
+      {
+        "id": 174,
+        "section": "Institutions",
+        "question": "Selon la présentation officielle, quelles sont deux missions générales de la Police nationale ?",
+        "answer_preview": "Correction : La protection des personnes et des biens, ainsi que le maintien et le rétablissement de l’ordre public."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Français",
+        "question": "Corrigez : « Les candidats doit remettre leurs dossiers avant la date limite. »",
+        "answer": "Correction : « Les candidats doivent remettre leurs dossiers avant la date limite. » Le sujet pluriel « les candidats » impose « doivent »."
+      },
+      {
+        "id": 2,
+        "section": "Français",
+        "question": "Mettez au discours indirect : Le responsable dit : « Je vérifierai les pièces demain. »",
+        "answer": "Correction : Le responsable dit qu’il vérifiera les pièces le lendemain. Le futur peut rester au futur après un verbe introducteur au présent."
+      },
+      {
+        "id": 3,
+        "section": "Français",
+        "question": "Donnez un synonyme de « impartial » dans le contexte d’un agent public.",
+        "answer": "Correction : Neutre, équitable ou objectif. L’idée fondamentale est l’absence de favoritisme."
+      },
+      {
+        "id": 4,
+        "section": "Français",
+        "question": "Expliquez la différence entre « quoique » et « quoi que ».",
+        "answer": "Correction : « Quoique » est une conjonction signifiant « bien que » ; « quoi que » signifie « quelle que soit la chose que » et est suivi d’une proposition."
+      },
+      {
+        "id": 5,
+        "section": "Français",
+        "question": "Transformez en phrase passive : « Les agents contrôlent les documents. »",
+        "answer": "Correction : « Les documents sont contrôlés par les agents. » Le complément d’objet direct devient sujet."
+      },
+      {
+        "id": 6,
+        "section": "Français",
+        "question": "Identifiez la fonction de « avec rigueur » dans : « Le candidat répond avec rigueur. »",
+        "answer": "Correction : « Avec rigueur » est un complément circonstanciel de manière : il précise la façon dont le candidat répond."
+      },
+      {
+        "id": 16,
+        "section": "Français",
+        "question": "Réécrivez en style administratif : « Envoyez-moi vite les papiers. »",
+        "answer": "Correction : « Je vous prie de bien vouloir transmettre les pièces requises dans les meilleurs délais. »"
+      },
+      {
+        "id": 41,
+        "section": "Mathématiques",
+        "question": "Un candidat obtient 18 points sur 27. Calculez son pourcentage de réussite.",
+        "answer": "Correction : 18/27 × 100 = 66,7 %."
+      },
+      {
+        "id": 51,
+        "section": "Mathématiques",
+        "question": "Un équipement coûte 24 000 F CFA avant une réduction de 15 %. Quel est son prix après réduction ?",
+        "answer": "Correction : Réduction = 24 000 × 0,15 = 3 600 F CFA. Prix final = 20 400 F CFA."
+      },
+      {
+        "id": 67,
+        "section": "Mathématiques",
+        "question": "Un véhicule parcourt 120 km à une vitesse moyenne de 25 km/h. Calculez la durée du trajet.",
+        "answer": "Correction : Temps = distance/vitesse = 120 / 25 = 4,80 h, soit 4 h 48 min."
+      },
+      {
+        "id": 76,
+        "section": "Histoire du Sénégal",
+        "question": "Quel événement marque l’indépendance du Sénégal en 1960 ?",
+        "answer": "Correction : Le Sénégal accède à l’indépendance en 1960, après l’éclatement de la Fédération du Mali (août 1960)."
+      },
+      {
+        "id": 77,
+        "section": "Histoire du Sénégal",
+        "question": "Qui fut le premier président de la République du Sénégal indépendant ?",
+        "answer": "Correction : Léopold Sédar Senghor (1960–1980)."
+      },
+      {
+        "id": 78,
+        "section": "Histoire du Sénégal",
+        "question": "Quel rôle historique est associé à l’île de Gorée ?",
+        "answer": "Correction : Elle constitue un lieu mondial majeur de mémoire de la traite transatlantique et de l’histoire coloniale."
+      },
+      {
+        "id": 87,
+        "section": "Histoire du Sénégal",
+        "question": "Quel rôle a joué Blaise Diagne dans l’histoire politique du Sénégal ?",
+        "answer": "Correction : Il fut une figure politique majeure et le premier député noir africain élu à la Chambre des députés française (1914)."
+      },
+      {
+        "id": 88,
+        "section": "Histoire du Sénégal",
+        "question": "Pourquoi les Quatre Communes sont-elles importantes ?",
+        "answer": "Correction : Saint-Louis, Gorée, Rufisque et Dakar ont bénéficié d’un statut particulier de citoyenneté dans l'empire colonial français."
+      },
+      {
+        "id": 95,
+        "section": "Histoire du Sénégal",
+        "question": "Citez un domaine dans lequel Cheikh Anta Diop a marqué les études africaines.",
+        "answer": "Correction : L’histoire, l’égyptologie, l’anthropologie, la physique nucléaire et la réhabilitation des civilisations africaines."
+      },
+      {
+        "id": 106,
+        "section": "Géographie du Sénégal",
+        "question": "Quel océan borde le Sénégal à l’ouest ?",
+        "answer": "Correction : L’océan Atlantique (façade maritime de plus de 700 km)."
+      },
+      {
+        "id": 108,
+        "section": "Géographie du Sénégal",
+        "question": "Quel fleuve forme une partie importante de la frontière nord du Sénégal ?",
+        "answer": "Correction : Le fleuve Sénégal, frontière naturelle avec la Mauritanie."
+      },
+      {
+        "id": 131,
+        "section": "Culture générale",
+        "question": "Qu’est-ce que la citoyenneté ?",
+        "answer": "Correction : La qualité de citoyen, impliquant la jouissance de droits civils et politiques et l'accomplissement de devoirs envers la communauté."
+      },
+      {
+        "id": 136,
+        "section": "Déontologie",
+        "question": "Pourquoi la corruption nuit-elle à l’administration ?",
+        "answer": "Correction : Elle détourne les décisions et ressources publiques, compromet l’égalité de traitement des usagers et détruit la confiance civique."
+      },
+      {
+        "id": 156,
+        "section": "Institutions & Droit",
+        "question": "Qu’est-ce qu’une Constitution ?",
+        "answer": "Correction : La norme juridique suprême qui organise les pouvoirs publics (exécutif, législatif, judiciaire) et garantit les droits fondamentaux."
+      },
+      {
+        "id": 160,
+        "section": "Institutions & Droit",
+        "question": "Qu’est-ce que la séparation des pouvoirs ?",
+        "answer": "Correction : Le principe formulé par Montesquieu confiant l'exécutif, le législatif et le judiciaire à des organes distincts pour éviter la tyrannie."
+      },
+      {
+        "id": 164,
+        "section": "Institutions & Droit",
+        "question": "Qu’est-ce qu’une police administrative ?",
+        "answer": "Correction : Une activité administrative visant préventivement à maintenir l'ordre public (sécurité, tranquillité, salubrité publiques)."
+      },
+      {
+        "id": 165,
+        "section": "Institutions & Droit",
+        "question": "Qu’est-ce que la police judiciaire ?",
+        "answer": "Correction : Elle constate les infractions à la loi pénale, rassemble les preuves et recherche les auteurs sous la direction du Procureur de la République."
+      },
+      {
+        "id": 174,
+        "section": "Police Nationale",
+        "question": "Selon la présentation officielle, quelles sont deux missions générales de la Police nationale ?",
+        "answer": "Correction : La protection des personnes et des biens, ainsi que le maintien et le rétablissement de l’ordre public."
+      },
+      {
+        "id": 191,
+        "section": "Logique",
+        "question": "Trouvez le terme manquant : 2, 4, 8, 16, ?",
+        "answer": "Correction : 32. Chaque terme est multiplié par 2 (progression géométrique de raison 2)."
+      },
+      {
+        "id": 221,
+        "section": "Déontologie Policière",
+        "question": "Selon la présentation officielle de la DGPN, quelle est une mission centrale de la Police nationale ?",
+        "answer": "Correction : Assurer la sécurité des personnes et des biens sur l’ensemble du territoire urbain et périurbain."
+      },
+      {
+        "id": 246,
+        "section": "Mise en situation",
+        "question": "Un usager offre de l’argent pour accélérer une procédure. Quelle réponse professionnelle ?",
+        "answer": "Correction : Refuser fermement et courtoisement tout avantage indu, rappeler la gratuité de la procédure légale et consigner l'incident au registre."
+      },
+      {
+        "id": 266,
+        "section": "Mise en situation",
+        "question": "Vous arrivez à un poste et constatez qu’une information importante n’a pas été transmise à la relève. Que faites-vous ?",
+        "answer": "Correction : Vérifier l’information immédiatement, la transmettre à l'officier de permanence et consigner une note sur la main courante."
+      },
+      {
+        "id": 306,
+        "section": "Oral & Entretien",
+        "question": "Présentez en 60 secondes votre motivation pour intégrer la Police nationale.",
+        "answer": "Correction : Présentation synthétique : identité et parcours, dévouement pour le service de l'État sénégalais, discipline, respect des lois républicaines et engagement opérationnel pour protéger les concitoyens."
+      }
+    ],
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-gendarmerie-sn",
+    "slug": "concours-gendarmerie-senegal-fascicule-renforce-tome-1",
+    "title": "Concours Gendarmerie — Sénégal : Fascicule Renforcé Tome 1",
+    "ministry": "Ministère des Forces Armées — Haut Commandement",
+    "category": "Gendarmerie",
+    "target_corps": "Élèves Gendarmes, Gendarmes Adjoints et Sous-Officiers",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Officielle 2026",
+    "total_exercises": 320,
+    "total_pages": 26,
+    "rating": 4.98,
+    "reviews_count": 289,
+    "cover_gradient": "from-emerald-900 via-teal-900 to-slate-950",
+    "cover_image": "/covers/gendarmerie.jpg?v=clean-timeless",
+    "accent_color": "#059669",
+    "badge": "Honneur & Patrie",
+    "description": "Fascicule officiel renforcé avec 320 exercices distincts, 4 concours blancs complets, préparation aux épreuves physiques (1000m, 100m, corde) et programme d'entraînement militaire sur 30 jours.",
+    "official_reference": "Ministère des Forces Armées — Concours d'Élève Gendarme : Rédaction, Dictée-questions, Arithmétique, Psychotechnique et Épreuves physiques.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Français, expression & rédaction professionnelle",
+        "count": 40,
+        "description": "Grammaire, style militaire concis, rapports et syntaxe."
+      },
+      {
+        "title": "2. Mathématiques & arithmétique de terrain",
+        "count": 35,
+        "description": "Proportions, vitesses, calculs de remises et consommation."
+      },
+      {
+        "title": "3. Histoire du Sénégal et des armées africaines",
+        "count": 30,
+        "description": "Tirailleurs, résistances, frontières et souveraineté nationale."
+      },
+      {
+        "title": "4. Géographie du Sénégal, frontières et mobilité",
+        "count": 25,
+        "description": "Axes routiers, corridors régionaux, fleuves et sécurité territoriale."
+      },
+      {
+        "title": "5. Culture générale, citoyenneté et déontologie",
+        "count": 25,
+        "description": "Civisme, intégrité, probité et secret professionnel."
+      },
+      {
+        "title": "6. Institutions, droit public et Gendarmerie nationale",
+        "count": 35,
+        "description": "Statut militaire, brigades de proximité, tutelles et chaîne de commandement."
+      },
+      {
+        "title": "7. Logique et tests psychotechniques",
+        "count": 30,
+        "description": "Raisonnement déductif, analogies, spatial et codage."
+      },
+      {
+        "title": "8. Gendarmerie nationale, sécurité et discipline",
+        "count": 45,
+        "description": "Ordre public, proportionnalité de la force, police judiciaire et secours."
+      },
+      {
+        "title": "9. Mises en situation opérationnelles",
+        "count": 20,
+        "description": "Contrôles routiers, accueil des victimes, gestion des refus d'obtempérer."
+      },
+      {
+        "title": "10. Anglais de base pour forces de sécurité",
+        "count": 10,
+        "description": "Public safety, border control, phrases clés pour patrouilles."
+      },
+      {
+        "title": "11. Préparation physique militaire",
+        "count": 10,
+        "description": "Course 1 000 m, 100 m, étirements, récupération active."
+      },
+      {
+        "title": "12. Oral et motivation devant le jury",
+        "count": 15,
+        "description": "Devise Honneur et Patrie, sens du sacrifice et esprit de corps."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Équilibré",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Gendarmerie et droit",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Logique et situations",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Simulation finale militaire",
+        "duration": "3h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Français",
+        "question": "Corrigez : « Les candidats doit présenter leurs pièces à temps. »",
+        "answer_preview": "Correction : « Les candidats doivent présenter leurs pièces à temps. » Accord sujet-verbe."
+      },
+      {
+        "id": 156,
+        "section": "Institutions Gendarmerie",
+        "question": "Quel est le statut général des gendarmes au Sénégal ?",
+        "answer_preview": "Correction : Les gendarmes ont le statut militaire (Ministère des Forces Armées)."
+      },
+      {
+        "id": 307,
+        "section": "Oral & Valeurs",
+        "question": "Que signifie pour vous la devise « Honneur - Patrie » ?",
+        "answer_preview": "Correction : Dévouement suprême envers la Nation, intégrité morale sans faille et respect scrupuleux des institutions républicaines."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Français",
+        "question": "Corrigez : « Les candidats doit présenter leurs pièces à temps. »",
+        "answer": "Correction : « Les candidats doivent présenter leurs pièces à temps. » Le sujet pluriel commande « doivent »."
+      },
+      {
+        "id": 2,
+        "section": "Français",
+        "question": "Corrigez : « La gendarmerie veille à la sécurité des citoyens et protège les biens. »",
+        "answer": "Correction : La phrase est parfaitement correcte."
+      },
+      {
+        "id": 41,
+        "section": "Mathématiques",
+        "question": "Un candidat obtient 17 points sur 20. Calculez son pourcentage de réussite.",
+        "answer": "Correction : 17/20 × 100 = 85.0 %."
+      },
+      {
+        "id": 59,
+        "section": "Mathématiques",
+        "question": "Un trajet mesure 120 km et la vitesse moyenne est 60 km/h. Combien de temps dure le trajet ?",
+        "answer": "Correction : Temps = 120 / 60 h = 2 heures (120 minutes)."
+      },
+      {
+        "id": 76,
+        "section": "Histoire",
+        "question": "En quelle année le Sénégal accède-t-il à l’indépendance ?",
+        "answer": "Correction : 1960 (le 4 avril marquant la fête nationale officielle)."
+      },
+      {
+        "id": 108,
+        "section": "Géographie",
+        "question": "Quel fleuve porte le nom du pays et constitue une frontière au nord ?",
+        "answer": "Correction : Le fleuve Sénégal."
+      },
+      {
+        "id": 134,
+        "section": "Déontologie",
+        "question": "Qu’est-ce que la probité ?",
+        "answer": "Correction : L’intégrité et l’honnêteté scrupuleuse dans la conduite personnelle et l'exercice des fonctions publiques."
+      },
+      {
+        "id": 156,
+        "section": "Institutions",
+        "question": "Quel est le statut général des gendarmes au Sénégal ?",
+        "answer": "Correction : Les personnels de la Gendarmerie nationale ont le statut de militaires des forces armées."
+      },
+      {
+        "id": 157,
+        "section": "Institutions",
+        "question": "De quel ministère relève directement le Haut Commandement de la Gendarmerie nationale ?",
+        "answer": "Correction : Du Ministère des Forces armées pour l'administration et l'emploi militaire."
+      },
+      {
+        "id": 158,
+        "section": "Institutions",
+        "question": "Sous quelle autorité la Gendarmerie exerce-t-elle ses missions de police ?",
+        "answer": "Correction : Elle est placée sous l’autorité du Ministère de l’Intérieur et du Ministère de la Justice selon qu'il s'agit de police administrative ou judiciaire."
+      },
+      {
+        "id": 159,
+        "section": "Institutions",
+        "question": "Quelles sont deux missions générales de la Gendarmerie nationale ?",
+        "answer": "Correction : Veiller à la sûreté publique, maintenir l’ordre et assurer l’exécution des lois et règlements sur toute l'étendue du territoire."
+      },
+      {
+        "id": 191,
+        "section": "Logique",
+        "question": "Trouvez le terme manquant : 2, 5, 8, 11, ?",
+        "answer": "Correction : 14. La suite progresse par addition constante de 3."
+      },
+      {
+        "id": 221,
+        "section": "Missions & Déontologie",
+        "question": "Pourquoi la Gendarmerie est-elle dite force de police à statut militaire au Sénégal ?",
+        "answer": "Correction : Parce qu’elle exerce des missions de police de droit commun tout en conservant son organisation, sa discipline et son statut militaire."
+      },
+      {
+        "id": 246,
+        "section": "Opérations",
+        "question": "Que signifie la proportionnalité dans une action de sécurité ?",
+        "answer": "Correction : L'intensité des moyens et de la force employés doit être strictement nécessaire et proportionnée à la menace ou à la résistance rencontrée."
+      },
+      {
+        "id": 270,
+        "section": "Mise en situation",
+        "question": "Deux personnes se disputent violemment dans un espace d’accueil de brigade. Priorité ?",
+        "answer": "Correction : Préserver immédiatement la sécurité physique des personnes, séparer sans brutalité, apaiser les tensions et entendre les parties séparément."
+      },
+      {
+        "id": 307,
+        "section": "Oral",
+        "question": "Que signifie pour vous « Honneur-Patrie » ?",
+        "answer": "Correction : Réponse attendue : sens élevé du sacrifice pour la défense du peuple sénégalais, fidélité aux institutions et exemplarité sous le drapeau national."
+      }
+    ],
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-douane-sn",
+    "slug": "concours-douane-senegal-preparation-intensive-tome-1",
+    "title": "Concours Douane — Sénégal : Préparation Intensive Tome 1",
+    "ministry": "Ministère des Finances et du Budget — DGD",
+    "category": "Douane",
+    "target_corps": "Préposés des Douanes, Contrôleurs et Inspecteurs des Douanes",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition 2026 Conforme Code des Douanes UEMOA/Sénégal",
+    "total_exercises": 320,
+    "total_pages": 32,
+    "rating": 4.96,
+    "reviews_count": 412,
+    "cover_gradient": "from-amber-900 via-stone-800 to-emerald-950",
+    "cover_image": "/covers/douane.jpg?v=clean-timeless",
+    "accent_color": "#d97706",
+    "badge": "Élite Fiscale",
+    "description": "320 exercices concrets et corrigés couvrant la fiscalité de porte, le classement tarifaire SH, la valeur en douane, les Incoterms 2020, les procédures de dédouanement et le contrôle a posteriori.",
+    "official_reference": "Direction Générale des Douanes du Sénégal & Décret n°70-1172 modifié portant statut des personnels des douanes.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Missions, organisation et éthique douanières",
+        "count": 32,
+        "description": "Fiscalité, protection du tissu économique, facilitation et intégrité."
+      },
+      {
+        "title": "2. Procédures de dédouanement et contrôle documentaire",
+        "count": 32,
+        "description": "Déclaration préalable, manifeste, visite et mainlevée."
+      },
+      {
+        "title": "3. Classement tarifaire, origine et valeur en douane",
+        "count": 32,
+        "description": "Nomenclature du Système Harmonisé (SH), règles d'origine UEMOA/CEDEAO."
+      },
+      {
+        "title": "4. Calculs, pourcentages et arithmétique douanière",
+        "count": 32,
+        "description": "Droits de douane, TVA, prélèvements communautaires et conversions FCFA."
+      },
+      {
+        "title": "5. Commerce international, logistique et Incoterms",
+        "count": 32,
+        "description": "FOB, CIF/CAF, connaissements maritimes et gestion portuaire."
+      },
+      {
+        "title": "6. Institutions, finances publiques et culture générale",
+        "count": 32,
+        "description": "Recettes de l'État, budget national et intégration sous-régionale."
+      },
+      {
+        "title": "7. Français, dictée et rédaction administrative",
+        "count": 32,
+        "description": "Procès-verbal de constat, rapports d'inspection et rigueur lexicale."
+      },
+      {
+        "title": "8. Logique et psychotechnique douanier",
+        "count": 32,
+        "description": "Détection des anomalies de flux, suites et analyse de risque."
+      },
+      {
+        "title": "9. Anglais professionnel maritime et douanier",
+        "count": 32,
+        "description": "Customs declaration, invoice, bill of lading, clearance."
+      },
+      {
+        "title": "10. Études de cas, situations de guichet et oral",
+        "count": 32,
+        "description": "Gestion des fausses déclarations, propositions illicites et entretien."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Fondamentaux douaniers",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Technique tarifaire et valeur",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Calculs et logique",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Mises en situation & cas réels",
+        "duration": "3h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Missions Douanières",
+        "question": "Expliquez la différence entre la mission fiscale et la mission économique de la Douane.",
+        "answer_preview": "Correction : La mission fiscale perçoit les droits et taxes pour le budget de l’État ; la mission économique protège et facilite les entreprises locales et le commerce extérieur licite."
+      },
+      {
+        "id": 67,
+        "section": "Valeur en Douane",
+        "question": "Qu’est-ce que la valeur en douane ?",
+        "answer_preview": "Correction : La valeur déterminée selon les règles de l'OMC (généralement la valeur transactionnelle CAF/CIF) servant d'assiette aux droits de porte."
+      },
+      {
+        "id": 97,
+        "section": "Calculs Douaniers",
+        "question": "Une marchandise vaut 2 400 000 FCFA. Un droit de 10 % est appliqué. Calculez le montant du droit.",
+        "answer_preview": "Correction : 2 400 000 × 0,10 = 240 000 FCFA."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Missions Douanières",
+        "question": "Expliquez la différence entre la mission fiscale et la mission économique de la Douane.",
+        "answer": "Correction : La mission fiscale consiste à recouvrer les taxes et droits de porte pour le Trésor public. La mission économique régule les flux commerciaux, protège les industries naissantes et encourage la fluidité des échanges licites."
+      },
+      {
+        "id": 6,
+        "section": "Procédures",
+        "question": "Qu’est-ce qu’un contrôle a posteriori ?",
+        "answer": "Correction : Un contrôle réalisé après la délivrance de la mainlevée, en entreprise ou sur pièces comptables, pour vérifier l'exactitude des déclarations passées."
+      },
+      {
+        "id": 65,
+        "section": "Tarif",
+        "question": "Pourquoi le classement tarifaire est-il important ?",
+        "answer": "Correction : Il attribue le code à 10 chiffres (SH) qui détermine précisément le taux des droits et taxes applicables ainsi que les éventuelles restrictions sanitaires ou phytosanitaires."
+      },
+      {
+        "id": 111,
+        "section": "Conversions & Devises",
+        "question": "Une facture est de 7 200 EUR et le taux officiel de conversion est 655 FCFA/EUR. Calculez la valeur en FCFA.",
+        "answer": "Correction : 7 200 × 655 = 4 716 000 FCFA."
+      },
+      {
+        "id": 129,
+        "section": "Commerce & Logistique",
+        "question": "Définissez un Incoterm.",
+        "answer": "Correction : Un terme commercial international normalisé par la Chambre de Commerce Internationale (CCI) fixant la répartition des frais, risques et obligations documentaires entre vendeur et acheteur."
+      },
+      {
+        "id": 257,
+        "section": "Anglais Douanier",
+        "question": "Translate: « customs officer » and « customs declaration ».",
+        "answer": "Correction : « agent des douanes » et « déclaration en douane »."
+      },
+      {
+        "id": 290,
+        "section": "Étude de Cas",
+        "question": "Un opérateur vous propose un avantage financier personnel pour débloquer un conteneur au Port Autonome de Dakar. Que faire ?",
+        "answer": "Correction : Rejet catégorique et immédiat de la tentative de corruption, maintien de la marchandise sous contrôle douanier et rédaction d'un rapport circonstancié à l'inspecteur chef de visite."
+      }
+    ],
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-ena-sn",
+    "slug": "concours-ena-senegal-cycle-a-et-b-tome-1",
+    "title": "Concours ENA — Sénégal : Cycles A & B Tome 1",
+    "ministry": "École Nationale d’Administration du Sénégal",
+    "category": "ENA",
+    "target_corps": "Administrateurs Civils, Diplomates, Inspecteurs du Trésor et des Impôts",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale Grands Corps de l’État 2026",
+    "total_exercises": 320,
+    "total_pages": 26,
+    "rating": 4.97,
+    "reviews_count": 520,
+    "cover_gradient": "from-purple-950 via-slate-900 to-indigo-950",
+    "cover_image": "/covers/ena.jpg?v=clean-timeless",
+    "accent_color": "#7c3aed",
+    "badge": "Haut Commandement Civil",
+    "description": "Le fascicule de référence pour le concours d'entrée à l'ENA de Dakar. 320 exercices corrigés sur le droit administratif, l'économie du développement, la gestion axée sur les résultats (GAR), la synthèse de documents et l'épreuve orale.",
+    "official_reference": "Arrêté interministériel fixant les programmes des concours directs et professionnels cycles A et B de l'ENA Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Psychotechnique et raisonnement logique",
+        "count": 32,
+        "description": "Test éliminatoire de 2h : suites, matrices, logique verbale et temporelle."
+      },
+      {
+        "title": "2. Culture générale et enjeux contemporains",
+        "count": 32,
+        "description": "État, Constitution, souveraineté alimentaire, CEDEAO et transitions."
+      },
+      {
+        "title": "3. Droit public et droit administratif sénégalais",
+        "count": 32,
+        "description": "Actes unilatéraux, hiérarchie des normes, juge administratif et tutelle."
+      },
+      {
+        "title": "4. Économie politique et finances publiques",
+        "count": 32,
+        "description": "PIB, inflation, politique budgétaire, balance commerciale et dette."
+      },
+      {
+        "title": "5. Gestion publique axée sur les résultats (GAR)",
+        "count": 32,
+        "description": "Budget-programme, indicateurs SMART, contrôle interne et audit public."
+      },
+      {
+        "title": "6. Méthodologie du résumé et de la note de synthèse",
+        "count": 32,
+        "description": "Plans en deux parties, problématisation, transitions et condensation."
+      },
+      {
+        "title": "7. Français soutenu et rédaction administrative",
+        "count": 32,
+        "description": "Style officiel républicain, figures d'argumentation et précision terminologique."
+      },
+      {
+        "title": "8. Connaissance des corps et sections ENA",
+        "count": 32,
+        "description": "Administration générale, Diplomatie, Impôts & Domaines, Trésor, Travail."
+      },
+      {
+        "title": "9. Entretien avec le jury et épreuve orale",
+        "count": 32,
+        "description": "Présentation en 90 secondes, questions pièges, neutralité et déontologie."
+      },
+      {
+        "title": "10. Études de cas et prise de décision publique",
+        "count": 32,
+        "description": "Arbitrages budgétaires, gestion de crise et modernisation des services."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Direct Cycle B (Résumé & Dissertation)",
+        "duration": "3h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Direct Cycle A (Droit & Économie)",
+        "duration": "4h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Gestion publique & Indicateurs",
+        "duration": "3h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Grand Oral de Synthèse",
+        "duration": "45min",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 33,
+        "section": "Culture Générale",
+        "question": "Définissez brièvement l’État en droit public.",
+        "answer_preview": "Correction : Une organisation politique et juridique souveraine exerçant son autorité sur une population et un territoire délimité."
+      },
+      {
+        "id": 65,
+        "section": "Droit Administratif",
+        "question": "Définissez le principe de légalité administrative.",
+        "answer_preview": "Correction : L’obligation stricte pour l’administration d'agir conformément aux normes juridiques supérieures en vigueur."
+      },
+      {
+        "id": 134,
+        "section": "Gestion Publique",
+        "question": "Qu’est-ce qu’un budget-programme ?",
+        "answer_preview": "Correction : Une approche budgétaire moderne (LOLF) reliant les allocations de crédits à des objectifs de performance quantifiés et mesurables."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 33,
+        "section": "Culture Générale",
+        "question": "Définissez brièvement l’État.",
+        "answer": "Correction : Une organisation politique et juridique exerçant une autorité souveraine sur une population déterminée et à l'intérieur d'un territoire délimité."
+      },
+      {
+        "id": 35,
+        "section": "Institutions",
+        "question": "Qu’est-ce que la séparation des pouvoirs ?",
+        "answer": "Correction : Un principe fondamental distinguant le pouvoir législatif (voter la loi), exécutif (exécuter la loi) et judiciaire (sanctionner le non-respect du droit)."
+      },
+      {
+        "id": 65,
+        "section": "Droit Administratif",
+        "question": "Définissez le principe de légalité administrative.",
+        "answer": "Correction : L’administration doit obligatoirement agir dans le respect absolu de la hiérarchie des normes (Constitution, traités, lois, décrets, arrêtés)."
+      },
+      {
+        "id": 78,
+        "section": "Organisation Territoriale",
+        "question": "Différence entre déconcentration et décentralisation ?",
+        "answer": "Correction : La déconcentration transfère des pouvoirs décisionnels aux représentants locaux de l'État (Gouverneurs, Préfets) ; la décentralisation transfère des compétences à des collectivités locales élues dotées de la personnalité morale (Mairies, Conseils Départementaux)."
+      },
+      {
+        "id": 97,
+        "section": "Économie",
+        "question": "Définissez le Produit Intérieur Brut (PIB).",
+        "answer": "Correction : La valeur monétaire totale des biens et services finals produits à l'intérieur d'un territoire national donné au cours d'une période donnée (généralement un an)."
+      },
+      {
+        "id": 132,
+        "section": "Management Public",
+        "question": "Qu’est-ce qu’un objectif SMART ?",
+        "answer": "Correction : Un objectif Spécifique, Mesurable, Atteignable, Réaliste/Pertinent et Temporellement défini."
+      },
+      {
+        "id": 257,
+        "section": "Grand Oral",
+        "question": "Comment répondre à la question classique du jury : « Pourquoi voulez-vous intégrer l’ENA ? »",
+        "answer": "Correction : Éviter les réponses génériques sur le salaire ou le statut. Articuler sa vocation autour de la participation aux politiques publiques majeures du Sénégal, la modernisation du service aux usagers et le sens de l'État républicain."
+      }
+    ],
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-ensoa-sn",
+    "slug": "concours-ensoa-senegal-fascicule-reconstruit",
+    "title": "Concours ENSOA — Sénégal : Fascicule Reconstruit",
+    "ministry": "Ministère des Forces Armées — Koutal (Kaolack)",
+    "category": "ENSOA",
+    "target_corps": "Sous-Officiers d'Active de l'Armée de Terre, de l'Air et de la Marine",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition 2026 — Devise : Qui Ose Gagne",
+    "total_exercises": 320,
+    "total_pages": 26,
+    "rating": 4.94,
+    "reviews_count": 275,
+    "cover_gradient": "from-amber-950 via-red-950 to-neutral-900",
+    "cover_image": "/covers/ensoa.jpg?v=clean-timeless",
+    "accent_color": "#b91c1c",
+    "badge": "Qui Ose Gagne",
+    "description": "Préparation complète au concours direct (niveau BFEM) et professionnel de l'École Nationale des Sous-Officiers d'Active de Koutal. Mathématiques, culture militaire, leadership, secourisme et épreuves physiques.",
+    "official_reference": "Ministère des Forces Armées du Sénégal — Concours ENSOA Koutal (Kaolack).",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Français, expression et rédaction",
+        "count": 32,
+        "description": "Grammaire, style clair, compte rendu d'incident et notes de service."
+      },
+      {
+        "title": "2. Mathématiques et calcul numérique",
+        "count": 32,
+        "description": "Fractions, équations, calculs d'échelle et moyennes pondérées."
+      },
+      {
+        "title": "3. Histoire du Sénégal et repères militaires",
+        "count": 32,
+        "description": "Lat Dior, batailles historiques, 1960 et opérations de maintien de la paix."
+      },
+      {
+        "title": "4. Géographie, environnement et territoire",
+        "count": 32,
+        "description": "Régions naturelles, zones frontalières et cartographie militaire de base."
+      },
+      {
+        "title": "5. Institutions, citoyenneté et culture civique",
+        "count": 32,
+        "description": "Lois de la République, obéissance légitime et symbole national."
+      },
+      {
+        "title": "6. Logique, raisonnement et psychotechnique",
+        "count": 32,
+        "description": "Suites de figures, repérage spatial nord/sud et tests d'attention."
+      },
+      {
+        "title": "7. Sciences, santé, secourisme et préparation physique",
+        "count": 32,
+        "description": "Système respiratoire, premiers secours, hydratation et endurance."
+      },
+      {
+        "title": "8. Culture militaire, ENSOA, discipline et leadership",
+        "count": 32,
+        "description": "Subordination, commandement direct et esprit d'abnégation."
+      },
+      {
+        "title": "9. Anglais de base et vocabulaire professionnel",
+        "count": 32,
+        "description": "Terminologie bilingue pour missions internationales et casques bleus."
+      },
+      {
+        "title": "10. Situations professionnelles et commandement",
+        "count": 32,
+        "description": "Gestion des erreurs en patrouille, cohésion et exemplarité."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Écrit général (Français & Logique)",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Mathématiques et Histoire-Géo",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Raisonnement & Sciences",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Leadership & Situations de terrain",
+        "duration": "2h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 35,
+        "section": "Mathématiques",
+        "question": "Résolvez l'équation : 3x + 7 = 25.",
+        "answer_preview": "Correction : 3x = 25 - 7 = 18, donc x = 6."
+      },
+      {
+        "id": 225,
+        "section": "Culture Militaire",
+        "question": "Que signifie le sigle ENSOA et où est implantée l'école au Sénégal ?",
+        "answer_preview": "Correction : École Nationale des Sous-Officiers d'Active, implantée à Koutal, dans la région de Kaolack."
+      },
+      {
+        "id": 256,
+        "section": "Tradition Militaire",
+        "question": "Quelle est la devise historique de l'ENSOA ?",
+        "answer_preview": "Correction : « Qui Ose Gagne », symbole de bravoure et de détermination opérationnelle."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 35,
+        "section": "Mathématiques",
+        "question": "Résolvez : 3x + 7 = 25.",
+        "answer": "Correction : 3x = 18, d'où x = 6."
+      },
+      {
+        "id": 36,
+        "section": "Mathématiques",
+        "question": "Un convoi parcourt 180 km en 3 heures. Quelle est sa vitesse moyenne ?",
+        "answer": "Correction : V = d/t = 180 / 3 = 60 km/h."
+      },
+      {
+        "id": 65,
+        "section": "Histoire",
+        "question": "Quelle date marque l'indépendance de la République du Sénégal ?",
+        "answer": "Correction : Le 4 avril 1960."
+      },
+      {
+        "id": 76,
+        "section": "Histoire",
+        "question": "Citez une figure historique emblématique de la résistance à la conquête coloniale au Sénégal.",
+        "answer": "Correction : Le Damel du Cayor Lat Dior Ngoné Latyr Diop."
+      },
+      {
+        "id": 161,
+        "section": "Logique",
+        "question": "Suite : 2, 4, 8, 16, ?",
+        "answer": "Correction : 32 (multiplication par 2 à chaque étape)."
+      },
+      {
+        "id": 225,
+        "section": "Culture Militaire",
+        "question": "Que signifie ENSOA ?",
+        "answer": "Correction : École Nationale des Sous-Officiers d'Active."
+      },
+      {
+        "id": 226,
+        "section": "Culture Militaire",
+        "question": "Où se trouve l'ENSOA sénégalaise ?",
+        "answer": "Correction : À Koutal, dans le département et la région de Kaolack."
+      },
+      {
+        "id": 244,
+        "section": "Leadership",
+        "question": "Que signifie « donner l'exemple » pour un sous-officier d'active ?",
+        "answer": "Correction : Incarner soi-même avec rigueur la discipline, la ponctualité, le respect des consignes et le courage attendus des soldats sous ses ordres."
+      },
+      {
+        "id": 256,
+        "section": "Tradition Militaire",
+        "question": "Que rappelle l'expression « Qui Ose Gagne », associée à l'ENSOA ?",
+        "answer": "Correction : Elle exprime une idée d'audace, de combativité et de dépassement de soi propre aux sous-officiers sénégalais."
+      }
+    ],
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-eaux-forets-sn",
+    "slug": "concours-eaux-et-forets-senegal-fascicule-reconstruit",
+    "title": "Concours Eaux & Forêts — Sénégal : Fascicule Reconstruit",
+    "ministry": "Ministère de l'Environnement et de la Transition Écologique",
+    "category": "Eaux & Forêts",
+    "target_corps": "Agents Techniques, Contrôleurs et Inspecteurs des Eaux et Forêts",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale Préservation Environnementale 2026",
+    "total_exercises": 320,
+    "total_pages": 26,
+    "rating": 4.93,
+    "reviews_count": 198,
+    "cover_gradient": "from-emerald-950 via-green-900 to-teal-950",
+    "cover_image": "/covers/eaux_forets.jpg?v=clean-timeless",
+    "accent_color": "#15803d",
+    "badge": "Protection Naturelle",
+    "description": "320 exercices distincts et corrigés pour le concours des Eaux et Forêts : écologie forestière, sylviculture, feux de brousse, lutte contre la désertification, législation du Code Forestier sénégalais et SIG.",
+    "official_reference": "Direction des Eaux, Forêts, Chasses et de la Conservation des Sols (DEFCCS) du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Écologie forestière et écosystèmes",
+        "count": 32,
+        "description": "Habitats, puits de carbone, chaînes trophiques et mangroves."
+      },
+      {
+        "title": "2. Sylviculture, reboisement et pépinières",
+        "count": 32,
+        "description": "Semences locales, éclaircies, densité et taux de reprise."
+      },
+      {
+        "title": "3. Botanique et agroforesterie sahélienne",
+        "count": 32,
+        "description": "Arbres fertiliaires (Faidherbia albida), haies vives et brise-vents."
+      },
+      {
+        "title": "4. Faune sauvage et aires protégées",
+        "count": 32,
+        "description": "Parcs nationaux (Niokolo-Koba, Djoudj), braconnage et inventaires."
+      },
+      {
+        "title": "5. Sols, eau et lutte contre la désertification",
+        "count": 32,
+        "description": "Grande Muraille Verte, érosion éolienne et cordons pierreux."
+      },
+      {
+        "title": "6. Feux de brousse, prévention et pare-feu",
+        "count": 32,
+        "description": "Triangle du feu, feux précoces vs tardifs, sensibilisation rurale."
+      },
+      {
+        "title": "7. Législation forestière et Code de l'Environnement",
+        "count": 32,
+        "description": "Délits forestiers, coupes illicites, droit d'usage et procès-verbaux."
+      },
+      {
+        "title": "8. Techniques de terrain, cartographie et SIG",
+        "count": 32,
+        "description": "Boussole, GPS, transects d'inventaire et cubage des peuplements."
+      },
+      {
+        "title": "9. Français et culture générale environnementale",
+        "count": 32,
+        "description": "Rédaction de rapports de mission et vocabulaire écologique."
+      },
+      {
+        "title": "10. Mathématiques appliquées et situations de terrain",
+        "count": 32,
+        "description": "Surfaces de parcelles en hectares, calculs de densité et constats."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Écologie et gestion forestière",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Faune, feux et environnement",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Terrain, droit et données SIG",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve générale et professionnelle",
+        "duration": "3h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Écologie Forestière",
+        "question": "Définissez un écosystème forestier.",
+        "answer_preview": "Correction : Ensemble dynamique formé par les êtres vivants d'une forêt (biocénose), leur milieu physique (biotope) et les interactions complexes entre eux."
+      },
+      {
+        "id": 161,
+        "section": "Feux de Brousse",
+        "question": "Quels sont les trois éléments constituant le triangle du feu ?",
+        "answer_preview": "Correction : Un combustible (végétation sèche), un comburant (l’oxygène de l'air) et une source d'énergie ou de chaleur."
+      },
+      {
+        "id": 228,
+        "section": "Cartographie",
+        "question": "À l’échelle 1:50 000, 1 cm sur la carte représente quelle distance sur le terrain ?",
+        "answer_preview": "Correction : 50 000 cm, soit exactement 500 mètres (0,5 km)."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Écologie Forestière",
+        "question": "Définissez un écosystème forestier.",
+        "answer": "Correction : Ensemble formé par les êtres vivants d'une forêt, leur milieu physique (sol, eau, climat) et les interactions symbiotiques entre eux."
+      },
+      {
+        "id": 5,
+        "section": "Écologie",
+        "question": "Pourquoi les arbres participent-ils au cycle du carbone ?",
+        "answer": "Correction : Ils absorbent le CO2 atmosphérique par photosynthèse et stockent durablement le carbone dans leur biomasse ligneuse et dans l'humus du sol."
+      },
+      {
+        "id": 44,
+        "section": "Sylviculture",
+        "question": "Comment calcule-t-on le taux de survie d'une plantation forestière ?",
+        "answer": "Correction : Taux de survie = (Nombre de plants vivants / Nombre initial de plants mis en terre) × 100."
+      },
+      {
+        "id": 161,
+        "section": "Feux de Brousse",
+        "question": "Qu'est-ce qu'un feu de brousse ?",
+        "answer": "Correction : Un incendie non maîtrisé se propageant dans les formations végétales naturelles, savanes ou forêts."
+      },
+      {
+        "id": 164,
+        "section": "Prévention Feux",
+        "question": "Qu'est-ce qu'une bande pare-feu ?",
+        "answer": "Correction : Une bande de terrain débroussaillée et nettoyée de tout combustible sur une largeur déterminée, destinée à stopper ou ralentir l'avancée des flammes."
+      },
+      {
+        "id": 200,
+        "section": "Législation",
+        "question": "Qu'est-ce qu'un procès-verbal dressé par un agent des Eaux et Forêts ?",
+        "answer": "Correction : Un acte juridique solennel constatant matériellement une infraction forestière ou environnementale, faisant foi jusqu'à preuve du contraire devant les juridictions répressives."
+      },
+      {
+        "id": 229,
+        "section": "SIG & Terrain",
+        "question": "À l'échelle 1:50 000, 1 cm sur la carte représente combien sur le terrain ?",
+        "answer": "Correction : 50 000 cm = 500 mètres."
+      }
+    ],
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-inseps-sn",
+    "slug": "concours-inseps-senegal-tome-1-exercices-corriges",
+    "title": "Concours INSEPS — Sénégal : Tome 1 Exercices Corrigés",
+    "ministry": "Université Cheikh Anta Diop de Dakar (UCAD) — INSEPS",
+    "category": "INSEPS",
+    "target_corps": "Professeurs d'EPS, Managers du Sport et Éducateurs Sportifs",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition 2026 Conforme aux Tests d’Admission UCAD",
+    "total_exercises": 320,
+    "total_pages": 45,
+    "rating": 4.91,
+    "reviews_count": 215,
+    "cover_gradient": "from-orange-950 via-amber-900 to-stone-900",
+    "cover_image": "/covers/inseps.jpg?v=clean-timeless",
+    "accent_color": "#ea580c",
+    "badge": "Sport & Didactique",
+    "description": "Guide complet pour réussir les épreuves d'admission de l'INSEPS (STAPS-JL EPS) : biologie humaine, physiologie de l'effort, entraînement, test Luc-Léger / navette, quintuple saut et pédagogie sportive.",
+    "official_reference": "Institut National Supérieur de l'Éducation Populaire et du Sport (INSEPS) — UCAD Dakar.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Français : compréhension, grammaire et expression",
+        "count": 45,
+        "description": "Textes d'actualité sportive, syntaxe et dissertation."
+      },
+      {
+        "title": "2. Biologie humaine générale",
+        "count": 55,
+        "description": "Cellule, systèmes cardiovasculaire et respiratoire, homéostasie."
+      },
+      {
+        "title": "3. Anatomie et physiologie de l'effort",
+        "count": 40,
+        "description": "Muscles, articulations, filières énergétiques (aérobie, anaérobie)."
+      },
+      {
+        "title": "4. Sciences du sport et entraînement",
+        "count": 35,
+        "description": "Volume, intensité, surcharge progressive et planification."
+      },
+      {
+        "title": "5. EPS : pédagogie et didactique",
+        "count": 25,
+        "description": "Objectifs opérationnels, critères d'évaluation et consignes de sécurité."
+      },
+      {
+        "title": "6. Culture générale, Sénégal, jeunesse et sport",
+        "count": 25,
+        "description": "Place du sport au Sénégal, fair-play et citoyenneté active."
+      },
+      {
+        "title": "7. Logique et psychotechnique",
+        "count": 25,
+        "description": "Suites mathématiques, proportions et calcul mental rapide."
+      },
+      {
+        "title": "8. Anglais appliqué aux sciences du sport",
+        "count": 15,
+        "description": "Vocabulaire athlétique, traductions médicales simples."
+      },
+      {
+        "title": "9. Tests physiques et préparation pratique",
+        "count": 30,
+        "description": "Test de Luc-Léger, 100m, quintuple saut, gainage et souplesse."
+      },
+      {
+        "title": "10. Oral, entretien et mises en situation",
+        "count": 25,
+        "description": "Motivation, projet d'études STAPS et réaction aux litiges d'élèves."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — EPS & Biologie de l'effort",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Sciences anatomiques et entraînement",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Pédagogie de terrain",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Simulation finale & Grand Entretien",
+        "duration": "3h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Biologie Humaine",
+        "question": "Expliquez le rôle du noyau, de la membrane plasmique et des mitochondries.",
+        "answer_preview": "Correction : Le noyau stocke l’information génétique (ADN) ; la membrane contrôle les échanges cellulaires ; les mitochondries sont les centrales énergétiques produisant l’ATP."
+      },
+      {
+        "id": 4,
+        "section": "Physiologie",
+        "question": "Décrivez le trajet de l'oxygène depuis l'air inspiré jusqu'à la cellule musculaire.",
+        "answer_preview": "Correction : Alvéoles pulmonaires -> diffusion dans le sang -> liaison à l'hémoglobine -> pompage cardiaque ventricule gauche -> artérioles -> diffusion dans le myocyte."
+      },
+      {
+        "id": 297,
+        "section": "Tests Physiques",
+        "question": "Un candidat court 1 000 m en 5 minutes. Quelle est sa vitesse moyenne en km/h ?",
+        "answer_preview": "Correction : 5 min = 1/12 d'heure ; 1 km / (1/12 h) = 12 km/h."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Biologie Humaine",
+        "question": "Expliquez le rôle du noyau, de la membrane plasmique et des mitochondries.",
+        "answer": "Correction : Le noyau renferme l’ADN régissant les synthèses cellulaires ; la membrane plasmique régule sélectivement les flux ioniques et moléculaires ; les mitochondries synthétisent l’ATP par phosphorylation oxydative."
+      },
+      {
+        "id": 3,
+        "section": "Anatomie de l'Effort",
+        "question": "Distinguez contraction concentrique et contraction excentrique.",
+        "answer": "Correction : Contraction concentrique : les fibres musculaires se raccourcissent en développant de la force (ex: montée en développé couché). Contraction excentrique : le muscle développe une tension tout en s'allongeant pour freiner une charge (ex: descente contrôlée)."
+      },
+      {
+        "id": 5,
+        "section": "Physiologie",
+        "question": "Pourquoi la fréquence cardiaque augmente-t-elle brutalement pendant un sprint ?",
+        "answer": "Correction : Pour augmenter le débit cardiaque (DC = FC × VES) et acheminer massivement l'oxygène et le glucose vers les fibres musculaires actives tout en éliminant les protons et métabolites."
+      },
+      {
+        "id": 296,
+        "section": "Entraînement",
+        "question": "Pourquoi un échauffement progressif est-il impératif avant un test de vitesse ?",
+        "answer": "Correction : Il élève la température centrale et musculaire, diminue la viscosité articulaire, améliore la vitesse de conduction nerveuse et prévient les déchirures musculo-tendineuses."
+      },
+      {
+        "id": 297,
+        "section": "Calcul Sportif",
+        "question": "Un candidat court 1 000 m en 5 min. Quelle est sa vitesse moyenne en km/h ?",
+        "answer": "Correction : 5 min = 300 secondes = 1/12 h. Vitesse = 1 / (1/12) = 12 km/h."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 106,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-fastef-sn",
+    "slug": "concours-fastef-senegal-fascicule-complet",
+    "title": "Concours FASTEF — Sénégal : Fascicule Complet",
+    "ministry": "Ministère de l'Enseignement supérieur — UCAD FASTEF",
+    "category": "FASTEF",
+    "target_corps": "Professeurs de Collège et Lycée (CAES, CAPES, PES)",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale Concours 2026",
+    "total_exercises": 320,
+    "total_pages": 23,
+    "rating": 4.96,
+    "reviews_count": 278,
+    "cover_gradient": "from-amber-950 via-yellow-900 to-slate-950",
+    "cover_image": "/covers/fastef.jpg?v=clean-timeless",
+    "accent_color": "#d97706",
+    "badge": "Enseignement Secondaire",
+    "description": "320 exercices distincts corrigés sans doublons répartis en 10 domaines d'expertise, 4 concours blancs complets et plan intensif sur 30 jours pour réussir le concours de la Faculté des Sciences et Technologies de l’Éducation et de la Formation (FASTEF).",
+    "official_reference": "FASTEF — UCAD Dakar : Modalités officielles d'admission aux formations pédagogiques (CAES, CAPES, PES).",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Pédagogie et didactique",
+        "count": 32,
+        "description": "Objectifs opérationnels, évaluation diagnostique/formative, remédiation, étayage et différenciation."
+      },
+      {
+        "title": "2. Français et expression",
+        "count": 32,
+        "description": "Syntaxe, accords COD, transitions argumentatives, résumé, méthode de dissertation et connecteurs."
+      },
+      {
+        "title": "3. Histoire, géographie et Sénégal",
+        "count": 32,
+        "description": "Sahel, aménagement de Dakar, littoral, désertification, transition démographique et gestion de l'eau."
+      },
+      {
+        "title": "4. Mathématiques et sciences physiques",
+        "count": 32,
+        "description": "Équations, pourcentages, géométrie, vitesse moyenne, électricité, énergie et chimie."
+      },
+      {
+        "title": "5. SVT, santé et environnement",
+        "count": 32,
+        "description": "Photosynthèse, respiration cellulaire, immunité innée/adaptative, écosystèmes et écologie sahélienne."
+      },
+      {
+        "title": "6. Anglais et communication",
+        "count": 32,
+        "description": "Grammaire, vocabulaire professionnel, traduction, gestion de classe et formulations orales."
+      },
+      {
+        "title": "7. Psychologie, inclusion et sociologie",
+        "count": 32,
+        "description": "Motivation intrinsèque, charge cognitive, estime de soi, inclusion scolaire et gestion de classe."
+      },
+      {
+        "title": "8. Culture générale, institutions et éducation",
+        "count": 32,
+        "description": "Institutions républicaines, décentralisation, éthique enseignante et politiques éducatives du Sénégal."
+      },
+      {
+        "title": "9. Numérique, informatique et méthodologie",
+        "count": 32,
+        "description": "Outils TICE, plateformes LMS, sécurité des données, algorithmique et recherche documentaire."
+      },
+      {
+        "title": "10. Concours, oral et situations professionnelles",
+        "count": 32,
+        "description": "Gestion du temps d'épreuve, oral devant le jury, résolution de conflits et déontologie."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Pédagogie et français",
+        "duration": "3h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 2 — Sciences et géographie",
+        "duration": "2h30",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 3 — Éducation et numérique",
+        "duration": "2h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 4 — Oral et situations professionnelles",
+        "duration": "2h00",
+        "questions_count": 5
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Pédagogie et didactique",
+        "question": "Définissez l’objectif pédagogique.",
+        "answer_preview": "Correction : Résultat observable attendu."
+      },
+      {
+        "id": 33,
+        "section": "Français et expression",
+        "question": "Corrigez : « Les candidats que j’ai vu ».",
+        "answer_preview": "Correction : « Les candidats que j’ai vus ». Le COD « que » (mis pour les candidats) placé avant le verbe impose l'accord."
+      },
+      {
+        "id": 65,
+        "section": "Histoire & Géographie",
+        "question": "Définissez le Sahel.",
+        "answer_preview": "Correction : Zone de transition semi-aride au sud du Sahara."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Pédagogie et didactique",
+        "question": "Définissez l’objectif pédagogique.",
+        "answer": "Correction : Résultat observable attendu."
+      },
+      {
+        "id": 2,
+        "section": "Pédagogie et didactique",
+        "question": "Distinguez objectif et activité.",
+        "answer": "Correction : L’objectif décrit le résultat; l’activité est la tâche."
+      },
+      {
+        "id": 3,
+        "section": "Pédagogie et didactique",
+        "question": "Définissez l’évaluation diagnostique.",
+        "answer": "Correction : Évaluation avant apprentissage pour repérer les acquis."
+      },
+      {
+        "id": 4,
+        "section": "Pédagogie et didactique",
+        "question": "Définissez l’évaluation formative.",
+        "answer": "Correction : Évaluation pendant l’apprentissage pour réguler."
+      },
+      {
+        "id": 6,
+        "section": "Pédagogie et didactique",
+        "question": "Expliquez l’étayage.",
+        "answer": "Correction : Aide temporaire retirée progressivement."
+      },
+      {
+        "id": 7,
+        "section": "Pédagogie et didactique",
+        "question": "Définissez la différenciation pédagogique.",
+        "answer": "Correction : Adaptation aux différences entre apprenants."
+      },
+      {
+        "id": 10,
+        "section": "Pédagogie et didactique",
+        "question": "Définissez compétence.",
+        "answer": "Correction : Mobilisation de ressources pour agir efficacement."
+      },
+      {
+        "id": 12,
+        "section": "Pédagogie et didactique",
+        "question": "Qu’est-ce qu’une situation-problème?",
+        "answer": "Correction : Situation nécessitant recherche et mobilisation de ressources."
+      },
+      {
+        "id": 33,
+        "section": "Français et expression",
+        "question": "Corrigez : « Les candidats que j’ai vu ».",
+        "answer": "Correction : Les candidats que j’ai vus."
+      },
+      {
+        "id": 38,
+        "section": "Français et expression",
+        "question": "Voix passive : « Le jury corrige les copies ».",
+        "answer": "Correction : Les copies sont corrigées par le jury."
+      },
+      {
+        "id": 47,
+        "section": "Français et expression",
+        "question": "Corrigez « malgré qu’il soit absent ».",
+        "answer": "Correction : Bien qu’il soit absent / malgré son absence."
+      },
+      {
+        "id": 53,
+        "section": "Français et expression",
+        "question": "Contenu d’une introduction de dissertation?",
+        "answer": "Correction : Amorce, définitions, problématique, plan."
+      },
+      {
+        "id": 65,
+        "section": "Histoire et géographie",
+        "question": "Définissez le Sahel.",
+        "answer": "Correction : Zone de transition semi-aride au sud du Sahara."
+      },
+      {
+        "id": 66,
+        "section": "Histoire et géographie",
+        "question": "Pourquoi Dakar est-elle un pôle majeur?",
+        "answer": "Correction : Concentration administrative, économique, portuaire et universitaire."
+      },
+      {
+        "id": 72,
+        "section": "Histoire et géographie",
+        "question": "Pourquoi protéger les mangroves?",
+        "answer": "Correction : Protection côtière, biodiversité et ressources."
+      },
+      {
+        "id": 87,
+        "section": "Histoire et géographie",
+        "question": "Définissez développement durable.",
+        "answer": "Correction : Répondre aux besoins présents sans compromettre l’avenir."
+      },
+      {
+        "id": 97,
+        "section": "Mathématiques",
+        "question": "Résolvez 3x+7=25.",
+        "answer": "Correction : x=6."
+      },
+      {
+        "id": 98,
+        "section": "Mathématiques",
+        "question": "21 filles sur 36 : pourcentage?",
+        "answer": "Correction : 58,33 %."
+      },
+      {
+        "id": 102,
+        "section": "Physique",
+        "question": "180 km en 3 h : vitesse?",
+        "answer": "Correction : 60 km/h."
+      },
+      {
+        "id": 113,
+        "section": "Physique",
+        "question": "U=12V et R=4Ω : I?",
+        "answer": "Correction : 3A (Loi d'Ohm : I = U / R = 12 / 4 = 3 A)."
+      },
+      {
+        "id": 129,
+        "section": "SVT",
+        "question": "Rôle des globules rouges?",
+        "answer": "Correction : Transport de l’oxygène grâce à l'hémoglobine."
+      },
+      {
+        "id": 130,
+        "section": "SVT",
+        "question": "Lieu de la photosynthèse?",
+        "answer": "Correction : Chloroplastes."
+      },
+      {
+        "id": 161,
+        "section": "Anglais",
+        "question": "Translate: The teacher checks the homework every morning.",
+        "answer": "Correction : Le professeur vérifie les devoirs chaque matin."
+      },
+      {
+        "id": 194,
+        "section": "Psychologie",
+        "question": "Définissez motivation intrinsèque.",
+        "answer": "Correction : Engagement lié à l’intérêt de l’activité elle-même."
+      },
+      {
+        "id": 227,
+        "section": "Culture générale",
+        "question": "Définissez Constitution.",
+        "answer": "Correction : Texte fondamental des institutions et des droits républicains."
+      },
+      {
+        "id": 260,
+        "section": "Numérique",
+        "question": "Définissez authentification à deux facteurs.",
+        "answer": "Correction : Deux preuves d’identité distinctes pour sécuriser l'accès."
+      },
+      {
+        "id": 294,
+        "section": "Oral & Concours",
+        "question": "Comment répondre à « présentez-vous »?",
+        "answer": "Correction : Présenter parcours, compétences, motivation et projet professionnel."
+      },
+      {
+        "id": 320,
+        "section": "Oral & Concours",
+        "question": "Attitude le jour du concours?",
+        "answer": "Correction : Respecter les consignes, gérer son temps et rester concentré."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 107,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-crem-sn",
+    "slug": "concours-crem-senegal-fascicule-complet",
+    "title": "Concours CREM — Sénégal : Fascicule Complet de Préparation",
+    "ministry": "Ministère de l'Éducation nationale — CRFPE",
+    "category": "CREM",
+    "target_corps": "Élèves-Maîtres (Options Français et Arabe) — Enseignement élémentaire",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition 2026 CRFPE — Conforme Arrêté Ministériel",
+    "total_exercises": 320,
+    "total_pages": 23,
+    "rating": 4.97,
+    "reviews_count": 312,
+    "cover_gradient": "from-teal-950 via-emerald-900 to-slate-950",
+    "cover_image": "/covers/crem.jpg?v=clean-timeless",
+    "accent_color": "#0d9488",
+    "badge": "Élèves-Maîtres CRFPE",
+    "description": "320 exercices distincts et corrigés pour le CREM : pédagogie, psychologie de l'enfant, didactique du français et mathématiques, sciences, inclusion scolaire, gestion de l'école primaire et 4 concours blancs complets.",
+    "official_reference": "Ministère de l’Éducation nationale — Concours de Recrutement des Élèves-Maîtres (CREM) dans les Centres Régionaux de Formation des Personnels de l’Éducation.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Pédagogie, psychologie de l’apprentissage et didactique",
+        "count": 32,
+        "description": "Compétence professionnelle, progression annuelle, situation-problème, remédiation et différenciation."
+      },
+      {
+        "title": "2. Français, expression et communication",
+        "count": 32,
+        "description": "Accords participes passés, tournures actives/passives, connecteurs logiques, dissertation et registres."
+      },
+      {
+        "title": "3. Mathématiques et raisonnement",
+        "count": 32,
+        "description": "Arithmétique, fractions, pourcentages, géométrie (aires/périmètres), probabilités et statistiques."
+      },
+      {
+        "title": "4. Sciences, environnement et santé de l’enfant",
+        "count": 32,
+        "description": "Organes vitaux, photosynthèse, nutrition équilibrée, hygiène, cycle de l'eau et premiers secours."
+      },
+      {
+        "title": "5. Histoire, géographie et culture générale",
+        "count": 32,
+        "description": "Sénégal, Dakar, Sahel, ressources en eau, citoyenneté, développement durable et esprit critique."
+      },
+      {
+        "title": "6. Psychologie de l’enfant et développement",
+        "count": 32,
+        "description": "Développement cognitif, mémoire de travail, motivation, socialisation, estime de soi et gestion des conflits."
+      },
+      {
+        "title": "7. Sciences de l’éducation, inclusion et vie scolaire",
+        "count": 32,
+        "description": "Climat scolaire, règles de classe, prévention du harcèlement, projet d'école et partenariat avec les parents."
+      },
+      {
+        "title": "8. Culture générale, citoyenneté et santé scolaire",
+        "count": 32,
+        "description": "Service public, égalité des chances, vérification de l'information, secourisme et santé mentale."
+      },
+      {
+        "title": "9. Méthodologie du concours, français pratique et situations professionnelles",
+        "count": 32,
+        "description": "Gestion du temps de l'épreuve, oral de motivation, analyse des consignes et entretien avec le jury."
+      },
+      {
+        "title": "10. Organisation de l’école, administration et profession enseignante",
+        "count": 32,
+        "description": "Réunions pédagogiques, éthique professionnelle, suivi des élèves, sorties scolaires et développement continu."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Pédagogie et français",
+        "duration": "3h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 2 — Sciences et géographie",
+        "duration": "2h30",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 3 — Éducation et numérique",
+        "duration": "2h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 4 — Oral et situations professionnelles",
+        "duration": "2h00",
+        "questions_count": 5
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Pédagogie & Didactique",
+        "question": "Définissez une compétence professionnelle de l’enseignant.",
+        "answer_preview": "Correction : Capacité à mobiliser des savoirs, savoir-faire et attitudes pour agir efficacement en situation."
+      },
+      {
+        "id": 33,
+        "section": "Français & Expression",
+        "question": "Corrigez : « Les élèves que j’ai rencontré ».",
+        "answer_preview": "Correction : « Les élèves que j’ai rencontrés ». Le COD « que » (antécédent : les élèves) précède le verbe, imposant l'accord."
+      },
+      {
+        "id": 65,
+        "section": "Mathématiques",
+        "question": "Résolvez 4x+5=29.",
+        "answer_preview": "Correction : 4x = 24 => x = 6."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Pédagogie & Didactique",
+        "question": "Définissez une compétence professionnelle de l’enseignant.",
+        "answer": "Correction : Capacité à mobiliser des savoirs, savoir-faire et attitudes pour agir efficacement en situation."
+      },
+      {
+        "id": 2,
+        "section": "Pédagogie & Didactique",
+        "question": "Distinguez pédagogie et didactique.",
+        "answer": "Correction : La pédagogie concerne la relation et les conditions d’apprentissage; la didactique porte sur l’enseignement des savoirs spécifiques."
+      },
+      {
+        "id": 3,
+        "section": "Pédagogie & Didactique",
+        "question": "Qu’est-ce qu’un objectif opérationnel?",
+        "answer": "Correction : Un résultat formulé de manière observable et vérifiable."
+      },
+      {
+        "id": 8,
+        "section": "Pédagogie & Didactique",
+        "question": "Quel est le rôle d’une évaluation formative?",
+        "answer": "Correction : Fournir des informations pendant l’apprentissage afin d’ajuster l’enseignement."
+      },
+      {
+        "id": 14,
+        "section": "Pédagogie & Didactique",
+        "question": "Définissez différenciation pédagogique.",
+        "answer": "Correction : Adaptation des démarches, supports, aides ou niveaux de guidage selon les besoins."
+      },
+      {
+        "id": 17,
+        "section": "Pédagogie & Didactique",
+        "question": "Définissez métacognition.",
+        "answer": "Correction : Capacité à réfléchir sur ses connaissances, stratégies et processus d’apprentissage."
+      },
+      {
+        "id": 33,
+        "section": "Français",
+        "question": "Corrigez : « Les élèves que j’ai rencontré ».",
+        "answer": "Correction : Les élèves que j’ai rencontrés."
+      },
+      {
+        "id": 38,
+        "section": "Français",
+        "question": "Mettez à la voix passive : « Le maître explique la règle ».",
+        "answer": "Correction : La règle est expliquée par le maître."
+      },
+      {
+        "id": 41,
+        "section": "Français",
+        "question": "Qu’est-ce qu’une problématique?",
+        "answer": "Correction : Question directrice précise qui organise une réflexion."
+      },
+      {
+        "id": 56,
+        "section": "Français",
+        "question": "Corrigez : « Malgré qu’il soit absent ».",
+        "answer": "Correction : On peut écrire « bien qu’il soit absent » ou « malgré son absence »."
+      },
+      {
+        "id": 65,
+        "section": "Mathématiques",
+        "question": "Résolvez 4x+5=29.",
+        "answer": "Correction : x=6."
+      },
+      {
+        "id": 66,
+        "section": "Mathématiques",
+        "question": "Calculez 18 % de 250.",
+        "answer": "Correction : 45."
+      },
+      {
+        "id": 67,
+        "section": "Mathématiques",
+        "question": "Une classe compte 32 élèves dont 20 filles. Quel pourcentage de filles?",
+        "answer": "Correction : (20 / 32) × 100 = 62,5 %."
+      },
+      {
+        "id": 76,
+        "section": "Mathématiques",
+        "question": "Aire d’un rectangle de 12 m sur 7 m?",
+        "answer": "Correction : 12 × 7 = 84 m²."
+      },
+      {
+        "id": 95,
+        "section": "Mathématiques",
+        "question": "Un triangle rectangle a des côtés 6 et 8. Hypoténuse?",
+        "answer": "Correction : √(6² + 8²) = √(36 + 64) = √100 = 10."
+      },
+      {
+        "id": 97,
+        "section": "Sciences",
+        "question": "Rôle principal du cœur?",
+        "answer": "Correction : Propulser le sang dans la circulation sanguine générale et pulmonaire."
+      },
+      {
+        "id": 110,
+        "section": "Sciences",
+        "question": "Pourquoi le sommeil est-il important chez l’enfant?",
+        "answer": "Correction : Il contribue à la croissance, récupération et consolidation des apprentissages."
+      },
+      {
+        "id": 120,
+        "section": "Sciences",
+        "question": "Définissez photosynthèse.",
+        "answer": "Correction : Processus par lequel les végétaux chlorophylliens produisent de la matière organique grâce à la lumière."
+      },
+      {
+        "id": 129,
+        "section": "Histoire-Géo",
+        "question": "Définissez le Sahel.",
+        "answer": "Correction : Bande de transition semi-aride au sud du Sahara."
+      },
+      {
+        "id": 161,
+        "section": "Psychologie",
+        "question": "Définissez développement cognitif.",
+        "answer": "Correction : Évolution des capacités de perception, mémoire, raisonnement et résolution de problèmes."
+      },
+      {
+        "id": 199,
+        "section": "Vie scolaire",
+        "question": "Qu’est-ce que le harcèlement scolaire?",
+        "answer": "Correction : Répétition de comportements hostiles ou humiliants créant un déséquilibre et une souffrance."
+      },
+      {
+        "id": 226,
+        "section": "Citoyenneté",
+        "question": "Pourquoi l’école joue-t-elle un rôle civique?",
+        "answer": "Correction : Elle transmet connaissances, règles communes et capacités de participation citoyenne."
+      },
+      {
+        "id": 257,
+        "section": "Méthodologie",
+        "question": "Comment lire un sujet de concours efficacement?",
+        "answer": "Correction : Identifier consigne, verbes d’action, limites du sujet et critères implicites."
+      },
+      {
+        "id": 282,
+        "section": "Méthodologie",
+        "question": "Comment répondre « pourquoi le CREM? »?",
+        "answer": "Correction : Relier motivation pour l’enseignement, service éducatif républicain et projet professionnel."
+      },
+      {
+        "id": 320,
+        "section": "Profession",
+        "question": "Comment fixer un objectif de développement professionnel?",
+        "answer": "Correction : Le rendre précis, mesurable, réaliste et associé à une échéance."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 108,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-endss-sn",
+    "slug": "concours-endss-senegal-fascicule-complet",
+    "title": "Concours ENDSS — Sénégal : Fascicule Complet de Préparation",
+    "ministry": "Ministère de la Santé et de l'Action Sociale — ENDSS",
+    "category": "ENDSS",
+    "target_corps": "Infirmiers d’État, Sages-Femmes d’État, Techniciens de Santé",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Officielle Santé & Paramédical 2026",
+    "total_exercises": 320,
+    "total_pages": 21,
+    "rating": 4.98,
+    "reviews_count": 364,
+    "cover_gradient": "from-rose-950 via-red-900 to-slate-950",
+    "cover_image": "/covers/endss.jpg?v=clean-timeless",
+    "accent_color": "#e11d48",
+    "badge": "Santé & Paramédical",
+    "description": "320 exercices originaux et corrigés couvrant tout le programme du concours d'entrée à l'ENDSS : anatomie, physiologie, biologie, sémiologie, hygiène/asepsie, pharmacologie et calculs de doses, santé publique et 4 concours blancs.",
+    "official_reference": "École Nationale de Développement Sanitaire et Social (ENDSS Dakar) — Ministère de la Santé et de l'Action Sociale du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Anatomie et physiologie",
+        "count": 32,
+        "description": "Appareil digestif, hémodynamique, reins/ADH, régulation cardiaque, système nerveux et endocrinien."
+      },
+      {
+        "title": "2. Biologie, microbiologie et immunologie",
+        "count": 31,
+        "description": "Bactéries Gram, paludisme/anophèle, réaction inflammatoire, immunité innée/adaptative et antibiogramme."
+      },
+      {
+        "title": "3. Pathologies, sémiologie et soins",
+        "count": 31,
+        "description": "Détresse respiratoire, état de choc, AVC, pneumonie, appendicite et surveillance des paramètres vitaux."
+      },
+      {
+        "title": "4. Hygiène, asepsie, prévention des infections",
+        "count": 31,
+        "description": "Cinq moments de l'hygiène des mains, déchets biomédicaux, stérilisation, désinfection et infections nosocomiales."
+      },
+      {
+        "title": "5. Pharmacologie et calculs de doses",
+        "count": 31,
+        "description": "Calculs de débit de perfusion, conversion de milligrammes, 5 vérifications et tolérance médicamenteuse."
+      },
+      {
+        "title": "6. Santé publique, épidémiologie et prévention",
+        "count": 32,
+        "description": "Incidence/prévalence, prévention primaire/secondaire, choléra, santé maternelle et vaccination."
+      },
+      {
+        "title": "7. Mathématiques, statistiques et raisonnement",
+        "count": 31,
+        "description": "Moyennes, proportions, pourcentages, taux d'attaque, fréquences et échantillonnage."
+      },
+      {
+        "title": "8. Français, communication et rédaction professionnelle",
+        "count": 32,
+        "description": "Transmissions écrites ciblées, relation d'aide avec patient anxieux, secret professionnel et synthèse."
+      },
+      {
+        "title": "9. Situations professionnelles, éthique et organisation des soins",
+        "count": 32,
+        "description": "Consentement éclairé, prévention des chutes et escarres, gestion des urgences et travail d'équipe."
+      },
+      {
+        "title": "10. Urgences, pédiatrie, santé maternelle et informatique de santé",
+        "count": 37,
+        "description": "Déshydratation infantile, surveillance post-partum, allaitement maternel et traçabilité des données de santé."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Pédagogie et français",
+        "duration": "3h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 2 — Sciences et géographie",
+        "duration": "2h30",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 3 — Éducation et numérique",
+        "duration": "2h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 4 — Oral et situations professionnelles",
+        "duration": "2h00",
+        "questions_count": 5
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Anatomie et physiologie",
+        "question": "Décrire les principaux segments de l’appareil digestif et préciser le rôle fonctionnel de chacun.",
+        "answer_preview": "Correction attendue : Bouche, pharynx, œsophage, estomac, intestin grêle, côlon et rectum : ingestion, digestion mécanique/chimique, absorption des nutriments et excrétion."
+      },
+      {
+        "id": 33,
+        "section": "Microbiologie & Immunologie",
+        "question": "Différencier bactéries, virus, champignons et parasites sur le plan biologique.",
+        "answer_preview": "Correction attendue : Bactéries (procaryotes autonomes), virus (parasites intracellulaires stricts sans métabolisme propre), champignons (eucaryotes unicellulaires ou filamenteux), parasites (protozoaires ou helminthes)."
+      },
+      {
+        "id": 132,
+        "section": "Pharmacologie & Doses",
+        "question": "Calculer le volume à administrer si 500 mg sont disponibles dans 5 mL et que la prescription est de 250 mg.",
+        "answer_preview": "Correction : 250 mg × (5 mL / 500 mg) = 2,5 mL."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Anatomie et physiologie",
+        "question": "Décrire les principaux segments de l’appareil digestif et préciser le rôle fonctionnel de chacun.",
+        "answer": "Correction attendue : Bouche, pharynx, œsophage, estomac, intestin grêle, côlon et rectum : ingestion, digestion mécanique/chimique, absorption des nutriments et excrétion."
+      },
+      {
+        "id": 3,
+        "section": "Anatomie et physiologie",
+        "question": "Expliquer le rôle du foie dans le métabolisme des glucides, lipides et protéines.",
+        "answer": "Correction attendue : Rôle de stockage sous forme de glycogène, néoglucogenèse, synthèse des protéines plasmatiques (albumine) et production de la bile pour l'émulsion des lipides."
+      },
+      {
+        "id": 4,
+        "section": "Anatomie et physiologie",
+        "question": "Décrire la circulation sanguine pulmonaire et la circulation systémique.",
+        "answer": "Correction attendue : La petite circulation (pulmonaire) assure l'oxygénation du sang via l'artère pulmonaire et les poumons ; la grande circulation (systémique) distribue l'oxygène aux organes via l'aorte."
+      },
+      {
+        "id": 10,
+        "section": "Anatomie et physiologie",
+        "question": "Décrire le rôle de l’ADH dans la régulation hydrique.",
+        "answer": "Correction attendue : L'hormone antidiurétique (ADH) augmente la réabsorption d'eau au niveau des tubules collecteurs rénaux, réduisant le volume urinaire pour maintenir la volémie."
+      },
+      {
+        "id": 19,
+        "section": "Physiologie",
+        "question": "Comparer les actions de l’insuline et du glucagon sur la glycémie.",
+        "answer": "Correction attendue : L'insuline est une hormone hypoglycémiante facilitant l'entrée du glucose cellulaire ; le glucagon est une hormone hyperglycémiante stimulant la glycogénolyse hépatique."
+      },
+      {
+        "id": 33,
+        "section": "Biologie et immunologie",
+        "question": "Différencier bactéries, virus, champignons et parasites sur le plan biologique.",
+        "answer": "Correction attendue : Bactéries (procaryotes cellulaires), virus (acellulaires obligatoirement intracellulaires), champignons (eucaryotes), parasites (êtres vivants dépendant d'un hôte)."
+      },
+      {
+        "id": 45,
+        "section": "Immunologie",
+        "question": "Décrire la fonction des anticorps.",
+        "answer": "Correction attendue : Immunoglobulines produites par les plasmocytes neutralisant spécifiquement les antigènes, facilitant la phagocytose et activant le complément."
+      },
+      {
+        "id": 52,
+        "section": "Maladies infectieuses",
+        "question": "Décrire les modes de transmission du paludisme.",
+        "answer": "Correction attendue : Transmission vectorielle par la piqûre de l'anophèle femelle infestée par le parasite Plasmodium (falciparum au Sénégal)."
+      },
+      {
+        "id": 65,
+        "section": "Sémiologie & Soins",
+        "question": "Décrire les signes d’alerte d’une détresse respiratoire.",
+        "answer": "Correction attendue : Polypnée superficielle, tirage intercostal, battement des ailes du nez, cyanose péribuccale et saturation en oxygène (SpO2) < 90%."
+      },
+      {
+        "id": 73,
+        "section": "Sémiologie & Soins",
+        "question": "Expliquer les signes évocateurs d’un accident vasculaire cérébral (AVC).",
+        "answer": "Correction attendue : Asymétrie faciale subite, faiblesse ou paralysie d'un membre (hémiplégie), troubles de la parole (aphasie) et céphalées brutales."
+      },
+      {
+        "id": 95,
+        "section": "Hygiène et asepsie",
+        "question": "Décrire les cinq moments essentiels de l’hygiène des mains selon les pratiques de soins.",
+        "answer": "Correction attendue : 1. Avant le contact patient ; 2. Avant geste aseptique ; 3. Après risque d'exposition à un liquide biologique ; 4. Après contact patient ; 5. Après contact avec l'environnement du patient."
+      },
+      {
+        "id": 105,
+        "section": "Hygiène et asepsie",
+        "question": "Expliquer la différence entre nettoyage, désinfection et stérilisation.",
+        "answer": "Correction attendue : Nettoyage (élimination des souillures visibles) ; Désinfection (destruction des micro-organismes pathogènes sur surfaces inertes) ; Stérilisation (destruction irréversible de tout micro-organisme y compris les spores)."
+      },
+      {
+        "id": 126,
+        "section": "Pharmacologie",
+        "question": "Définir médicament, principe actif, excipient et forme pharmaceutique.",
+        "answer": "Correction attendue : Médicament (substance à visée thérapeutique), principe actif (molécule active), excipient (véhicule inactif), forme pharmaceutique (galénique : injectable, per os, etc.)."
+      },
+      {
+        "id": 132,
+        "section": "Calculs de doses",
+        "question": "Calculer le volume à administrer si 500 mg sont disponibles dans 5 mL et que la prescription est de 250 mg.",
+        "answer": "Correction : 250 mg × (5 mL / 500 mg) = 2,5 mL à injecter."
+      },
+      {
+        "id": 136,
+        "section": "Calculs de doses",
+        "question": "Une perfusion de 500 mL doit passer en 5 heures. Calculer le débit en mL/h.",
+        "answer": "Correction : 500 mL / 5 h = 100 mL/h."
+      },
+      {
+        "id": 157,
+        "section": "Santé publique",
+        "question": "Définir incidence, prévalence et mortalité.",
+        "answer": "Correction attendue : Incidence (nombre de nouveaux cas sur une période) ; Prévalence (nombre total de cas à un instant donné) ; Mortalité (nombre de décès rapporté à la population totale)."
+      },
+      {
+        "id": 169,
+        "section": "Santé publique",
+        "question": "Expliquer la notion d’immunité collective.",
+        "answer": "Correction attendue : Protection indirecte de la population contre une maladie infectieuse lorsqu'un pourcentage seuil d'individus est immunisé (vaccination ou antécédent d'infection)."
+      },
+      {
+        "id": 191,
+        "section": "Statistiques & Raisonnement",
+        "question": "Calculer 15 % de 240.",
+        "answer": "Correction : 240 × 0,15 = 36."
+      },
+      {
+        "id": 226,
+        "section": "Communication médicale",
+        "question": "Rédiger une transmission professionnelle concernant un patient fébrile.",
+        "answer": "Correction attendue : Transmission structurée ciblée : Donnée (température mesurée à 39,2°C, sueurs, frissons) ; Action (administration du paracétamol prescrit, déshabillage partiel) ; Résultat (surveillance à H+1)."
+      },
+      {
+        "id": 253,
+        "section": "Éthique médicale",
+        "question": "Expliquer le principe du consentement aux soins.",
+        "answer": "Correction attendue : Droit fondamental du patient de recevoir une information claire et loyale avant d'accepter ou de refuser librement tout acte diagnostique ou thérapeutique."
+      },
+      {
+        "id": 284,
+        "section": "Pédiatrie & Maternité",
+        "question": "Décrire les priorités de surveillance d’un enfant présentant une détresse respiratoire.",
+        "answer": "Correction attendue : Libération des voies aériennes supérieures, oxygénothérapie adaptée, position demi-assise, surveillance de la fréquence respiratoire et de la SpO2."
+      },
+      {
+        "id": 320,
+        "section": "Informatique sanitaire",
+        "question": "Expliquer l’intérêt d’un archivage organisé des documents de soins.",
+        "answer": "Correction attendue : Garantir la traçabilité médico-légale, assurer la continuité de la prise en charge lors des réadmissions et faciliter les audits de qualité."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 109,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-bts-transit-sn",
+    "slug": "concours-bts-transit-senegal-tome-1",
+    "title": "BTS Transit — Sénégal : Tome 1",
+    "ministry": "Ministère de la Formation Professionnelle, de l'Apprentissage et de l'Artisanat",
+    "category": "BTS Transit",
+    "target_corps": "Déclarants en douane, Agents de transit, Gestionnaires de fret maritime et aérien",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale BTS 2026",
+    "total_exercises": 320,
+    "total_pages": 36,
+    "rating": 4.96,
+    "reviews_count": 248,
+    "cover_gradient": "from-cyan-950 via-teal-900 to-slate-950",
+    "cover_image": "/covers/bts_transit.jpg?v=clean-timeless",
+    "accent_color": "#06b6d4",
+    "badge": "Transit & Douane",
+    "description": "320 exercices distincts avec corrections détaillées : douane et réglementation douanière, transit douanier et transport, commerce international et Incoterms, transport maritime/portuaire/conteneurs, logistique routière, documents commerciaux (facture, packing list), calculs douaniers et financiers, anglais professionnel, informatique/GAINDE et cas pratiques professionnels + 4 concours blancs complets.",
+    "official_reference": "Brevet de Technicien Supérieur (BTS) Transit — Direction des Examens et Concours (DECO) du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Douane et réglementation douanière",
+        "count": 32,
+        "description": "Fonctions fiscale et économique, territoire douanier, déclaration, commissionnaire agréé, valeur en douane, origine et classement tarifaire."
+      },
+      {
+        "title": "2. Transit douanier et opérations de transport",
+        "count": 32,
+        "description": "Régime du transit, bureaux de départ/destination, garanties douanières, délais, scellés, traçabilité et apurement du transit."
+      },
+      {
+        "title": "3. Commerce international et Incoterms",
+        "count": 32,
+        "description": "Contrat de vente internationale, facture commerciale, packing list, Incoterms (EXW, FCA, FOB, CIF, DAP, DDP) et lettre de crédit."
+      },
+      {
+        "title": "4. Transport maritime, portuaire et conteneurs",
+        "count": 32,
+        "description": "Armateur, consignataire, connaissement (Bill of Lading), FCL/LCL, dépotage/empotage, surestaries et avaries maritimes."
+      },
+      {
+        "title": "5. Transport routier, logistique et chaîne d’approvisionnement",
+        "count": 32,
+        "description": "Lettre de voiture, planning de livraison, taux de service, coût au km/tonne, gestion des stocks et tournées de livraison."
+      },
+      {
+        "title": "6. Documents commerciaux, administratifs et opérations de transit",
+        "count": 32,
+        "description": "Dossier import/export, facture pro forma, certificat d'origine, cohérence documentaire et archivage professionnel."
+      },
+      {
+        "title": "7. Calculs douaniers, financiers et statistiques",
+        "count": 32,
+        "description": "TVA, remises commerciales, devises, coût de fret, marge commerciale, rotation des stocks et productivité d'agence."
+      },
+      {
+        "title": "8. Anglais professionnel et communication",
+        "count": 32,
+        "description": "Terminologie maritime (shipment, consignee, bill of lading, customs clearance), correspondance et relances en anglais."
+      },
+      {
+        "title": "9. Informatique, systèmes et traçabilité du transit",
+        "count": 32,
+        "description": "Systèmes d'information logistique, GAINDE, dématérialisation, sécurité des données et tableaux de suivi Excel."
+      },
+      {
+        "title": "10. Cas pratiques intégrés et gestion professionnelle",
+        "count": 32,
+        "description": "Traitement des anomalies documentaires, scellés rompus, sous-évaluation, litiges et tableaux de bord d'exploitation."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Douane et déclaration",
+        "duration": "3h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 2 — Transit et transport",
+        "duration": "3h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 3 — Commerce international",
+        "duration": "3h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée BTS Transit",
+        "duration": "4h00",
+        "questions_count": 8
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Douane et réglementation",
+        "question": "Définir la fonction économique et fiscale de la douane.",
+        "answer_preview": "Correction attendue : Identifier les missions de perception fiscale (droits de porte, TVA à l'import) et de protection économique (sauvegarde de la production locale, contrôle sanitaire et répression des fraudes)."
+      },
+      {
+        "id": 76,
+        "section": "Commerce international",
+        "question": "Définir un Incoterm.",
+        "answer_preview": "Correction attendue : Les Incoterms (International Commercial Terms) de la CCI déterminent la répartition précise des frais, des risques de transport et des formalités documentaires entre vendeur et acheteur."
+      },
+      {
+        "id": 103,
+        "section": "Transport maritime",
+        "question": "Définir un connaissement maritime (Bill of Lading).",
+        "answer_preview": "Correction attendue : Document délivré par le transporteur maritime attestant de la prise en charge de la marchandise, matérialisant le contrat de transport et conférant la propriété des biens au porteur régulier."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Douane et réglementation",
+        "question": "Définir la fonction économique et fiscale de la douane.",
+        "answer": "Correction : La douane assure une double fonction : fiscale (perception des droits de douane et taxes pour le Trésor public) et économique (protection du tissu industriel national, régulation des flux commerciaux, surveillance du territoire et application des accords préférentiels)."
+      },
+      {
+        "id": 4,
+        "section": "Douane et réglementation",
+        "question": "Différencier importation, exportation et transit.",
+        "answer": "Correction : L'importation est l'introduction définitive de marchandises étrangères sur le territoire douanier ; l'exportation est la sortie définitive de marchandises nationales vers l'étranger ; le transit est le transport sous contrôle douanier sans acquittement immédiat des droits et taxes."
+      },
+      {
+        "id": 8,
+        "section": "Douane et réglementation",
+        "question": "Définir le déclarant en douane et préciser son statut.",
+        "answer": "Correction : Le déclarant est la personne physique ou morale qui effectue la déclaration en douane en son nom propre ou pour le compte d'autrui (commissionnaire en douane agréé détenant un agrément ministériel officiel au Sénégal)."
+      },
+      {
+        "id": 11,
+        "section": "Valeur en douane",
+        "question": "Définir la valeur en douane à l'importation.",
+        "answer": "Correction : La valeur en douane à l'importation est la valeur transactionnelle (prix payé ou à payer) ajustée des éléments obligatoires (fret maritime, assurance jusqu'au port de Dakar selon l'Incoterm CIF)."
+      },
+      {
+        "id": 15,
+        "section": "Origine des marchandises",
+        "question": "Différencier origine préférentielle et origine non préférentielle.",
+        "answer": "Correction : L'origine non préférentielle sert à appliquer le tarif de droit commun, les mesures antidumping et les statistiques ; l'origine préférentielle (ex: CEDEAO, ZLECAF) permet de bénéficier de droits réduits ou nuls."
+      },
+      {
+        "id": 33,
+        "section": "Transit douanier",
+        "question": "Définir le régime du transit douanier.",
+        "answer": "Correction : Régime suspensif permettant l'acheminement de marchandises sous surveillance douanière d'un bureau de départ à un bureau de destination (ex: Port de Dakar vers Kidira ou Bamako) en suspension des droits et taxes."
+      },
+      {
+        "id": 42,
+        "section": "Garantie de transit",
+        "question": "Présenter le principe de la garantie en matière de transit.",
+        "answer": "Correction : L'acquit-à-caution exige une caution financière ou bancaire garantissant à l'administration douanière le paiement des droits et taxes si les marchandises venaient à être détournées frauduleusement sur le territoire national."
+      },
+      {
+        "id": 48,
+        "section": "Sécurité du transit",
+        "question": "Analyser un cas de rupture de scellé douanier en cours de route.",
+        "answer": "Correction : Le transporteur doit immédiatement alerter le poste de douane ou de gendarmerie le plus proche pour dresser un procès-verbal de constatation d'avarie ou d'incident avant toute manipulation de la cargaison."
+      },
+      {
+        "id": 65,
+        "section": "Commerce international",
+        "question": "Définir le commerce international et ses flux.",
+        "answer": "Correction : Échange de biens et de services à travers les frontières nationales, impliquant des flux physiques de marchandises, des flux documentaires et des flux financiers internationaux."
+      },
+      {
+        "id": 78,
+        "section": "Incoterms",
+        "question": "Comparer EXW (Ex Works) et FCA (Free Carrier).",
+        "answer": "Correction : En EXW, l'acheteur assume tous les frais et risques dès la mise à disposition dans les locaux du vendeur (dédouanement export à sa charge). En FCA, le vendeur charge et dédouane la marchandise à l'exportation."
+      },
+      {
+        "id": 79,
+        "section": "Incoterms",
+        "question": "Comparer FOB (Free On Board) et CIF (Cost, Insurance and Freight).",
+        "answer": "Correction : En FOB, le transfert des risques et des frais a lieu lorsque la marchandise est chargée à bord du navire au port de départ. En CIF, le vendeur paie le fret maritime et l'assurance jusqu'au port d'arrivée, mais le risque est transféré dès le chargement."
+      },
+      {
+        "id": 89,
+        "section": "Paiement international",
+        "question": "Définir la lettre de crédit (crédit documentaire).",
+        "answer": "Correction : Engagement irrévocable pris par la banque de l'importateur de payer l'exportateur contre présentation stricte de documents conformes attestant de l'expédition des marchandises dans les délais stipulés."
+      },
+      {
+        "id": 97,
+        "section": "Transport maritime",
+        "question": "Présenter les caractéristiques majeures du transport maritime.",
+        "answer": "Correction : Capacité d'emport massive, coûts unitaires faibles au conteneur, lenteur relative des traversées, standardisation des unités de charge (EVP/TEU) et soumission aux règles internationales de La Haye-Visby."
+      },
+      {
+        "id": 103,
+        "section": "Connaissement",
+        "question": "Définir le connaissement maritime (Bill of Lading).",
+        "answer": "Correction : Document émis par le transporteur maritime constatant la mise à bord des marchandises, concrétisant le contrat d'affrètement maritime et représentant la propriété de la cargaison."
+      },
+      {
+        "id": 112,
+        "section": "Conteneurisation",
+        "question": "Différencier conteneur FCL (Full Container Load) et LCL (Less than Container Load).",
+        "answer": "Correction : En FCL (complet), le conteneur est empoté par un seul chargeur pour un seul destinataire. En LCL (groupage), plusieurs lots appartenant à différents expéditeurs sont regroupés dans un même conteneur."
+      },
+      {
+        "id": 118,
+        "section": "Gestion portuaire",
+        "question": "Expliquer la notion de surestaries (demurrage).",
+        "answer": "Correction : Pénalités financières facturées par la compagnie maritime pour dépassement de la franchise accordée pour le déchargement et la restitution du conteneur vide après arrivée au port."
+      },
+      {
+        "id": 135,
+        "section": "Transport routier",
+        "question": "Expliquer le rôle de la lettre de voiture (CMR).",
+        "answer": "Correction : Document contractuel de transport routier matérialisant l'accord entre l'expéditeur et le transporteur, attestant de la prise en charge des colis et fixant les réserves éventuelles à la livraison."
+      },
+      {
+        "id": 161,
+        "section": "Documents de transit",
+        "question": "Identifier les pièces fondamentales d’un dossier d’importation au Sénégal.",
+        "answer": "Correction : Facture commerciale originale, connaissement maritime (B/L), liste de colisage (packing list), certificat d'origine, déclaration préalable d'importation (DPI), attestation d'assurance locale et certificat de vérification (ex: AV/ORIBUS)."
+      },
+      {
+        "id": 196,
+        "section": "Calculs douaniers",
+        "question": "Calculer la TVA à 18 % sur une base taxable de 12 500 000 FCFA.",
+        "answer": "Correction : TVA = 12 500 000 × 0,18 = 2 250 000 FCFA."
+      },
+      {
+        "id": 226,
+        "section": "Anglais professionnel",
+        "question": "Définir shipment, consignee, shipper et freight.",
+        "answer": "Correction : Shipment = expédition/cargaison ; Shipper = chargeur/expéditeur ; Consignee = destinataire ; Freight = fret (prix du transport)."
+      },
+      {
+        "id": 261,
+        "section": "Systèmes d'information",
+        "question": "Présenter le rôle du système GAINDE dans la douane sénégalaise.",
+        "answer": "Correction : GAINDE (Gestion Automatisée des Informations Douanières et des Échanges) permet la transmission électronique des manifestes, l'enregistrement des déclarations, le dédouanement informatisé et le paiement électronique des droits."
+      },
+      {
+        "id": 320,
+        "section": "Pratique professionnelle",
+        "question": "Construire une checklist finale de conformité d’une opération de transit avant apurement.",
+        "answer": "Correction : Vérifier la concordance B/L - manifeste, la validation du certificat de visite, la preuve d'apurement de l'acquit au bureau frontière et la restitution de la caution bancaire."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 110,
+    "created_at": "2026-10-04T21:49:22.965Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-bts-secretariat-sn",
+    "slug": "concours-bts-secretariat-bureautique-senegal-tome-1",
+    "title": "BTS Secrétariat-Bureautique — Sénégal : Tome 1",
+    "ministry": "Ministère de la Formation Professionnelle, de l'Apprentissage et de l'Artisanat",
+    "category": "BTS Secrétariat",
+    "target_corps": "Assistants de Direction, Secrétaires de Direction, Gestionnaires Administratifs",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Bureautique d’Élite 2026",
+    "total_exercises": 320,
+    "total_pages": 35,
+    "rating": 4.95,
+    "reviews_count": 210,
+    "cover_gradient": "from-purple-950 via-fuchsia-900 to-slate-950",
+    "cover_image": "/covers/bts_secretariat.jpg?v=clean-timeless",
+    "accent_color": "#c026d3",
+    "badge": "Secrétariat & Bureautique",
+    "description": "320 exercices pratiques corrigés sans répétition : communication professionnelle et accueil, secrétariat et agenda de direction, français et rédaction administrative (lettres officielles, notes de service, comptes rendus, PV de réunion), Word avancé, Excel et calculs de gestion, PowerPoint, archivage et gestion documentaire, comptabilité commerciale et facturation, anglais professionnel et management de bureau + 4 concours blancs.",
+    "official_reference": "Brevet de Technicien Supérieur (BTS) Secrétariat-Bureautique — Ministère de la Formation Professionnelle du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Communication professionnelle et expression",
+        "count": 32,
+        "description": "Communication verbale et non verbale, accueil physique/téléphonique, gestion des usagers difficiles et courriels professionnels."
+      },
+      {
+        "title": "2. Secrétariat, accueil et organisation administrative",
+        "count": 32,
+        "description": "Tenue d'agenda, réunions de direction, ordres du jour, feuilles de présence, comptes rendus et missions de déplacement."
+      },
+      {
+        "title": "3. Français, rédaction administrative et correction",
+        "count": 32,
+        "description": "Grammaire administrative, accords, notes de service, attestations, bordereaux de transmission et synthèse de textes."
+      },
+      {
+        "title": "4. Bureautique Word et traitement de texte",
+        "count": 32,
+        "description": "Feuilles de style, tableaux complexes, publipostage, en-têtes/pieds de page, tables des matières et suivi des révisions."
+      },
+      {
+        "title": "5. Excel, tableaux et calculs de gestion",
+        "count": 32,
+        "description": "Formules Arithmétiques, fonctions SI, SOMME, MOYENNE, calculs de TVA/TTC, graphiques de suivi et tableaux de bord."
+      },
+      {
+        "title": "6. PowerPoint, présentation et outils numériques",
+        "count": 32,
+        "description": "Création de diaporamas percutants, transitions professionnelles, formats de fichiers (PDF, PPTX) et synthèses visuelles."
+      },
+      {
+        "title": "7. Gestion documentaire, archivage et classement",
+        "count": 32,
+        "description": "Plans de classement alphabétique/numérique, arborescence réseau, nommage normalisé et dématérialisation."
+      },
+      {
+        "title": "8. Comptabilité, gestion commerciale et facturation",
+        "count": 32,
+        "description": "Devis, bons de commande, bons de livraison, facturation, relances clients et échéanciers de paiement."
+      },
+      {
+        "title": "9. Anglais professionnel et communication numérique",
+        "count": 32,
+        "description": "Vocabulaire de secrétariat en anglais (meeting, invoice, schedule), courriels internationaux et accueil de visiteurs anglophones."
+      },
+      {
+        "title": "10. Situations professionnelles, management et droit du travail",
+        "count": 32,
+        "description": "Gestion des priorités, confidentialité absolue, ergonomie du poste de travail et prévention des conflits d'intérêts."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Secrétariat et communication",
+        "duration": "3h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 2 — Bureautique Word et Excel",
+        "duration": "3h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 3 — Gestion documentaire et commerciale",
+        "duration": "3h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée BTS Secrétariat",
+        "duration": "4h00",
+        "questions_count": 8
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Communication professionnelle",
+        "question": "Définir la communication professionnelle et ses objectifs.",
+        "answer_preview": "Correction attendue : Transmission structurée d'informations au sein d'une organisation visant l'efficacité opérationnelle, la coordination des équipes et la qualité du service rendu."
+      },
+      {
+        "id": 47,
+        "section": "Secrétariat et réunions",
+        "question": "Différencier procès-verbal, compte rendu et relevé de décisions.",
+        "answer_preview": "Correction attendue : Le PV a une valeur juridique probante et retranscrit fidèlement les débats ; le compte rendu résume l'essentiel des échanges ; le relevé de décisions liste uniquement les actions adoptées avec leurs responsables."
+      },
+      {
+        "id": 139,
+        "section": "Calculs commerciaux",
+        "question": "Calculer un prix TTC à partir d’un prix HT de 85 000 FCFA au taux de TVA de 18 %.",
+        "answer_preview": "Correction : Montant TVA = 85 000 × 0,18 = 15 300 FCFA. Prix TTC = 85 000 + 15 300 = 100 300 FCFA."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Communication professionnelle",
+        "question": "Définir la communication professionnelle et ses objectifs.",
+        "answer": "Correction : Processus d'émission et de réception de messages au sein ou en dehors de l'entreprise ayant pour but d'informer, de convaincre, de coordonner l'action administrative et de valoriser l'image de marque."
+      },
+      {
+        "id": 4,
+        "section": "Accueil professionnel",
+        "question": "Présenter les qualités d’un bon accueil professionnel.",
+        "answer": "Correction : Écoute active, disponibilité, courtoisie, présentation soignée, clarté dans l'orientation du visiteur et respect de la confidentialité."
+      },
+      {
+        "id": 12,
+        "section": "Communication écrite",
+        "question": "Présenter les règles de politesse dans un courriel professionnel.",
+        "answer": "Correction : Objet explicite, formule d'appel personnalisée (ex: « Monsieur le Directeur »), concision du corps, formule de salutation professionnelle adaptée et signature automatique avec coordonnées complètes."
+      },
+      {
+        "id": 36,
+        "section": "Organisation du travail",
+        "question": "Organiser une journée de travail comportant plusieurs urgences.",
+        "answer": "Correction : Utiliser la matrice d'Eisenhower : traiter immédiatement ce qui est urgent et important, planifier ce qui est important mais non urgent, déléguer ce qui est urgent non important et éliminer les distractions."
+      },
+      {
+        "id": 46,
+        "section": "Organisation de réunions",
+        "question": "Rédiger un ordre du jour de réunion de direction.",
+        "answer": "Correction : Document listant les points à débattre par ordre de priorité, les intervenants associés et la durée allouée pour chaque séquence afin de cadrer les travaux."
+      },
+      {
+        "id": 47,
+        "section": "Secrétariat administratif",
+        "question": "Rédiger un procès-verbal de réunion conforme aux usages.",
+        "answer": "Correction : Mentionner la date, l'heure, le lieu, la liste des membres présents/excusés, la présidence de séance, le résumé chronologique des débats et les résolutions votées."
+      },
+      {
+        "id": 65,
+        "section": "Français administratif",
+        "question": "Identifier le sujet, le verbe et les compléments dans une phrase administrative complexe.",
+        "answer": "Correction : Décomposer la structure syntaxique pour garantir la parfaite concordance des temps et le respect des accords du participe passé avec l'auxiliaire avoir."
+      },
+      {
+        "id": 84,
+        "section": "Rédaction administrative",
+        "question": "Rédiger une note de service relative au respect des horaires.",
+        "answer": "Correction : En-tête officiel, objet clair, rappel impersonnel des dispositions réglementaires, motifs de la note, instructions précises et formule de prise d'effet immédiate signée par la direction."
+      },
+      {
+        "id": 99,
+        "section": "Bureautique Word",
+        "question": "Utiliser correctement les styles de titre dans un rapport volumineux.",
+        "answer": "Correction : Appliquer les styles hiérarchiques Titre 1, Titre 2, Titre 3 pour uniformiser la typographie, faciliter la navigation dans le volet et générer automatiquement la table des matières."
+      },
+      {
+        "id": 126,
+        "section": "Publipostage",
+        "question": "Créer un publipostage à partir d’une liste de contacts Excel.",
+        "answer": "Correction : Lier le document principal Word à la base de données Excel, insérer les champs de fusion (« Civilité », « Nom », « Adresse »), prévisualiser les fusions et exécuter vers un nouveau document."
+      },
+      {
+        "id": 133,
+        "section": "Bureautique Excel",
+        "question": "Calculer une somme et une moyenne avec formules.",
+        "answer": "Correction : Utiliser les syntaxes =SOMME(B2:B30) et =MOYENNE(B2:B30) avec verrouillage des plages par des références absolues ($) si nécessaire pour le recopiage."
+      },
+      {
+        "id": 145,
+        "section": "Bureautique Excel",
+        "question": "Utiliser la fonction conditionnelle SI dans une situation administrative.",
+        "answer": "Correction : Syntaxe : =SI(test_logique; valeur_si_vrai; valeur_si_faux). Exemple : =SI(C2>=10; \"Admis\"; \"Ajourné\") pour le traitement automatique des résultats."
+      },
+      {
+        "id": 161,
+        "section": "Présentations PowerPoint",
+        "question": "Créer une présentation de cinq diapositives percutante.",
+        "answer": "Correction : Règle des 6×6 (maximum 6 lignes par slide et 6 mots par ligne), contraste visuel élevé, hiérarchie claire et utilisation d'illustrations représentatives sans surcharge textuelle."
+      },
+      {
+        "id": 195,
+        "section": "Gestion documentaire",
+        "question": "Différencier classement alphabétique, numérique et thématique.",
+        "answer": "Correction : Alphabétique (selon le mot d'ordre/nom), numérique (selon un numéro d'ordre chronologique ou matricule), thématique (selon l'objet ou la matière du dossier)."
+      },
+      {
+        "id": 201,
+        "section": "Gestion documentaire",
+        "question": "Définir une règle de nommage normalisée des fichiers administratifs.",
+        "answer": "Correction : Structure type : AAAA-MM-JJ_[TypeDoc]_[NomClient/Dossier]_[Version] sans accents ni espaces pour assurer la compatibilité multi-plateformes et l'ordre chronologique."
+      },
+      {
+        "id": 225,
+        "section": "Gestion commerciale",
+        "question": "Définir les mentions obligatoires d’une facture commerciale.",
+        "answer": "Correction : Nom et adresse des parties, NINEA, numéro de facture chronologique, date d'émission, désignation précise des biens/services, prix unitaires HT, taux de TVA, total TTC et modalités de règlement."
+      },
+      {
+        "id": 257,
+        "section": "Anglais professionnel",
+        "question": "Traduire en français : appointment, meeting, deadline, invoice, purchase order.",
+        "answer": "Correction : Appointment = rendez-vous ; Meeting = réunion ; Deadline = date limite/échéance ; Invoice = facture ; Purchase order = bon de commande."
+      },
+      {
+        "id": 291,
+        "section": "Déontologie & Confidentialité",
+        "question": "Définir la discrétion professionnelle et le secret de fonction de l'assistant.",
+        "answer": "Correction : Obligation légale et déontologique de ne divulguer aucune information, document ou fait dont on a connaissance dans l'exercice de ses fonctions sous peine de sanctions disciplinaires et pénales."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 111,
+    "created_at": "2026-10-04T21:49:22.966Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-bts-logistique-sn",
+    "slug": "concours-bts-gestion-chaine-approvisionnement-logistique-senegal-tome-1",
+    "title": "BTS Gestion de la Chaîne d'Approvisionnement et Logistique — Sénégal : Tome 1",
+    "ministry": "Ministère de la Formation Professionnelle, de l'Apprentissage et de l'Artisanat",
+    "category": "BTS Gestion Chaine Approvisionnement Logistique",
+    "target_corps": "Responsables Approvisionnement, Chefs d’entrepôt, Coordinateurs Logistiques",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Officielle BTS GCA 2026",
+    "total_exercises": 320,
+    "total_pages": 38,
+    "rating": 4.97,
+    "reviews_count": 265,
+    "cover_gradient": "from-amber-950 via-orange-900 to-slate-950",
+    "cover_image": "/covers/bts_logistique.jpg?v=clean-timeless",
+    "accent_color": "#f59e0b",
+    "badge": "GCA & Logistique",
+    "description": "320 exercices corrigés complets : fondamentaux de la supply chain et gestion des flux, achats et évaluation fournisseurs, gestion des stocks et inventaires (FIFO, stock de sécurité, point de commande), entreposage (picking, cross-docking, adressage), transport et distribution (multimodal, dernier kilomètre), planification de la demande, calculs logistiques et KPI, douane et Incoterms, ERP/WMS/TMS, anglais logistique et études de cas + 4 concours blancs.",
+    "official_reference": "Brevet de Technicien Supérieur (BTS) Gestion de la Chaîne d'Approvisionnement et Logistique — Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Fondamentaux de la supply chain",
+        "count": 35,
+        "description": "Flux physiques, financiers et d'information, chaîne amont et aval, coordination des acteurs et taux de satisfaction client."
+      },
+      {
+        "title": "2. Achats, fournisseurs et approvisionnement",
+        "count": 35,
+        "description": "Cahier des charges, sélection de fournisseurs, bons de commande, contrôle de conformité à réception et partenariats."
+      },
+      {
+        "title": "3. Gestion des stocks et inventaires",
+        "count": 40,
+        "description": "Stock de sécurité, stock d'alerte, rotation des stocks, méthode FIFO, inventaires permanents et coût de rupture."
+      },
+      {
+        "title": "4. Entrepôt, magasinage et manutention",
+        "count": 35,
+        "description": "Organisation des zones de stockage, techniques de picking, cross-docking, optimisation des parcours et règles de sécurité."
+      },
+      {
+        "title": "5. Transport et distribution",
+        "count": 35,
+        "description": "Transport multimodal, plan de transport, bons de livraison, optimisation des tournées et logistique du dernier kilomètre."
+      },
+      {
+        "title": "6. Prévision de la demande et planification",
+        "count": 25,
+        "description": "Variations saisonnières, rupture de capacité, synchronisation achats/production et planification opérationnelle."
+      },
+      {
+        "title": "7. Calculs logistiques, coûts et indicateurs KPI",
+        "count": 35,
+        "description": "Taux de service, taux d'avarie, débit horaire d'entrepôt, coût par tonne/km, rotation des stocks et réduction des coûts."
+      },
+      {
+        "title": "8. Douane, commerce international et Incoterms",
+        "count": 20,
+        "description": "Incoterms EXW, FOB, CIF, DDP, déclarations douanières, certificats d'origine et classement tarifaire."
+      },
+      {
+        "title": "9. Informatique, systèmes d’information et digitalisation",
+        "count": 20,
+        "description": "Progiciels ERP, progiciels d'entrepôt WMS, gestion de transport TMS, codes-barres et traçabilité RFID."
+      },
+      {
+        "title": "10. Anglais logistique & Études de cas management",
+        "count": 40,
+        "description": "Anglais technique de la chaîne d'approvisionnement, plans d'action d'urgence, méthode 5S et amélioration continue."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Approvisionnement complet",
+        "duration": "4h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 2 — Entrepôt et productivité",
+        "duration": "4h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 3 — Transport international",
+        "duration": "4h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 4 — Cas supply chain intégral",
+        "duration": "4h00",
+        "questions_count": 5
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Fondamentaux Supply Chain",
+        "question": "Définissez la chaîne d’approvisionnement et ses composantes.",
+        "answer_preview": "Correction attendue : Ensemble des organisations, activités, technologies et ressources impliquées dans la transformation des matières premières jusqu'à la livraison au client final."
+      },
+      {
+        "id": 75,
+        "section": "Gestion des stocks",
+        "question": "Expliquez la formule et le rôle du point de commande (seuil de réapprovisionnement).",
+        "answer_preview": "Correction attendue : Point de commande = (Consommation journalière × Délai de livraison) + Stock de sécurité. Il déclenche automatiquement la passation d'une nouvelle commande."
+      },
+      {
+        "id": 213,
+        "section": "Indicateurs KPI",
+        "question": "Un fournisseur livre 47 commandes à l'heure sur 50. Calculez le taux de service.",
+        "answer_preview": "Correction : Taux de service = (47 / 50) × 100 = 94 %."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Supply Chain",
+        "question": "Définissez la chaîne d’approvisionnement (Supply Chain).",
+        "answer": "Correction : Réseau coordonné reliant fournisseurs, producteurs, entrepôts, transporteurs et distributeurs pour approvisionner, fabriquer et distribuer des produits aux clients finaux au bon moment, au bon endroit et au coût optimal."
+      },
+      {
+        "id": 4,
+        "section": "Gestion des flux",
+        "question": "Distinguez flux physique, flux d’information et flux financier.",
+        "answer": "Correction : Le flux physique est la circulation matérielle des marchandises ; le flux d'information pilote et trace les opérations (commandes, expéditions) ; le flux financier correspond aux règlements monétaires."
+      },
+      {
+        "id": 36,
+        "section": "Achats professionnels",
+        "question": "Définissez un achat professionnel et ses enjeux.",
+        "answer": "Correction : Acquisition de biens ou services répondant aux besoins de l'entreprise avec recherche du meilleur rapport qualité-coût-délai pour maximiser la marge opérationnelle."
+      },
+      {
+        "id": 41,
+        "section": "Approvisionnement",
+        "question": "Définissez le délai d’approvisionnement (Lead Time).",
+        "answer": "Correction : Temps écoulé entre l'émission du besoin d'achat (ou passation de commande) et la mise à disposition effective de la marchandise contrôlée dans l'entrepôt."
+      },
+      {
+        "id": 72,
+        "section": "Gestion des stocks",
+        "question": "Qu’est-ce qu’un stock de sécurité et pourquoi est-il indispensable ?",
+        "answer": "Correction : Niveau de stock tampon conservé en permanence pour absorber les aléas de la demande client (pics imprévus) ou les retards de livraison des fournisseurs."
+      },
+      {
+        "id": 75,
+        "section": "Gestion des stocks",
+        "question": "Expliquez le calcul du point de commande.",
+        "answer": "Correction : Niveau de stock qui déclenche l'ordre d'approvisionnement. Formule : Point de commande = (Consommation moyenne par jour × Délai de livraison en jours) + Stock de sécurité."
+      },
+      {
+        "id": 79,
+        "section": "Valorisation des stocks",
+        "question": "Expliquez la méthode FIFO (First In, First Out).",
+        "answer": "Correction : Règle de gestion consistant à consommer ou expédier en priorité les articles entrés les premiers en stock afin d'éviter la péremption ou l'obsolescence."
+      },
+      {
+        "id": 113,
+        "section": "Entrepôt",
+        "question": "Qu’est-ce que le picking dans un entrepôt ?",
+        "answer": "Correction : Opération de prélèvement unitaire des articles stockés sur les étagères ou palettes pour constituer le colis commandé par un client."
+      },
+      {
+        "id": 114,
+        "section": "Entrepôt",
+        "question": "Qu’est-ce que le cross-docking ?",
+        "answer": "Correction : Technique logistique consistant à transférer les marchandises des quais de déchargement directement vers les quais d'expédition sans mise en stock intermédiaire."
+      },
+      {
+        "id": 146,
+        "section": "Transport",
+        "question": "Définissez le transport multimodal et citez un exemple sénégalais.",
+        "answer": "Correction : Acheminement d'une marchandise empruntant au moins deux modes de transport successifs sous un contrat unique (ex: navire conteneurisé jusqu'au port de Dakar puis train ou camion vers le Mali)."
+      },
+      {
+        "id": 154,
+        "section": "Distribution",
+        "question": "Qu’est-ce que la logistique du dernier kilomètre ?",
+        "answer": "Correction : Dernier segment de la livraison entre la plateforme de distribution locale et le destinataire final, représentant souvent plus de 25% du coût global de transport."
+      },
+      {
+        "id": 206,
+        "section": "Calculs logistiques",
+        "question": "Une entreprise consomme 120 unités par jour pendant 5 jours. Calculez la consommation hebdomadaire.",
+        "answer": "Correction : 120 × 5 = 600 unités par semaine."
+      },
+      {
+        "id": 209,
+        "section": "Calculs logistiques",
+        "question": "Un entrepôt traite 900 colis en 6 heures. Calculez le débit horaire moyen.",
+        "answer": "Correction : Débit = 900 / 6 = 150 colis par heure."
+      },
+      {
+        "id": 211,
+        "section": "Calculs logistiques",
+        "question": "Un transport coûte 750 000 FCFA pour 150 tonnes. Calculez le coût par tonne.",
+        "answer": "Correction : 750 000 / 150 = 5 000 FCFA par tonne transportée."
+      },
+      {
+        "id": 212,
+        "section": "Qualité logistique",
+        "question": "Une livraison compte 96 colis dont 4 sont endommagés. Calculez le taux d’avarie.",
+        "answer": "Correction : Taux d'avarie = (4 / 96) × 100 = 4,17 %."
+      },
+      {
+        "id": 214,
+        "section": "Rotation des stocks",
+        "question": "Le stock moyen est de 2 000 unités et la consommation annuelle de 12 000 unités. Calculez le taux de rotation.",
+        "answer": "Correction : Taux de rotation = Consommation annuelle / Stock moyen = 12 000 / 2 000 = 6 rotations par an."
+      },
+      {
+        "id": 262,
+        "section": "Systèmes d'information",
+        "question": "À quoi sert un logiciel WMS (Warehouse Management System) ?",
+        "answer": "Correction : Système informatisé qui gère et optimise l'ensemble des opérations d'un entrepôt : réception, adressage des emplacements, préparation des commandes, inventaires et expéditions."
+      },
+      {
+        "id": 263,
+        "section": "Systèmes d'information",
+        "question": "À quoi sert un logiciel TMS (Transport Management System) ?",
+        "answer": "Correction : Logiciel dédié à la planification des tournées, à la sélection des transporteurs, au suivi géolocalisé des véhicules et au contrôle des factures de transport."
+      },
+      {
+        "id": 309,
+        "section": "Amélioration continue",
+        "question": "Présenter les 5 étapes de la démarche 5S en atelier ou entrepôt.",
+        "answer": "Correction : Seiri (Débarrasser), Seiton (Ranger), Seiso (Nettoyer), Seiketsu (Standardiser) et Shitsuke (Pérenniser/Rigueur)."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 112,
+    "created_at": "2026-10-04T21:49:22.966Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-magistrature-sn",
+    "slug": "concours-magistrature-senegal-cfj-tome-1",
+    "title": "Concours Magistrature — Sénégal : Tome 1",
+    "ministry": "Ministère de la Justice — Centre de Formation Judiciaire (CFJ)",
+    "category": "Magistrature",
+    "target_corps": "Auditeurs de Justice, Magistrats du Siège, Magistrats du Parquet",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale Haute Juridiction 2026",
+    "total_exercises": 320,
+    "total_pages": 35,
+    "rating": 4.99,
+    "reviews_count": 412,
+    "cover_gradient": "from-rose-950 via-red-950 to-slate-950",
+    "cover_image": "/covers/magistrature.jpg?v=clean-timeless",
+    "accent_color": "#b91c1c",
+    "badge": "Justice & Magistrature",
+    "description": "320 exercices juridiques approfondis avec cas pratiques résolus et corrigés méthodologiques (faits → problème de droit → règle applicable → application d'espèce → conclusion) : droit constitutionnel et institutions de la République, droit civil des obligations et des personnes, droit pénal général et spécial, procédure pénale et libertés, procédure civile et voies de recours, droit administratif et contentieux, droit des affaires OHADA, organisation judiciaire, déontologie et méthodologie + 4 concours blancs.",
+    "official_reference": "Concours direct d'accès à la Section Magistrature du Centre de Formation Judiciaire (CFJ Dakar) — Ministère de la Justice du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Droit constitutionnel et institutions",
+        "count": 32,
+        "description": "État de droit, séparation des pouvoirs, hiérarchie des normes, contrôle de constitutionnalité et libertés fondamentales."
+      },
+      {
+        "title": "2. Droit civil, personnes, famille et obligations",
+        "count": 32,
+        "description": "Personnalité juridique, validité contractuelle, vices du consentement, responsabilité civile délictuelle/contractuelle et régimes matrimoniaux."
+      },
+      {
+        "title": "3. Droit pénal général et spécial",
+        "count": 32,
+        "description": "Légalité criminelle, élément moral/matériel, tentative, complicité, légitime défense, infractions contre les biens (vol, escroquerie) et contre l'État."
+      },
+      {
+        "title": "4. Procédure pénale et police judiciaire",
+        "count": 32,
+        "description": "Action publique et civile, opportunité des poursuites, garde à vue, flagrance, information judiciaire, détention provisoire et procès équitable."
+      },
+      {
+        "title": "5. Procédure civile, commerciale et voies de recours",
+        "count": 32,
+        "description": "Acte introductif d'instance, compétence matérielle/territoriale, contradictoire, incidents d'instance, appel, pourvoi en cassation et opposition."
+      },
+      {
+        "title": "6. Droit administratif et contentieux administratif",
+        "count": 32,
+        "description": "Actes administratifs unilatéraux, service public, responsabilité pour faute de service, recours pour excès de pouvoir et plein contentieux."
+      },
+      {
+        "title": "7. Droit OHADA, commercial et affaires",
+        "count": 32,
+        "description": "Actes de commerce, immatriculation au RCCM, sociétés commerciales (SARL, SA), procédures collectives et cessation des paiements."
+      },
+      {
+        "title": "8. Organisation judiciaire, magistrature et déontologie",
+        "count": 32,
+        "description": "Dualité siège/parquet, indépendance du juge, secret délibéré, impartialité, récusation, discipline et prévention des conflits d'intérêts."
+      },
+      {
+        "title": "9. Droit international, droits humains et libertés",
+        "count": 32,
+        "description": "Traités internationaux, CADHP, garanties du procès pénal, interdiction de la torture et extradition."
+      },
+      {
+        "title": "10. Méthodologie juridique, dissertation, cas pratique et culture générale",
+        "count": 32,
+        "description": "Technique du syllogisme juridique, fiche d'arrêt, plan binaire de dissertation et argumentation doctrinale."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Droit constitutionnel et civil",
+        "duration": "4h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 2 — Droit pénal et procédure",
+        "duration": "4h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 3 — Droit administratif et affaires",
+        "duration": "4h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée magistrature",
+        "duration": "4h00",
+        "questions_count": 8
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Droit constitutionnel",
+        "question": "Définir l’État de droit et expliquer ses principales caractéristiques.",
+        "answer_preview": "Correction attendue : Système institutionnel dans lequel la puissance publique est soumise au respect des règles de droit, avec hiérarchie des normes et tribunaux indépendants."
+      },
+      {
+        "id": 65,
+        "section": "Droit pénal",
+        "question": "Définir l’infraction et expliciter la distinction tripartite (crime, délit, contravention).",
+        "answer_preview": "Correction attendue : Action ou omission violant la loi pénale et sanctionnée par une peine. La distinction repose sur la gravité de la peine encourue."
+      },
+      {
+        "id": 292,
+        "section": "Méthodologie juridique",
+        "question": "Construire un syllogisme juridique complet appliqué à une hypothèse de vol.",
+        "answer_preview": "Correction attendue : Majeure (règle de droit : art. 364 CP), Mineure (faits qualifiés juridiquement), Conclusion (conséquence juridique applicable)."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Droit constitutionnel",
+        "question": "Définir l’État de droit et expliquer ses principales caractéristiques.",
+        "answer": "Correction : Modèle d'organisation étatique où l'autorité publique est strictement assujettie à l'ordre juridique établi. Piliers : primauté de la Constitution, respect des droits fondamentaux, séparation effective des pouvoirs et existence de recours juridictionnels effectifs."
+      },
+      {
+        "id": 2,
+        "section": "Droit constitutionnel",
+        "question": "Présenter le principe de séparation des pouvoirs.",
+        "answer": "Correction : Théorie classique (Montesquieu) selon laquelle les trois fonctions étatiques (législative, exécutive, juridictionnelle) doivent être attribuées à des organes distincts et équilibrés pour préserver la liberté des citoyens."
+      },
+      {
+        "id": 9,
+        "section": "Contrôle de constitutionnalité",
+        "question": "Définir le contrôle de constitutionnalité et ses modalités au Sénégal.",
+        "answer": "Correction : Mécanisme juridictionnel confié au Conseil constitutionnel garantissant la conformité des lois et engagements internationaux à la Constitution, par voie d'action a priori ou par exception d'inconstitutionnalité transmise par la Cour suprême."
+      },
+      {
+        "id": 33,
+        "section": "Droit civil",
+        "question": "Définir la personnalité juridique et distinguer personne physique et morale.",
+        "answer": "Correction : Aptitude juridique à être titulaire de droits et assujetti à des obligations. La personne physique l'acquiert à la naissance viable ; la personne morale par son immatriculation ou déclaration légale."
+      },
+      {
+        "id": 48,
+        "section": "Droit des contrats",
+        "question": "Présenter les conditions de validité d’un contrat selon le Code des Obligations Civiles et Commerciales (COCC).",
+        "answer": "Correction : 1. Le consentement éclairé et exempt de vices ; 2. La capacité juridique de contracter ; 3. Un objet déterminé et licite ; 4. Une cause licite et morale."
+      },
+      {
+        "id": 49,
+        "section": "Vices du consentement",
+        "question": "Identifier les trois principaux vices du consentement en droit civil.",
+        "answer": "Correction : L'erreur (méprise sur la substance ou la personne), le dol (manœuvres frauduleuses déterminantes) et la violence (contrainte physique ou morale illégitime)."
+      },
+      {
+        "id": 54,
+        "section": "Responsabilité civile",
+        "question": "Présenter les fondements de la responsabilité civile délictuelle.",
+        "answer": "Correction : Tout fait quelconque de l'homme qui cause à autrui un dommage oblige celui par la faute duquel il est arrivé à le réparer (faute prouvée, dommage certain et lien de causalité direct)."
+      },
+      {
+        "id": 65,
+        "section": "Droit pénal général",
+        "question": "Définir l’infraction et expliciter la distinction tripartite (crime, délit, contravention).",
+        "answer": "Correction : Comportement prohibé par la loi pénale sous peine de sanction. La classification tripartite détermine la juridiction compétente (tribunal d'instance, tribunal de grande instance, chambre criminelle), la tentative et la prescription."
+      },
+      {
+        "id": 68,
+        "section": "Principes pénaux",
+        "question": "Expliquer le principe de légalité des délits et des peines (Nullum crimen, nulla poena sine lege).",
+        "answer": "Correction : Nul ne peut être poursuivi ni condamné pour une action ou omission qui ne constituait pas une infraction d'après la loi en vigueur au moment où elle a été commise."
+      },
+      {
+        "id": 74,
+        "section": "Responsabilité pénale",
+        "question": "Différencier auteur, coauteur et complice en droit pénal sénégalais.",
+        "answer": "Correction : L'auteur accomplit personnellement les actes matériels constitutifs ; le coauteur agit de concert en réalisant une partie de l'infraction ; le complice facilite ou provoque l'infraction par aide, assistance ou instructions."
+      },
+      {
+        "id": 98,
+        "section": "Procédure pénale",
+        "question": "Définir l’action publique et ses modes d'extinction.",
+        "answer": "Correction : Action menée au nom de la société par le ministère public pour faire constater une infraction, en établir la culpabilité et appliquer les sanctions. S'éteint par décès, amnistie, prescription ou transaction légale."
+      },
+      {
+        "id": 104,
+        "section": "Enquêtes pénales",
+        "question": "Différencier enquête de flagrance et enquête préliminaire.",
+        "answer": "Correction : La flagrance (infraction en train de se commettre ou venant de se commettre) confère des pouvoirs de contrainte étendus aux OPJ sous le contrôle direct du Procureur. L'enquête préliminaire requiert en principe l'assentiment des parties."
+      },
+      {
+        "id": 139,
+        "section": "Procédure civile",
+        "question": "Expliquer le principe du contradictoire dans le procès civil.",
+        "answer": "Correction : Règle fondamentale imposant que chaque partie soit informée de l'instance, mise à même de présenter ses prétentions et de discuter contradictoirement les pièces et arguments de son adversaire."
+      },
+      {
+        "id": 153,
+        "section": "Voies de recours",
+        "question": "Différencier juge du fond et juge de cassation.",
+        "answer": "Correction : Les juges du fond (tribunaux, cours d'appel) apprécient souverainement les faits et le droit du litige ; la Cour suprême ne réexamine pas les faits mais contrôle uniquement la stricte et exacte application de la loi."
+      },
+      {
+        "id": 172,
+        "section": "Droit administratif",
+        "question": "Définir le recours pour excès de pouvoir (REP).",
+        "answer": "Correction : Recours contentieux objectif formé devant la Chambre administrative de la Cour suprême tendant à l'annulation d'un acte administratif unilatéral illégal pour incompétence, vice de forme, détournement de pouvoir ou violation de la loi."
+      },
+      {
+        "id": 195,
+        "section": "Droit des affaires",
+        "question": "Définir la qualité de commerçant selon l'Acte Uniforme OHADA.",
+        "answer": "Correction : Est commerçant celui qui accomplit des actes de commerce par nature et en fait sa profession habituelle à titre indépendant."
+      },
+      {
+        "id": 228,
+        "section": "Organisation judiciaire",
+        "question": "Différencier magistrats du siège et magistrats du parquet.",
+        "answer": "Correction : Les magistrats du siège (juges) tranchent les litiges, sont inamovibles et indépendants. Les magistrats du parquet (procureurs) représentent le ministère public, défendent l'intérêt général et sont subordonnés hiérarchiquement."
+      },
+      {
+        "id": 231,
+        "section": "Déontologie du magistrat",
+        "question": "Expliquer le devoir de réserve et l’obligation d'impartialité du magistrat.",
+        "answer": "Correction : Obligation d'adopter une attitude de neutralité stricte, de s'abstenir de toute manifestation politique publique susceptible d'altérer la confiance des justiciables en la justice républicaine."
+      },
+      {
+        "id": 292,
+        "section": "Méthodologie juridique",
+        "question": "Construire un syllogisme juridique.",
+        "answer": "Correction : Raisonnement déductif en 3 temps : 1. La majeure (énoncé de la règle de droit applicable) ; 2. La mineure (constatation et qualification juridique des faits d'espèce) ; 3. La conclusion (application de la règle aux faits constatés pour déterminer la solution)."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 113,
+    "created_at": "2026-10-04T21:49:22.966Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-greffe-sn",
+    "slug": "concours-greffe-senegal-cfj-tome-1",
+    "title": "Concours Greffe — Sénégal : Tome 1",
+    "ministry": "Ministère de la Justice — Centre de Formation Judiciaire (CFJ)",
+    "category": "Greffe",
+    "target_corps": "Greffiers en Chef, Greffiers des Cours et Tribunaux",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Officielle Greffe & Procédures 2026",
+    "total_exercises": 320,
+    "total_pages": 35,
+    "rating": 4.97,
+    "reviews_count": 318,
+    "cover_gradient": "from-indigo-950 via-slate-900 to-slate-950",
+    "cover_image": "/covers/greffe.jpg?v=clean-timeless",
+    "accent_color": "#6366f1",
+    "badge": "Justice & Greffe",
+    "description": "320 exercices distincts avec méthodologie judiciaire : droit civil et personnes, procédure civile et voies de recours, droit pénal et procédure pénale, organisation judiciaire et institutions, techniques du greffe et actes judiciaires (plumitif, PV d'audience, cotation de pièces, minutes, expéditions), droit administratif, droit OHADA et RCCM, français juridique, déontologie et logique mathématique + 4 concours blancs.",
+    "official_reference": "Concours direct d'accès à la Section Greffe du Centre de Formation Judiciaire (CFJ Dakar) — Ministère de la Justice du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Droit civil et personnes",
+        "count": 32,
+        "description": "État civil, capacité juridique, mariage, filiation, tutelle, validité des actes civils et prescription."
+      },
+      {
+        "title": "2. Procédure civile et voies de recours",
+        "count": 32,
+        "description": "Enrôlement, assignation, signification, rôle du greffier dans l'instance, mise en état, jugement par défaut et appel."
+      },
+      {
+        "title": "3. Droit pénal et procédure pénale",
+        "count": 32,
+        "description": "Enregistrement des plaintes, dossier pénal, pièces à conviction, répertoires des jugements correctionnels et voies de recours."
+      },
+      {
+        "title": "4. Organisation judiciaire et institutions",
+        "count": 32,
+        "description": "Structure des juridictions sénégalaises, Cour suprême, rôle du chef de greffe et circulation administrative des dossiers."
+      },
+      {
+        "title": "5. Techniques du greffe et actes judiciaires",
+        "count": 32,
+        "description": "Tenue du plumitif, procès-verbal d'audience, cotation, conservation des minutes, délivrance des expéditions et copies certifiées."
+      },
+      {
+        "title": "6. Droit administratif et service public",
+        "count": 32,
+        "description": "Actes administratifs, neutralité du service public de la justice, recours gracieux et conservation des archives."
+      },
+      {
+        "title": "7. Droit OHADA, commercial et entreprises",
+        "count": 32,
+        "description": "Tenue du Registre du Commerce et du Crédit Mobilier (RCCM), formalités de constitution de société et sûretés."
+      },
+      {
+        "title": "8. Procédure, rédaction administrative et français juridique",
+        "count": 32,
+        "description": "Formulation des actes de greffe, requêtes, bordereaux de transmission, convocations et correspondances officielles."
+      },
+      {
+        "title": "9. Déontologie, éthique et situations professionnelles",
+        "count": 32,
+        "description": "Secret professionnel du greffier, probité républicaine, impartialité de l'accueil et gestion des dossiers sensibles."
+      },
+      {
+        "title": "10. Mathématiques, logique, informatique et organisation",
+        "count": 32,
+        "description": "Calcul des délais procéduraux, statistiques judiciaires, sécurisation des bases de données et gestion d'audience."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Droit et procédure",
+        "duration": "3h30",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 2 — Techniques du greffe",
+        "duration": "3h30",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 3 — Déontologie et rédaction",
+        "duration": "3h00",
+        "questions_count": 8
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée de greffe",
+        "duration": "4h00",
+        "questions_count": 8
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 41,
+        "section": "Procédure civile",
+        "question": "Décrire le rôle du greffe lors de l’enrôlement d’une affaire.",
+        "answer_preview": "Correction attendue : Réception de l'acte introductif, vérification du paiement des droits de consignation, attribution d'un numéro d'ordre au Répertoire Général et inscription sur la feuille d'audience."
+      },
+      {
+        "id": 129,
+        "section": "Techniques du greffe",
+        "question": "Définir la mission générale d’un greffier et son rôle d'authentificateur.",
+        "answer_preview": "Correction attendue : Le greffier est le garant de la régularité des actes de procédure, consigne les déclarations à l'audience et authentifie les jugements aux côtés du magistrat."
+      },
+      {
+        "id": 143,
+        "section": "Actes judiciaires",
+        "question": "Différencier copie simple, copie certifiée conforme et expédition (grosse).",
+        "answer_preview": "Correction attendue : Copie simple (information sans sceau) ; Copie certifiée (attestation d'exactitude avec sceau du greffe) ; Expédition revêtue de la formule exécutoire pour signification par huissier."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Droit civil",
+        "question": "Définir la personnalité juridique et distinguer personne physique et personne morale.",
+        "answer": "Correction : Aptitude à être sujet de droits et d'obligations. Les personnes physiques sont les êtres humains vivants et viables ; les personnes morales sont des groupements dotés d'une existence juridique propre."
+      },
+      {
+        "id": 41,
+        "section": "Techniques de greffe",
+        "question": "Décrire le rôle du greffe lors de l’enrôlement d’une affaire.",
+        "answer": "Correction : Enregistrement de la citation ou de l'assignation au Répertoire Général civil ou correctionnel, contrôle de recevabilité matérielle, perception de la consignation légale et constitution de la cote de dossier."
+      },
+      {
+        "id": 108,
+        "section": "Relations judiciaires",
+        "question": "Décrire les relations fonctionnelles entre le magistrat et le greffier.",
+        "answer": "Correction : Collaboration étroite au prétoire : le greffier assiste obligatoirement le magistrat sous peine de nullité de la décision, tient les notes d'audience et cosigne les minutes des jugements."
+      },
+      {
+        "id": 129,
+        "section": "Statut du greffe",
+        "question": "Définir la mission générale d’un greffier.",
+        "answer": "Correction : Officier ministériel et fonctionnaire de justice investi du pouvoir d'authentification, responsable de la garde des minutes, des scellés, des registres légaux et de la traçabilité des procédures."
+      },
+      {
+        "id": 133,
+        "section": "Actes judiciaires",
+        "question": "Expliquer le rôle du procès-verbal d’audience (ou plumitif).",
+        "answer": "Correction : Registre manuscrit ou électronique tenu à l'audience consignant chronologiquement les comparutions, déclarations des parties, plaidoiries des avocats, réquisitions du ministère public et délibérés."
+      },
+      {
+        "id": 144,
+        "section": "Actes judiciaires",
+        "question": "Expliquer la différence entre minute et expédition.",
+        "answer": "Correction : La minute est l'acte original signé conservé perpétuellement au greffe de la juridiction ; l'expédition est la copie authentifiée délivrée aux parties munie de la formule exécutoire."
+      },
+      {
+        "id": 148,
+        "section": "Tenue des registres",
+        "question": "Expliquer le rôle du registre des décisions (Répertoire).",
+        "answer": "Correction : Registre légal officiel coté et paraphé retraçant chronologiquement toutes les décisions rendues par la juridiction pour garantir leur conservation et leur consultation publique."
+      },
+      {
+        "id": 153,
+        "section": "Procédures de greffe",
+        "question": "Élaborer une checklist de réception d’un dossier judiciaire.",
+        "answer": "Correction : 1. Contrôle des pièces obligatoires ; 2. Vérification des identités et adresses ; 3. Constat de la consignation payée ; 4. Numérotation chronologique ; 5. Délivrance du récépissé."
+      },
+      {
+        "id": 196,
+        "section": "Droit commercial",
+        "question": "Expliquer le rôle du greffier dans la tenue du RCCM (OHADA).",
+        "answer": "Correction : Le greffe reçoit les dossiers de création et modification d'entreprises, vérifie la conformité des statuts, attribue le numéro d'immatriculation RCCM et délivre les extraits K-bis."
+      },
+      {
+        "id": 257,
+        "section": "Déontologie du greffe",
+        "question": "Définir le secret professionnel du greffier.",
+        "answer": "Correction : Interdiction absolue de divulguer à des tiers le contenu des dossiers en cours, les débats de chambre du conseil et les décisions avant leur prononcé public solennel."
+      },
+      {
+        "id": 289,
+        "section": "Calcul des délais",
+        "question": "Calculer un délai franc de 15 jours pour interjeter appel.",
+        "answer": "Correction : Le dies a quo (jour de la notification) et le dies ad quem (jour de l'échéance) ne sont pas comptés. Si le dernier jour est férié ou chômé, le délai est prorogé jusqu'au premier jour ouvrable suivant."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 114,
+    "created_at": "2026-10-04T21:49:22.966Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-esp-sn",
+    "slug": "concours-esp-dakar-polytechnique-senegal-fascicule-complet",
+    "title": "Concours ESP Dakar — Sénégal : École Supérieure Polytechnique (UCAD)",
+    "ministry": "Ministère de l'Enseignement Supérieur, de la Recherche et de l'Innovation — UCAD",
+    "category": "Ingénierie & Polytechnique",
+    "target_corps": "Élèves Ingénieurs de Conception, Techniciens Supérieurs et Cadres Scientifiques",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Grandes Écoles d’Ingénieurs",
+    "total_exercises": 320,
+    "total_pages": 24,
+    "rating": 4.98,
+    "reviews_count": 350,
+    "cover_gradient": "from-blue-950 via-indigo-900 to-slate-950",
+    "cover_image": "/covers/esp.jpg?v=clean-timeless",
+    "accent_color": "#3b82f6",
+    "badge": "Polytechnique Dakar",
+    "description": "320 exercices distincts sans répétition pour réussir le concours d’entrée à l'École Supérieure Polytechnique de Dakar (ESP - UCAD). Mathématiques approfondies, analyse, probabilités, physique mécanique, électricité, chimie, algorithmique, réseaux et sciences de l’ingénieur + 4 concours blancs complets avec corrigés certifiés.",
+    "official_reference": "Université Cheikh Anta Diop de Dakar (UCAD) — École Supérieure Polytechnique (ESP Dakar).",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Droit pénal général et spécial",
+        "count": 32,
+        "description": "Infractions, éléments constitutifs, peines, légitime défense et responsabilité pénale."
+      },
+      {
+        "title": "2. Procédure pénale et enquêtes",
+        "count": 32,
+        "description": "Flagrance, enquête préliminaire, garde à vue, perquisition et rédaction de procès-verbaux."
+      },
+      {
+        "title": "3. Droit constitutionnel et libertés publiques",
+        "count": 32,
+        "description": "Institutions républicaines, séparation des pouvoirs, maintien de l'ordre et protection des libertés fondamentales."
+      },
+      {
+        "title": "4. Rédaction et correspondance administrative",
+        "count": 32,
+        "description": "Rapports de police, fiches de renseignement, synthèses opérationnelles et comptes rendus hiérarchiques."
+      },
+      {
+        "title": "5. Déontologie et éthique policière",
+        "count": 32,
+        "description": "Code de déontologie de la Police nationale, usage proportionné de la force, probité et secret professionnel."
+      },
+      {
+        "title": "6. Culture générale et géopolitique sahélienne",
+        "count": 32,
+        "description": "Histoire du Sénégal, menaces sécuritaires contemporaines, cybercriminalité et coopération transfrontalière."
+      },
+      {
+        "title": "7. Psychotechnique et prise de décision rapide",
+        "count": 32,
+        "description": "Matrices logiques, analyse de données complexes, gestion de l'urgence et raisonnement déductif."
+      },
+      {
+        "title": "8. Gestion de crise et sécurité publique",
+        "count": 32,
+        "description": "Maintien de la paix civile, dialogue communautaire, gestion des rassemblements et périmètres de sécurité."
+      },
+      {
+        "title": "9. Condition physique, rusticité et self-défense",
+        "count": 32,
+        "description": "Endurance cardio-vasculaire, résistance musculaire, gestes de secours d'urgence et techniques de maîtrise sans arme."
+      },
+      {
+        "title": "10. Grand oral et mises en situation d'officier",
+        "count": 32,
+        "description": "Présentation devant le grand jury d'officiers supérieurs, gestion du stress, posture de commandement et cas pratiques d'autorité."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Mathématiques & physique",
+        "duration": "3h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 2 — Chimie & électricité",
+        "duration": "3h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 3 — Informatique & réseaux",
+        "duration": "3h00",
+        "questions_count": 5
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée ESP",
+        "duration": "4h00",
+        "questions_count": 5
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Mathématiques",
+        "question": "Résoudre 3x − 7 = 11.",
+        "answer_preview": "Correction : 3x = 18 d'où x = 6."
+      },
+      {
+        "id": 65,
+        "section": "Physique",
+        "question": "Calculer la vitesse moyenne d'un mobile parcourant 150 m en 12 s.",
+        "answer_preview": "Correction : Vitesse v = d / t = 150 / 12 = 12,5 m/s (soit 45 km/h)."
+      },
+      {
+        "id": 161,
+        "section": "Informatique",
+        "question": "Écrire l'algorithme calculant le maximum de trois nombres A, B, C.",
+        "answer_preview": "Correction : Comparer A et B pour trouver le plus grand Max, puis comparer Max avec C pour déterminer le maximum final."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Mathématiques",
+        "question": "Résoudre 3x − 7 = 11.",
+        "answer": "Correction : 3x = 11 + 7 = 18 => x = 18 / 3 = 6."
+      },
+      {
+        "id": 3,
+        "section": "Mathématiques",
+        "question": "Résoudre l'équation du second degré x² − 7x + 12 = 0.",
+        "answer": "Correction : Discriminant Δ = (−7)² − 4(1)(12) = 49 − 48 = 1. Racines : x1 = (7 − 1)/2 = 3 et x2 = (7 + 1)/2 = 4. S = {3 ; 4}."
+      },
+      {
+        "id": 26,
+        "section": "Mathématiques",
+        "question": "Calculer la limite : lim(x→2) (x² − 4) / (x − 2).",
+        "answer": "Correction : Forme indéterminée 0/0. On factorise le numérateur : (x − 2)(x + 2) / (x − 2) = x + 2. lim(x→2) (x + 2) = 4."
+      },
+      {
+        "id": 33,
+        "section": "Probabilités & Stats",
+        "question": "Calculer la moyenne de la série : 8, 10, 12, 15, 20.",
+        "answer": "Correction : Somme = 8 + 10 + 12 + 15 + 20 = 65. Moyenne = 65 / 5 = 13."
+      },
+      {
+        "id": 65,
+        "section": "Physique",
+        "question": "Calculer la vitesse moyenne d'un mobile parcourant 150 m en 12 s.",
+        "answer": "Correction : v = d / t = 150 / 12 = 12,5 m/s."
+      },
+      {
+        "id": 66,
+        "section": "Physique",
+        "question": "Convertir 72 km/h en m/s.",
+        "answer": "Correction : 72 / 3,6 = 20 m/s."
+      },
+      {
+        "id": 74,
+        "section": "Énergie mécanique",
+        "question": "Calculer l'énergie cinétique d'une masse de 1 000 kg se déplaçant à 20 m/s.",
+        "answer": "Correction : Ec = 1/2 m v² = 0,5 × 1 000 × (20)² = 500 × 400 = 200 000 Joules (soit 200 kJ)."
+      },
+      {
+        "id": 97,
+        "section": "Électricité",
+        "question": "Calculer le courant traversant une résistance de 12 Ω soumise à 24 V.",
+        "answer": "Correction : Loi d'Ohm I = U / R = 24 / 12 = 2 A."
+      },
+      {
+        "id": 101,
+        "section": "Électricité",
+        "question": "Calculer la résistance équivalente de deux résistances 10 Ω et 20 Ω en parallèle.",
+        "answer": "Correction : 1/Req = 1/10 + 1/20 = 3/20 => Req = 20 / 3 ≈ 6,67 Ω."
+      },
+      {
+        "id": 129,
+        "section": "Chimie",
+        "question": "Calculer la masse molaire de l'eau H2O (M(H)=1 g/mol, M(O)=16 g/mol).",
+        "answer": "Correction : M(H2O) = 2(1) + 16 = 18 g/mol."
+      },
+      {
+        "id": 139,
+        "section": "Chimie des solutions",
+        "question": "Calculer le pH d'une solution d'acide chlorhydrique HCl de concentration C = 10^-3 mol/L.",
+        "answer": "Correction : Acide fort, donc pH = −log[H3O+] = −log(10^-3) = 3."
+      },
+      {
+        "id": 161,
+        "section": "Algorithmique",
+        "question": "Écrire en pseudo-code l'algorithme d'addition de deux entiers.",
+        "answer": "Correction :\nAlgorithme Somme\nVariables a, b, s : Entiers\nDébut\n  Lire(a, b)\n  s ← a + b\n  Afficher(s)\nFin"
+      },
+      {
+        "id": 181,
+        "section": "Bases de données SQL",
+        "question": "Écrire une requête SQL sélectionnant tous les étudiants ayant une note supérieure à 12.",
+        "answer": "Correction : SELECT * FROM etudiants WHERE note > 12 ORDER BY note DESC;"
+      },
+      {
+        "id": 196,
+        "section": "Réseaux informatiques",
+        "question": "Calculer le nombre d'adresses IP utilisables pour des hôtes dans un sous-réseau /24.",
+        "answer": "Correction : Un masque /24 laisse 8 bits pour les hôtes. 2^8 = 256 adresses. En excluant l'adresse réseau et l'adresse de diffusion (broadcast), il reste 254 adresses hôtes exploitables."
+      },
+      {
+        "id": 228,
+        "section": "Génie civil",
+        "question": "Calculer le volume de béton d'un poteau carré de 0,3 m de côté et 3 m de hauteur.",
+        "answer": "Correction : Volume = 0,3 × 0,3 × 3 = 0,27 m³."
+      },
+      {
+        "id": 258,
+        "section": "Automatique",
+        "question": "Expliquer le principe d’un système asservi en boucle fermée.",
+        "answer": "Correction : Système mesurant en continu la grandeur de sortie pour la comparer à la consigne d'entrée. L'erreur constatée est traitée par un régulateur (ex: PID) pour corriger l'actionneur et maintenir la stabilité."
+      },
+      {
+        "id": 274,
+        "section": "Électrotechnique",
+        "question": "Expliquer le principe de fonctionnement d'un moteur asynchrone triphasé.",
+        "answer": "Correction : Les courants statoriques triphasés créent un champ magnétique tournant qui induit des courants dans le rotor. La force de Laplace résultante entraîne le rotor en rotation à une vitesse légèrement inférieure à la vitesse de synchronisme (glissement)."
+      },
+      {
+        "id": 306,
+        "section": "Anglais technique",
+        "question": "Traduire en français les termes : circuit breaker, pressure sensor, power supply.",
+        "answer": "Correction : Circuit breaker = disjoncteur ; Pressure sensor = capteur de pression ; Power supply = alimentation électrique."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 115,
+    "created_at": "2026-10-04T21:49:22.966Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-bts-genie-civil-sn",
+    "slug": "concours-bts-genie-civil-senegal-fascicule-complet",
+    "title": "BTS Génie Civil — Sénégal : Fascicule Complet",
+    "ministry": "Ministère de la Formation Professionnelle, de l'Apprentissage et de l'Artisanat",
+    "category": "BTS Génie Civil",
+    "target_corps": "Techniciens Supérieurs en Génie Civil, Conducteurs de Travaux BTP, Projeteurs",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition BTP d’Élite 2026",
+    "total_exercises": 320,
+    "total_pages": 34,
+    "rating": 4.98,
+    "reviews_count": 279,
+    "cover_gradient": "from-amber-950 via-yellow-900 to-slate-950",
+    "cover_image": "/covers/bts_genie_civil.jpg?v=clean-timeless",
+    "accent_color": "#d97706",
+    "badge": "BTP & Génie Civil",
+    "description": "320 exercices distincts avec corrections détaillées : mathématiques appliquées au BTP, topographie et implantation, résistance des matériaux (RDM), béton et technologie des matériaux, calcul des structures en béton armé, fondations et géotechnique, routes, terrassements et VRD, dessin technique et DAO, économie de construction (métrés et devis), organisation de chantier et sécurité + 4 concours blancs complets.",
+    "official_reference": "Brevet de Technicien Supérieur (BTS) Génie Civil — Direction des Examens et Concours (DECO) du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Mathématiques appliquées au génie civil",
+        "count": 32,
+        "description": "Trigonométrie, calculs de surfaces, volumes de prismes/cylindres, pentes et pourcentages, conversion d'unités de chantier."
+      },
+      {
+        "title": "2. Topographie et implantation",
+        "count": 32,
+        "description": "Nivellement direct, lectures avant/arrière, calcul d'altitudes, fermeture de cheminement, azimut, station totale et GPS."
+      },
+      {
+        "title": "3. Résistance des matériaux et mécanique",
+        "count": 32,
+        "description": "Réactions d'appuis, moments fléchissants, efforts tranchants, contraintes normales/tangentielles, loi de Hooke et flambement."
+      },
+      {
+        "title": "4. Béton, matériaux et technologie",
+        "count": 32,
+        "description": "Granulats, ciment, rapport E/C, affaissement au cône d'Abrams, résistance à la compression, cure du béton et adjuvants."
+      },
+      {
+        "title": "5. Structures en béton armé",
+        "count": 32,
+        "description": "Prédimensionnement de poutres, poteaux et dalles, hauteur utile, armatures longitudinales et transversales, enrobage."
+      },
+      {
+        "title": "6. Fondations et géotechnique",
+        "count": 32,
+        "description": "Semelles isolées et filantes, portance du sol, contrainte admissible, tassements différentiels, essais au pénétromètre et drainage."
+      },
+      {
+        "title": "7. Routes, terrassements et VRD",
+        "count": 32,
+        "description": "Couches de chaussée (forme, base, roulement), profils en long/travers, cubatures de déblais/remblais, réseaux d'assainissement."
+      },
+      {
+        "title": "8. Dessin technique, plans et DAO",
+        "count": 32,
+        "description": "Lecture de plans de coffrage et ferraillage, cotations fonctionnelles, coupes verticales, cartouches et calques DAO."
+      },
+      {
+        "title": "9. Économie de construction, métrés et devis",
+        "count": 32,
+        "description": "Bordereaux quantitatifs, sous-détails de prix, calculs HT/TTC, rendements de maçonnerie, ratios d'acier et déboursés secs."
+      },
+      {
+        "title": "10. Organisation de chantier, sécurité et conduite de travaux",
+        "count": 32,
+        "description": "Installation de chantier (base vie), planning Gantt, chemin critique, circulation des engins, analyse des risques et PV de réception."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Structure et RDM",
+        "duration": "3h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Béton armé et fondations",
+        "duration": "3h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Topographie, routes et VRD",
+        "duration": "3h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Étude de chantier intégrée",
+        "duration": "4h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Mathématiques appliquées",
+        "question": "Calculer une longueur inconnue dans un triangle rectangle appliqué à un bâtiment R+2.",
+        "answer_preview": "Correction attendue : Utiliser le théorème de Pythagore c = √(a² + b²) avec contrôle des unités et cohérence technique."
+      },
+      {
+        "id": 34,
+        "section": "Topographie",
+        "question": "Calculer la dénivelée ΔH entre deux repères A et B avec lecture arrière LAR = 1,450 m et lecture avant LAV = 0,820 m.",
+        "answer_preview": "Correction : ΔH = LAR − LAV = 1,450 − 0,820 = +0,630 m. Le point B est plus haut de 63 cm."
+      },
+      {
+        "id": 66,
+        "section": "Résistance des matériaux",
+        "question": "Calculer le moment fléchissant maximal d'une poutre de portée L=5m sous charge ponctuelle centrale F=40 kN.",
+        "answer_preview": "Correction : Mmax = (F × L) / 4 = (40 × 5) / 4 = 50 kNm."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Mathématiques appliquées",
+        "question": "Calculer une longueur inconnue dans un triangle rectangle appliqué à un bâtiment R+2.",
+        "answer": "Correction : Identifier l'hypoténuse ou les côtés de l'angle droit, appliquer le théorème de Pythagore a² + b² = c², convertir toutes les dimensions dans la même unité (mètres) et vérifier que la longueur obtenue est géométriquement cohérente."
+      },
+      {
+        "id": 3,
+        "section": "Pentes et cotes",
+        "question": "Calculer un pourcentage de pente à partir d’une différence d’altitude de 1,20 m sur une distance horizontale de 40 m.",
+        "answer": "Correction : Pente = (Dénivelée / Distance horizontale) × 100 = (1,20 / 40) × 100 = 3 %."
+      },
+      {
+        "id": 8,
+        "section": "Volumes de terrassement",
+        "question": "Déterminer le volume d’un prisme trapézoïdal appliqué à une plateforme routière de base 12 m, sommet 8 m, hauteur 2 m et longueur 50 m.",
+        "answer": "Correction : Section S = [(B + b) × h] / 2 = [(12 + 8) × 2] / 2 = 20 m². Volume V = S × L = 20 × 50 = 1 000 m³."
+      },
+      {
+        "id": 34,
+        "section": "Topographie",
+        "question": "Calculer une dénivelée entre deux points à partir des lectures de mire.",
+        "answer": "Correction : Dénivelée ΔH = Lecture Arrière (LAR) − Lecture Avant (LAV). Si le résultat est positif, le terrain monte ; s'il est négatif, le terrain descend."
+      },
+      {
+        "id": 37,
+        "section": "Cheminement altimétrique",
+        "question": "Calculer une fermeture altimétrique sur un cheminement et vérifier la tolérance.",
+        "answer": "Correction : Écart de fermeture = Altitude finale calculée − Altitude finale connue. Comparer à la tolérance T = ± 2,5 mm × √K (où K est la longueur en km)."
+      },
+      {
+        "id": 65,
+        "section": "RDM",
+        "question": "Déterminer les réactions d'appuis RA et RB pour une poutre simplement appuyée de portée L soumise à une charge répartie q.",
+        "answer": "Correction : Par symétrie ou somme des moments : RA = RB = (q × L) / 2. L'effort tranchant maximal aux appuis vaut qL/2 et s'annule à mi-portée."
+      },
+      {
+        "id": 66,
+        "section": "RDM",
+        "question": "Calculer le moment fléchissant maximal d’une poutre sous charge ponctuelle centrale F.",
+        "answer": "Correction : Mmax = (F × L) / 4. Le moment fléchissant est maximal au point d'application de la charge."
+      },
+      {
+        "id": 70,
+        "section": "Contraintes mécaniques",
+        "question": "Calculer la contrainte normale dans un tirant en acier de section 4 cm² soumis à un effort de traction de 80 kN.",
+        "answer": "Correction : σ = N / S = 80 000 N / (4 × 10^-4 m²) = 200 × 10^6 Pa = 200 MPa. Comparer à la limite élastique fe."
+      },
+      {
+        "id": 101,
+        "section": "Technologie du béton",
+        "question": "Déterminer la quantité d’eau pour un béton dosé à 350 kg/m³ de ciment avec un rapport E/C = 0,50.",
+        "answer": "Correction : E = 350 × 0,50 = 175 litres d'eau par m³ de béton."
+      },
+      {
+        "id": 106,
+        "section": "Contrôles du béton",
+        "question": "Expliquer l'essai d'affaissement au cône d'Abrams (Slump Test) et ses classes de consistance.",
+        "answer": "Correction : Mesure de l'affaissement du béton frais démoulé du cône normalisé. Classes : S1 (ferme 10-40 mm), S2 (plastique 50-90 mm), S3 (très plastique 100-150 mm), S4 (fluide 160-210 mm)."
+      },
+      {
+        "id": 134,
+        "section": "Béton armé",
+        "question": "Prédimensionner la hauteur h d'une poutre continue en béton armé de portée L = 6,00 m.",
+        "answer": "Correction : Règle empirique de prédimensionnement : h comprise entre L/15 et L/10, soit 600/15 = 40 cm à 600/10 = 60 cm. On choisit couramment h = 50 cm avec une largeur b = 20 à 25 cm."
+      },
+      {
+        "id": 168,
+        "section": "Fondations",
+        "question": "Vérifier la contrainte transmise au sol par une semelle carrée de 1,50 m de côté recevant une charge de 450 kN. La contrainte admissible du sol est de 0,25 MPa.",
+        "answer": "Correction : Surface S = 1,50 × 1,50 = 2,25 m². Contrainte appliquée σ = N / S = 450 kN / 2,25 m² = 200 kPa = 0,20 MPa. Comme 0,20 MPa ≤ 0,25 MPa, la condition de portance est vérifiée."
+      },
+      {
+        "id": 193,
+        "section": "Voirie et Routes",
+        "question": "Définir les différentes couches composant la structure d’une chaussée.",
+        "answer": "Correction : 1. Sol support ; 2. Couche de forme ; 3. Couche de fondation ; 4. Couche de base (grave non traitée ou grave bitume) ; 5. Couche de roulement (enrobé bitumineux ou béton)."
+      },
+      {
+        "id": 257,
+        "section": "Métrés et devis",
+        "question": "Définir le rôle d’un métré et expliciter ses composantes (avant-métré, quantitatif, estimatif).",
+        "answer": "Correction : Le métré quantifie précisément les ouvrages élémentaires par nature de travaux. L'avant-métré détaille les calculs géométriques, le devis quantitatif récapitule les unités et volumes, et l'estimatif applique les prix unitaires pour déterminer le montant global."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 116,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-bts-comptabilite-sn",
+    "slug": "concours-bts-comptabilite-gestion-senegal-tome-complet",
+    "title": "BTS Comptabilité et Gestion — Sénégal : Tome Complet",
+    "ministry": "Ministère de la Formation Professionnelle, de l'Apprentissage et de l'Artisanat",
+    "category": "BTS Comptabilité",
+    "target_corps": "Comptables d’Entreprise, Gestionnaires Financiers, Collaborateurs de Cabinet Comptable",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition SYSCOHADA Révisé 2026",
+    "total_exercises": 320,
+    "total_pages": 33,
+    "rating": 4.97,
+    "reviews_count": 324,
+    "cover_gradient": "from-emerald-950 via-teal-900 to-slate-950",
+    "cover_image": "/covers/bts_comptabilite.jpg?v=clean-timeless",
+    "accent_color": "#10b981",
+    "badge": "Comptabilité & Gestion",
+    "description": "320 exercices originaux corrigés couvrant le référentiel national SYSCOHADA : comptabilité générale et opérations courantes, TVA et déclarations fiscales, paie et charges sociales IPRES/CSS, immobilisations et amortissements, gestion des stocks et inventaires, travaux de clôture, analyse financière (SIG, bilans fonctionnels, FRNG, BFR), contrôle de gestion (seuils de rentabilité, coûts complets, budgets), trésorerie et modélisation Excel + 4 concours blancs.",
+    "official_reference": "Brevet de Technicien Supérieur (BTS) Comptabilité et Gestion — République du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Comptabilité générale et opérations courantes",
+        "count": 32,
+        "description": "Achats/ventes, réductions commerciales et financières, frais accessoires, emballages consignés, effets de commerce, rapprochements bancaires."
+      },
+      {
+        "title": "2. TVA, fiscalité et déclarations",
+        "count": 32,
+        "description": "TVA facturée/déductible, prorata de déduction, crédit de TVA, acomptes d'IS, retenues à la source (BRS, VRS) et déclarations mensuelles."
+      },
+      {
+        "title": "3. Paie, personnel et charges sociales",
+        "count": 32,
+        "description": "Calcul du salaire brut, heures supplémentaires, retenues salariales IPRES/CSS, charges patronales, bulletin de paie et écritures de salaires."
+      },
+      {
+        "title": "4. Immobilisations, amortissements et provisions",
+        "count": 32,
+        "description": "Coût d'acquisition, amortissement linéaire/dégressif, cessions d'actifs, plus/moins-values, dépréciations d'actifs et provisions pour risques."
+      },
+      {
+        "title": "5. Stocks, inventaire et variations",
+        "count": 32,
+        "description": "Méthodes CUMP et FIFO, fiches de stocks, variations de stocks, démarque inconnue, provisions sur stocks et inventaire physique."
+      },
+      {
+        "title": "6. Travaux d'inventaire et clôture",
+        "count": 32,
+        "description": "Charges à payer, produits à recevoir, charges/produits constatés d'avance, régularisations d'intérêts et balance après inventaire."
+      },
+      {
+        "title": "7. Analyse financière et états financiers",
+        "count": 32,
+        "description": "Bilan fonctionnel, FRNG, BFR d'exploitation, trésorerie nette, SIG (marge commerciale, valeur ajoutée, EBE), ratios de rentabilité et liquidité."
+      },
+      {
+        "title": "8. Contrôle de gestion, coûts et marges",
+        "count": 32,
+        "description": "Coûts variables et fixes, marge sur coût variable, seuil de rentabilité en valeur et quantité, point mort, imputation rationnelle et centres d'analyse."
+      },
+      {
+        "title": "9. Gestion, financement et trésorerie",
+        "count": 32,
+        "description": "Budgets des ventes, achats et trésorerie, plan de financement, escompte d'effets, capacité d'autofinancement (CAF) et tableaux de flux."
+      },
+      {
+        "title": "10. Informatique de gestion, Excel et systèmes comptables",
+        "count": 32,
+        "description": "Formules conditionnelles SI/RECHERCHEV, tableaux croisés dynamiques, macro-commandes, progiciels ERP et sécurisation des bases comptables."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Comptabilité générale et fiscalité",
+        "duration": "3h30",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 2 — Paie, stocks et inventaire",
+        "duration": "3h30",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 3 — Analyse financière et contrôle de gestion",
+        "duration": "3h30",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée BTS Comptabilité-Gestion",
+        "duration": "4h00",
+        "questions_count": 4
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 9,
+        "section": "Comptabilité générale",
+        "question": "Établir les écritures d’une facture comportant remise 5 %, rabais 2 % et escompte 1 %.",
+        "answer_preview": "Correction attendue : Déduire d'abord les réductions commerciales en cascade pour obtenir le Net Commercial, calculer l'escompte sur le net commercial pour obtenir le Net Financier, puis calculer la TVA à 18 % sur le net financier."
+      },
+      {
+        "id": 37,
+        "section": "TVA et fiscalité",
+        "question": "Déterminer la TVA à décaisser : TVA collectée = 4 500 000 FCFA, TVA déductible sur biens et services = 2 800 000 FCFA, crédit de TVA antérieur = 500 000 FCFA.",
+        "answer_preview": "Correction : TVA nette = 4 500 000 − 2 800 000 − 500 000 = 1 200 000 FCFA à reverser au Trésor public."
+      },
+      {
+        "id": 233,
+        "section": "Contrôle de gestion",
+        "question": "Calculer le seuil de rentabilité : Chiffre d'affaires = 80 000 000 FCFA, Charges variables = 48 000 000 FCFA, Charges fixes = 20 000 000 FCFA.",
+        "answer_preview": "Correction : Taux de M/CV = (80M − 48M) / 80M = 40 %. Seuil de rentabilité SR = 20 000 000 / 0,40 = 50 000 000 FCFA."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Comptabilité générale",
+        "question": "Enregistrer l’apport initial d’un associé : 15 000 000 FCFA déposés en banque et matériel évalué à 10 000 000 FCFA.",
+        "answer": "Correction : Débit du compte 521 Banque (15 000 000) et Débit du compte 241 Matériel (10 000 000) par le Crédit du compte 101 Capital social (25 000 000 FCFA)."
+      },
+      {
+        "id": 6,
+        "section": "Comptabilité générale",
+        "question": "Comptabiliser un escompte de règlement de 2 % accordé par un fournisseur sur une dette de 3 000 000 FCFA réglée par virement.",
+        "answer": "Correction : Montant escompte = 60 000 FCFA. Règlement net = 2 940 000 FCFA. Écriture : Débit 401 Fournisseurs (3 000 000) / Crédit 773 Escomptes obtenus (60 000) et Crédit 521 Banque (2 940 000 FCFA)."
+      },
+      {
+        "id": 35,
+        "section": "Fiscalité",
+        "question": "Calculer le montant TTC d'une facture ayant un montant HT de 1 250 000 FCFA au taux légal de TVA de 18 % au Sénégal.",
+        "answer": "Correction : TVA = 1 250 000 × 0,18 = 225 000 FCFA. Montant TTC = 1 250 000 + 225 000 = 1 475 000 FCFA."
+      },
+      {
+        "id": 65,
+        "section": "Paie et social",
+        "question": "Calculer le salaire brut d’un employé : salaire de base 250 000 FCFA, prime de transport légale 20 800 FCFA, prime d’ancienneté (5%) 12 500 FCFA, heures supplémentaires 35 000 FCFA.",
+        "answer": "Correction : Salaire brut = 250 000 + 20 800 + 12 500 + 35 000 = 318 300 FCFA."
+      },
+      {
+        "id": 98,
+        "section": "Immobilisations",
+        "question": "Calculer l’annuité d’amortissement linéaire d’un matériel industriel acquis le 01/01/N pour 12 000 000 FCFA HT avec une durée d'utilité de 5 ans.",
+        "answer": "Correction : Taux linéaire t = 100 / 5 = 20 %. Annuité = 12 000 000 × 0,20 = 2 400 000 FCFA par an."
+      },
+      {
+        "id": 131,
+        "section": "Gestion des stocks",
+        "question": "Calculer le CUMP après une nouvelle entrée : Stock initial 100 unités à 2 000 FCFA, Entrée 200 unités à 2 600 FCFA.",
+        "answer": "Correction : Valeur totale = (100 × 2 000) + (200 × 2 600) = 200 000 + 520 000 = 720 000 FCFA. Quantité totale = 300 unités. CUMP = 720 000 / 300 = 2 400 FCFA."
+      },
+      {
+        "id": 162,
+        "section": "Régularisations",
+        "question": "Une prime d’assurance annuelle de 1 200 000 FCFA a été payée et comptabilisée le 01/10/N pour la période du 01/10/N au 30/09/N+1. Calculer la charge constatée d’avance au 31/12/N.",
+        "answer": "Correction : La prime couvre 12 mois dont 9 mois concernent l'exercice N+1 (du 01/01 au 30/09/N+1). Charge constatée d'avance (CCA) = 1 200 000 × (9 / 12) = 900 000 FCFA. Écriture : Débit 476 CCA / Crédit 625 Primes d'assurance pour 900 000 FCFA."
+      },
+      {
+        "id": 197,
+        "section": "Analyse financière",
+        "question": "Calculer le Fonds de Roulement Net Global (FRNG) à partir des Capitaux permanents = 65 000 000 FCFA et de l'Actif immobilisé = 45 000 000 FCFA.",
+        "answer": "Correction : FRNG = Capitaux permanents (Ressources stables) − Actif immobilisé (Emplois stables) = 65 000 000 − 45 000 000 = +20 000 000 FCFA. L'excédent de ressources stables finance l'exploitation."
+      },
+      {
+        "id": 198,
+        "section": "Analyse financière",
+        "question": "Calculer la Trésorerie Nette sachant que FRNG = +20 000 000 FCFA et BFR = +14 000 000 FCFA.",
+        "answer": "Correction : Trésorerie Nette = FRNG − BFR = 20 000 000 − 14 000 000 = +6 000 000 FCFA (trésorerie active positive en banque)."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 117,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-bt-secretariat-sn",
+    "slug": "concours-bt-secretariat-bureautique-senegal-tome-complet",
+    "title": "BT Secrétariat-Bureautique — Sénégal : Tome Complet",
+    "ministry": "Ministère de la Formation Professionnelle, de l'Apprentissage et de l'Artisanat",
+    "category": "BT Secrétariat",
+    "target_corps": "Secrétaires Bureautiques, Agents d’Accueil et de Liaison, Assistants de Service",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Brevet de Technicien 2026",
+    "total_exercises": 320,
+    "total_pages": 33,
+    "rating": 4.96,
+    "reviews_count": 185,
+    "cover_gradient": "from-pink-950 via-rose-900 to-slate-950",
+    "cover_image": "/covers/bt_secretariat.jpg?v=clean-timeless",
+    "accent_color": "#ec4899",
+    "badge": "Secrétariat & Bureau",
+    "description": "320 exercices pratiques d'entraînement intensif pour l'examen du Brevet de Technicien (BT) : organisation du travail administratif et gestion des priorités, accueil physique et filtrage téléphonique, rédaction de correspondance officielle, traitement de texte Word, tableur Excel, communication électronique et sécurité numérique, facturation commerciale, gestion RH du personnel, anglais professionnel bilingue et droit du travail + 4 concours blancs.",
+    "official_reference": "Brevet de Technicien (BT) Secrétariat-Bureautique — Direction des Examens et Concours du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Techniques de secrétariat et organisation du travail",
+        "count": 32,
+        "description": "Planning quotidien, tenue de l'agenda, préparation des réunions, gestion du courrier entrant/sortant, archivage et méthode des priorités."
+      },
+      {
+        "title": "2. Communication professionnelle et accueil",
+        "count": 32,
+        "description": "Accueil physique, standard téléphonique, prise de messages précis, traitement des usagers mécontents, écoute active et confidentialité."
+      },
+      {
+        "title": "3. Français professionnel, correspondance et rédaction",
+        "count": 32,
+        "description": "Lettres commerciales, notes de service, comptes rendus, procès-verbaux, syntaxe administrative et correction orthographique."
+      },
+      {
+        "title": "4. Traitement de texte et bureautique numérique",
+        "count": 32,
+        "description": "Mise en page normalisée, styles, tableaux, publipostage, étiquettes, pagination et exportation au format PDF."
+      },
+      {
+        "title": "5. Tableur, calculs et gestion de données",
+        "count": 32,
+        "description": "Tableaux de bord des activités, calculs de moyennes/totaux, formules conditionnelles SI, listes déroulantes et graphiques statistiques."
+      },
+      {
+        "title": "6. Communication électronique, internet et sécurité numérique",
+        "count": 32,
+        "description": "Rédaction de courriels, gestion des pièces jointes, arborescence partagée, détection de phishing, mots de passe et sauvegardes."
+      },
+      {
+        "title": "7. Comptabilité, facturation et gestion administrative",
+        "count": 32,
+        "description": "Contrôle des factures fournisseurs/clients, calculs HT/TVA/TTC, remises commerciales, relances d'impayés et transmission comptable."
+      },
+      {
+        "title": "8. Ressources humaines et administration du personnel",
+        "count": 32,
+        "description": "Dossiers des salariés, fiches de congés, suivi des absences, attestations de travail, organisation des entretiens et turnover."
+      },
+      {
+        "title": "9. Anglais professionnel et correspondance bilingue",
+        "count": 32,
+        "description": "Accueil en anglais, courriels bilingues, vocabulaire commercial (invoice, delivery, meeting), messages téléphoniques en anglais."
+      },
+      {
+        "title": "10. Droit, administration, logique et épreuves pratiques",
+        "count": 32,
+        "description": "Contrats de travail, secret professionnel, règles de déontologie, gestion des incidents administratifs et mise en situation réelle."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Secrétariat et communication",
+        "duration": "3h00",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 2 — Bureautique et gestion de données",
+        "duration": "3h00",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 3 — Administration et personnel",
+        "duration": "3h00",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée BT Secrétariat",
+        "duration": "4h00",
+        "questions_count": 4
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Techniques de secrétariat",
+        "question": "Classer chronologiquement les tâches d’une journée de secrétariat selon leur urgence et importance.",
+        "answer_preview": "Correction attendue : Dépouillement du courrier urgent et des messages prioritaires, validation de l'agenda avec la direction, accueil des rendez-vous et traitement du travail de fond."
+      },
+      {
+        "id": 35,
+        "section": "Communication professionnelle",
+        "question": "Prendre un message téléphonique complet en précisant les 6 mentions obligatoires.",
+        "answer_preview": "Correction attendue : Date et heure de l'appel, identité complète de l'interlocuteur, organisme/entreprise, numéro de rappel, objet clair du message et nom de l'agent récepteur."
+      },
+      {
+        "id": 194,
+        "section": "Facturation",
+        "question": "Calculer le montant TTC d'une facture ayant un montant HT de 450 000 FCFA avec une TVA à 18 %.",
+        "answer_preview": "Correction : TVA = 450 000 × 0,18 = 81 000 FCFA. Montant TTC = 531 000 FCFA."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Techniques de secrétariat",
+        "question": "Classer chronologiquement les tâches d’une journée de secrétariat selon leur urgence.",
+        "answer": "Correction : 1. Ouverture du secrétariat et consultation des courriels/urgences ; 2. Mise à jour de l'agenda de direction ; 3. Traitement des parapheurs et courriers prioritaires ; 4. Accueil des visiteurs programmés ; 5. Classement et préparation des dossiers du lendemain."
+      },
+      {
+        "id": 12,
+        "section": "Gestion du temps",
+        "question": "Prioriser dix tâches administratives selon les critères d'urgence et d'importance.",
+        "answer": "Correction : Appliquer la matrice d'Eisenhower : Priorité 1 (Urgent et Important : réunion immédiate, note au ministre) ; Priorité 2 (Non urgent mais important : classement, commande de fournitures) ; Priorité 3 (Urgent non important : certains appels téléphoniques) ; Priorité 4 (Non urgent non important : tri de vieux prospectus)."
+      },
+      {
+        "id": 38,
+        "section": "Accueil professionnel",
+        "question": "Comment gérer un visiteur mécontent à l'accueil d'un service ?",
+        "answer": "Correction : Conserver son calme, adopter une posture d'écoute active sans l'interrompre, reformuler ses doléances pour valider la compréhension, lui proposer une solution concrète ou l'orienter poliment vers le responsable compétent."
+      },
+      {
+        "id": 69,
+        "section": "Correspondance commerciale",
+        "question": "Rédiger une lettre de relance de premier niveau pour une facture impayée.",
+        "answer": "Correction : Rappel courtois des références de la facture (numéro, date, montant), constatation du dépassement de l'échéance convenue, transmission d'un duplicata de la facture et invitation à régulariser sous 8 jours."
+      },
+      {
+        "id": 113,
+        "section": "Bureautique Word",
+        "question": "Présenter les étapes de réalisation d'un publipostage de convocations officielles.",
+        "answer": "Correction : 1. Création de la lettre-type sous Word avec espacement des zones de fusion ; 2. Préparation du tableau de données sous Excel (Nom, Prénom, Adresse, Date) ; 3. Fusion et insertion des champs ; 4. Vérification individuelle des aperçus avant édition finale."
+      },
+      {
+        "id": 130,
+        "section": "Tableur Excel",
+        "question": "Écrire la formule permettant de calculer le total et la moyenne de la plage de cellules C5 à C25.",
+        "answer": "Correction : Total : =SOMME(C5:C25) ; Moyenne : =MOYENNE(C5:C25)."
+      },
+      {
+        "id": 166,
+        "section": "Sécurité numérique",
+        "question": "Différencier l'usage du champ CC (copie conforme) et du champ Cci (copie cachée) dans un courriel.",
+        "answer": "Correction : Le champ CC informe les destinataires secondaires de façon visible par tous. Le champ Cci masque les adresses électroniques pour préserver la vie privée et respecter la législation sur la protection des données personnelles."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 118,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-probatoire-sn",
+    "slug": "concours-probatoire-senegal-fascicule-complet",
+    "title": "Probatoire — Sénégal : Fascicule Complet de Préparation",
+    "ministry": "Ministère de l'Éducation Nationale — Enseignement Moyen & Secondaire",
+    "category": "Probatoire",
+    "target_corps": "Candidats au Probatoire, Lycéens et Préparation aux Concours d’Entrée",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Académique Renforcée 2026",
+    "total_exercises": 320,
+    "total_pages": 12,
+    "rating": 4.95,
+    "reviews_count": 290,
+    "cover_gradient": "from-blue-950 via-indigo-900 to-slate-950",
+    "cover_image": "/covers/probatoire.jpg?v=clean-timeless",
+    "accent_color": "#2563eb",
+    "badge": "Probatoire & Lycée",
+    "description": "320 exercices originaux progressifs couvrant les 10 matières fondamentales du programme du Probatoire sénégalais : langue et grammaire française, calcul et algèbre, géométrie et statistiques, physique (mécanique et électricité), chimie et environnement, sciences de la vie et de la Terre (SVT), histoire et géographie du Sénégal, anglais, raisonnement logique et méthodologie d'examen + 4 concours blancs intégraux.",
+    "official_reference": "Programme officiel de l'Enseignement Secondaire et du Probatoire — République du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Français — langue, grammaire et expression",
+        "count": 32,
+        "description": "Accords des adjectifs et participes, concordance des temps, discours direct/indirect, figures de style, connecteurs et résumés de textes."
+      },
+      {
+        "title": "2. Mathématiques — calcul et algèbre",
+        "count": 32,
+        "description": "Calcul fractionnaire, factorisation, équations et inéquations du premier degré, pourcentages, vitesses moyennes et suites arithmétiques."
+      },
+      {
+        "title": "3. Géométrie, fonctions et statistiques",
+        "count": 32,
+        "description": "Pythagore, aires et volumes de solides, fonctions affines, représentations graphiques, probabilités simples et diagrammes statistiques."
+      },
+      {
+        "title": "4. Physique — mécanique, électricité et énergie",
+        "count": 32,
+        "description": "Poids et masse (P=mg), travail et puissance, énergie cinétique, loi d'Ohm (U=RI), puissance électrique consommée et circuits."
+      },
+      {
+        "title": "5. Chimie — matière, réactions et environnement",
+        "count": 32,
+        "description": "États de la matière, formules chimiques, équilibrage d'équations, pH des solutions aqueuses, combustion et effet de serre."
+      },
+      {
+        "title": "6. Sciences de la vie et de la Terre (SVT)",
+        "count": 32,
+        "description": "Appareils digestif et respiratoire, circulation sanguine, cellule végétale/animale, photosynthèse, écosystèmes et chaînes trophiques."
+      },
+      {
+        "title": "7. Histoire, géographie et Sénégal",
+        "count": 32,
+        "description": "Climat sahélien, façade atlantique, fleuve Sénégal, pêche, agriculture, décolonisation, histoire des Quatre Communes et institutions."
+      },
+      {
+        "title": "8. Anglais — compréhension et communication",
+        "count": 32,
+        "description": "Conjugaison au présent simple et continu, verbes irréguliers, modaux (can, must, should), prépositions de lieu et traductions courtes."
+      },
+      {
+        "title": "9. Logique, informatique et raisonnement",
+        "count": 32,
+        "description": "Suites logiques, analogies, syllogismes, fonctions de base des tableurs et traitements de texte, cybersécurité élémentaire."
+      },
+      {
+        "title": "10. Méthodologie, citoyenneté et préparation à l’examen",
+        "count": 32,
+        "description": "Technique de la dissertation, gestion du temps d'épreuve, règles de relecture, valeurs civiques républicaines et lutte contre la corruption."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Français, mathématiques et logique",
+        "duration": "3h00",
+        "questions_count": 6
+      },
+      {
+        "title": "Concours blanc 2 — Sciences et culture générale",
+        "duration": "3h00",
+        "questions_count": 6
+      },
+      {
+        "title": "Concours blanc 3 — Anglais, informatique et raisonnement",
+        "duration": "2h30",
+        "questions_count": 6
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée probatoire",
+        "duration": "4h00",
+        "questions_count": 6
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 4,
+        "section": "Français",
+        "question": "Corriger un texte comportant des erreurs d'accord entre sujet et verbe.",
+        "answer_preview": "Correction attendue : « La plupart des candidats réussissent l'épreuve lorsque le travail et la persévérance guident leur révision. »"
+      },
+      {
+        "id": 42,
+        "section": "Mathématiques",
+        "question": "Calculer une augmentation de 15 % sur un montant initial de 48 000 FCFA.",
+        "answer_preview": "Correction : Augmentation = 48 000 × 0,15 = 7 200 FCFA. Nouveau montant = 55 200 FCFA."
+      },
+      {
+        "id": 110,
+        "section": "Physique",
+        "question": "Appliquer la relation d'Ohm U = R × I pour calculer la tension aux bornes d'une résistance de 45 Ω traversée par 0,6 A.",
+        "answer_preview": "Correction : U = 45 × 0,6 = 27 Volts."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Français",
+        "question": "Accorder correctement les adjectifs qualificatifs : « Des décision (rapide) et des mesure (efficace) ont été prise. »",
+        "answer": "Correction : « Des décisions rapides et des mesures efficaces ont été prises. » Les adjectifs et le participe passé s'accordent en genre et en nombre avec leurs noms féminins pluriels."
+      },
+      {
+        "id": 8,
+        "section": "Français",
+        "question": "Mettre au discours indirect : Le professeur affirme : « Vous terminerez votre devoir avant midi. »",
+        "answer": "Correction : Le professeur affirme que nous terminerons notre devoir avant midi."
+      },
+      {
+        "id": 37,
+        "section": "Mathématiques",
+        "question": "Résoudre l’équation du premier degré : 5x − 18 = 2x + 12.",
+        "answer": "Correction : 5x − 2x = 12 + 18 => 3x = 30 => x = 10. La solution est S = {10}."
+      },
+      {
+        "id": 43,
+        "section": "Mathématiques",
+        "question": "Un article subit une réduction de 10 % puis une seconde réduction de 20 %. Quel est le pourcentage total de réduction ?",
+        "answer": "Correction : Coefficient multiplicateur global = (1 − 0,10) × (1 − 0,20) = 0,90 × 0,80 = 0,72. Réduction totale = (1 − 0,72) × 100 = 28 % (et non 30 %)."
+      },
+      {
+        "id": 72,
+        "section": "Géométrie",
+        "question": "Dans un triangle rectangle ABC en A, AB = 6 cm et AC = 8 cm. Calculer la longueur BC de l'hypoténuse.",
+        "answer": "Correction : D'après le théorème de Pythagore : BC² = AB² + AC² = 6² + 8² = 36 + 64 = 100. BC = √100 = 10 cm."
+      },
+      {
+        "id": 102,
+        "section": "Physique",
+        "question": "Calculer le poids P d’un corps de masse m = 75 kg sur Terre où l'intensité de la pesanteur g = 9,8 N/kg.",
+        "answer": "Correction : P = m × g = 75 × 9,8 = 735 Newtons."
+      },
+      {
+        "id": 138,
+        "section": "Chimie",
+        "question": "Équilibrer l’équation chimique de combustion du méthane : CH4 + O2 → CO2 + H2O.",
+        "answer": "Correction : Équation équilibrée : CH4 + 2 O2 → CO2 + 2 H2O."
+      },
+      {
+        "id": 167,
+        "section": "SVT",
+        "question": "Décrire le rôle et le fonctionnement du cœur dans la circulation sanguine.",
+        "answer": "Correction : Muscle creux assurant la fonction de pompe : le cœur droit envoie le sang désoxygéné vers les poumons pour être réoxygéné (petite circulation), et le cœur gauche propulse le sang oxygéné dans tout l'organisme via l'aorte (grande circulation)."
+      },
+      {
+        "id": 196,
+        "section": "Histoire-Géographie",
+        "question": "Décrire les caractéristiques principales du climat sahélien qui touche la partie nord du Sénégal.",
+        "answer": "Correction : Climat semi-aride caractérisé par une longue saison sèche (8 à 9 mois), une saison des pluies courte (hivernage de juillet à septembre), des précipitations faibles et irrégulières (300 à 500 mm/an) et de fortes chaleurs."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 119,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-iface-sn",
+    "slug": "concours-iface-senegal-ucad-tome-complet",
+    "title": "Concours IFACE — Sénégal : Tome Complet",
+    "ministry": "Ministère de l'Enseignement Supérieur, de la Recherche et de l'Innovation — UCAD",
+    "category": "IFACE Dakar",
+    "target_corps": "Étudiants en Administration des Affaires, Créateurs d’Entreprise, Gestionnaires IFACE",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale Entrée IFACE 2026",
+    "total_exercises": 320,
+    "total_pages": 23,
+    "rating": 4.98,
+    "reviews_count": 245,
+    "cover_gradient": "from-slate-950 via-sky-950 to-indigo-950",
+    "cover_image": "/covers/iface.jpg?v=clean-timeless",
+    "accent_color": "#0284c7",
+    "badge": "Management & Entreprise",
+    "description": "320 exercices professionnels corrigés couvrant tout le concours d'admission à l'IFACE (Institut de Formation en Administration et Création d'Entreprise — UCAD) : comptabilité financière et écritures, gestion des sociétés commerciales, contrôle de gestion, diagnostic financier, fiscalité, mathématiques financières et probabilités, macroéconomie, droit des affaires OHADA, management RH, audit et entrepreneuriat + 4 concours blancs.",
+    "official_reference": "Concours d'accès à l'IFACE (Université Cheikh Anta Diop de Dakar) — Faculté des Sciences Économiques et de Gestion.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Comptabilité générale et écritures",
+        "count": 32,
+        "description": "Apports en capital, achats/ventes avec TVA, créances douteuses, états de rapprochement bancaire et régularisations."
+      },
+      {
+        "title": "2. Comptabilité des sociétés et opérations financières",
+        "count": 32,
+        "description": "Constitution de sociétés (SARL, SA), affectation du résultat, distribution des dividendes, emprunts bancaires et capitaux propres."
+      },
+      {
+        "title": "3. Comptabilité analytique, coûts et contrôle de gestion",
+        "count": 32,
+        "description": "Coûts complets, unités d'œuvre, marges sur coûts variables, seuils de rentabilité, budgets de ventes et de trésorerie."
+      },
+      {
+        "title": "4. Analyse financière et états financiers",
+        "count": 32,
+        "description": "Bilan fonctionnel, FRNG, BFR, trésorerie nette, SIG, soldes de gestion, rentabilité financière (ROE) et ratios de liquidité."
+      },
+      {
+        "title": "5. Fiscalité et TVA",
+        "count": 32,
+        "description": "TVA collectée et déductible, prorata de déduction, calculs de l'IS, acomptes provisionnels, retenues à la source et contrôle fiscal."
+      },
+      {
+        "title": "6. Mathématiques financières, statistiques et probabilités",
+        "count": 32,
+        "description": "Intérêts simples et composés, valeurs actuelles nettes, annuités constantes, moyennes pondérées, variances et arbres de probabilité."
+      },
+      {
+        "title": "7. Économie générale et développement",
+        "count": 32,
+        "description": "Circuit économique, inflation, chômage, déterminants de l'investissement, politiques budgétaire et monétaire, solde commercial."
+      },
+      {
+        "title": "8. Droit des affaires et droit social",
+        "count": 32,
+        "description": "Contrats commerciaux, Acte Uniforme OHADA, responsabilité des dirigeants, contrats de travail (CDD/CDI) et licenciement."
+      },
+      {
+        "title": "9. Gestion, management et ressources humaines",
+        "count": 32,
+        "description": "Objectifs SMART, organigrammes, motivation des équipes, fiches de poste, plans de formation, absentéisme et turnover."
+      },
+      {
+        "title": "10. Français, culture générale, informatique et entrepreneuriat",
+        "count": 32,
+        "description": "Audit interne, contrôle interne, cartographie des risques, business model canvas, seuil de rentabilité de start-up et soutenance orale."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Comptabilité, fiscalité et mathématiques",
+        "duration": "3h30",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 2 — Économie, droit et management",
+        "duration": "3h30",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 3 — Contrôle de gestion, finance et audit",
+        "duration": "3h30",
+        "questions_count": 4
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée IFACE",
+        "duration": "4h00",
+        "questions_count": 4
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Comptabilité générale",
+        "question": "Enregistrer l’apport en capital d’une entreprise de 10 000 000 FCFA effectué par virement bancaire.",
+        "answer_preview": "Correction : Débit du compte 521 Banque par le Crédit du compte 101 Capital social pour 10 000 000 FCFA."
+      },
+      {
+        "id": 73,
+        "section": "Contrôle de gestion",
+        "question": "Calculer le seuil de rentabilité à partir des charges fixes (15 000 000 FCFA) et d'un taux de marge sur coût variable de 30 %.",
+        "answer_preview": "Correction : SR = 15 000 000 / 0,30 = 50 000 000 FCFA."
+      },
+      {
+        "id": 169,
+        "section": "Mathématiques financières",
+        "question": "Calculer l’intérêt simple produit par un capital de 5 000 000 FCFA placé à 6 % l'an pendant 8 mois.",
+        "answer_preview": "Correction : I = (C × t × n) / 1 200 = (5 000 000 × 6 × 8) / 1 200 = 200 000 FCFA."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Comptabilité générale",
+        "question": "Enregistrer l’apport en capital d’une entreprise effectué par virement bancaire pour 10 000 000 FCFA.",
+        "answer": "Correction : Débit 521 Banque (10 000 000) / Crédit 101 Capital social (10 000 000 FCFA). L'actif circulant augmente et les capitaux propres sont constatés."
+      },
+      {
+        "id": 42,
+        "section": "Comptabilité des sociétés",
+        "question": "Calculer le dividende par action d'une société ayant dégagé un bénéfice distribuable de 18 000 000 FCFA divisé en 6 000 actions ordinaires.",
+        "answer": "Correction : Dividende unitaire = 18 000 000 / 6 000 = 3 000 FCFA par action."
+      },
+      {
+        "id": 73,
+        "section": "Contrôle de gestion",
+        "question": "Calculer le seuil de rentabilité à partir des charges fixes et du taux de marge sur coût variable.",
+        "answer": "Correction : SR = Charges Fixes / Taux de M/CV. Il représente le chiffre d'affaires minimum pour lequel l'entreprise ne réalise ni bénéfice ni perte."
+      },
+      {
+        "id": 101,
+        "section": "Analyse financière",
+        "question": "Calculer le fonds de roulement net global (FRNG) et expliquer sa signification économique.",
+        "answer": "Correction : FRNG = Ressources durables (Capitaux propres + Dettes à long terme) − Emplois stables (Actif immobilisé net). Un FRNG positif garantit une marge de sécurité financière pour financer le cycle d'exploitation."
+      },
+      {
+        "id": 133,
+        "section": "Fiscalité",
+        "question": "Calculer la TVA due au titre du mois : Ventes HT taxables à 18 % = 30 000 000 FCFA, Achats HT ouvrant droit à déduction = 18 000 000 FCFA.",
+        "answer": "Correction : TVA collectée = 30 000 000 × 0,18 = 5 400 000 FCFA. TVA déductible = 18 000 000 × 0,18 = 3 240 000 FCFA. TVA à reverser = 5 400 000 − 3 240 000 = 2 160 000 FCFA."
+      },
+      {
+        "id": 173,
+        "section": "Mathématiques financières",
+        "question": "Calculer la valeur acquise d'un placement de 2 000 000 FCFA placé à intérêts composés au taux annuel de 5 % pendant 4 ans.",
+        "answer": "Correction : Cn = C0 × (1 + i)^n = 2 000 000 × (1,05)^4 = 2 000 000 × 1,215506 = 2 431 012 FCFA."
+      },
+      {
+        "id": 225,
+        "section": "Droit des affaires",
+        "question": "Quelles sont les 4 conditions de validité d’un contrat commercial selon le droit sénégalais et OHADA ?",
+        "answer": "Correction : 1. Le consentement non vicié des parties contractantes ; 2. La capacité juridique d'exercer le commerce ; 3. Un objet certain, licite et déterminable ; 4. Une cause licite et conforme aux bonnes mœurs."
+      },
+      {
+        "id": 261,
+        "section": "Management",
+        "question": "Définir les caractéristiques d'un objectif SMART dans la conduite d'une équipe commerciale.",
+        "answer": "Correction : S (Spécifique/Clair), M (Mesurable avec indicateurs chiffrés), A (Atteignable), R (Réaliste/Pertinent), T (Temporellement défini avec une échéance précise)."
+      },
+      {
+        "id": 316,
+        "section": "Entrepreneuriat",
+        "question": "Calculer le point mort en jours pour un projet ayant un chiffre d'affaires prévisionnel de 36 000 000 FCFA et un seuil de rentabilité de 24 000 000 FCFA sur une année de 360 jours.",
+        "answer": "Correction : Point mort = (Seuil de rentabilité / Chiffre d'affaires) × 360 jours = (24 000 000 / 36 000 000) × 360 = (2/3) × 360 = 240 jours d'activité."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 120,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-eaa-sn",
+    "slug": "concours-ecole-agriculture-armee-senegal-fascicule-complet",
+    "title": "Concours École d'Agriculture de l'Armée — Sénégal : Fascicule Complet",
+    "ministry": "Ministère des Forces Armées & Ministère de l'Agriculture — Sénégal",
+    "category": "Agriculture de l'Armée",
+    "target_corps": "Militaires techniciens agricoles, exploitants agro-pastoraux des Armées et sous-officiers spécialistes ruraux",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Militaire Agro-Pastorale 2026",
+    "total_exercises": 320,
+    "total_pages": 12,
+    "rating": 4.99,
+    "reviews_count": 367,
+    "cover_gradient": "from-emerald-950 via-teal-900 to-slate-950",
+    "cover_image": "/covers/agriculture_armee.jpg?v=clean-timeless",
+    "accent_color": "#10b981",
+    "badge": "Agro-Militaire & Souveraineté",
+    "description": "320 exercices distincts sans répétition pour réussir le concours de l'École d'Agriculture de l'Armée du Sénégal : agronomie générale, productions végétales et maraîchères, élevage et santé animale, gestion des fermes militaires, mathématiques et calculs agricoles de rendement, déontologie et discipline militaire, tests psychotechniques et préparation physique + 4 concours blancs complets.",
+    "official_reference": "Programme de Formation Agricole des Forces Armées — Ministère des Forces Armées de la République du Sénégal.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Français, rédaction technique et comptes rendus",
+        "count": 32,
+        "description": "Accords, syntaxe, rédaction de fiches d'exploitation agricole, rapports techniques et comptes rendus de service."
+      },
+      {
+        "title": "2. Mathématiques, surfaces et calculs de rendement",
+        "count": 32,
+        "description": "Calculs de doses d'engrais, périmètres et surfaces de parcelles, débits d'irrigation, pourcentages et calculs d'amortissement."
+      },
+      {
+        "title": "3. Agronomie générale et sciences du sol",
+        "count": 32,
+        "description": "Texture, structure des sols, pédologie du Sénégal, fertilisation organique, compostage et préservation des ressources en eau."
+      },
+      {
+        "title": "4. Productions végétales et cultures vivrières",
+        "count": 32,
+        "description": "Céréales (mil, maïs, riz), maraîchage, arboriculture, rotation des cultures, lutte intégrée contre les ravageurs et calendrier cultural."
+      },
+      {
+        "title": "5. Productions animales et élevage agro-pastoral",
+        "count": 32,
+        "description": "Aviculture, embouche bovine et ovine, alimentation du cheptel, hygiène vétérinaire, prophylaxie et gestion des pâturages."
+      },
+      {
+        "title": "6. Machinisme, hydraulique et gestion de fermes",
+        "count": 32,
+        "description": "Entretien des motopompes, systèmes de goutte-à-goutte, forages solaires, maintenance des équipements et logistique de stockage."
+      },
+      {
+        "title": "7. Discipline militaire, éthique et chaîne de commandement",
+        "count": 32,
+        "description": "Règlement de discipline générale dans les armées, sens de la mission, sécurité des installations et obéissance légitime."
+      },
+      {
+        "title": "8. Logique, psychotechnique et organisation du travail",
+        "count": 32,
+        "description": "Suites logiques, planification de chantier agricole, priorisation des tâches opérationnelles et gestion des imprévus."
+      },
+      {
+        "title": "9. Condition physique, hygiène de terrain et secourisme",
+        "count": 32,
+        "description": "Endurance opérationnelle, rusticité, hydratation, gestes d'urgence et secourisme en milieu rural et isolé."
+      },
+      {
+        "title": "10. Grand oral et projet professionnel agro-militaire",
+        "count": 32,
+        "description": "Présentation de son parcours, motivation pour la souveraineté alimentaire nationale, posture militaire et entretien avec le jury."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Écrit général, calculs et sciences du sol",
+        "duration": "3h00",
+        "questions_count": 6
+      },
+      {
+        "title": "Concours blanc 2 — Productions végétales et animales",
+        "duration": "3h00",
+        "questions_count": 6
+      },
+      {
+        "title": "Concours blanc 3 — Machinisme, hydraulique et gestion",
+        "duration": "2h30",
+        "questions_count": 6
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve intégrée Agro-Militaire",
+        "duration": "4h00",
+        "questions_count": 6
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Rédaction Technique",
+        "question": "Rédigez un compte rendu succinct après la détection d'une invasion d'acridiens sur une parcelle de maïs militaire.",
+        "answer_preview": "Correction attendue : Localisation précise de la parcelle, superficie impactée, stade végétatif du maïs, densité des ravageurs et mesures conservatoires immédiates."
+      },
+      {
+        "id": 34,
+        "section": "Calcul Agricole",
+        "question": "Une motopompe débite 18 m³/h. Combien de temps faut-il pour apporter 72 m³ d'eau à un casier rizicole ?",
+        "answer_preview": "Correction : Temps = Volume / Débit = 72 m³ / 18 m³/h = 4 heures d'arrosage."
+      },
+      {
+        "id": 194,
+        "section": "Agronomie",
+        "question": "Quels sont les avantages d'une fumure organique par rapport aux seuls engrais chimiques ?",
+        "answer_preview": "Correction attendue : Amélioration durable de la structure et de la rétention d'eau du sol, stimulation de l'activité microbienne, apport progressif d'oligo-éléments et diminution du risque de salinisation."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Français & Rapport de Ferme",
+        "question": "Accorder les participes passés : « Les semences sélectionnées que l'intendance a (fourni) ont été (semé) dès les premières pluies. »",
+        "answer": "Correction : « Les semences sélectionnées que l'intendance a fournies ont été semées dès les premières pluies. » « fournies » s'accorde avec le COD antéposé « que » (féminin pluriel) ; « semées » s'accorde avec le sujet passif."
+      },
+      {
+        "id": 34,
+        "section": "Mathématiques et Irrigation",
+        "question": "Une parcelle de 2 hectares reçoit un apport d'eau équivalent à une lame d'eau de 30 mm. Quel est le volume total en m³ nécessaire ?",
+        "answer": "Correction : 1 ha = 10 000 m². 2 ha = 20 000 m². 30 mm = 0,03 m. Volume = 20 000 × 0,03 = 600 m³ d'eau."
+      },
+      {
+        "id": 65,
+        "section": "Calcul de Doses d'Engrais",
+        "question": "Pour apporter 60 unités d'azote par hectare sur une parcelle de 3 ha avec de l'urée à 46 %, quelle masse totale d'urée faut-il ?",
+        "answer": "Correction : Besoin total = 60 × 3 = 180 unités de N. Masse d'urée = 180 / 0,46 = 391,3 kg d'urée (soit 8 sacs de 50 kg)."
+      },
+      {
+        "id": 98,
+        "section": "Pédologie & Conservation",
+        "question": "Expliquer le rôle de la matière organique dans la lutte contre l'érosion des sols sous climat sahélien.",
+        "answer": "Correction : La matière organique forme des agrégats stables avec l'argile (complexe argilo-humique), augmente la cohésion du sol face au vent (déflation éolienne) et améliore l'infiltration lors des pluies orageuses, limitant le ruissellement décapant."
+      },
+      {
+        "id": 161,
+        "section": "Productions Végétales",
+        "question": "Définir la rotation culturale et citer deux bénéfices agronomiques majeurs pour une exploitation.",
+        "answer": "Correction : La rotation est la succession ordonnée de cultures différentes sur une même parcelle au fil des campagnes. Bénéfices : rupture des cycles de ravageurs et maladies spécifiques, et valorisation optimale des nutriments (ex. alternance légumineuse fixatrice d'azote et céréale gourmande)."
+      },
+      {
+        "id": 193,
+        "section": "Discipline Militaire & Sécurité",
+        "question": "Pourquoi la tenue d'un carnet d'exploitation et d'un registre des stocks d'intrants est-elle une exigence de sécurité militaire ?",
+        "answer": "Correction : Elle garantit la traçabilité des ressources publiques de l'État, prévient les pertes et détournements d'intrants stratégiques, et permet au commandement d'anticiper les approvisionnements vitaux des cantonnements."
+      },
+      {
+        "id": 257,
+        "section": "Machinisme & Hydraulique",
+        "question": "Quels sont les trois points de contrôle quotidiens obligatoires avant le démarrage d'un tracteur ou d'une motopompe ?",
+        "answer": "Correction : 1. Niveau d'huile moteur ; 2. Niveau du liquide de refroidissement / état du radiateur ; 3. Propreté du filtre à air et absence de fuite de carburant."
+      },
+      {
+        "id": 289,
+        "section": "Grand Oral",
+        "question": "Comment convaincre le jury militaire de votre motivation pour la filière agricole des Forces Armées ?",
+        "answer": "Correction : 1. Souligner que la souveraineté alimentaire est le premier pilier de la sécurité nationale ; 2. Montrer son attachement à la terre et à la rigueur militaire ; 3. Exprimer sa fierté de produire pour nourrir les troupes et les populations en zone de déploiement."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 121,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-esogn-sn",
+    "slug": "concours-esogn-gendarmerie-senegal-fascicule-complet",
+    "title": "Concours ESOGN — Sénégal : École des Sous-Officiers de la Gendarmerie Nationale",
+    "ministry": "Ministère des Forces Armées — Haut Commandement de la Gendarmerie Nationale",
+    "category": "Gendarmerie (ESOGN)",
+    "target_corps": "Élèves Sous-Officiers de Gendarmerie (ESOGN Fatick - Camp Capitaine Saïdou Nourou Tall)",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Spéciale Sous-Officiers Gendarmerie",
+    "total_exercises": 320,
+    "total_pages": 22,
+    "rating": 4.96,
+    "reviews_count": 248,
+    "cover_gradient": "from-emerald-950 via-slate-900 to-teal-950",
+    "cover_image": "/covers/esogn.jpg?v=clean-timeless",
+    "accent_color": "#059669",
+    "badge": "Sous-Officiers Gendarmerie",
+    "description": "320 exercices distincts sans répétition pour réussir le concours direct d'entrée à l'École des Sous-Officiers de la Gendarmerie Nationale (ESOGN Fatick). Français militaire, mathématiques et logique, institutions républicaines, missions de la Gendarmerie (ordre public, police judiciaire, sécurité routière), tests psychotechniques et préparation physique + 4 concours blancs complets.",
+    "official_reference": "Haut Commandement de la Gendarmerie Nationale et Direction de la Justice Militaire — Sénégal (ESOGN Fatick).",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Français militaire et rédaction de comptes-rendus",
+        "count": 40,
+        "description": "Grammaire, vocabulaire militaire, compte-rendu d'incident, procès-verbal sommaire et synthèse."
+      },
+      {
+        "title": "2. Mathématiques opérationnelles et calcul mental",
+        "count": 40,
+        "description": "Arithmétique, pourcentages, vitesses de patrouille, consommation de carburant et calculs d'itinéraires."
+      },
+      {
+        "title": "3. Institutions de la République et instruction civique",
+        "count": 35,
+        "description": "Constitution du Sénégal, pouvoirs publics, droits fondamentaux du citoyen et symboles de l'État."
+      },
+      {
+        "title": "4. Organisation et missions de la Gendarmerie",
+        "count": 35,
+        "description": "Gendarmerie territoriale, gendarmerie mobile, police judiciaire, police administrative et prévôté."
+      },
+      {
+        "title": "5. Notions de Droit pénal et procédure",
+        "count": 35,
+        "description": "Infractions, flagrant délit, cadre d'action de l'APJ et de l'OPJ, légitime défense et usage des armes."
+      },
+      {
+        "title": "6. Sécurité routière et constatations d'accidents",
+        "count": 30,
+        "description": "Code de la route sénégalais, contrôle des véhicules, mesures conservatoires et secours d'urgence."
+      },
+      {
+        "title": "7. Topographie, orientation et lecture de cartes",
+        "count": 30,
+        "description": "Coordonnées géographiques, boussole, azimut, calcul de distances et repérage de zone."
+      },
+      {
+        "title": "8. Logique, suites et tests psychotechniques",
+        "count": 30,
+        "description": "Suites numériques, dominos, matrices visuelles, raisonnement spatial et déduction sous stress."
+      },
+      {
+        "title": "9. Discipline militaire et déontologie",
+        "count": 25,
+        "description": "Devise Honneur et Patrie, règlement de discipline générale, obéissance légale et hiérarchie."
+      },
+      {
+        "title": "10. Grand Oral avec le jury et entretien de motivation",
+        "count": 20,
+        "description": "Présentation martiale, motivation pour le métier des armes, connaissance du territoire national et sang-froid."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Français & Dictée militaire",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Mathématiques & Logique",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Institutions & Sécurité Publique",
+        "duration": "2h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Simulation finale intégrale ESOGN",
+        "duration": "4h00",
+        "questions_count": 20
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "Organisation Militaire",
+        "question": "Quelle est la devise officielle de la Gendarmerie Nationale du Sénégal et quel est son ministère de tutelle ?",
+        "answer_preview": "Devise : « Honneur et Patrie ». Tutelle : Ministère des Forces Armées (pour l'emploi militaire) et Ministère de l'Intérieur / Justice (pour l'emploi civil et judiciaire)."
+      },
+      {
+        "id": 2,
+        "section": "Français & Rédaction",
+        "question": "Distinguez un compte-rendu d'un rapport dans la correspondance militaire.",
+        "answer_preview": "Le compte-rendu expose rapidement et fidèlement un fait survenu (qui, quoi, où, quand) ; le rapport est plus détaillé, analyse les causes et propose des mesures ou sanctions."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Organisation Militaire",
+        "question": "Quelle est la devise officielle de la Gendarmerie Nationale du Sénégal et quelles sont ses missions fondamentales ?",
+        "answer": "Correction : La devise officielle de la Gendarmerie Nationale du Sénégal est « Honneur et Patrie ». Ses missions fondamentales se divisent en trois volets majeurs : 1) La police administrative (maintien et rétablissement de l'ordre public, surveillance du territoire et des voies de communication), 2) La police judiciaire (constatation des infractions pénales, rassemblement des preuves et recherche des auteurs), et 3) Les missions militaires (défense opérationnelle du territoire et prévôté auprès des forces armées)."
+      },
+      {
+        "id": 2,
+        "section": "Français militaire & Procédures",
+        "question": "Rédigez la trame réglementaire d'un compte-rendu d'incident d'ordre public survenu lors d'un rassemblement forain.",
+        "answer": "Correction : La structure réglementaire d'un compte-rendu militaire comprend : 1) En-tête officiel de l'unité de Gendarmerie émettrice avec date, lieu et heure de rédaction, 2) Mention d'urgence et destinataire hiérarchique (Commandant de Compagnie / Légion), 3) Objet clair et précis de l'incident, 4) Exposé chronologique et objectif des faits (circonstances de survenue, acteurs identifiés, incidents constatés), 5) Mesures d'urgence prises (dispersion, évacuation, interpellations sous contrôle d'OPJ, sécurisation des biens et personnes), 6) Bilan humain et matériel provisoire, 7) Dispositif de veille maintenu et signature du gradé rédacteur."
+      },
+      {
+        "id": 3,
+        "section": "Mathématiques opérationnelles",
+        "question": "Une patrouille de gendarmerie quitte Kaolack pour Fatick (distance 45 km) à la vitesse moyenne de 75 km/h. À quelle heure arrivera-t-elle si elle part à 08h20 min ?",
+        "answer": "Correction : Temps de trajet t = distance / vitesse = 45 / 75 = 0,6 heure. En minutes : 0,6 × 60 = 36 minutes. Heure d'arrivée : 08h20 min + 36 min = 08h56 min."
+      },
+      {
+        "id": 4,
+        "section": "Institutions & Droits",
+        "question": "Quelle est la distinction fondamentale entre un Officier de Police Judiciaire (OPJ) et un Agent de Police Judiciaire (APJ) dans le Code de Procédure Pénale sénégalais ?",
+        "answer": "Correction : L'OPJ a la plénitude de compétence pour diriger les enquêtes, recevoir les plaintes et dénonciations, procéder aux auditions, ordonner des perquisitions dans les formes légales et décider de mesures de garde à vue avec information immédiate du Procureur de la République. L'APJ seconde l'OPJ dans l'exercice de ses fonctions, constate les infractions et rend compte fidèlement à son supérieur hiérarchique, mais n'a pas compétence autonome pour décider seul de gardes à vue ou signer des procès-verbaux de clôture."
+      },
+      {
+        "id": 5,
+        "section": "Topographie & Orientation",
+        "question": "Définissez un azimut en topographie militaire et expliquez la méthode pour le mesurer avec une boussole.",
+        "answer": "Correction : L'azimut est l'angle horizontal formé entre la direction du Nord (magnétique ou géographique) et la ligne de visée orientée vers un objectif précis, mesuré en degrés (de 0° à 360°) dans le sens des aiguilles d'une montre. Pour le mesurer : 1) Orienter la boussole à plat, 2) Aligner la ligne de visée vers l'objectif visible, 3) Tourner le cadran mobile pour superposer l'aiguille magnétique avec le repère Nord du boîtier, 4) Lire la graduation en degrés en face du repère d'index."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 122,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  },
+  {
+    "id": "annale-bt-comptabilite-sn",
+    "slug": "concours-bt-comptabilite-senegal-fascicule-complet",
+    "title": "Concours BT Comptabilité — Sénégal : Fascicule Complet",
+    "ministry": "Ministère de la Formation Professionnelle, de l'Apprentissage et de l'Insertion",
+    "category": "BT Comptabilité",
+    "target_corps": "Comptables assistants, aides-comptables certifiés et teneurs de livres en cabinet ou entreprise",
+    "price": 2000,
+    "currency": "XOF",
+    "edition": "Édition Conforme Brevet de Technicien 2026",
+    "total_exercises": 320,
+    "total_pages": 20,
+    "rating": 4.95,
+    "reviews_count": 219,
+    "cover_gradient": "from-blue-950 via-sky-900 to-slate-950",
+    "cover_image": "/covers/bt_comptabilite.jpg?v=clean-timeless",
+    "accent_color": "#0284c7",
+    "badge": "Comptabilité Pratique",
+    "description": "320 exercices d'application corrigés pas-à-pas pour réussir le concours et l'examen du Brevet de Technicien (BT) Comptabilité au Sénégal : comptabilité générale, analyse financière, fiscalité (TVA, BRS, VRS), gestion des entreprises, informatique de gestion et communication professionnelle + 4 concours blancs complets.",
+    "official_reference": "Direction des Examens et Concours Professionnels (DECPC) — Brevet de Technicien en Comptabilité.",
+    "study_plan_days": 30,
+    "summary_sections": [
+      {
+        "title": "1. Comptabilité générale et écritures courantes",
+        "count": 45,
+        "description": "Facturation, achats, ventes, règlements, TVA et état de rapprochement bancaire."
+      },
+      {
+        "title": "2. Opérations d'inventaire et de régularisation",
+        "count": 45,
+        "description": "Amortissements linéaires et dégressifs, provisions, stocks et charges/produits constatés d'avance."
+      },
+      {
+        "title": "3. Fiscalité pratique sénégalaise",
+        "count": 35,
+        "description": "Calcul et déclaration de TVA, acomptes provisionnels, VRS et retenue à la source (BRS)."
+      },
+      {
+        "title": "4. Gestion de la paie et charges sociales",
+        "count": 35,
+        "description": "Salaire brut, cotisations IPRES, CSS, CFCE, impôt sur le revenu (IR) et net à payer."
+      },
+      {
+        "title": "5. Analyse financière élémentaire",
+        "count": 30,
+        "description": "Bilan fonctionnel, FRNG, BFR, trésorerie nette et ratios de solvabilité."
+      },
+      {
+        "title": "6. Informatique et tableur Excel de gestion",
+        "count": 30,
+        "description": "Formules conditionnelles, tableaux croisés dynamiques, fonctions financières et sécurité."
+      },
+      {
+        "title": "7. Mathématiques financières et commerciales",
+        "count": 30,
+        "description": "Taux d'intérêt, escompte commercial, équivalence d'effets et amortissement d'emprunt."
+      },
+      {
+        "title": "8. Droit des affaires et de l'entreprise (SYSCOHADA)",
+        "count": 25,
+        "description": "Principes comptables OHADA révisé, forme des sociétés et tenue des livres légaux."
+      },
+      {
+        "title": "9. Communication professionnelle et secrétariat comptable",
+        "count": 25,
+        "description": "Rédaction de notes de service, correspondances bancaires et classement d'archives."
+      },
+      {
+        "title": "10. Grand oral et mise en situation professionnelle",
+        "count": 20,
+        "description": "Présentation devant la commission d'examen, défense d'un dossier comptable et maîtrise pratique."
+      }
+    ],
+    "exam_simulations": [
+      {
+        "title": "Concours blanc 1 — Écritures courantes et TVA",
+        "duration": "3h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 2 — Travaux d'inventaire et paie",
+        "duration": "3h00",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 3 — Analyse financière et mathématiques",
+        "duration": "2h30",
+        "questions_count": 10
+      },
+      {
+        "title": "Concours blanc 4 — Épreuve finale intégrale BT Comptabilité",
+        "duration": "4h00",
+        "questions_count": 10
+      }
+    ],
+    "sample_exercises": [
+      {
+        "id": 1,
+        "section": "SYSCOHADA",
+        "question": "Enregistrez au journal une facture d'achat de marchandises de 1 000 000 F CFA HT, remise 5 %, port forfaitaire 50 000 F, TVA 18 %.",
+        "answer_preview": "Correction : Net commercial = 950 000 F. Base TVA = 950 000 + 50 000 = 1 000 000 F. TVA = 180 000 F. Net à payer TTC = 1 180 000 F."
+      },
+      {
+        "id": 25,
+        "section": "Fiscalité",
+        "question": "Quel est le taux normal de la TVA au Sénégal et la date limite mensuelle de dépôt de la déclaration ?",
+        "answer_preview": "Correction : Taux normal de 18 %. La déclaration doit être déposée et payée au plus tard le 15 du mois suivant."
+      }
+    ],
+    "protected_exercises": [
+      {
+        "id": 1,
+        "section": "Comptabilité des Salaires",
+        "question": "Un salarié a un salaire de base de 250 000 FCFA, prime d'ancienneté 30 000 FCFA. Calculez l'assiette des cotisations sociales et les parts IPRES RG (3 % salarié, 4,2 % employeur).",
+        "answer": "Correction : Brut imposable = 280 000 FCFA. Part salariale IPRES RG = 280 000 × 3 % = 8 400 FCFA. Part patronale = 280 000 × 4,2 % = 11 760 FCFA."
+      },
+      {
+        "id": 2,
+        "section": "Amortissements",
+        "question": "Un matériel acquis 6 000 000 FCFA HT le 01/04/N a une durée de 5 ans en linéaire. Calculez l'annuité de l'année N.",
+        "answer": "Correction : Taux = 20 %. Prorata temporis du 01/04 au 31/12 = 9 mois. Annuité N = 6 000 000 × 20 % × (9 / 12) = 900 000 FCFA."
+      }
+    ],
+    "year": 2026,
+    "format": "PDF",
+    "wc_product_id": 123,
+    "created_at": "2026-10-04T21:49:22.985Z",
+    "is_custom_upload": false,
+    "cover_source": "official"
+  }
+];
