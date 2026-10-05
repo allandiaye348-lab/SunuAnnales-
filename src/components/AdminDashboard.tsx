@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { AdminStats, PaymentRecord, User, Annale } from '../types';
+import { AdminVisitorStatistics } from './AdminVisitorStatistics';
 import { 
   TrendingUp, Users, ShoppingBag, AlertOctagon, CheckCircle2, 
   Clock, XCircle, Search, Download, RefreshCw, Eye, ShieldAlert, ShieldCheck,
   ArrowUpRight, BarChart3, Database, Key, Check, Image as ImageIcon,
-  Upload, Link as LinkIcon, Camera, Sparkles, ArrowLeft, FileArchive
+  Upload, Link as LinkIcon, Camera, Sparkles, ArrowLeft, FileArchive, Activity
 } from 'lucide-react';
 
 interface AdminDashboardProps {
   onClose: () => void;
-  initialTab?: 'overview' | 'payments' | 'failed' | 'users' | 'covers';
+  initialTab?: 'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers';
 }
 
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initialTab = 'overview' }) => {
@@ -18,7 +19,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
   const [users, setUsers] = useState<any[]>([]);
   const [annales, setAnnales] = useState<Annale[]>([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<'overview' | 'payments' | 'failed' | 'users' | 'covers'>(initialTab);
+  const [activeTab, setActiveTab] = useState<'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers'>(initialTab);
   const [statusFilter, setStatusFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRawResponse, setSelectedRawResponse] = useState<any | null>(null);
@@ -29,6 +30,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
   const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
   const batchFileInputRef = useRef<HTMLInputElement | null>(null);
   const [isBatchUploading, setIsBatchUploading] = useState(false);
+  const getAdminKey = () => sessionStorage.getItem('sunu_admin_key') || localStorage.getItem('sunu_admin_key') || '';
 
   const handleBatchUploadFiles = async (files: FileList | File[]) => {
     const fileArray = Array.from(files);
@@ -79,7 +81,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',
-                    'x-admin-key': '2026',
+                    Authorization: `Bearer ${localStorage.getItem('sunu_token') || ''}`,
+                    'x-admin-key': getAdminKey(),
                   },
                   body: JSON.stringify({
                     annale_id: match.id,
@@ -113,7 +116,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
       const token = localStorage.getItem('sunu_token') || '';
       const headers: Record<string, string> = {
         Authorization: `Bearer ${token}`,
-        'x-admin-key': '2026', // Admin bypass key
+        'x-admin-key': getAdminKey(),
       };
 
       const [statsRes, paymentsRes, usersRes, annalesRes, settingsRes] = await Promise.all([
@@ -144,7 +147,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,
-          'x-admin-key': '2026',
+          'x-admin-key': getAdminKey(),
         },
         body: JSON.stringify({ paytech_env: targetEnv }),
       });
@@ -180,7 +183,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
-            'x-admin-key': '2026',
+            'x-admin-key': getAdminKey(),
           },
           body: JSON.stringify({
             annale_id: annaleId,
@@ -219,7 +222,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,
-          'x-admin-key': '2026',
+          'x-admin-key': getAdminKey(),
         },
         body: JSON.stringify({
           annale_id: annaleId,
@@ -249,7 +252,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,
-          'x-admin-key': '2026',
+          'x-admin-key': getAdminKey(),
         },
         body: JSON.stringify({ status: newStatus }),
       });
@@ -369,6 +372,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
         <div className="px-6 py-2 bg-slate-900 border-b border-slate-800 flex items-center gap-2 shrink-0 overflow-x-auto">
           {[
             { id: 'overview', label: 'Vue Générale & Revenus' },
+            { id: 'statistiques', label: '📊 Statistiques Visiteurs' },
             { id: 'covers', label: `Photos & Couvertures (${annales.length})` },
             { id: 'payments', label: `Tous les Paiements (${payments.length})` },
             { id: 'failed', label: `Échecs & Diagnostics (${failedPayments.length})` },
@@ -390,6 +394,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
 
         {/* Content Area */}
         <div className="flex-1 overflow-y-auto p-6 bg-slate-950">
+          {/* TAB: VISITOR STATS */}
+          {activeTab === 'statistiques' && (
+            <div className="-m-6">
+              <AdminVisitorStatistics onBack={() => setActiveTab('overview')} />
+            </div>
+          )}
+
           {/* TAB 1: OVERVIEW */}
           {activeTab === 'overview' && (
             <div className="space-y-6">

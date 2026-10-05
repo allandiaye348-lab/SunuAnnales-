@@ -43,7 +43,7 @@ export const ApiRoutesModal: React.FC<ApiRoutesModalProps> = ({ onClose }) => {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${localStorage.getItem('sunu_token') || ''}`,
-        'x-admin-key': '2026',
+        'x-admin-key': sessionStorage.getItem('sunu_admin_key') || localStorage.getItem('sunu_admin_key') || '',
       },
     };
 

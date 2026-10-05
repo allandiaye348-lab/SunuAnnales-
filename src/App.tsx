@@ -6,6 +6,7 @@ import { AnnaleCard } from './components/AnnaleCard';
 import { PaymentModal } from './components/PaymentModal';
 import { SecureReaderModal } from './components/SecureReaderModal';
 import { AdminDashboard } from './components/AdminDashboard';
+import { AdminVisitorStatistics } from './components/AdminVisitorStatistics';
 import { PreviewSummaryModal } from './components/PreviewSummaryModal';
 import { ApiRoutesModal } from './components/ApiRoutesModal';
 import { FaqSection } from './components/FaqSection';
@@ -15,6 +16,7 @@ import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { Professional3DModal } from './components/Professional3DModal';
 import { Professional3DBookViewer } from './components/Professional3DBookViewer';
+import { trackPageView, initAnalyticsTracking } from './utils/analytics';
 import { 
   Sparkles, ShieldCheck, CheckCircle2, Award, Zap, BookOpen, 
   Search, Filter, ChevronRight, HelpCircle, ArrowRight, ArrowLeft, Smartphone,
@@ -48,7 +50,8 @@ export default function App() {
   const [active3DAnnale, setActive3DAnnale] = useState<Annale | null>(null);
   const [heroViewMode, setHeroViewMode] = useState<'3d' | 'poster'>('poster');
   const [showAdminDashboard, setShowAdminDashboard] = useState(false);
-  const [adminInitialTab, setAdminInitialTab] = useState<'overview' | 'payments' | 'failed' | 'users' | 'covers'>('overview');
+  const [showStatsDashboard, setShowStatsDashboard] = useState(false);
+  const [adminInitialTab, setAdminInitialTab] = useState<'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers'>('overview');
   const [showRoutesModal, setShowRoutesModal] = useState(false);
   const [showPortalModal, setShowPortalModal] = useState(false);
   const [showPaymentReturn, setShowPaymentReturn] = useState(false);
@@ -262,12 +265,45 @@ export default function App() {
   }, [annales]);
 
   useEffect(() => {
-    // Hidden private access for administrator via ?admin=true in URL
+    // Hidden private access for administrator via /admin/statistiques or ?admin=stats
+    const pathname = window.location.pathname;
     const params = new URLSearchParams(window.location.search);
-    if (params.get('admin') === 'true' || params.get('admin') === 'secret') {
+
+    if (
+      pathname === '/admin/statistiques' || 
+      pathname === '/admin/stats' || 
+      params.get('admin') === 'stats' || 
+      params.get('stats') === 'true'
+    ) {
+      setShowStatsDashboard(true);
+    } else if (params.get('admin') === 'true' || params.get('admin') === 'secret' || pathname === '/admin') {
       setShowAdminDashboard(true);
     }
+
+    // Initialize real-time visitor analytics
+    const cleanup = initAnalyticsTracking();
+    return cleanup;
   }, []);
+
+  // Track tab navigation (Accueil, À propos, Contact)
+  useEffect(() => {
+    trackPageView({
+      path: currentTab === 'accueil' ? '/' : `/${currentTab}`,
+    });
+  }, [currentTab]);
+
+  // Track search queries with debounce
+  useEffect(() => {
+    if (searchQuery.trim().length > 2) {
+      const timer = setTimeout(() => {
+        trackPageView({
+          path: currentTab === 'accueil' ? '/' : `/${currentTab}`,
+          searchQuery: searchQuery.trim(),
+        });
+      }, 1200);
+      return () => clearTimeout(timer);
+    }
+  }, [searchQuery, currentTab]);
 
   const handleUploadCover = async (annaleId: string, file: File) => {
     return new Promise<void>((resolve) => {
@@ -277,11 +313,14 @@ export default function App() {
           const base64Data = e.target?.result as string;
           if (!base64Data) return resolve();
 
+          const token = localStorage.getItem('sunu_token') || '';
+          const adminKey = sessionStorage.getItem('sunu_admin_key') || localStorage.getItem('sunu_admin_key') || '';
           const res = await fetch('/api/admin/update-cover', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              'x-admin-key': '2026',
+              Authorization: `Bearer ${token}`,
+              'x-admin-key': adminKey,
             },
             body: JSON.stringify({
               annale_id: annaleId,
@@ -927,14 +966,6 @@ export default function App() {
           <div className="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-3">
             <p>© 2026 SunuAnnales SN SARL. Tous droits réservés. République du Sénégal.</p>
             <div className="flex items-center gap-4">
-              <a
-                href="/download-zip"
-                download="sunu-annales-projet.zip"
-                className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-emerald-400 border border-slate-800 hover:border-slate-700 text-[10px] font-semibold transition flex items-center gap-1.5 shadow-sm"
-                title="Télécharger l'archive ZIP complète du projet"
-              >
-                <span>📦 Télécharger ZIP</span>
-              </a>
               <p className="hidden md:block">Conforme aux réglementations UEMOA et protection des données personnelles.</p>
               <button
                 onClick={() => setShowAdminDashboard(true)}
@@ -1019,6 +1050,24 @@ export default function App() {
             fetchCatalog();
           }}
         />
+      )}
+
+      {/* 5.1 Dedicated Admin Visitor Statistics View (/admin/statistiques) */}
+      {showStatsDashboard && (
+        <div className="fixed inset-0 z-50 bg-slate-950 overflow-y-auto">
+          <AdminVisitorStatistics
+            onClose={() => {
+              setShowStatsDashboard(false);
+              if (window.location.pathname.startsWith('/admin')) {
+                window.history.pushState({}, '', '/');
+              }
+            }}
+            onBack={() => {
+              setShowStatsDashboard(false);
+              setShowAdminDashboard(true);
+            }}
+          />
+        </div>
       )}
 
       {/* 6. API Routes Explorer Modal */}

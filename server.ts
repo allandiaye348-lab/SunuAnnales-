@@ -21,27 +21,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(process.cwd(), 'public')));
 app.use('/covers', express.static(path.resolve(process.cwd(), 'public/covers'), { maxAge: 0, etag: true }));
 
-// Route dédiée au téléchargement direct de l'archive ZIP du projet
-app.get(['/download-zip', '/api/download-zip'], (_req: Request, res: Response) => {
-  const zipPath = path.resolve(process.cwd(), 'public/sunu-annales.zip');
-  if (fs.existsSync(zipPath)) {
-    res.download(zipPath, 'sunu-annales-projet.zip');
-  } else {
-    res.status(404).json({ error: 'Archive ZIP en cours de génération, veuillez réessayer.' });
-  }
-});
-
 // Initialize DB with seed annales
 db.upsertAnnales(initialAnnales);
 
 // Ensure default demo admin and demo user exist if empty
 if (db.getAllUsers().length === 0) {
+  const adminSecret = process.env.ADMIN_PIN?.trim();
   db.createUser({
     id: 'user-admin-1',
     name: 'Administrateur Principal',
     email: 'admin@sunuannales.sn',
     phone: '+221 77 000 00 00',
-    password_hash: 'admin2026',
+    password_hash: adminSecret ? crypto.createHash('sha256').update(adminSecret).digest('hex') : crypto.randomBytes(32).toString('hex'),
     role: 'admin',
     created_at: new Date().toISOString(),
   });
@@ -93,6 +84,32 @@ function parseToken(authHeader?: string): { id: string; email: string; role: str
   } catch {
     return null;
   }
+}
+
+/**
+ * Strict server-side verification of administrator credentials.
+ * SECURITY AUDIT ENFORCEMENT:
+ * 1. Checks if the caller has a valid JWT session where role === 'admin'.
+ * 2. Checks if x-admin-key matches process.env.ADMIN_PIN.
+ * 3. CRITICAL: If process.env.ADMIN_PIN is not configured, PIN access is strictly REFUSED.
+ * 4. NEVER accepts hardcoded fallback PINs like '2026'.
+ */
+function isAuthorizedAdmin(req: Request): boolean {
+  // 1. Authenticated admin user session via JWT Bearer
+  const userPayload = parseToken(req.headers.authorization);
+  if (userPayload && userPayload.role === 'admin') {
+    return true;
+  }
+
+  // 2. Strict ADMIN_PIN environment variable verification
+  const envAdminPin = process.env.ADMIN_PIN?.trim();
+  const providedKey = (req.headers['x-admin-key'] as string)?.trim();
+
+  if (envAdminPin && envAdminPin.length > 0 && providedKey && providedKey === envAdminPin) {
+    return true;
+  }
+
+  return false;
 }
 
 // ==========================================
@@ -246,19 +263,21 @@ app.get('/api/annales', (_req: Request, res: Response) => {
   res.json(all);
 });
 
-// Endpoint direct pour télécharger le dossier data en fichier ZIP
-app.get(['/api/export/data.zip', '/data.zip', '/download/data.zip'], (_req: Request, res: Response) => {
-  const zipPath = path.resolve(process.cwd(), 'public/data.zip');
+// Endpoint direct pour télécharger le dossier data en fichier ZIP (Réservé à l'administrateur)
+app.get(['/api/export/data.zip', '/data.zip', '/download/data.zip'], (req: Request, res: Response) => {
+  if (!isAuthorizedAdmin(req)) {
+    res.status(403).json({ error: 'Accès strictement réservé à l’administrateur.' });
+    return;
+  }
+
+  const zipPath = path.resolve(process.cwd(), 'data/sunuannales-data.zip');
   try {
-    // Regenerate zip archive from latest data/database.json
+    // Regenerate zip archive from latest data/database.json securely
     execSync(`python3 -c "
 import zipfile, os
 with zipfile.ZipFile('${zipPath}', 'w', zipfile.ZIP_DEFLATED) as z:
     if os.path.exists('data/database.json'):
         z.write('data/database.json', arcname='data/database.json')
-        z.write('data/database.json', arcname='database.json')
-    if os.path.exists('.env.example'):
-        z.write('.env.example', arcname='env.example')
 "`);
   } catch (err) {
     console.error('[DATA.ZIP EXPORT ERROR]:', err);
@@ -316,10 +335,8 @@ app.get('/wp-json/wc/v3/products', (_req: Request, res: Response) => {
 
 // WooCommerce REST API Compatibility Endpoint (Orders)
 app.get('/wp-json/wc/v3/orders', (req: Request, res: Response) => {
-  const adminKey = req.headers['x-admin-key'];
-  const userPayload = parseToken(req.headers.authorization);
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026') {
-    res.status(403).json({ error: 'Accès restreint à l’API WooCommerce' });
+  if (!isAuthorizedAdmin(req)) {
+    res.status(403).json({ error: 'Accès restreint aux commandes.' });
     return;
   }
   const orders = db.getAllOrders().map(o => ({
@@ -1292,9 +1309,7 @@ app.post('/api/contact', (req: Request, res: Response) => {
 });
 
 app.get('/api/contact/messages', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs.' });
     return;
   }
@@ -1302,27 +1317,95 @@ app.get('/api/contact/messages', (req: Request, res: Response) => {
 });
 
 // ==========================================
+// 4.9 VISITOR ANALYTICS & STATS ENGINE
+// ==========================================
+app.post('/api/analytics/track', (req: Request, res: Response) => {
+  try {
+    const {
+      visitor_id,
+      session_id,
+      path,
+      referrer,
+      device_type,
+      browser,
+      os,
+      annale_id,
+      annale_title,
+      search_query,
+    } = req.body || {};
+
+    // Detect Country from headers (Vercel, Cloudflare, or fallback to Senegal)
+    const vercelCountry = req.headers['x-vercel-ip-country'] as string;
+    const cfCountry = req.headers['cf-ipcountry'] as string;
+    const countryCode = (vercelCountry || cfCountry || 'SN').toUpperCase();
+    let countryName = 'Sénégal';
+
+    if (countryCode === 'SN') countryName = 'Sénégal';
+    else if (countryCode === 'FR') countryName = 'France';
+    else if (countryCode === 'CI') countryName = 'Côte d’Ivoire';
+    else if (countryCode === 'US') countryName = 'États-Unis';
+    else if (countryCode === 'MA') countryName = 'Maroc';
+    else if (countryCode === 'CA') countryName = 'Canada';
+    else if (countryCode === 'ML') countryName = 'Mali';
+    else if (countryCode === 'GN') countryName = 'Guinée';
+    else countryName = countryCode;
+
+    // PRIVACY ENFORCEMENT (RGPD / CDP Sénégal):
+    // Never store plain raw IP addresses. Always salt and hash into a privacy-safe ID.
+    const rawIp = String(req.headers['x-forwarded-for'] || req.socket.remoteAddress || req.ip || '127.0.0.1');
+    const safeVisitorId = visitor_id && typeof visitor_id === 'string' && !visitor_id.includes('.') && !visitor_id.includes(':')
+      ? visitor_id
+      : `anon_${crypto.createHash('sha256').update(rawIp + (process.env.JWT_SECRET || 'sunu_sn_salt')).digest('hex').slice(0, 16)}`;
+
+    const visit = db.recordPageVisit({
+      visitor_id: safeVisitorId,
+      session_id: session_id || `sess-${Date.now()}`,
+      path: path || '/',
+      referrer: referrer || 'direct',
+      device_type: device_type === 'desktop' || device_type === 'tablet' ? device_type : 'mobile',
+      browser: browser || 'Navigateur web',
+      os: os || 'Système',
+      country: countryName,
+      country_code: countryCode,
+      annale_id,
+      annale_title,
+      search_query,
+      timestamp: new Date().toISOString(),
+    });
+
+    res.json({ ok: true, visit_id: visit.id });
+  } catch (err: any) {
+    console.error('Analytics tracking error:', err);
+    res.status(500).json({ error: 'Failed to record visit' });
+  }
+});
+
+// Admin-only visitor statistics endpoint (strictly protected)
+app.get('/api/admin/statistiques', (req: Request, res: Response) => {
+  if (!isAuthorizedAdmin(req)) {
+    res.status(403).json({ 
+      error: 'Accès strictement refusé. Cette ressource statistique est réservée exclusivement à l’administrateur SunuAnnales.' 
+    });
+    return;
+  }
+
+  res.json(db.getVisitorStats());
+});
+
+// ==========================================
 // 5. ADMIN DASHBOARD ROUTES
 // ==========================================
 app.get('/api/admin/stats', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  // Verify admin access
-  if (!userPayload || userPayload.role !== 'admin') {
-    // If testing without full admin token, allow if admin secret header is passed
-    const adminKey = req.headers['x-admin-key'];
-    if (adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
-      res.status(403).json({ error: 'Accès réservé aux administrateurs SunuAnnales.' });
-      return;
-    }
+  if (!isAuthorizedAdmin(req)) {
+    res.status(403).json({ error: 'Accès réservé aux administrateurs SunuAnnales.' });
+    return;
   }
 
   res.json(db.getStats());
 });
 
 app.get('/api/admin/payments', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs' });
     return;
   }
@@ -1349,9 +1432,7 @@ app.get('/api/admin/payments', (req: Request, res: Response) => {
 });
 
 app.get('/api/admin/users', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs' });
     return;
   }
@@ -1378,9 +1459,7 @@ app.get('/api/admin/users', (req: Request, res: Response) => {
 });
 
 app.get('/api/admin/purchases', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs' });
     return;
   }
@@ -1389,9 +1468,7 @@ app.get('/api/admin/purchases', (req: Request, res: Response) => {
 
 // Manual payment refund or status change by admin
 app.post('/api/admin/payments/:id/status', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs' });
     return;
   }
@@ -1435,9 +1512,7 @@ app.post('/api/admin/payments/:id/status', (req: Request, res: Response) => {
 
 // Admin route to get payment gateway settings (SaaSPay env, key status, pricing, merchant info)
 app.get('/api/admin/payment-settings', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs' });
     return;
   }
@@ -1478,9 +1553,7 @@ app.get('/api/merchant-info', (_req: Request, res: Response) => {
 
 // Admin route to update payment gateway environment and merchant info
 app.post('/api/admin/payment-settings', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if ((!userPayload || userPayload.role !== 'admin') && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs' });
     return;
   }
@@ -1523,9 +1596,7 @@ app.post('/api/admin/payment-settings', (req: Request, res: Response) => {
 
 // Admin route to upload or update a cover image for any annale/concours
 app.post('/api/admin/update-cover', (req: Request, res: Response) => {
-  const userPayload = parseToken(req.headers.authorization);
-  const adminKey = req.headers['x-admin-key'];
-  if (adminKey && adminKey !== '2026' && adminKey !== process.env.ADMIN_PIN && (!userPayload || userPayload.role !== 'admin')) {
+  if (!isAuthorizedAdmin(req)) {
     res.status(403).json({ error: 'Accès réservé aux administrateurs' });
     return;
   }

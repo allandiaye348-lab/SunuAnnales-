@@ -112,3 +112,96 @@ export interface AdminStats {
   pendingPayments: number;
   annalesSoldBreakdown: { title: string; count: number; revenue: number }[];
 }
+
+export interface PageVisit {
+  id: string;
+  visitor_id: string;
+  session_id: string;
+  path: string;
+  referrer: string;
+  device_type: 'mobile' | 'desktop' | 'tablet';
+  browser: string;
+  os: string;
+  country: string;
+  country_code: string;
+  annale_id?: string;
+  annale_title?: string;
+  search_query?: string;
+  timestamp: string;
+}
+
+export interface DayMetric {
+  date: string;
+  day_name: string;
+  visitors: number;
+  page_views: number;
+}
+
+export interface TopPageMetric {
+  path: string;
+  label: string;
+  views: number;
+  unique_visitors: number;
+  percentage: number;
+}
+
+export interface TopAnnaleMetric {
+  id: string;
+  title: string;
+  category: string;
+  views: number;
+  percentage: number;
+}
+
+export interface SearchQueryMetric {
+  query: string;
+  count: number;
+}
+
+export interface DeviceBreakdown {
+  mobile: number;
+  desktop: number;
+  tablet: number;
+  mobile_percent: number;
+  desktop_percent: number;
+  tablet_percent: number;
+}
+
+export interface CountryMetric {
+  country: string;
+  code: string;
+  flag: string;
+  count: number;
+  percent: number;
+}
+
+export interface LiveVisitor {
+  id: string;
+  path: string;
+  device_type: 'mobile' | 'desktop' | 'tablet';
+  country: string;
+  country_code: string;
+  time_ago: string;
+  timestamp: string;
+}
+
+export interface VisitorStats {
+  visitors_today: number;
+  visitors_yesterday: number;
+  visitors_this_week: number;
+  visitors_this_month: number;
+  total_visitors: number;
+  total_page_views: number;
+  active_visitors_now: number;
+  visitors_growth_today_vs_yesterday: number;
+  chart_7_days: DayMetric[];
+  chart_30_days: DayMetric[];
+  top_pages: TopPageMetric[];
+  top_annales: TopAnnaleMetric[];
+  top_searches: SearchQueryMetric[];
+  device_breakdown: DeviceBreakdown;
+  country_breakdown: CountryMetric[];
+  recent_live_feed: LiveVisitor[];
+  last_updated: string;
+}
+
