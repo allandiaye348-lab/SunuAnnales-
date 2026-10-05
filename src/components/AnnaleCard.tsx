@@ -1,7 +1,7 @@
 import React from 'react';
 import { Annale } from '../types';
 import { downloadAnnalePdf } from '../utils/pdfDownloader';
-import { ShieldCheck, BookOpen, CheckCircle2, ShoppingBag, Eye, Sparkles, Award, Clock, Camera, Download } from 'lucide-react';
+import { ShieldCheck, BookOpen, CheckCircle2, ShoppingBag, Eye, Sparkles, Award, Clock, Download } from 'lucide-react';
 
 interface AnnaleCardProps {
   annale: Annale;
@@ -21,7 +21,7 @@ export const AnnaleCard: React.FC<AnnaleCardProps> = ({
   onOpenReader,
   onPreview,
   onOpen3D,
-  onUploadCover,
+  onUploadCover: _onUploadCover,
 }) => {
   return (
     <div className="relative group bg-slate-900/90 rounded-3xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-emerald-950/30">
@@ -61,25 +61,6 @@ export const AnnaleCard: React.FC<AnnaleCardProps> = ({
               <Award className="w-3 h-3" />
               {annale.badge}
             </span>
-            {onUploadCover && (
-              <label
-                className="p-1 rounded-lg text-slate-500 hover:text-emerald-400 hover:bg-slate-800 cursor-pointer transition"
-                title="Remplacer la photo officielle (Administrateur)"
-              >
-                <Camera className="w-3.5 h-3.5" />
-                <input
-                  type="file"
-                  accept="image/*"
-                  className="hidden"
-                  onChange={(e) => {
-                    const file = e.target.files?.[0];
-                    if (file) {
-                      onUploadCover(annale.id, file);
-                    }
-                  }}
-                />
-              </label>
-            )}
           </div>
         </div>
 
