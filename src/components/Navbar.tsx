@@ -122,8 +122,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className="flex items-center gap-2 sm:gap-3 cursor-pointer group shrink-0"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-emerald-600 via-emerald-700 to-teal-900 flex items-center justify-center text-white shadow-lg shadow-emerald-900/40 border border-emerald-500/30 group-hover:scale-105 transition shrink-0">
-                <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 text-amber-300" />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-blue-700 to-slate-900 flex items-center justify-center text-white shadow-lg shadow-blue-950/40 border border-blue-500/40 group-hover:scale-105 transition shrink-0 overflow-hidden p-0.5">
+                <img src="/favicon.svg" alt="SunuAnnales Logo" className="w-full h-full object-contain rounded-lg" />
               </div>
               <div>
                 <div className="flex items-center">

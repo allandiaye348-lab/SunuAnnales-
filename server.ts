@@ -21,6 +21,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(process.cwd(), 'public')));
 app.use('/covers', express.static(path.resolve(process.cwd(), 'public/covers'), { maxAge: 0, etag: true }));
 
+// Route dédiée au téléchargement direct de l'archive ZIP du projet
+app.get(['/download-zip', '/api/download-zip'], (_req: Request, res: Response) => {
+  const zipPath = path.resolve(process.cwd(), 'public/sunu-annales.zip');
+  if (fs.existsSync(zipPath)) {
+    res.download(zipPath, 'sunu-annales-projet.zip');
+  } else {
+    res.status(404).json({ error: 'Archive ZIP en cours de génération, veuillez réessayer.' });
+  }
+});
+
 // Initialize DB with seed annales
 db.upsertAnnales(initialAnnales);
 

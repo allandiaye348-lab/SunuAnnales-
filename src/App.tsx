@@ -830,9 +830,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold">
-                  SA
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-lg bg-blue-900 border border-blue-500/40 flex items-center justify-center text-white overflow-hidden p-0.5 shadow-md">
+                  <img src="/favicon.svg" alt="SunuAnnales Logo" className="w-full h-full object-contain rounded-md" />
                 </div>
                 <span className="text-base font-bold text-white font-['Cabinet_Grotesk']">
                   SunuAnnales
@@ -927,7 +927,15 @@ export default function App() {
           <div className="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-3">
             <p>© 2026 SunuAnnales SN SARL. Tous droits réservés. République du Sénégal.</p>
             <div className="flex items-center gap-4">
-              <p>Conforme aux réglementations UEMOA et protection des données personnelles.</p>
+              <a
+                href="/download-zip"
+                download="sunu-annales-projet.zip"
+                className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-emerald-400 border border-slate-800 hover:border-slate-700 text-[10px] font-semibold transition flex items-center gap-1.5 shadow-sm"
+                title="Télécharger l'archive ZIP complète du projet"
+              >
+                <span>📦 Télécharger ZIP</span>
+              </a>
+              <p className="hidden md:block">Conforme aux réglementations UEMOA et protection des données personnelles.</p>
               <button
                 onClick={() => setShowAdminDashboard(true)}
                 className="text-slate-700 hover:text-slate-400 transition text-[10px]"
