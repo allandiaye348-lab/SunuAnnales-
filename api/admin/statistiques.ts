@@ -1,117 +1,255 @@
-// Vercel Serverless Function for Admin Statistics
+import crypto from 'crypto';
+import fs from 'fs';
+import path from 'path';
+
+function parseCookies(cookieHeader?: string): Record<string, string> {
+  const list: Record<string, string> = {};
+  if (!cookieHeader) return list;
+  cookieHeader.split(';').forEach(cookie => {
+    const parts = cookie.split('=');
+    if (parts.length >= 2) {
+      list[parts[0].trim()] = decodeURIComponent(parts.slice(1).join('=').trim());
+    }
+  });
+  return list;
+}
+
+function verifyToken(token: string, secret: string, adminEmail: string): boolean {
+  if (!token || !token.includes('.')) return false;
+  const [str, sig] = token.split('.');
+  if (!str || !sig) return false;
+  const expectedSig = crypto.createHmac('sha256', secret).update(str).digest('base64url');
+  if (sig !== expectedSig) return false;
+  try {
+    const payload = JSON.parse(Buffer.from(str, 'base64url').toString('utf-8'));
+    if (!payload || payload.role !== 'admin') return false;
+    if (Date.now() > payload.exp) return false;
+    if (payload.email !== adminEmail) return false;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export default function handler(req: any, res: any) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, x-admin-key, Authorization');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
 
-  // Security check: verify admin PIN from environment variable ONLY
-  const adminPinEnv = process.env.ADMIN_PIN?.trim();
-  const providedKey = (req.headers['x-admin-key'] as string)?.trim();
-  const authHeader = req.headers['authorization'];
+  const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || 'allandiaye348@gmail.com').trim().toLowerCase();
+  const SESSION_SECRET = process.env.SESSION_SECRET || 'sunu_admin_secret_session_key_2026';
 
-  // If ADMIN_PIN is not configured on the server/Vercel, refuse access completely
-  if (!adminPinEnv) {
-    return res.status(403).json({
-      error: 'Accès administrateur non configuré sur le serveur (ADMIN_PIN manquant). Veuillez configurer ADMIN_PIN dans les variables d’environnement.'
+  const cookies = parseCookies(req.headers.cookie);
+  const cookieToken = cookies.admin_session;
+  const authHeader = req.headers.authorization;
+  const bearerToken = authHeader?.startsWith('Bearer ') ? authHeader.substring(7).trim() : null;
+  const token = cookieToken || bearerToken;
+
+  if (!token || !verifyToken(token, SESSION_SECRET, ADMIN_EMAIL)) {
+    return res.status(401).json({
+      error: 'Accès strictement refusé. Cette ressource statistique est réservée exclusivement à l’administrateur SunuAnnales.',
     });
   }
 
-  const isValidAdmin = 
-    (providedKey && providedKey === adminPinEnv) ||
-    (authHeader && authHeader.includes('admin'));
-
-  if (!isValidAdmin) {
-    return res.status(403).json({
-      error: 'Accès strictement refusé. Code secret ADMIN_PIN incorrect ou invalide.'
-    });
+  // Load real visits from database
+  let rawVisits: any[] = [];
+  try {
+    const dbPath = path.resolve(process.cwd(), 'data/database.json');
+    if (fs.existsSync(dbPath)) {
+      const dbContent = JSON.parse(fs.readFileSync(dbPath, 'utf-8'));
+      rawVisits = dbContent.page_visits || [];
+    }
+  } catch (err) {
+    console.warn('Could not read visits from data/database.json:', err);
   }
 
-  // Generate real-time computed statistics
+  const visits = rawVisits.filter(v => !v.id?.startsWith('visit-seed-'));
   const now = new Date();
+  const nowMs = now.getTime();
+
+  // Time boundaries
+  const todayStr = now.toISOString().slice(0, 10);
+  const yesterdayDate = new Date(nowMs - 86400000);
+  const yesterdayStr = yesterdayDate.toISOString().slice(0, 10);
+  const sevenDaysAgoMs = nowMs - 7 * 86400000;
+  const thirtyDaysAgoMs = nowMs - 30 * 86400000;
+  const tenMinutesAgoMs = nowMs - 10 * 60 * 1000;
+
+  const todayVisits = visits.filter(v => v.timestamp?.startsWith(todayStr));
+  const yesterdayVisits = visits.filter(v => v.timestamp?.startsWith(yesterdayStr));
+  const weekVisits = visits.filter(v => new Date(v.timestamp).getTime() >= sevenDaysAgoMs);
+  const monthVisits = visits.filter(v => new Date(v.timestamp).getTime() >= thirtyDaysAgoMs);
+  const realTimeVisits = visits.filter(v => new Date(v.timestamp).getTime() >= tenMinutesAgoMs);
+
+  const uniqueToday = new Set(todayVisits.map(v => v.visitor_id)).size;
+  const uniqueYesterday = new Set(yesterdayVisits.map(v => v.visitor_id)).size;
+  const unique7Days = new Set(weekVisits.map(v => v.visitor_id)).size;
+  const unique30Days = new Set(monthVisits.map(v => v.visitor_id)).size;
+  const uniqueTotal = new Set(visits.map(v => v.visitor_id)).size;
+  const activeVisitorsNow = new Set(realTimeVisits.map(v => v.visitor_id)).size;
+
+  const growthToday = uniqueYesterday > 0
+    ? Math.round(((uniqueToday - uniqueYesterday) / uniqueYesterday) * 100)
+    : (uniqueToday > 0 ? 100 : 0);
+
   const dayNames = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
 
-  const getMetrics = (count: number) => {
-    const list = [];
-    for (let i = count - 1; i >= 0; i--) {
-      const d = new Date(Date.now() - i * 86400000);
-      const dateStr = d.toISOString().slice(0, 10);
-      const visitors = Math.floor(40 + (count - i) * 3 + (Math.sin(i) * 10));
-      list.push({
-        date: dateStr,
+  const chartToday = Array.from({ length: 24 }, (_, hour) => {
+    const hPrefix = `${todayStr}T${hour.toString().padStart(2, '0')}`;
+    const hVisits = todayVisits.filter(v => v.timestamp?.startsWith(hPrefix));
+    return {
+      date: `${hour.toString().padStart(2, '0')}h`,
+      day_name: `${hour.toString().padStart(2, '0')}h00`,
+      visitors: new Set(hVisits.map(v => v.visitor_id)).size,
+      page_views: hVisits.length,
+    };
+  });
+
+  const getDailyMetrics = (daysCount: number) => {
+    return Array.from({ length: daysCount }, (_, idx) => {
+      const i = daysCount - 1 - idx;
+      const d = new Date(nowMs - i * 86400000);
+      const dStr = d.toISOString().slice(0, 10);
+      const dayVisits = visits.filter(v => v.timestamp?.startsWith(dStr));
+      return {
+        date: dStr,
         day_name: dayNames[d.getDay()],
-        visitors,
-        page_views: Math.floor(visitors * 2.8),
-      });
-    }
-    return list;
+        visitors: new Set(dayVisits.map(v => v.visitor_id)).size,
+        page_views: dayVisits.length,
+      };
+    });
   };
 
-  const chart7 = getMetrics(7);
-  const chart30 = getMetrics(30);
+  const chart7Days = getDailyMetrics(7);
+  const chart30Days = getDailyMetrics(30);
+  const chart90Days = getDailyMetrics(90);
+
+  // Top Pages
+  const pageCounts: Record<string, { views: number; visitors: Set<string> }> = {};
+  for (const v of visits) {
+    const p = v.path || '/';
+    if (!pageCounts[p]) pageCounts[p] = { views: 0, visitors: new Set() };
+    pageCounts[p].views++;
+    pageCounts[p].visitors.add(v.visitor_id);
+  }
+  const totalViews = Math.max(1, visits.length);
+  const topPagesList = Object.entries(pageCounts)
+    .map(([path, data]) => {
+      let label = 'Accueil';
+      if (path.includes('police')) label = 'Police';
+      else if (path.includes('gendarmerie')) label = 'Gendarmerie';
+      else if (path.includes('douane')) label = 'Douane';
+      else if (path.includes('greffe')) label = 'Greffe';
+      else if (path.includes('ena')) label = 'ENA';
+      else if (path.includes('contact')) label = 'Contact';
+      else if (path.includes('apropos')) label = 'À propos';
+      return { page: label, views: data.views };
+    })
+    .sort((a, b) => b.views - a.views)
+    .slice(0, 10);
+
+  // Device Breakdown
+  let mobileCount = 0;
+  let desktopCount = 0;
+  let tabletCount = 0;
+  for (const v of visits) {
+    if (v.device_type === 'mobile') mobileCount++;
+    else if (v.device_type === 'tablet') tabletCount++;
+    else desktopCount++;
+  }
+  const totalDevices = mobileCount + desktopCount + tabletCount;
+  const deviceBreakdown = {
+    mobile: mobileCount,
+    desktop: desktopCount,
+    tablet: tabletCount,
+    mobile_percent: totalDevices > 0 ? Math.round((mobileCount / totalDevices) * 100) : 0,
+    desktop_percent: totalDevices > 0 ? Math.round((desktopCount / totalDevices) * 100) : 0,
+    tablet_percent: totalDevices > 0 ? Math.round((tabletCount / totalDevices) * 100) : 0,
+  };
+
+  // Traffic Sources
+  const sourceMap: Record<string, number> = {
+    'Google': 0,
+    'TikTok': 0,
+    'Facebook': 0,
+    'Instagram': 0,
+    'Accès direct': 0,
+    'Autres sites': 0,
+  };
+  for (const v of visits) {
+    const ref = (v.referrer || '').toLowerCase();
+    if (!ref || ref === 'direct' || ref.includes('localhost')) {
+      sourceMap['Accès direct']++;
+    } else if (ref.includes('google')) {
+      sourceMap['Google']++;
+    } else if (ref.includes('tiktok')) {
+      sourceMap['TikTok']++;
+    } else if (ref.includes('facebook') || ref.includes('fb.com')) {
+      sourceMap['Facebook']++;
+    } else if (ref.includes('instagram')) {
+      sourceMap['Instagram']++;
+    } else {
+      sourceMap['Autres sites']++;
+    }
+  }
+  const trafficSources = Object.entries(sourceMap)
+    .filter(([_, count]) => count > 0)
+    .map(([name, count]) => ({
+      name,
+      count,
+      percent: visits.length > 0 ? Math.round((count / visits.length) * 100) : 0,
+    }))
+    .sort((a, b) => b.count - a.count);
+
+  // Recent Activity
+  const recentActivity = visits
+    .slice(-20)
+    .reverse()
+    .map(v => {
+      const d = new Date(v.timestamp);
+      const timeStr = d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+      let pageName = 'Accueil';
+      if (v.path?.includes('police')) pageName = 'Police';
+      else if (v.path?.includes('gendarmerie')) pageName = 'Gendarmerie';
+      else if (v.path?.includes('douane')) pageName = 'Douane';
+      else if (v.path?.includes('greffe')) pageName = 'Greffe';
+      else if (v.path?.includes('ena')) pageName = 'ENA';
+      const devName = v.device_type === 'mobile' ? 'Mobile' : (v.device_type === 'tablet' ? 'Tablette' : 'Ordinateur');
+      return {
+        time: timeStr,
+        page: pageName,
+        device: devName,
+        country: v.country || 'Sénégal',
+        timestamp: v.timestamp,
+        text: `${timeStr} — ${pageName} — ${devName} — ${v.country || 'Sénégal'}`,
+      };
+    });
 
   return res.status(200).json({
-    visitors_today: chart7[chart7.length - 1].visitors,
-    visitors_yesterday: chart7[chart7.length - 2]?.visitors || 42,
-    visitors_this_week: chart7.reduce((sum, d) => sum + d.visitors, 0),
-    visitors_this_month: chart30.reduce((sum, d) => sum + d.visitors, 0),
-    total_visitors: 1845,
-    total_page_views: 5210,
-    active_visitors_now: 4,
-    visitors_growth_today_vs_yesterday: 14,
-    chart_7_days: chart7,
-    chart_30_days: chart30,
-    top_pages: [
-      { path: '/', label: 'Accueil & Catalogue Officiel', views: 2450, unique_visitors: 1120, percentage: 47 },
-      { path: '/annale/annale-police-sn', label: 'Concours Police — Sénégal', views: 820, unique_visitors: 410, percentage: 16 },
-      { path: '/annale/annale-douane-sn', label: 'Concours Douane — Sénégal', views: 640, unique_visitors: 330, percentage: 12 },
-      { path: '/annale/annale-gendarmerie-sn', label: 'Concours Gendarmerie — Sénégal', views: 510, unique_visitors: 260, percentage: 10 },
-      { path: '/apropos', label: 'Page À propos & Vision', views: 420, unique_visitors: 210, percentage: 8 },
-      { path: '/contact', label: 'Page Contact & Support', views: 260, unique_visitors: 150, percentage: 5 },
-    ],
-    top_annales: [
-      { id: 'annale-police-sn', title: 'Concours Police — Fascicule Renforcé Tome 1', category: 'Police', views: 820, percentage: 16 },
-      { id: 'annale-douane-sn', title: 'Concours Douane — Préparation Intensive Tome 1', category: 'Douane', views: 640, percentage: 12 },
-      { id: 'annale-gendarmerie-sn', title: 'Concours Gendarmerie — Fascicule Renforcé Tome 1', category: 'Gendarmerie', views: 510, percentage: 10 },
-      { id: 'annale-ena-sn', title: 'Concours ENA — Cycles A & B Tome 1', category: 'ENA', views: 390, percentage: 8 },
-      { id: 'annale-ensoa-sn', title: 'Concours ENSOA — Fascicule Reconstruit', category: 'ENSOA', views: 310, percentage: 6 },
-      { id: 'annale-bts-logistique-sn', title: 'BTS Gestion de la Chaîne d’Approvisionnement et Logistique — Tome 1', category: 'BTS', views: 280, percentage: 5 },
-    ],
-    top_searches: [
-      { query: 'police', count: 184 },
-      { query: 'douane', count: 142 },
-      { query: 'gendarmerie', count: 128 },
-      { query: 'bts', count: 110 },
-      { query: 'ena', count: 86 },
-      { query: 'crem', count: 72 },
-      { query: 'fastef', count: 65 },
-      { query: 'logistique', count: 54 },
-    ],
-    device_breakdown: {
-      mobile: 1440,
-      desktop: 370,
-      tablet: 35,
-      mobile_percent: 78,
-      desktop_percent: 20,
-      tablet_percent: 2,
-    },
-    country_breakdown: [
-      { country: 'Sénégal', code: 'SN', flag: '🇸🇳', count: 1620, percent: 88 },
-      { country: 'France', code: 'FR', flag: '🇫🇷', count: 95, percent: 5 },
-      { country: 'Côte d’Ivoire', code: 'CI', flag: '🇨🇮', count: 55, percent: 3 },
-      { country: 'Maroc', code: 'MA', flag: '🇲🇦', count: 35, percent: 2 },
-      { country: 'Canada', code: 'CA', flag: '🇨🇦', count: 20, percent: 1 },
-      { country: 'Mali', code: 'ML', flag: '🇲🇱', count: 20, percent: 1 },
-    ],
-    recent_live_feed: [
-      { id: 'live-1', path: '/', device_type: 'mobile', country: 'Sénégal', country_code: 'SN', time_ago: 'Il y a 14s', timestamp: now.toISOString() },
-      { id: 'live-2', path: '/annale/annale-police-sn', device_type: 'mobile', country: 'Sénégal', country_code: 'SN', time_ago: 'Il y a 42s', timestamp: now.toISOString() },
-      { id: 'live-3', path: '/annale/annale-douane-sn', device_type: 'desktop', country: 'Sénégal', country_code: 'SN', time_ago: 'Il y a 1min', timestamp: now.toISOString() },
-      { id: 'live-4', path: '/apropos', device_type: 'mobile', country: 'France', country_code: 'FR', time_ago: 'Il y a 2min', timestamp: now.toISOString() },
-    ],
-    last_updated: now.toISOString(),
+    visitors_today: uniqueToday,
+    visitors_yesterday: uniqueYesterday,
+    visitors_7_days: unique7Days,
+    visitors_this_week: unique7Days,
+    visitors_30_days: unique30Days,
+    visitors_this_month: unique30Days,
+    visitors_total: uniqueTotal,
+    total_visitors: uniqueTotal,
+    page_views: visits.length,
+    total_page_views: visits.length,
+    active_visitors_now: activeVisitorsNow,
+    visitors_growth_today_vs_yesterday: growthToday,
+    chart_today: chartToday,
+    chart_7_days: chart7Days,
+    chart_30_days: chart30Days,
+    chart_90_days: chart90Days,
+    top_pages_list: topPagesList,
+    device_breakdown: deviceBreakdown,
+    traffic_sources: trafficSources,
+    recent_activity: recentActivity,
+    last_updated: new Date().toISOString(),
   });
 }

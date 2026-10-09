@@ -266,29 +266,36 @@ export class SaaSPayGateway implements PaymentGateway {
           },
         });
         const fullData = await fullRes.json();
-        const session = fullData.data || {};
-        const isPaid = session.status === 'PAID' || session.status === 'SUCCESS';
+        const session = fullData.data || fullData || {};
+        const rawStatus = (session.status || session.transaction_status || '').toUpperCase();
+        const isPaid = rawStatus === 'PAID' || rawStatus === 'SUCCESS' || rawStatus === 'COMPLETED';
+        const isFailed = rawStatus === 'FAILED' || rawStatus === 'CANCELLED' || rawStatus === 'EXPIRED';
         const sessionAmount = Number(session.amount);
 
         return {
           verified: isPaid,
-          status: isPaid ? 'paid' : (session.status === 'CANCELLED' ? 'failed' : 'pending'),
+          status: isPaid ? 'paid' : (isFailed ? 'failed' : 'pending'),
           transaction_ref,
           provider_reference: session.transaction || session.id,
           amount: sessionAmount,
           currency: session.currency,
+          failure_reason: isFailed ? 'Solde insuffisant sur votre compte Wave / Orange Money ou transaction refusée par l’opérateur.' : undefined,
           raw_response: fullData,
         };
       }
 
       const statusData = await response.json();
-      const isPaid = statusData.status === 'PAID' || statusData.transaction_status === 'SUCCESS';
+      const dataObj = statusData.data || statusData || {};
+      const rawStatus = (dataObj.status || dataObj.transaction_status || '').toUpperCase();
+      const isPaid = rawStatus === 'PAID' || rawStatus === 'SUCCESS' || rawStatus === 'COMPLETED';
+      const isFailed = rawStatus === 'FAILED' || rawStatus === 'CANCELLED' || rawStatus === 'EXPIRED';
 
       return {
         verified: isPaid,
-        status: isPaid ? 'paid' : 'pending',
+        status: isPaid ? 'paid' : (isFailed ? 'failed' : 'pending'),
         transaction_ref,
-        provider_reference: statusData.transaction_id || statusData.id,
+        provider_reference: dataObj.transaction_id || dataObj.id,
+        failure_reason: isFailed ? 'Solde insuffisant sur votre compte Wave / Orange Money ou transaction refusée par l’opérateur.' : undefined,
         raw_response: statusData,
       };
     } catch (err: any) {

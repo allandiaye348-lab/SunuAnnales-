@@ -54,6 +54,9 @@ export interface Annale {
   is_custom_upload?: boolean;
   user_uploaded_at?: string;
   cover_source?: string;
+  pdf_path?: string;
+  pdf_url?: string;
+  has_original_pdf?: boolean;
   year?: number;
   created_at?: string;
   wc_product_id?: number;
@@ -188,20 +191,29 @@ export interface LiveVisitor {
 export interface VisitorStats {
   visitors_today: number;
   visitors_yesterday: number;
+  visitors_7_days: number;
   visitors_this_week: number;
+  visitors_30_days: number;
   visitors_this_month: number;
+  visitors_total: number;
   total_visitors: number;
+  page_views: number;
   total_page_views: number;
   active_visitors_now: number;
   visitors_growth_today_vs_yesterday: number;
+  chart_today: DayMetric[];
   chart_7_days: DayMetric[];
   chart_30_days: DayMetric[];
+  chart_90_days: DayMetric[];
   top_pages: TopPageMetric[];
+  top_pages_list: { page: string; views: number }[];
   top_annales: TopAnnaleMetric[];
   top_searches: SearchQueryMetric[];
   device_breakdown: DeviceBreakdown;
+  traffic_sources: { name: string; count: number; percent: number }[];
   country_breakdown: CountryMetric[];
   recent_live_feed: LiveVisitor[];
+  recent_activity: { time: string; page: string; device: string; country: string; timestamp: string; text: string }[];
   last_updated: string;
 }
 

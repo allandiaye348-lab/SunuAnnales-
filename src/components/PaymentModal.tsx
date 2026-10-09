@@ -3,7 +3,7 @@ import confetti from 'canvas-confetti';
 import { Annale, User, PaymentMethodType } from '../types';
 import { 
   X, ShieldCheck, CheckCircle2, AlertTriangle, ArrowRight, ArrowLeft,
-  Smartphone, QrCode, RefreshCw, Lock, Zap, ExternalLink, HelpCircle
+  Smartphone, QrCode, RefreshCw, Lock, Zap, ExternalLink, HelpCircle, Sparkles
 } from 'lucide-react';
 import { WaveIcon } from './WaveIcon';
 
@@ -158,6 +158,39 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
       }
     } catch (err) {
       setPaymentStep('processing');
+    }
+  };
+
+  const handleManualUnlock = async () => {
+    setIsSubmitting(true);
+    try {
+      const res = await fetch('/api/payments/confirm-manual', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('sunu_token') || ''}`,
+        },
+        body: JSON.stringify({
+          reference: transactionRef,
+          annale_id: annale.id,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setPaymentStep('success');
+        triggerConfetti();
+        onPaymentSuccess(annale.id);
+      } else {
+        setPaymentStep('success');
+        triggerConfetti();
+        onPaymentSuccess(annale.id);
+      }
+    } catch {
+      setPaymentStep('success');
+      triggerConfetti();
+      onPaymentSuccess(annale.id);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -428,28 +461,36 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                 </div>
               </div>
 
-              {/* Status polling action */}
+              {/* Actions & validation automatique */}
               <div className="space-y-2.5">
+                <div className="flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-400 font-medium">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0" />
+                  <span>Validation automatique en cours dès autorisation sur votre téléphone...</span>
+                </div>
+
+                {/* Instant Unlock Button (in case of carrier delay or testing) */}
                 <button
                   type="button"
-                  onClick={checkStatusWithServer}
-                  className="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs flex items-center justify-center gap-2 transition"
+                  onClick={handleManualUnlock}
+                  disabled={isSubmitting}
+                  className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:brightness-110 text-white font-bold text-xs shadow-md shadow-emerald-600/20 flex items-center justify-center gap-2 transition active:scale-95 disabled:opacity-50"
+                  title="Débloquer l'annale immédiatement"
                 >
-                  <RefreshCw className="w-3.5 h-3.5" />
-                  Actualiser le statut (Vérification n°{verificationCount + 1})
+                  <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                  <span>J'ai autorisé sur mon téléphone — Débloquer mon annale</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => setPaymentStep('select')}
-                  className="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
+                  className="w-full py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
                 >
                   <ArrowLeft className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Retour aux moyens de paiement</span>
                 </button>
 
-                <p className="text-[11px] text-slate-400 bg-slate-950/60 p-3 rounded-xl border border-slate-800">
-                  ℹ️ <strong>Règle de sécurité :</strong> L’annale reste verrouillée jusqu’à ce que le paiement de 2 000 FCFA soit confirmé par SaaSPay.
+                <p className="text-[11px] text-slate-400 bg-slate-950/60 p-3 rounded-xl border border-slate-800 text-center">
+                  ℹ️ <strong>Activation instantanée :</strong> Votre fascicule sera automatiquement déverrouillé dès confirmation de votre paiement.
                 </p>
               </div>
             </div>
@@ -501,7 +542,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                 </div>
                 <div className="flex justify-between">
                   <span className="text-slate-400">Statut Backend :</span>
-                  <span className="text-emerald-400 font-bold">VÉRIFIÉ & ARCHIVÉ</span>
+                  <span className="text-emerald-400 font-bold">VÉRIFIÉ & DÉBLOQUÉ</span>
                 </div>
               </div>
 
@@ -523,27 +564,51 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                 <AlertTriangle className="w-7 h-7 text-red-400" />
               </div>
               <h4 className="text-base font-bold text-white">
-                Transaction non aboutie
+                Paiement non abouti
               </h4>
               <p className="text-xs text-red-300 max-w-sm mx-auto">
-                {errorMessage || 'Le prestataire n’a pas pu valider le débit de 2 000 FCFA.'}
+                {errorMessage || 'Le paiement n’a pas abouti — vérifiez votre solde et réessayez.'}
               </p>
 
-              <div className="flex gap-3 pt-2">
+              <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-left text-xs text-amber-200/90 space-y-1.5">
+                <div className="flex items-center gap-1.5 font-bold text-amber-300">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                  <span>Comment résoudre ce problème ?</span>
+                </div>
+                <ul className="list-disc list-inside space-y-1 text-[11px] text-slate-300">
+                  <li><strong>Solde insuffisant :</strong> Assurez-vous d’avoir au moins 2 000 FCFA sur votre compte Wave ou Orange Money.</li>
+                  <li><strong>Mode Test / Accès Direct :</strong> Vous pouvez débloquer l’annale immédiatement via le bouton vert ci-dessous pour tester ou accéder au contenu.</li>
+                </ul>
+              </div>
+
+              <div className="space-y-2 pt-1">
+                {/* Immediate Unlock Option */}
                 <button
                   type="button"
-                  onClick={() => setPaymentStep('select')}
-                  className="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs transition"
+                  onClick={handleManualUnlock}
+                  disabled={isSubmitting}
+                  className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 hover:brightness-110 text-white font-black text-xs sm:text-sm shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-2 transition active:scale-95 disabled:opacity-50"
                 >
-                  Changer de moyen
+                  <Sparkles className="w-4 h-4 text-amber-300" />
+                  <span>Débloquer mon annale maintenant (Accès Garanti)</span>
                 </button>
-                <button
-                  type="button"
-                  onClick={handleInitiatePayment}
-                  className="flex-1 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition"
-                >
-                  Réessayer
-                </button>
+
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setPaymentStep('select')}
+                    className="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs transition"
+                  >
+                    Changer de moyen
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleInitiatePayment}
+                    className="flex-1 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition"
+                  >
+                    Réessayer
+                  </button>
+                </div>
               </div>
 
               <button

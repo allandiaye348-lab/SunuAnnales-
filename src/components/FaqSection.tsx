@@ -48,7 +48,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-slate-950 border-b border-slate-800">
+    <section className="py-16 bg-slate-950/40 backdrop-blur-sm border-b border-slate-800/80">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold">

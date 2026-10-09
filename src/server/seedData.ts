@@ -1,6 +1,7 @@
 import { Annale } from './db.js';
 import { additionalAnnales } from './newAnnalesData.js';
 import { additionalAnnales2 } from './moreAnnalesData.js';
+import { police320Exercises, police4Simulations } from './policeExercisesData.js';
 
 const baseAnnales: Annale[] = [
   {
@@ -38,49 +39,14 @@ const baseAnnales: Annale[] = [
       { title: "11. Préparation physique", count: 10, description: "Gestion de l'endurance, vitesse, récupération et hydratation." },
       { title: "12. Oral et entretien avec le jury", count: 15, description: "Motivation en 60 secondes, gestion du stress, posture et éthique." }
     ],
-    exam_simulations: [
-      { title: "Concours Blanc 1 — Écrit équilibré", duration: "2h30", questions_count: 10 },
-      { title: "Concours Blanc 2 — Droit, institutions et logique", duration: "2h00", questions_count: 10 },
-      { title: "Concours Blanc 3 — Culture, police et expression", duration: "2h00", questions_count: 10 },
-      { title: "Concours Blanc 4 — Simulation finale intégrale", duration: "3h00", questions_count: 10 }
-    ],
-    sample_exercises: [
-      { id: 1, section: "Français", question: "Corrigez : « Les candidats doit remettre leurs dossiers avant la date limite. »", answer_preview: "Correction : « Les candidats doivent remettre leurs dossiers avant la date limite. » Le sujet pluriel impose le verbe au pluriel." },
-      { id: 41, section: "Mathématiques", question: "Un candidat obtient 18 points sur 27. Calculez son pourcentage de réussite.", answer_preview: "Correction : (18 / 27) × 100 = 66,7 % de réussite." },
-      { id: 174, section: "Institutions", question: "Selon la présentation officielle, quelles sont deux missions générales de la Police nationale ?", answer_preview: "Correction : La protection des personnes et des biens, ainsi que le maintien et le rétablissement de l’ordre public." }
-    ],
-    protected_exercises: [
-      { id: 1, section: "Français", question: "Corrigez : « Les candidats doit remettre leurs dossiers avant la date limite. »", answer: "Correction : « Les candidats doivent remettre leurs dossiers avant la date limite. » Le sujet pluriel « les candidats » impose « doivent »." },
-      { id: 2, section: "Français", question: "Mettez au discours indirect : Le responsable dit : « Je vérifierai les pièces demain. »", answer: "Correction : Le responsable dit qu’il vérifiera les pièces le lendemain. Le futur peut rester au futur après un verbe introducteur au présent." },
-      { id: 3, section: "Français", question: "Donnez un synonyme de « impartial » dans le contexte d’un agent public.", answer: "Correction : Neutre, équitable ou objectif. L’idée fondamentale est l’absence de favoritisme." },
-      { id: 4, section: "Français", question: "Expliquez la différence entre « quoique » et « quoi que ».", answer: "Correction : « Quoique » est une conjonction signifiant « bien que » ; « quoi que » signifie « quelle que soit la chose que » et est suivi d’une proposition." },
-      { id: 5, section: "Français", question: "Transformez en phrase passive : « Les agents contrôlent les documents. »", answer: "Correction : « Les documents sont contrôlés par les agents. » Le complément d’objet direct devient sujet." },
-      { id: 6, section: "Français", question: "Identifiez la fonction de « avec rigueur » dans : « Le candidat répond avec rigueur. »", answer: "Correction : « Avec rigueur » est un complément circonstanciel de manière : il précise la façon dont le candidat répond." },
-      { id: 16, section: "Français", question: "Réécrivez en style administratif : « Envoyez-moi vite les papiers. »", answer: "Correction : « Je vous prie de bien vouloir transmettre les pièces requises dans les meilleurs délais. »" },
-      { id: 41, section: "Mathématiques", question: "Un candidat obtient 18 points sur 27. Calculez son pourcentage de réussite.", answer: "Correction : 18/27 × 100 = 66,7 %." },
-      { id: 51, section: "Mathématiques", question: "Un équipement coûte 24 000 F CFA avant une réduction de 15 %. Quel est son prix après réduction ?", answer: "Correction : Réduction = 24 000 × 0,15 = 3 600 F CFA. Prix final = 20 400 F CFA." },
-      { id: 67, section: "Mathématiques", question: "Un véhicule parcourt 120 km à une vitesse moyenne de 25 km/h. Calculez la durée du trajet.", answer: "Correction : Temps = distance/vitesse = 120 / 25 = 4,80 h, soit 4 h 48 min." },
-      { id: 76, section: "Histoire du Sénégal", question: "Quel événement marque l’indépendance du Sénégal en 1960 ?", answer: "Correction : Le Sénégal accède à l’indépendance en 1960, après l’éclatement de la Fédération du Mali (août 1960)." },
-      { id: 77, section: "Histoire du Sénégal", question: "Qui fut le premier président de la République du Sénégal indépendant ?", answer: "Correction : Léopold Sédar Senghor (1960–1980)." },
-      { id: 78, section: "Histoire du Sénégal", question: "Quel rôle historique est associé à l’île de Gorée ?", answer: "Correction : Elle constitue un lieu mondial majeur de mémoire de la traite transatlantique et de l’histoire coloniale." },
-      { id: 87, section: "Histoire du Sénégal", question: "Quel rôle a joué Blaise Diagne dans l’histoire politique du Sénégal ?", answer: "Correction : Il fut une figure politique majeure et le premier député noir africain élu à la Chambre des députés française (1914)." },
-      { id: 88, section: "Histoire du Sénégal", question: "Pourquoi les Quatre Communes sont-elles importantes ?", answer: "Correction : Saint-Louis, Gorée, Rufisque et Dakar ont bénéficié d’un statut particulier de citoyenneté dans l'empire colonial français." },
-      { id: 95, section: "Histoire du Sénégal", question: "Citez un domaine dans lequel Cheikh Anta Diop a marqué les études africaines.", answer: "Correction : L’histoire, l’égyptologie, l’anthropologie, la physique nucléaire et la réhabilitation des civilisations africaines." },
-      { id: 106, section: "Géographie du Sénégal", question: "Quel océan borde le Sénégal à l’ouest ?", answer: "Correction : L’océan Atlantique (façade maritime de plus de 700 km)." },
-      { id: 108, section: "Géographie du Sénégal", question: "Quel fleuve forme une partie importante de la frontière nord du Sénégal ?", answer: "Correction : Le fleuve Sénégal, frontière naturelle avec la Mauritanie." },
-      { id: 131, section: "Culture générale", question: "Qu’est-ce que la citoyenneté ?", answer: "Correction : La qualité de citoyen, impliquant la jouissance de droits civils et politiques et l'accomplissement de devoirs envers la communauté." },
-      { id: 136, section: "Déontologie", question: "Pourquoi la corruption nuit-elle à l’administration ?", answer: "Correction : Elle détourne les décisions et ressources publiques, compromet l’égalité de traitement des usagers et détruit la confiance civique." },
-      { id: 156, section: "Institutions & Droit", question: "Qu’est-ce qu’une Constitution ?", answer: "Correction : La norme juridique suprême qui organise les pouvoirs publics (exécutif, législatif, judiciaire) et garantit les droits fondamentaux." },
-      { id: 160, section: "Institutions & Droit", question: "Qu’est-ce que la séparation des pouvoirs ?", answer: "Correction : Le principe formulé par Montesquieu confiant l'exécutif, le législatif et le judiciaire à des organes distincts pour éviter la tyrannie." },
-      { id: 164, section: "Institutions & Droit", question: "Qu’est-ce qu’une police administrative ?", answer: "Correction : Une activité administrative visant préventivement à maintenir l'ordre public (sécurité, tranquillité, salubrité publiques)." },
-      { id: 165, section: "Institutions & Droit", question: "Qu’est-ce que la police judiciaire ?", answer: "Correction : Elle constate les infractions à la loi pénale, rassemble les preuves et recherche les auteurs sous la direction du Procureur de la République." },
-      { id: 174, section: "Police Nationale", question: "Selon la présentation officielle, quelles sont deux missions générales de la Police nationale ?", answer: "Correction : La protection des personnes et des biens, ainsi que le maintien et le rétablissement de l’ordre public." },
-      { id: 191, section: "Logique", question: "Trouvez le terme manquant : 2, 4, 8, 16, ?", answer: "Correction : 32. Chaque terme est multiplié par 2 (progression géométrique de raison 2)." },
-      { id: 221, section: "Déontologie Policière", question: "Selon la présentation officielle de la DGPN, quelle est une mission centrale de la Police nationale ?", answer: "Correction : Assurer la sécurité des personnes et des biens sur l’ensemble du territoire urbain et périurbain." },
-      { id: 246, section: "Mise en situation", question: "Un usager offre de l’argent pour accélérer une procédure. Quelle réponse professionnelle ?", answer: "Correction : Refuser fermement et courtoisement tout avantage indu, rappeler la gratuité de la procédure légale et consigner l'incident au registre." },
-      { id: 266, section: "Mise en situation", question: "Vous arrivez à un poste et constatez qu’une information importante n’a pas été transmise à la relève. Que faites-vous ?", answer: "Correction : Vérifier l’information immédiatement, la transmettre à l'officier de permanence et consigner une note sur la main courante." },
-      { id: 306, section: "Oral & Entretien", question: "Présentez en 60 secondes votre motivation pour intégrer la Police nationale.", answer: "Correction : Présentation synthétique : identité et parcours, dévouement pour le service de l'État sénégalais, discipline, respect des lois républicaines et engagement opérationnel pour protéger les concitoyens." }
-    ],
+    exam_simulations: police4Simulations as any,
+    sample_exercises: police320Exercises.slice(0, 5).map(e => ({
+      id: e.id,
+      section: e.section,
+      question: e.question,
+      answer_preview: e.answer,
+    })),
+    protected_exercises: police320Exercises,
     created_at: new Date().toISOString(),
   },
   {

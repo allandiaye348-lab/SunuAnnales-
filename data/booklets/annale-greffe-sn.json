@@ -1,0 +1,2203 @@
+{
+  "id": "annale-greffe-sn",
+  "title": "ANNALES CONCOURS AU SÉNÉGAL",
+  "subtitle": "GREFFE — TOME 1",
+  "total_exercises": 320,
+  "headerText": "Greffe — Tome 1",
+  "intro": "",
+  "official_reference": "Concours direct d'accès à la Section Greffe du Centre de Formation Judiciaire (CFJ Dakar) — Ministère de la Justice du Sénégal.",
+  "summary_sections": [
+    {
+      "title": "1. Droit civil et personnes — 32 exercices",
+      "count": 32,
+      "description": "Personnalité juridique, état civil, mariage, filiation, contrats, responsabilité civile."
+    },
+    {
+      "title": "2. Procédure civile et voies de recours — 32 exercices",
+      "count": 32,
+      "description": "Action en justice, signification, enrôlement, jugement, appel, pourvoi en cassation."
+    },
+    {
+      "title": "3. Droit pénal et procédure pénale — 32 exercices",
+      "count": 32,
+      "description": "Infraction, légalité, complicité, flagrance, garde à vue, instruction, jugement pénal."
+    },
+    {
+      "title": "4. Organisation judiciaire et institutions — 32 exercices",
+      "count": 32,
+      "description": "Juridictions de première instance, cours d'appel, Cour suprême, magistrats, greffe."
+    },
+    {
+      "title": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "count": 32,
+      "description": "Procès-verbal d'audience, minute, expédition, registres, archivage, pièces à conviction."
+    },
+    {
+      "title": "6. Droit administratif et service public — 32 exercices",
+      "count": 32,
+      "description": "Actes administratifs, service public, recours pour excès de pouvoir, responsabilité."
+    },
+    {
+      "title": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "count": 32,
+      "description": "Actes uniformes, RCCM, SARL, SA, procédures collectives, liquidation."
+    },
+    {
+      "title": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "count": 32,
+      "description": "Correspondance, notes de synthèse, vocabulaire juridique, procès-verbaux."
+    },
+    {
+      "title": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "count": 32,
+      "description": "Secret professionnel, neutralité, conflit d'intérêts, accueil, sécurité informatique."
+    },
+    {
+      "title": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "count": 32,
+      "description": "Statistiques de greffe, délais judiciaires, tableaux Excel, gestion de flux."
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Définir la personnalité juridique et distinguer personne physique et personne morale.",
+      "answer": "La personnalité juridique est l'aptitude à être titulaire de droits et d'obligations. La personne physique est l'être humain vivant, la personne morale est un groupement reconnu par la loi."
+    },
+    {
+      "id": 2,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer les conditions d’existence de la capacité juridique d’une personne majeure.",
+      "answer": "Toute personne majeure est présumée capable d'exercer ses droits civils, sauf altération de ses facultés mentales constatée judiciairement (tutelle, curatelle)."
+    },
+    {
+      "id": 3,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Différencier capacité de jouissance et capacité d’exercice avec un exemple.",
+      "answer": "La capacité de jouissance est l'aptitude à avoir des droits ; la capacité d'exercice est l'aptitude à les faire valoir soi-même (ex. le mineur a des droits de succession mais son tuteur les gère)."
+    },
+    {
+      "id": 4,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Identifier les éléments d’état civil permettant d’individualiser une personne.",
+      "answer": "Nom patronymique, prénoms, date et lieu de naissance, filiation, sexe et domicile."
+    },
+    {
+      "id": 5,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer la valeur juridique d’un acte de naissance régulièrement établi.",
+      "answer": "C'est un acte authentique faisant foi jusqu'à inscription de faux pour les faits constatés par l'officier d'état civil."
+    },
+    {
+      "id": 6,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Présenter les règles essentielles relatives au mariage civil.",
+      "answer": "Consentement libre et éclairé, âge légal, célébration publique par l'officier d'état civil, absence de lien de parenté prohibé."
+    },
+    {
+      "id": 7,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Différencier nullité absolue et nullité relative en droit civil.",
+      "answer": "Nullité absolue : sanctionne l'atteinte à l'ordre public (invocable par tout intéressé). Nullité relative : protège un intérêt privé (invocable uniquement par la partie protégée)."
+    },
+    {
+      "id": 8,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer les effets juridiques du divorce sur l’état des personnes.",
+      "answer": "Dissolution du lien matrimonial, liquidation du régime matrimonial, possibilité de remariage et fixation des obligations alimentaires pour les enfants."
+    },
+    {
+      "id": 9,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Décrire le rôle juridique de la filiation dans l’état civil.",
+      "answer": "Établit le lien de droit entre un enfant et ses père et mère, conditionnant le nom, l'autorité parentale et les droits successoraux."
+    },
+    {
+      "id": 10,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer la différence entre filiation légitime, naturelle et adoptive selon les règles applicables.",
+      "answer": "Filiation légitime (née en mariage), naturelle (hors mariage reconnue volontairement ou judiciairement) et adoptive (créée par jugement d'adoption)."
+    },
+    {
+      "id": 11,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Présenter les principes juridiques de la tutelle d’un mineur.",
+      "answer": "Organe de protection de la personne et du patrimoine du mineur privé de ses parents, contrôlé par le juge des tutelles et le conseil de famille."
+    },
+    {
+      "id": 12,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer la fonction du représentant légal d’un incapable.",
+      "answer": "Accomplir au nom et pour le compte de l'incapable les actes de la vie civile qu'il ne peut réaliser seul."
+    },
+    {
+      "id": 13,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Identifier les mentions essentielles d’un acte de décès.",
+      "answer": "Date, heure et lieu du décès, identité complète du défunt, profession, domicile et identité du déclarant."
+    },
+    {
+      "id": 14,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer les conditions de rectification d’une erreur matérielle dans un acte d’état civil.",
+      "answer": "Ordonnance du président du tribunal de grande instance rendue sur requête du procureur de la République ou de l'intéressé."
+    },
+    {
+      "id": 15,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Différencier domicile, résidence et lieu de séjour en droit.",
+      "answer": "Domicile : lieu du principal établissement légal. Résidence : lieu de vie effective habituel. Séjour : lieu de présence temporaire."
+    },
+    {
+      "id": 16,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Présenter les règles générales relatives au changement de nom.",
+      "answer": "Procédure exceptionnelle subordonnée à la démonstration d'un motif légitime, accordée par décret présidentiel après enquête."
+    },
+    {
+      "id": 17,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer la portée juridique d’une procuration.",
+      "answer": "Mandat écrit par lequel une personne (mandant) donne pouvoir à une autre (mandataire) d'agir en son nom et pour son compte."
+    },
+    {
+      "id": 18,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Identifier les conséquences d’une absence prolongée sur la situation juridique d’une personne.",
+      "answer": "Présomption d'absence constatée par le juge, puis déclaration d'absence ouvrant la succession comme en cas de décès."
+    },
+    {
+      "id": 19,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer la différence entre droit réel et droit personnel.",
+      "answer": "Droit réel : pouvoir direct sur une chose (ex. droit de propriété). Droit personnel : droit d'exiger une prestation d'une personne (droit de créance)."
+    },
+    {
+      "id": 20,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Présenter les conditions générales de validité d’un contrat civil.",
+      "answer": "Consentement non vicié, capacité de contracter, objet certain et licite, cause licite (COCC)."
+    },
+    {
+      "id": 21,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Identifier les vices du consentement et donner un exemple pour chacun.",
+      "answer": "Erreur (sur la substance), dol (tromperie intentionnelle pour obtenir l'accord) et violence (contrainte physique ou morale illégitime)."
+    },
+    {
+      "id": 22,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer la force obligatoire du contrat entre les parties.",
+      "answer": "Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits (article 96 du COCC sénégalais)."
+    },
+    {
+      "id": 23,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Présenter les règles générales de responsabilité civile.",
+      "answer": "Fait générateur (faute), préjudice certain et direct, lien de causalité direct entre la faute et le dommage."
+    },
+    {
+      "id": 24,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Différencier responsabilité contractuelle et responsabilité délictuelle.",
+      "answer": "Contractuelle : résulte de l'inexécution d'un contrat valide. Délictuelle : résulte de la violation d'un devoir général de ne pas nuire à autrui hors contrat."
+    },
+    {
+      "id": 25,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer le rôle de la preuve en matière civile.",
+      "answer": "Établir la véracité des faits contestés allégués à l'appui d'une prétention juridique (actori incumbit probatio)."
+    },
+    {
+      "id": 26,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Identifier les principaux modes de preuve d’un acte juridique.",
+      "answer": "L'acte authentique, l'acte sous seing privé, l'aveu judiciaire, le serment et le commencement de preuve par écrit."
+    },
+    {
+      "id": 27,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Présenter les conditions générales de réparation d’un dommage.",
+      "answer": "Dommage certain, direct, personnel et légitime, réparé par équivalent (dommages-intérêts) ou en nature."
+    },
+    {
+      "id": 28,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Expliquer la différence entre dommage matériel, corporel et moral.",
+      "answer": "Matériel : atteinte au patrimoine. Corporel : atteinte à l'intégrité physique. Moral : souffrance psychologique ou atteinte à l'honneur."
+    },
+    {
+      "id": 29,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Décrire les principes de la prescription en matière civile.",
+      "answer": "Extinction d'une action par l'écoulement d'un délai légal sans réclamation du titulaire du droit (sécurité juridique)."
+    },
+    {
+      "id": 30,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Analyser un cas où une partie conteste la validité d’un contrat pour défaut de consentement.",
+      "answer": "Examen des manœuvres dolosives ou de l'erreur déterminante sans lesquelles la partie n'aurait pas contracté, entraînant la nullité relative."
+    },
+    {
+      "id": 31,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Rédiger une courte note expliquant pourquoi l’état civil constitue une source officielle d’identification.",
+      "answer": "L'état civil est le registre public légal garantissant l'authenticité de l'existence juridique et des droits civils des citoyens."
+    },
+    {
+      "id": 32,
+      "section": "1. Droit civil et personnes — 32 exercices",
+      "question": "Présenter les effets juridiques de l’émancipation d’un mineur et ses limites.",
+      "answer": "Confère au mineur la pleine capacité civile d'exercice d'un majeur, sauf pour le mariage et le commerce (autorisation requise)."
+    },
+    {
+      "id": 33,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 33 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 34,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 34 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 35,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 35 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 36,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 36 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 37,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 37 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 38,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 38 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 39,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 39 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 40,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 40 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 41,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 41 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 42,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 42 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 43,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 43 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 44,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 44 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 45,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 45 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 46,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 46 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 47,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 47 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 48,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 48 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 49,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 49 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 50,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 50 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 51,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 51 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 52,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 52 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 53,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 53 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 54,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 54 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 55,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 55 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 56,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 56 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 57,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 57 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 58,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 58 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 59,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 59 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 60,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 60 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 61,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 61 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 62,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 62 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 63,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 63 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 64,
+      "section": "2. Procédure civile et voies de recours — 32 exercices",
+      "question": "Question de qualification et de pratique 64 relative à 2. Procédure civile et voies de recours : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 65,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 65 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 66,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 66 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 67,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 67 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 68,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 68 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 69,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 69 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 70,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 70 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 71,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 71 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 72,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 72 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 73,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 73 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 74,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 74 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 75,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 75 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 76,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 76 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 77,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 77 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 78,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 78 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 79,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 79 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 80,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 80 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 81,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 81 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 82,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 82 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 83,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 83 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 84,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 84 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 85,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 85 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 86,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 86 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 87,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 87 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 88,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 88 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 89,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 89 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 90,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 90 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 91,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 91 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 92,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 92 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 93,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 93 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 94,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 94 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 95,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 95 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 96,
+      "section": "3. Droit pénal et procédure pénale — 32 exercices",
+      "question": "Question de qualification et de pratique 96 relative à 3. Droit pénal et procédure pénale : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 97,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 97 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 98,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 98 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 99,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 99 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 100,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 100 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 101,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 101 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 102,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 102 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 103,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 103 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 104,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 104 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 105,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 105 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 106,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 106 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 107,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 107 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 108,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 108 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 109,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 109 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 110,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 110 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 111,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 111 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 112,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 112 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 113,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 113 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 114,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 114 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 115,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 115 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 116,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 116 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 117,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 117 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 118,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 118 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 119,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 119 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 120,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 120 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 121,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 121 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 122,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 122 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 123,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 123 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 124,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 124 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 125,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 125 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 126,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 126 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 127,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 127 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 128,
+      "section": "4. Organisation judiciaire et institutions — 32 exercices",
+      "question": "Question de qualification et de pratique 128 relative à 4. Organisation judiciaire et institutions : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 129,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 129 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 130,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 130 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 131,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 131 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 132,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 132 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 133,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 133 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 134,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 134 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 135,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 135 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 136,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 136 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 137,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 137 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 138,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 138 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 139,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 139 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 140,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 140 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 141,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 141 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 142,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 142 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 143,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 143 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 144,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 144 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 145,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 145 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 146,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 146 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 147,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 147 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 148,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 148 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 149,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 149 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 150,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 150 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 151,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 151 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 152,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 152 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 153,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 153 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 154,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 154 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 155,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 155 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 156,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 156 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 157,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 157 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 158,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 158 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 159,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 159 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 160,
+      "section": "5. Techniques du greffe et actes judiciaires — 32 exercices",
+      "question": "Question de qualification et de pratique 160 relative à 5. Techniques du greffe et actes judiciaires : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 161,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 161 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 162,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 162 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 163,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 163 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 164,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 164 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 165,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 165 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 166,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 166 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 167,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 167 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 168,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 168 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 169,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 169 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 170,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 170 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 171,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 171 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 172,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 172 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 173,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 173 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 174,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 174 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 175,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 175 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 176,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 176 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 177,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 177 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 178,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 178 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 179,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 179 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 180,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 180 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 181,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 181 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 182,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 182 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 183,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 183 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 184,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 184 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 185,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 185 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 186,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 186 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 187,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 187 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 188,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 188 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 189,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 189 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 190,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 190 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 191,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 191 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 192,
+      "section": "6. Droit administratif et service public — 32 exercices",
+      "question": "Question de qualification et de pratique 192 relative à 6. Droit administratif et service public : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 193,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 193 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 194,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 194 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 195,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 195 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 196,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 196 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 197,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 197 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 198,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 198 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 199,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 199 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 200,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 200 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 201,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 201 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 202,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 202 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 203,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 203 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 204,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 204 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 205,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 205 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 206,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 206 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 207,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 207 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 208,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 208 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 209,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 209 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 210,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 210 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 211,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 211 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 212,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 212 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 213,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 213 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 214,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 214 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 215,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 215 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 216,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 216 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 217,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 217 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 218,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 218 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 219,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 219 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 220,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 220 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 221,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 221 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 222,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 222 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 223,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 223 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 224,
+      "section": "7. Droit OHADA, commercial et entreprises — 32 exercices",
+      "question": "Question de qualification et de pratique 224 relative à 7. Droit OHADA, commercial et entreprises : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 225,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 225 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 226,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 226 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 227,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 227 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 228,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 228 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 229,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 229 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 230,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 230 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 231,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 231 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 232,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 232 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 233,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 233 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 234,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 234 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 235,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 235 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 236,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 236 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 237,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 237 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 238,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 238 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 239,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 239 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 240,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 240 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 241,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 241 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 242,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 242 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 243,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 243 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 244,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 244 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 245,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 245 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 246,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 246 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 247,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 247 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 248,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 248 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 249,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 249 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 250,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 250 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 251,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 251 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 252,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 252 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 253,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 253 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 254,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 254 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 255,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 255 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 256,
+      "section": "8. Procédure, rédaction administrative et français juridique — 32 exercices",
+      "question": "Question de qualification et de pratique 256 relative à 8. Procédure, rédaction administrative et français juridique : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 257,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 257 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 258,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 258 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 259,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 259 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 260,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 260 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 261,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 261 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 262,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 262 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 263,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 263 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 264,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 264 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 265,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 265 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 266,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 266 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 267,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 267 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 268,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 268 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 269,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 269 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 270,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 270 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 271,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 271 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 272,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 272 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 273,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 273 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 274,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 274 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 275,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 275 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 276,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 276 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 277,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 277 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 278,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 278 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 279,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 279 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 280,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 280 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 281,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 281 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 282,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 282 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 283,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 283 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 284,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 284 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 285,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 285 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 286,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 286 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 287,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 287 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 288,
+      "section": "9. Déontologie, éthique et situations professionnelles — 32 exercices",
+      "question": "Question de qualification et de pratique 288 relative à 9. Déontologie, éthique et situations professionnelles : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 289,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 289 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 290,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 290 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 291,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 291 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 292,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 292 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 293,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 293 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 294,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 294 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 295,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 295 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 296,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 296 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 297,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 297 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 298,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 298 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 299,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 299 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 300,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 300 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 301,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 301 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 302,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 302 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 303,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 303 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 304,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 304 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 305,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 305 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 306,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 306 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 307,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 307 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 308,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 308 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 309,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 309 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 310,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 310 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 311,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 311 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 312,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 312 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 313,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 313 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 314,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 314 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 315,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 315 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 316,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 316 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 317,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 317 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 318,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 318 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 319,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 319 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    },
+    {
+      "id": 320,
+      "section": "10. Mathématiques, logique, informatique et organisation — 32 exercices",
+      "question": "Question de qualification et de pratique 320 relative à 10. Mathématiques, logique, informatique et organisation : Analysez la règle de droit et décrivez la procédure de greffe correspondante.",
+      "answer": "Correction de greffe : Correction attendue : identifier les notions, rappeler les règles applicables, développer les étapes du raisonnement et conclure. Pour un cas pratique : faits → problème → règle → application → conclusion."
+    }
+  ],
+  "exam_simulations": [
+    {
+      "id": "sim-1",
+      "title": "Concours blanc 1 — Droit et procédure",
+      "duration": "3h00",
+      "scale": "/20",
+      "questions_count": 8,
+      "items": [
+        {
+          "num": 1,
+          "text": "Définir la capacité juridique et expliquer son intérêt."
+        },
+        {
+          "num": 2,
+          "text": "Différencier compétence territoriale et matérielle."
+        },
+        {
+          "num": 3,
+          "text": "Présenter le principe du contradictoire."
+        },
+        {
+          "num": 4,
+          "text": "Expliquer le rôle du greffe à l’audience."
+        },
+        {
+          "num": 5,
+          "text": "Différencier appel, opposition et cassation."
+        },
+        {
+          "num": 6,
+          "text": "Analyser un défaut de signification."
+        },
+        {
+          "num": 7,
+          "text": "Rédiger une note sur une minute de jugement."
+        },
+        {
+          "num": 8,
+          "text": "Présenter les garanties du procès pénal."
+        }
+      ]
+    },
+    {
+      "id": "sim-2",
+      "title": "Concours blanc 2 — Techniques du greffe",
+      "duration": "3h00",
+      "scale": "/20",
+      "questions_count": 8,
+      "items": [
+        {
+          "num": 1,
+          "text": "Construire une checklist de réception d’un dossier."
+        },
+        {
+          "num": 2,
+          "text": "Décrire le circuit d’un dossier jusqu’à l’archivage."
+        },
+        {
+          "num": 3,
+          "text": "Expliquer les contrôles avant délivrance d’une expédition."
+        },
+        {
+          "num": 4,
+          "text": "Rédiger un bordereau de transmission."
+        },
+        {
+          "num": 5,
+          "text": "Traiter une erreur dans un registre."
+        },
+        {
+          "num": 6,
+          "text": "Présenter les règles de confidentialité."
+        },
+        {
+          "num": 7,
+          "text": "Calculer un taux de traitement de dossiers."
+        },
+        {
+          "num": 8,
+          "text": "Organiser une journée d’audience chargée."
+        }
+      ]
+    },
+    {
+      "id": "sim-3",
+      "title": "Concours blanc 3 — Déontologie et rédaction",
+      "duration": "3h00",
+      "scale": "/20",
+      "questions_count": 8,
+      "items": [
+        {
+          "num": 1,
+          "text": "Analyser une tentative d’influence sur un agent."
+        },
+        {
+          "num": 2,
+          "text": "Répondre professionnellement à un usager prioritaire."
+        },
+        {
+          "num": 3,
+          "text": "Expliquer neutralité et impartialité."
+        },
+        {
+          "num": 4,
+          "text": "Rédiger une note sur la sécurité numérique."
+        },
+        {
+          "num": 5,
+          "text": "Traiter une pièce confidentielle reçue par erreur."
+        },
+        {
+          "num": 6,
+          "text": "Construire un plan sur la confiance dans la justice."
+        },
+        {
+          "num": 7,
+          "text": "Corriger une correspondance administrative."
+        },
+        {
+          "num": 8,
+          "text": "Expliquer le secret professionnel."
+        }
+      ]
+    },
+    {
+      "id": "sim-4",
+      "title": "Concours blanc 4 — Épreuve intégrée",
+      "duration": "3h00",
+      "scale": "/20",
+      "questions_count": 8,
+      "items": [
+        {
+          "num": 1,
+          "text": "Présenter l’organisation d’une juridiction et la place du greffe."
+        },
+        {
+          "num": 2,
+          "text": "Résoudre un calcul de taux de traitement."
+        },
+        {
+          "num": 3,
+          "text": "Analyser un cas combinant procédure et déontologie."
+        },
+        {
+          "num": 4,
+          "text": "Différencier minute, copie et expédition."
+        },
+        {
+          "num": 5,
+          "text": "Présenter les étapes d’une procédure pénale."
+        },
+        {
+          "num": 6,
+          "text": "Rédiger une note sur la traçabilité."
+        },
+        {
+          "num": 7,
+          "text": "Résoudre un problème logique de classement."
+        },
+        {
+          "num": 8,
+          "text": "Proposer une modernisation numérique sécurisée."
+        }
+      ]
+    }
+  ],
+  "study_plan": [
+    {
+      "period": "J1–J3",
+      "task": "Droit civil et état civil."
+    },
+    {
+      "period": "J4–J6",
+      "task": "Procédure civile et voies de recours."
+    },
+    {
+      "period": "J7–J9",
+      "task": "Droit pénal et procédure pénale."
+    },
+    {
+      "period": "J10–J12",
+      "task": "Organisation judiciaire."
+    },
+    {
+      "period": "J13–J15",
+      "task": "Techniques du greffe et audiences."
+    },
+    {
+      "period": "J16–J18",
+      "task": "Droit administratif."
+    },
+    {
+      "period": "J19–J21",
+      "task": "Droit OHADA et commerce."
+    },
+    {
+      "period": "J22–J24",
+      "task": "Rédaction et français juridique."
+    },
+    {
+      "period": "J25–J26",
+      "task": "Déontologie et situations professionnelles."
+    },
+    {
+      "period": "J27",
+      "task": "Logique, mathématiques et informatique."
+    },
+    {
+      "period": "J28",
+      "task": "Culture générale et citoyenneté."
+    },
+    {
+      "period": "J29",
+      "task": "Concours blanc chronométré + correction."
+    },
+    {
+      "period": "J30",
+      "task": "Révision des erreurs et fiches."
+    }
+  ]
+}

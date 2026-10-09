@@ -5,8 +5,31 @@ import { downloadAnnalePdf } from '../utils/pdfDownloader';
 import { 
   X, ShieldCheck, Download, Search, CheckCircle, 
   HelpCircle, ChevronRight, FileText, Clock, Printer, 
-  Sparkles, Lock, ArrowLeft, BookOpen, AlertCircle
+  Sparkles, Lock, ArrowLeft, BookOpen, AlertCircle,
+  ZoomIn, ZoomOut, Type
 } from 'lucide-react';
+
+function cleanNoHashNumber(text: string | null | undefined, isQuestion = false, isAnswer = false): string {
+  if (!text || typeof text !== 'string') return '';
+  let str = text;
+  if (isQuestion) {
+    str = str.replace(/^Exercice\s+approfondi\s+(?:#\s*)?\d+\s*\([^)]*\)\s*:\s*/i, '');
+    str = str.replace(/^Exercice\s+(?:#\s*)?\d+\s*:\s*/i, '');
+    str = str.replace(/(\b[a-zA-ZÀ-ÿ\s\'-]+?)\s+(?:#\s*)?\d{1,4}\s*(?=\s*:)/g, '$1 ');
+  }
+  if (isAnswer) {
+    str = str.replace(/(\bCorrection\s+[a-zA-ZÀ-ÿ\s\'-]*?)\s+(?:#\s*)?\d{1,4}\s*(?=\s*:)/g, '$1 ');
+  }
+  str = str.replace(/#\s*(\d+)/g, '$1');
+  str = str.replace(/#\s*/g, '');
+  str = str.replace(/\s{2,}/g, ' ');
+  str = str.replace(/\s+:/g, ' :');
+  str = str.trim();
+  if (isQuestion && str && str[0] === str[0].toLowerCase() && /[a-zà-ÿ]/.test(str[0])) {
+    str = str[0].toUpperCase() + str.slice(1);
+  }
+  return str;
+}
 
 interface SecureReaderModalProps {
   annaleId: string;
@@ -26,6 +49,7 @@ export const SecureReaderModal: React.FC<SecureReaderModalProps> = ({
   const [activeTab, setActiveTab] = useState<'content' | 'simulations' | 'plan'>('content');
   const [selectedSection, setSelectedSection] = useState<string>('Tous');
   const [revealedAnswers, setRevealedAnswers] = useState<Record<number, boolean>>({});
+  const [fontSize, setFontSize] = useState<'standard' | 'grand' | 'tres-grand'>('grand');
 
   // Simulation timer
   const [timerSeconds, setTimerSeconds] = useState(7200); // 2 hours
@@ -242,16 +266,51 @@ export const SecureReaderModal: React.FC<SecureReaderModalProps> = ({
                 </button>
               </div>
 
-              {/* Concours Blanc Timer */}
-              <div className="flex items-center gap-2 bg-slate-950 px-3 py-1 rounded-full border border-slate-800 text-xs">
-                <Clock className="w-3.5 h-3.5 text-amber-400" />
-                <span className="font-mono font-bold text-amber-300">{formatTimer(timerSeconds)}</span>
-                <button
-                  onClick={() => setTimerActive(!timerActive)}
-                  className="text-[10px] font-bold text-slate-400 hover:text-white underline ml-1"
-                >
-                  {timerActive ? 'Pause' : 'Chrono'}
-                </button>
+              <div className="flex items-center gap-2">
+                {/* Contrôle de la taille de police (Augmenter la police du fascicule) */}
+                <div className="flex items-center gap-1 bg-slate-950 px-2.5 py-1 rounded-xl border border-slate-800 text-xs">
+                  <Type className="w-3.5 h-3.5 text-emerald-400 mr-0.5" />
+                  <span className="text-[10px] text-slate-400 font-semibold mr-1">Police :</span>
+                  <button
+                    onClick={() => setFontSize('standard')}
+                    className={`px-2 py-0.5 rounded-lg text-[11px] font-bold transition ${
+                      fontSize === 'standard' ? 'bg-emerald-600 text-white shadow' : 'text-slate-400 hover:text-white'
+                    }`}
+                    title="Taille Standard"
+                  >
+                    A
+                  </button>
+                  <button
+                    onClick={() => setFontSize('grand')}
+                    className={`px-2 py-0.5 rounded-lg text-[12px] font-bold transition ${
+                      fontSize === 'grand' ? 'bg-emerald-600 text-white shadow' : 'text-slate-400 hover:text-white'
+                    }`}
+                    title="Grande police lisible"
+                  >
+                    A+
+                  </button>
+                  <button
+                    onClick={() => setFontSize('tres-grand')}
+                    className={`px-2 py-0.5 rounded-lg text-[13px] font-bold transition ${
+                      fontSize === 'tres-grand' ? 'bg-emerald-600 text-white shadow' : 'text-slate-400 hover:text-white'
+                    }`}
+                    title="Très grande police confort"
+                  >
+                    A++
+                  </button>
+                </div>
+
+                {/* Concours Blanc Timer */}
+                <div className="flex items-center gap-2 bg-slate-950 px-3 py-1 rounded-xl border border-slate-800 text-xs">
+                  <Clock className="w-3.5 h-3.5 text-amber-400" />
+                  <span className="font-mono font-bold text-amber-300">{formatTimer(timerSeconds)}</span>
+                  <button
+                    onClick={() => setTimerActive(!timerActive)}
+                    className="text-[10px] font-bold text-slate-400 hover:text-white underline ml-1"
+                  >
+                    {timerActive ? 'Pause' : 'Chrono'}
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -284,7 +343,7 @@ export const SecureReaderModal: React.FC<SecureReaderModalProps> = ({
                             : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
                         }`}
                       >
-                        {sec.title}
+                        {cleanNoHashNumber(sec.title)}
                       </button>
                     ))}
                   </div>
@@ -322,59 +381,81 @@ export const SecureReaderModal: React.FC<SecureReaderModalProps> = ({
                   <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
                     {data.annale.protected_exercises
                       ?.filter((ex: Exercise) => {
-                        const matchSec = selectedSection === 'Tous' || ex.section.toLowerCase().includes(selectedSection.toLowerCase());
-                        const matchQ = !searchQuery || ex.question.toLowerCase().includes(searchQuery.toLowerCase()) || (ex.answer && ex.answer.toLowerCase().includes(searchQuery.toLowerCase()));
+                        const cleanSec = cleanNoHashNumber(ex.section);
+                        const cleanQ = cleanNoHashNumber(ex.question, true, false);
+                        const cleanA = cleanNoHashNumber(ex.answer || ex.answer_preview, false, true);
+                        const matchSec = selectedSection === 'Tous' || cleanSec.toLowerCase().includes(selectedSection.toLowerCase());
+                        const matchQ = !searchQuery || cleanQ.toLowerCase().includes(searchQuery.toLowerCase()) || cleanA.toLowerCase().includes(searchQuery.toLowerCase());
                         return matchSec && matchQ;
                       })
                       .map((ex: Exercise) => {
                         const isRevealed = revealedAnswers[ex.id];
+                        const cleanQ = cleanNoHashNumber(ex.question, true, false);
+                        const cleanA = cleanNoHashNumber(ex.answer || ex.answer_preview, false, true);
+                        const cleanSec = cleanNoHashNumber(ex.section);
+                        const cleanId = cleanNoHashNumber(String(ex.id));
+
                         return (
                           <div
                             key={ex.id}
-                            className="p-4 sm:p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden"
+                            className="p-5 sm:p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden"
                           >
                             {/* Subtle watermark in background */}
                             <div className="absolute top-2 right-3 text-[10px] font-mono text-slate-700 pointer-events-none select-none">
                               SUNUANNALES • DR-2026
                             </div>
 
-                            <div className="flex items-center gap-2 mb-2">
-                              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-bold text-[10px]">
-                                Exercice #{ex.id}
+                            <div className="flex items-center gap-2 mb-3">
+                              <span className="px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold text-xs">
+                                Exercice {cleanId}
                               </span>
-                              <span className="text-[11px] text-slate-400">
-                                {ex.section}
+                              <span className="px-2.5 py-0.5 rounded-lg bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xs font-semibold">
+                                {cleanSec}
                               </span>
                             </div>
 
-                            <h4 className="text-sm font-semibold text-white leading-relaxed">
-                              {ex.question}
+                            <h4 className={`text-white leading-relaxed ${
+                              fontSize === 'standard' 
+                                ? 'text-sm font-semibold' 
+                                : fontSize === 'grand' 
+                                ? 'text-base sm:text-lg font-bold' 
+                                : 'text-lg sm:text-xl font-bold'
+                            }`}>
+                              {cleanQ}
                             </h4>
 
                             {/* Answer Accordion */}
-                            <div className="mt-3 pt-3 border-t border-slate-800">
+                            <div className="mt-4 pt-3 border-t border-slate-800">
                               {isRevealed ? (
-                                <div className="p-3.5 rounded-xl bg-slate-950/80 border border-emerald-900/40 text-xs text-emerald-200/90 leading-relaxed animate-in fade-in">
-                                  <div className="flex items-center justify-between mb-1.5 text-emerald-400 font-bold text-[11px]">
-                                    <span className="flex items-center gap-1">
-                                      <CheckCircle className="w-3.5 h-3.5" />
+                                <div className="p-4 sm:p-5 rounded-xl bg-slate-950/90 border-l-4 border-emerald-500 border-t border-r border-b border-emerald-950/40 leading-relaxed animate-in fade-in">
+                                  <div className="flex items-center justify-between mb-2 text-emerald-400 font-bold text-xs sm:text-sm">
+                                    <span className="flex items-center gap-1.5">
+                                      <CheckCircle className="w-4 h-4 text-emerald-400" />
                                       Solution & Argumentation officielle :
                                     </span>
                                     <button
                                       onClick={() => toggleAnswer(ex.id)}
-                                      className="text-[10px] text-slate-400 hover:text-slate-200 underline"
+                                      className="text-xs text-slate-400 hover:text-slate-200 underline"
                                     >
                                       Masquer
                                     </button>
                                   </div>
-                                  <p>{ex.answer}</p>
+                                  <p className={`text-slate-200 leading-relaxed ${
+                                    fontSize === 'standard' 
+                                      ? 'text-xs sm:text-sm' 
+                                      : fontSize === 'grand' 
+                                      ? 'text-sm sm:text-base' 
+                                      : 'text-base sm:text-lg'
+                                  }`}>
+                                    {cleanA}
+                                  </p>
                                 </div>
                               ) : (
                                 <button
                                   onClick={() => toggleAnswer(ex.id)}
-                                  className="text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition"
+                                  className="text-xs sm:text-sm font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition py-1"
                                 >
-                                  <HelpCircle className="w-3.5 h-3.5" />
+                                  <HelpCircle className="w-4 h-4" />
                                   Afficher le corrigé certifié
                                 </button>
                               )}
@@ -401,21 +482,21 @@ export const SecureReaderModal: React.FC<SecureReaderModalProps> = ({
                   {data.annale.exam_simulations?.map((sim: any, idx: number) => (
                     <div
                       key={idx}
-                      className="p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-500/40 transition space-y-3"
+                      className="p-5 sm:p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition space-y-3"
                     >
                       <div className="flex items-center justify-between">
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300">
+                        <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30">
                           Épreuve {idx + 1}
                         </span>
-                        <span className="text-xs text-slate-400 flex items-center gap-1">
-                          <Clock className="w-3 h-3 text-amber-400" />
+                        <span className="text-xs text-sky-400 font-bold flex items-center gap-1.5 bg-sky-950/40 px-2.5 py-1 rounded-lg border border-sky-800/40">
+                          <Clock className="w-3.5 h-3.5 text-amber-400" />
                           {sim.duration}
                         </span>
                       </div>
 
-                      <h4 className="text-sm font-bold text-white">{sim.title}</h4>
-                      <p className="text-xs text-slate-400">
-                        {sim.questions_count} questions de synthèse transversales avec grille d'évaluation du jury.
+                      <h4 className="text-base font-bold text-white leading-snug">{cleanNoHashNumber(sim.title)}</h4>
+                      <p className="text-xs sm:text-sm text-slate-300">
+                        {sim.questions_count || 4} épreuves de synthèse transversales avec grille d'évaluation et barème officiel /20.
                       </p>
 
                       <button
@@ -424,10 +505,10 @@ export const SecureReaderModal: React.FC<SecureReaderModalProps> = ({
                           setTimerSeconds(sim.duration === '2h00' ? 7200 : 9000);
                           setTimerActive(true);
                         }}
-                        className="w-full py-2 px-3 rounded-xl bg-slate-800 hover:bg-emerald-600 hover:text-white text-slate-200 text-xs font-bold transition flex items-center justify-center gap-1.5"
+                        className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:brightness-110 text-white text-xs sm:text-sm font-bold transition flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-950/40"
                       >
                         Lancer ce Concours Blanc avec Chrono
-                        <ArrowLeft className="w-3.5 h-3.5 rotate-180" />
+                        <ArrowLeft className="w-4 h-4 rotate-180" />
                       </button>
                     </div>
                   ))}
@@ -437,33 +518,33 @@ export const SecureReaderModal: React.FC<SecureReaderModalProps> = ({
 
             {/* TAB 3: Plan de 30 Jours */}
             {activeTab === 'plan' && (
-              <div className="flex-1 overflow-y-auto p-6 space-y-4">
+              <div className="flex-1 overflow-y-auto p-6 space-y-5">
                 <div>
                   <h3 className="text-lg font-bold text-white">Programme de Révision Intensif sur 30 Jours</h3>
-                  <p className="text-xs text-slate-400 mt-1">
-                    Méthodologie recommandée : 45 min de révision théorique + 60 min d'exercices + 15 min de correction.
+                  <p className="text-xs sm:text-sm text-slate-400 mt-1">
+                    Méthodologie recommandée : 45 min de révision théorique + 60 min d'exercices + 15 min de correction certifiée.
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
                   {[
-                    { days: "Jours 1–3", subject: "Français & Syntaxe administrative", detail: "Grammaire, vocabulaire et exercices 1 à 40." },
-                    { days: "Jours 4–6", subject: "Mathématiques & Logique chiffrée", detail: "Calculs de pourcentages, vitesses et proportions." },
-                    { days: "Jours 7–9", subject: "Histoire du Sénégal & Afrique", detail: "Repères 1960, royaumes et grandes figures." },
-                    { days: "Jours 10–12", subject: "Géographie, frontières & climat", detail: "Territoire, bassins fluviaux et mangroves." },
-                    { days: "Jours 13–15", subject: "Institutions & Citoyenneté", detail: "Constitution, séparation des pouvoirs, probité." },
-                    { days: "Jours 16–18", subject: "Droit public & Réglementation", detail: "Police administrative, judiciaire et légalité." },
-                    { days: "Jours 19–21", subject: "Technique Métier Spécialisée", detail: "Missions de terrain, déontologie et sécurité." },
-                    { days: "Jours 22–24", subject: "Mises en situation & Études de cas", detail: "Cas réels de guichet, litiges et rédaction." },
-                    { days: "Jours 25–26", subject: "Anglais & Épreuves physiques", detail: "Luc-Léger, 100m et vocabulaire de service." },
-                    { days: "Jour 27", subject: "Entretien oral avec le jury", detail: "Présentation 60 secondes et posture d'agent." },
-                    { days: "Jour 28", subject: "Concours Blanc 1", detail: "Simulation chronométrée en conditions d'examen." },
-                    { days: "Jours 29–30", subject: "Concours Blanc Final & Bilan", detail: "Reprise des erreurs et fiches mémo finales." }
+                    { days: "Jours 1–3", subject: "Français & Syntaxe administrative", detail: "Grammaire, vocabulaire et exercices 1 à 40.", color: "border-indigo-500/40 text-indigo-400" },
+                    { days: "Jours 4–6", subject: "Mathématiques & Logique chiffrée", detail: "Calculs de pourcentages, vitesses et proportions.", color: "border-sky-500/40 text-sky-400" },
+                    { days: "Jours 7–9", subject: "Histoire du Sénégal & Afrique", detail: "Repères 1960, royaumes et grandes figures.", color: "border-emerald-500/40 text-emerald-400" },
+                    { days: "Jours 10–12", subject: "Géographie, frontières & climat", detail: "Territoire, bassins fluviaux et mangroves.", color: "border-teal-500/40 text-teal-400" },
+                    { days: "Jours 13–15", subject: "Institutions & Citoyenneté", detail: "Constitution, séparation des pouvoirs, probité.", color: "border-amber-500/40 text-amber-400" },
+                    { days: "Jours 16–18", subject: "Droit public & Réglementation", detail: "Police administrative, judiciaire et légalité.", color: "border-orange-500/40 text-orange-400" },
+                    { days: "Jours 19–21", subject: "Technique Métier Spécialisée", detail: "Missions de terrain, déontologie et sécurité.", color: "border-cyan-500/40 text-cyan-400" },
+                    { days: "Jours 22–24", subject: "Mises en situation & Études de cas", detail: "Cas réels de guichet, litiges et rédaction.", color: "border-blue-500/40 text-blue-400" },
+                    { days: "Jours 25–26", subject: "Anglais & Épreuves physiques", detail: "Luc-Léger, 100m et vocabulaire de service.", color: "border-purple-500/40 text-purple-400" },
+                    { days: "Jour 27", subject: "Entretien oral avec le jury", detail: "Présentation 60 secondes et posture d'agent.", color: "border-rose-500/40 text-rose-400" },
+                    { days: "Jour 28", subject: "Concours Blanc 1", detail: "Simulation chronométrée en conditions d'examen.", color: "border-yellow-500/40 text-yellow-400" },
+                    { days: "Jours 29–30", subject: "Concours Blanc Final & Bilan", detail: "Reprise des erreurs et fiches mémo finales.", color: "border-emerald-500/40 text-emerald-400" }
                   ].map((p, idx) => (
-                    <div key={idx} className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-xs">
-                      <span className="text-[10px] font-bold text-amber-400 font-mono block">{p.days}</span>
-                      <h5 className="font-bold text-white mt-0.5">{p.subject}</h5>
-                      <p className="text-[11px] text-slate-400 mt-1">{p.detail}</p>
+                    <div key={idx} className={`p-4 rounded-xl bg-slate-900 border ${p.color} text-xs space-y-1`}>
+                      <span className="text-[11px] font-bold text-amber-400 font-mono block">{p.days}</span>
+                      <h5 className="font-bold text-white text-sm mt-0.5">{cleanNoHashNumber(p.subject)}</h5>
+                      <p className="text-xs text-slate-300 leading-relaxed mt-1">{cleanNoHashNumber(p.detail)}</p>
                     </div>
                   ))}
                 </div>

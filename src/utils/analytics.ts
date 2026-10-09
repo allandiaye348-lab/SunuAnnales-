@@ -107,6 +107,9 @@ export async function trackPageView(options: TrackEventOptions = {}): Promise<vo
   if (typeof window === 'undefined') return;
 
   const currentPath = options.path || window.location.pathname || '/';
+  if (currentPath.startsWith('/admin')) {
+    return;
+  }
   const now = Date.now();
 
   // Deduplication check: if the exact same page was tracked in the last 15 seconds, avoid double counting

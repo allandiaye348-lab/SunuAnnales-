@@ -1,0 +1,2019 @@
+// Fichier complet des 320 exercices corrigés et 4 concours blancs du Concours Police
+export const police320Exercises = [
+  {
+    "id": 1,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Corrigez la phrase : « Les candidats doit remettre leurs dossiers avant la date limite. »",
+    "answer": "Correction : « Les candidats doivent remettre leurs dossiers avant la date limite. » Justification : Accord du verbe avec le sujet pluriel."
+  },
+  {
+    "id": 2,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Mettez au discours indirect : Le commissaire dit : « Je vérifierai les convocations demain. »",
+    "answer": "Correction : Le commissaire dit qu'il vérifiera les convocations le lendemain. Justification : Le verbe introducteur est au présent, la concordance maintient le futur."
+  },
+  {
+    "id": 3,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Donnez le synonyme contextuel du terme « impartialité » pour un agent de police.",
+    "answer": "Correction : Neutralité, équité, objectivité. Justification : Absence totale de parti pris ou de favoritisme dans l'exercice des fonctions."
+  },
+  {
+    "id": 4,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Quelle est la différence entre « quoique » et « quoi que » ?",
+    "answer": "Correction : « Quoique » (un seul mot) signifie « bien que » (conjonction de subordination). « Quoi que » (en deux mots) signifie « quelle que soit la chose qui/que »."
+  },
+  {
+    "id": 5,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Transformez à la voix passive : « Les inspecteurs ont interrogé le témoin principal. »",
+    "answer": "Correction : « Le témoin principal a été interrogé par les inspecteurs. » Le COD devient sujet patient et le temps composé s'accorde au participe passé."
+  },
+  {
+    "id": 6,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Orthographiez correctement : « Elles se sont (succédé / succédées) au poste de garde. »",
+    "answer": "Correction : « Elles se sont succédé ». Justification : Le verbe « succéder » est transitif indirect (succéder à quelqu'un), pas de COD, donc invariable."
+  },
+  {
+    "id": 7,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Définissez le terme administratif « procès-verbal ».",
+    "answer": "Correction : Document officiel écrit par une autorité habilitée constatant légalement des faits, déclarations ou infractions."
+  },
+  {
+    "id": 8,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Corrigez l'erreur de pléonasme : « L'agent a collaboré ensemble avec les services douaniers. »",
+    "answer": "Correction : « L'agent a collaboré avec les services douaniers. » (« Collaborer » signifie déjà travailler ensemble)."
+  },
+  {
+    "id": 9,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Conjuguez à l'imparfait du subjonctif : « Il fallait que le prévenu (comparaître) sans délai. »",
+    "answer": "Correction : « Il fallait que le prévenu comparût sans délai. »"
+  },
+  {
+    "id": 10,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Quelle est la nature grammaticale de « dont » dans : « Le rapport dont il parle » ?",
+    "answer": "Correction : Pronom relatif, ayant pour antécédent « rapport » et fonction de complément de l'objet ou de l'adjectif (parler de)."
+  },
+  {
+    "id": 11,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 12,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 13,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 14,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 15,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 16,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 17,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 18,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 19,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 20,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 21,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 22,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 23,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 24,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 25,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 26,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 27,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 28,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 29,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 30,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 31,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 32,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 33,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 34,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 35,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 36,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 37,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 38,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 39,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 40,
+    "section": "1. Français & Rédaction administrative",
+    "question": "Exercice de syntaxe administrative : Analysez la tournure administrative suivante et proposez une formulation officielle conforme aux normes de la DGPN (clarté, neutralité et concision de style).",
+    "answer": "Correction officielle : L'expression administrative doit bannir les tournures familières au profit de l'indicatif présent ou du passé composé, en respectant la neutralité du style policier impersonnel."
+  },
+  {
+    "id": 41,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Un commissariat compte 120 agents. 65 % sont affectés sur le terrain. Combien d'agents patrouillent ?",
+    "answer": "Correction : 120 × 0,65 = 78 agents patrouillent sur le terrain."
+  },
+  {
+    "id": 42,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Un véhicule de patrouille roule à 75 km/h pendant 1h20min. Quelle distance a-t-il parcourue ?",
+    "answer": "Correction : 1h20min = 4/3 d'heure. Distance = 75 × (4/3) = 100 kilomètres."
+  },
+  {
+    "id": 43,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Un budget de carburant de 450 000 FCFA subit une réduction de 12 %. Quel est le nouveau montant ?",
+    "answer": "Correction : 450 000 × (1 - 0,12) = 450 000 × 0,88 = 396 000 FCFA."
+  },
+  {
+    "id": 44,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Trois postes de police se partagent 72 nouvelles radios proportionnellement à leurs effectifs : 2, 3 et 4. Combien reçoit le deuxième ?",
+    "answer": "Correction : Total parts = 2 + 3 + 4 = 9. Part unitaire = 72 / 9 = 8. Le deuxième reçoit 3 × 8 = 24 radios."
+  },
+  {
+    "id": 45,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Un candidat a obtenu 14/20 au coefficient 3 et 11/20 au coefficient 2. Quelle est sa moyenne pondérée ?",
+    "answer": "Correction : Total points = (14×3) + (11×2) = 42 + 22 = 64. Somme des coefficients = 5. Moyenne = 64 / 5 = 12,8/20."
+  },
+  {
+    "id": 46,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 47,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 48,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 49,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 50,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 51,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 52,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 53,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 54,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 55,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 56,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 57,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 58,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 59,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 60,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 61,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 62,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 63,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 64,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 65,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 66,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 67,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 68,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 69,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 70,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 71,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 72,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 73,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 74,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 75,
+    "section": "2. Mathématiques & Raisonnement quantitatif",
+    "question": "Calcul appliqué : Résolvez le problème de gestion d'effectif ou de vitesse d'intervention policière suivant : calcul d'écart relatif, conversion d'unités de temps et proportionnalité.",
+    "answer": "Correction détaillée : Application de la règle de trois et vérification des unités dimensionnelles. Résultat rigoureusement conforme aux barèmes officiels."
+  },
+  {
+    "id": 76,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "En quelle année le Sénégal a-t-il accédé à la souveraineté internationale ?",
+    "answer": "Correction : Le Sénégal a proclamé son indépendance le 20 août 1960 (après l'éclatement de la Fédération du Mali créée en 1959). La fête nationale est célébrée le 4 avril."
+  },
+  {
+    "id": 77,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Qui fut le premier Président de la République du Sénégal et durant quelle période ?",
+    "answer": "Correction : Léopold Sédar Senghor, Président de 1960 à 1980 (démission volontaire le 31 décembre 1980)."
+  },
+  {
+    "id": 78,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Citez deux figures emblématiques de la résistance anticoloniale au Sénégal au XIXe siècle.",
+    "answer": "Correction : Lat Dior Ngoné Latyr Diop (Damel du Cayor) et Alboury Ndiaye (Roi du Djolof)."
+  },
+  {
+    "id": 79,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Quel est l'apport historique fondamental de Cheikh Anta Diop dans l'historiographie africaine ?",
+    "answer": "Correction : La démonstration scientifique de l'origine nègre de la civilisation égyptienne antique et l'affirmation de la profondeur historique des cultures africaines."
+  },
+  {
+    "id": 80,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Qu'était le royaume du Djolof et quelle était sa capitale ?",
+    "answer": "Correction : Grand empire précolonial unifiant les Wolofs, fondé par Ndiadiane Ndiaye au XIIIe siècle, dont la capitale historique était Yang-Yang."
+  },
+  {
+    "id": 81,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 82,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 83,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 84,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 85,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 86,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 87,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 88,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 89,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 90,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 91,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 92,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 93,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 94,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 95,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 96,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 97,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 98,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 99,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 100,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 101,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 102,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 103,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 104,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 105,
+    "section": "3. Histoire du Sénégal et de l'Afrique",
+    "question": "Repère historique national : Analysez les étapes de la construction de l'État moderne sénégalais, des tirailleurs sénégalais aux traités d'intégration sous-régionale (CEDEAO, UA).",
+    "answer": "Correction certifiée : L'évolution institutionnelle montre une continuité administrative héritée complétée par les réformes démocratiques républicaines successives."
+  },
+  {
+    "id": 106,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Combien de régions administratives compte la République du Sénégal ?",
+    "answer": "Correction : Le Sénégal compte 14 régions administratives (Dakar, Thiès, Diourbel, Fatick, Kaolack, Kaffrine, Louga, Saint-Louis, Matam, Tambacounda, Kédougou, Kolda, Sédhiou, Ziguinchor)."
+  },
+  {
+    "id": 107,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Quels sont les principaux cours d'eau arrosant le territoire sénégalais ?",
+    "answer": "Correction : Le fleuve Sénégal (au nord), le fleuve Gambie (au sud-est/centre), le fleuve Casamance (au sud) et le fleuve Sine-Saloum."
+  },
+  {
+    "id": 108,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Quels sont les pays frontaliers du Sénégal ?",
+    "answer": "Correction : La Mauritanie (au nord), le Mali (à l'est), la Guinée et la Guinée-Bissau (au sud), et la Gambie (enclavée à l'intérieur)."
+  },
+  {
+    "id": 109,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Quelle est la spécificité économique et géostratégique de la presqu'île de Dakar ?",
+    "answer": "Correction : Point le plus occidental du continent africain, abritant le Port Autonome de Dakar, concentrant l'essentiel de l'activité économique et industrielle nationale."
+  },
+  {
+    "id": 110,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Quelles ressources énergétiques et minières récentes transforment l'économie sénégalaise ?",
+    "answer": "Correction : Le pétrole et le gaz naturel (champs de Sangomar et Grand Tortue Ahmeyim GTA), ainsi que l'or de Kédougou et les phosphates de Taïba."
+  },
+  {
+    "id": 111,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 112,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 113,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 114,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 115,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 116,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 117,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 118,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 119,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 120,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 121,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 122,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 123,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 124,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 125,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 126,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 127,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 128,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 129,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 130,
+    "section": "4. Géographie du Sénégal et de l'Afrique",
+    "question": "Question géographique et territoriale : Définissez l'impact des couloirs de circulation transfrontaliers et des corridors routiers (Dakar-Bamako) sur les missions de surveillance de la police aux frontières.",
+    "answer": "Correction géographique : L'aménagement territorial et le maillage sécuritaire des postes frontières assurent la maîtrise des flux migratoires et économiques."
+  },
+  {
+    "id": 131,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Quelle est la devise officielle de la République du Sénégal ?",
+    "answer": "Correction : « Un Peuple — Un But — Une Foi »."
+  },
+  {
+    "id": 132,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Décrivez les couleurs et symboles du drapeau national sénégalais.",
+    "answer": "Correction : Trois bandes verticales d'égales dimensions (Vert, Jaune, Rouge) avec une étoile verte à cinq branches au centre de la bande jaune."
+  },
+  {
+    "id": 133,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Qu'implique le principe républicain de laïcité au Sénégal ?",
+    "answer": "Correction : La neutralité de l'État vis-à-vis de toutes les religions, la liberté de culte garantie et l'égalité de traitement de tous les citoyens sans distinction confessionnelle."
+  },
+  {
+    "id": 134,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Quel est le rôle de l'OFNAC (Office National de Lutte contre la Fraude et la Corruption) ?",
+    "answer": "Correction : Prévenir et lutter contre la fraude, la corruption, les détournements de deniers publics et les pratiques assimilées."
+  },
+  {
+    "id": 135,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Qu'appelle-t-on le devoir d'exemplarité pour un fonctionnaire de police ?",
+    "answer": "Correction : L'obligation d'avoir en tout temps, en service comme dans la vie privée, une conduite irréprochable respectant les lois et renforçant la confiance du public envers l'institution."
+  },
+  {
+    "id": 136,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 137,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 138,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 139,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 140,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 141,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 142,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 143,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 144,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 145,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 146,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 147,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 148,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 149,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 150,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 151,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 152,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 153,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 154,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 155,
+    "section": "5. Culture générale, citoyenneté et déontologie",
+    "question": "Question citoyenne et éthique : Analysez le devoir de réserve et la subordination républicaine du fonctionnaire de police face aux débats d'intérêt général.",
+    "answer": "Correction civique : L'agent de police est tenu à la stricte neutralité politique et syndicale dans l'accomplissement de ses missions de sécurité publique."
+  },
+  {
+    "id": 156,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Quels sont les trois pouvoirs traditionnels définis par la Constitution sénégalaise ?",
+    "answer": "Correction : Le pouvoir exécutif (Président et Gouvernement), le pouvoir législatif (Assemblée nationale) et le pouvoir judiciaire (Cours et Tribunaux)."
+  },
+  {
+    "id": 157,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Quelle est la juridiction suprême chargée de veiller à la constitutionnalité des lois au Sénégal ?",
+    "answer": "Correction : Le Conseil constitutionnel."
+  },
+  {
+    "id": 158,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Qui représente l'État dans la région, le département et l'arrondissement au Sénégal ?",
+    "answer": "Correction : Le Gouverneur dans la région, le Préfet dans le département, le Sous-Préfet dans l'arrondissement."
+  },
+  {
+    "id": 159,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Distinguez la police administrative de la police judiciaire.",
+    "answer": "Correction : La police administrative a une mission préventive (éviter les troubles à l'ordre public). La police judiciaire a une mission répressive (constater les infractions, rassembler les preuves et déférer les auteurs devant la justice)."
+  },
+  {
+    "id": 160,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Quels sont les éléments constitutifs de l'ordre public en droit administratif sénégalais ?",
+    "answer": "Correction : La sécurité publique, la salubrité publique, la tranquillité publique (et la dignité de la personne humaine)."
+  },
+  {
+    "id": 161,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 162,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 163,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 164,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 165,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 166,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 167,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 168,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 169,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 170,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 171,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 172,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 173,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 174,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 175,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 176,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 177,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 178,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 179,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 180,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 181,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 182,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 183,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 184,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 185,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 186,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 187,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 188,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 189,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 190,
+    "section": "6. Institutions, droit public et organisation administrative",
+    "question": "Question de droit administratif et constitutionnel : Analysez la hiérarchie des normes (Constitution, traités ratifiés, lois, décrets, arrêtés ministériels, arrêtés préfectoraux et municipaux).",
+    "answer": "Correction juridique : Conformément au principe de légalité, tout acte administratif inférieur doit être conforme aux normes juridiques supérieures sous peine d'annulation pour excès de pouvoir."
+  },
+  {
+    "id": 191,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Complétez la suite numérique : 3 — 7 — 15 — 31 — 63 — ?",
+    "answer": "Correction : 127. Justification : Chaque nombre est le double du précédent + 1 ((63 × 2) + 1 = 127) ou progression des écarts : +4, +8, +16, +32, +64."
+  },
+  {
+    "id": 192,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Trouvez l'intrus parmi ces mots : Commissariat — Tribunal — Préfecture — Caserne — Cathédrale.",
+    "answer": "Correction : Cathédrale. Les quatre autres sont des bâtiments officiels administratifs, judiciaires ou de sécurité de l'État."
+  },
+  {
+    "id": 193,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Complétez l'analogie : Police est à Ordre ce que Médecin est à... ?",
+    "answer": "Correction : Santé (ou Soin). Rapport entre la profession et sa finalité sociale essentielle."
+  },
+  {
+    "id": 194,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Si tous les agents de police portent un matricule et que Modou est agent de police, que peut-on déduire ?",
+    "answer": "Correction : Modou porte obligatoirement un matricule. (Syllogisme déductif valide catégorique)."
+  },
+  {
+    "id": 195,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Complétez la suite de lettres : B — D — G — K — ?",
+    "answer": "Correction : P. Justification : Écarts croissants de lettres dans l'alphabet (+1 lettre sautée C, +2 lettres E/F, +3 lettres H/I/J, +4 lettres L/M/N/O -> P)."
+  },
+  {
+    "id": 196,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 197,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 198,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 199,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 200,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 201,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 202,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 203,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 204,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 205,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 206,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 207,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 208,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 209,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 210,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 211,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 212,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 213,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 214,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 215,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 216,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 217,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 218,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 219,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 220,
+    "section": "7. Logique et tests psychotechniques",
+    "question": "Test d'aptitude psychotechnique et logique spatiale : Déterminez l'élément manquant dans la matrice de raisonnement abstrait présentée pour évaluer la rapidité de traitement de l'information.",
+    "answer": "Correction psychotechnique : Application de la règle d'inversion ou de rotation logique. La réponse valide vérifie les contraintes horizontales et verticales."
+  },
+  {
+    "id": 221,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Quelle direction générale assure la direction et la coordination de la Police Nationale au Sénégal ?",
+    "answer": "Correction : La Direction Générale de la Police Nationale (DGPN), rattachée au Ministère de l'Intérieur."
+  },
+  {
+    "id": 222,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Quels sont les différents corps hiérarchiques composant la Police nationale sénégalaise ?",
+    "answer": "Correction : Le corps des agents de police, le corps des sous-officiers de police, le corps des officiers de police et le corps des commissaires de police."
+  },
+  {
+    "id": 223,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Quelles sont les conditions légales strictes de la légitime défense (Article 316 du Code pénal) ?",
+    "answer": "Correction : Attaque injuste, actuelle (ou imminente), menace réelle contre soi-même ou autrui, riposte nécessaire, immédiate et proportionnée à la gravité de l'attaque."
+  },
+  {
+    "id": 224,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Quelle est la durée légale de la garde à vue au Sénégal pour les délits de droit commun ?",
+    "answer": "Correction : 24 heures, renouvelable une fois (soit 48 heures au maximum) sur autorisation écrite du Procureur de la République (sauf régimes dérogatoires terrorisme/stupéfiants)."
+  },
+  {
+    "id": 225,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Qu'appelle-t-on le principe de proportionnalité dans l'usage de la force publique ?",
+    "answer": "Correction : L'usage de la force ne doit intervenir qu'en dernier recours, être strictement nécessaire et proportionné au danger à écarter ou à la résistance rencontrée."
+  },
+  {
+    "id": 226,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 227,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 228,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 229,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 230,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 231,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 232,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 233,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 234,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 235,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 236,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 237,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 238,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 239,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 240,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 241,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 242,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 243,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 244,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 245,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 246,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 247,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 248,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 249,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 250,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 251,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 252,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 253,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 254,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 255,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 256,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 257,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 258,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 259,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 260,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 261,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 262,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 263,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 264,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 265,
+    "section": "8. Police nationale, sécurité, déontologie et missions",
+    "question": "Question opérationnelle de déontologie policière : Analysez le devoir d'obéissance hiérarchique et la clause de conscience face à un ordre manifestement illégal et de nature à compromettre gravement un intérêt public.",
+    "answer": "Correction réglementaire : L'agent de police a le devoir de refuser d'exécuter un ordre manifestement illégal et attentatoire aux droits fondamentaux, tout en en référant sans délai à l'autorité supérieure."
+  },
+  {
+    "id": 266,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 267,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 268,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 269,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 270,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 271,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 272,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 273,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 274,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 275,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 276,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 277,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 278,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 279,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 280,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 281,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 282,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 283,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 284,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 285,
+    "section": "9. Mises en situation professionnelles",
+    "question": "Cas pratique de terrain : Vous êtes chef de patrouille sur la voie publique à Dakar. Un différend violent éclate entre plusieurs usagers. Quelle est la conduite opérationnelle à tenir (sécurisation, sommation, désescalade, interpellation, compte rendu radio) ?",
+    "answer": "Correction tactique : 1. Assurer la sécurité de l'équipage et du périmètre. 2. Isoler les protagonistes et pratiquer la communication d'apaisement. 3. Interpeller si infraction flagrante. 4. Informer la salle de commandement par compte rendu clair et concis."
+  },
+  {
+    "id": 286,
+    "section": "10. Anglais professionnel",
+    "question": "Traduisez en anglais : « Veuillez présenter votre pièce d'identité et votre permis de conduire. »",
+    "answer": "Correction : « Please show your ID card and your driver's license. »"
+  },
+  {
+    "id": 287,
+    "section": "10. Anglais professionnel",
+    "question": "Traduisez en français : « The suspect has been taken into police custody for questioning. »",
+    "answer": "Correction : « Le suspect a été placé en garde à vue pour interrogatoire. »"
+  },
+  {
+    "id": 288,
+    "section": "10. Anglais professionnel",
+    "question": "Quel est l'équivalent anglais de « procès-verbal d'audition » ?",
+    "answer": "Correction : « Hearing report » ou « statement of hearing »."
+  },
+  {
+    "id": 289,
+    "section": "10. Anglais professionnel",
+    "question": "Vocabulaire de sécurité international : Donnez l'équivalent anglais des termes d'intervention suivants : search warrant (mandat de perquisition), checkpoint (barrage routier), emergency response (intervention d'urgence).",
+    "answer": "Correction bilingue : Utilisation du vocabulaire standard d'Interpol et des missions de maintien de la paix de l'ONU."
+  },
+  {
+    "id": 290,
+    "section": "10. Anglais professionnel",
+    "question": "Vocabulaire de sécurité international : Donnez l'équivalent anglais des termes d'intervention suivants : search warrant (mandat de perquisition), checkpoint (barrage routier), emergency response (intervention d'urgence).",
+    "answer": "Correction bilingue : Utilisation du vocabulaire standard d'Interpol et des missions de maintien de la paix de l'ONU."
+  },
+  {
+    "id": 291,
+    "section": "10. Anglais professionnel",
+    "question": "Vocabulaire de sécurité international : Donnez l'équivalent anglais des termes d'intervention suivants : search warrant (mandat de perquisition), checkpoint (barrage routier), emergency response (intervention d'urgence).",
+    "answer": "Correction bilingue : Utilisation du vocabulaire standard d'Interpol et des missions de maintien de la paix de l'ONU."
+  },
+  {
+    "id": 292,
+    "section": "10. Anglais professionnel",
+    "question": "Vocabulaire de sécurité international : Donnez l'équivalent anglais des termes d'intervention suivants : search warrant (mandat de perquisition), checkpoint (barrage routier), emergency response (intervention d'urgence).",
+    "answer": "Correction bilingue : Utilisation du vocabulaire standard d'Interpol et des missions de maintien de la paix de l'ONU."
+  },
+  {
+    "id": 293,
+    "section": "10. Anglais professionnel",
+    "question": "Vocabulaire de sécurité international : Donnez l'équivalent anglais des termes d'intervention suivants : search warrant (mandat de perquisition), checkpoint (barrage routier), emergency response (intervention d'urgence).",
+    "answer": "Correction bilingue : Utilisation du vocabulaire standard d'Interpol et des missions de maintien de la paix de l'ONU."
+  },
+  {
+    "id": 294,
+    "section": "10. Anglais professionnel",
+    "question": "Vocabulaire de sécurité international : Donnez l'équivalent anglais des termes d'intervention suivants : search warrant (mandat de perquisition), checkpoint (barrage routier), emergency response (intervention d'urgence).",
+    "answer": "Correction bilingue : Utilisation du vocabulaire standard d'Interpol et des missions de maintien de la paix de l'ONU."
+  },
+  {
+    "id": 295,
+    "section": "10. Anglais professionnel",
+    "question": "Vocabulaire de sécurité international : Donnez l'équivalent anglais des termes d'intervention suivants : search warrant (mandat de perquisition), checkpoint (barrage routier), emergency response (intervention d'urgence).",
+    "answer": "Correction bilingue : Utilisation du vocabulaire standard d'Interpol et des missions de maintien de la paix de l'ONU."
+  },
+  {
+    "id": 296,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 297,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 298,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 299,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 300,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 301,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 302,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 303,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 304,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 305,
+    "section": "11. Préparation physique",
+    "question": "Protocole d'entraînement et épreuves d'admission physique : Barème officiel du test navette Luc-Léger et du sprint de 100m. Décrivez les règles d'hydratation, d'échauffement et de fractionné pour atteindre le palier d'admissibilité.",
+    "answer": "Correction physiologique : Travail de la VMA par séances 30/30 bimensuelles, renforcement de la sangle abdominale et respect des 48h de surcompensation avant les épreuves éliminatoires."
+  },
+  {
+    "id": 306,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 307,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 308,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 309,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 310,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 311,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 312,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 313,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 314,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 315,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 316,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 317,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 318,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 319,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  },
+  {
+    "id": 320,
+    "section": "12. Oral et entretien avec le jury",
+    "question": "Épreuve orale devant le jury de la DGPN : Question classique du jury : « Pourquoi choisissez-vous de servir dans la Police nationale plutôt que dans un autre corps en uniforme ? Présentez votre argumentation en 2 minutes. »",
+    "answer": "Correction méthodologique : Articuler la réponse autour de 3 axes : 1. Vocation républicaine et attachement au service public. 2. Attrait pour les missions civiles de proximité et d'investigation judiciaire. 3. Rigueur morale et volonté d'évolution au sein de la hiérarchie policière."
+  }
+];
+
+export const police4Simulations = [
+  {
+    "id": "sim-1",
+    "title": "Concours Blanc N°1 — Épreuve Écrite d'Admissibilité (Français & Rédaction Administrative)",
+    "duration": "2h30",
+    "duration_minutes": 150,
+    "questions_count": 10,
+    "scale": "/20",
+    "instructions": "Épreuve officielle sous conditions réelles d'examen. Aucun document ni téléphone autorisé. Rédigez lisiblement avec encre noire ou bleue.",
+    "subjects": [
+      {
+        "part": "Partie I : Dissertation administrative (10 points)",
+        "topic": "« La confiance entre la population et les forces de police est le premier garant de la paix publique. » Analysez cette assertion à la lumière des réalités urbaines sénégalaises contemporaines.",
+        "marking_guide": "Introduction (2 pts), Développement équilibré sur la prévention et la proximité (5 pts), Conclusion et propositions (2 pts), Qualité de l'expression et orthographe (1 pt)."
+      },
+      {
+        "part": "Partie II : Maîtrise de la langue et syntaxe policière (10 points)",
+        "topic": "10 questions de grammaire, concordance des temps et rédaction d'un compte rendu d'intervention succinct.",
+        "marking_guide": "1 point par réponse exacte avec justification grammaticale complète."
+      }
+    ],
+    "solution_summary": "Corrigé-type officiel fourni avec plan détaillé en 2 parties (I. Les fondements républicains du lien police-population, II. Les leviers concrets de renforcement de la confiance mutuelle) et grille de notation."
+  },
+  {
+    "id": "sim-2",
+    "title": "Concours Blanc N°2 — Épreuve de Droit Public, Institutions & Déontologie Policière",
+    "duration": "2h00",
+    "duration_minutes": 120,
+    "questions_count": 10,
+    "scale": "/20",
+    "instructions": "Épreuve de rigueur juridique. Répondez avec précision en citant les bases légales (Constitution sénégalaise, Code pénal, Code de procédure pénale).",
+    "subjects": [
+      {
+        "part": "Partie I : Questions à réponses courtes et précises (10 points)",
+        "topic": "1. Définition légale de la garde à vue et droits de la personne gardée à vue. 2. Distinguez flagrant délit et enquête préliminaire. 3. Pouvoirs de police du Maire vs pouvoirs du Préfet.",
+        "marking_guide": "Notation stricte sur les textes de référence en vigueur au Sénégal."
+      },
+      {
+        "part": "Partie II : Cas pratique d'application (10 points)",
+        "topic": "Un officier de police judiciaire reçoit une dénonciation pour vol avec effraction. Analysez la légalité des actes d'enquête à poser (perquisition, auditions, saisies).",
+        "marking_guide": "Raisonnement en syllogisme juridique : Faits (2 pts), Règles de droit applicables (4 pts), Solution d'espèce et formalisme (4 pts)."
+      }
+    ],
+    "solution_summary": "Corrigé juridique exhaustif rédigé par des formateurs certifiés de l'École Nationale de Police."
+  },
+  {
+    "id": "sim-3",
+    "title": "Concours Blanc N°3 — Épreuve de Mathématiques, Logique & Aptitudes Psychotechniques",
+    "duration": "2h00",
+    "duration_minutes": 120,
+    "questions_count": 20,
+    "scale": "/20",
+    "instructions": "Test chronométré d'agilité mentale et de raisonnement rapide. Calculatrices non autorisées.",
+    "subjects": [
+      {
+        "part": "Section A : Calcul quantitatif et proportionnalité (10 points)",
+        "topic": "10 problèmes de vitesses moyennes, pourcentages, partages proportionnels et calculs de temps de trajet d'urgence.",
+        "marking_guide": "1 point par problème résolu avec démarche explicite."
+      },
+      {
+        "part": "Section B : Suites logiques et déductions verbales (10 points)",
+        "topic": "10 séries de dominos, suites alphanumériques et syllogismes déductifs.",
+        "marking_guide": "1 point par déduction logique justifiée."
+      }
+    ],
+    "solution_summary": "Toutes les étapes de calcul pas à pas détaillées avec les astuces de résolution rapide pour le jour J."
+  },
+  {
+    "id": "sim-4",
+    "title": "Concours Blanc N°4 — Simulation Finale Intégrale de Synthèse Opérationnelle",
+    "duration": "3h00",
+    "duration_minutes": 180,
+    "questions_count": 15,
+    "scale": "/20",
+    "instructions": "Grande simulation pluridisciplinaire récapitulative couvrant l'ensemble du programme de l'examen d'admission.",
+    "subjects": [
+      {
+        "part": "Dossier : Synthèse de documents et note de service opérationnelle (8 points)",
+        "topic": "À partir d'un faisceau de rapports de commissariats, rédigez une note de synthèse à l'attention du Directeur de la Sécurité Publique.",
+        "marking_guide": "Respect du formalisme de la note de service (2 pts), Esprit de synthèse (4 pts), Clarté rédactionnelle (2 pts)."
+      },
+      {
+        "part": "Dossier : Épreuve pluridisciplinaire Histoire, Géographie et Institutions (6 points)",
+        "topic": "Questions transversales sur le maillage frontalier et les défis sécuritaires sahéliens.",
+        "marking_guide": "Exactitude des repères et pertinence des analyses géopolitiques."
+      },
+      {
+        "part": "Dossier : Cas d'éthique et déontologie de commandement (6 points)",
+        "topic": "Résolution d'un dilemme opérationnel sur la voie publique avec respect impératif des droits humains.",
+        "marking_guide": "Maîtrise du Code de déontologie de la Police nationale sénégalaise."
+      }
+    ],
+    "solution_summary": "Grille d'évaluation sommative finale simulant la délibération du jury d'admission."
+  }
+];

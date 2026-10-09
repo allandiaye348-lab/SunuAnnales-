@@ -1,0 +1,2138 @@
+{
+  "id": "annale-esp-sn",
+  "title": "Concours ESP Dakar — Sénégal : École Supérieure Polytechnique (UCAD)",
+  "subtitle": "Édition Grandes Écoles d’Ingénieurs",
+  "total_exercises": 320,
+  "headerText": "Concours ESP Dakar — Sénégal : École Supérieure Polytechnique (UCAD) — Fascicule officiel",
+  "intro": "",
+  "official_reference": "Concours d'entrée à l'École Supérieure Polytechnique (ESP Dakar) — Université Cheikh Anta Diop de Dakar (UCAD).",
+  "summary_sections": [
+    {
+      "title": "1. Fondamentaux et culture professionnelle — ESP Dakar — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 1. Fondamentaux et culture professionnelle — ESP Dakar."
+    },
+    {
+      "title": "2. Méthodologie, outils techniques et normes appliquées — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 2. Méthodologie, outils techniques et normes appliquées."
+    },
+    {
+      "title": "3. Droit, réglementation et cadre institutionnel sénégalais — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 3. Droit, réglementation et cadre institutionnel sénégalais."
+    },
+    {
+      "title": "4. Mathématiques, calculs de gestion et analyse de données — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 4. Mathématiques, calculs de gestion et analyse de données."
+    },
+    {
+      "title": "5. Français, expression professionnelle et rédaction administrative — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 5. Français, expression professionnelle et rédaction administrative."
+    },
+    {
+      "title": "6. Logique, psychotechnique et résolution de problèmes — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 6. Logique, psychotechnique et résolution de problèmes."
+    },
+    {
+      "title": "7. Sciences, technologies et environnement sénégalais — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 7. Sciences, technologies et environnement sénégalais."
+    },
+    {
+      "title": "8. Culture générale, citoyenneté et institutions républicaines — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 8. Culture générale, citoyenneté et institutions républicaines."
+    },
+    {
+      "title": "9. Anglais professionnel et communication technique — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 9. Anglais professionnel et communication technique."
+    },
+    {
+      "title": "10. Situations professionnelles, études de cas et entretien oral — 32 exercices",
+      "count": 32,
+      "description": "Préparation intensive, notions fondamentales et cas pratiques corrigés de 10. Situations professionnelles, études de cas et entretien oral."
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Quels sont les objectifs majeurs et les compétences requises dans le domaine de ESP Dakar ?",
+      "answer": "Correction officielle & méthode : Maîtrise rigoureuse des notions de base, respect des normes professionnelles et capacité d'adaptation aux exigences du secteur public et privé sénégalais."
+    },
+    {
+      "id": 2,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Quelle est l'importance de la déontologie et de l'éthique dans l'exercice des fonctions de ESP Dakar ?",
+      "answer": "Correction officielle & méthode : Garantir la probité, le sens du service public, la confidentialité et la confiance des usagers et partenaires de l'État."
+    },
+    {
+      "id": 3,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Quelles sont les institutions et structures de tutelle régissant le secteur de ESP Dakar au Sénégal ?",
+      "answer": "Correction officielle & méthode : Les ministères sectoriels compétents, les directions techniques et les ordres professionnels reconnus par la loi."
+    },
+    {
+      "id": 4,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Comment les évolutions technologiques et réglementaires transforment-elles les pratiques de ESP Dakar ?",
+      "answer": "Correction officielle & méthode : Digitalisation des processus, gain de rapidité, traçabilité accrue et alignement sur les standards internationaux."
+    },
+    {
+      "id": 5,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Quelles sont les responsabilités civiles, administratives ou pénales engagées dans l'exercice de la profession ?",
+      "answer": "Correction officielle & méthode : Obligation de diligence, respect des textes en vigueur, sanctions disciplinaires en cas de faute professionnelle."
+    },
+    {
+      "id": 6,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les objectifs majeurs et les compétences requises dans le domaine de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Maîtrise rigoureuse des notions de base, respect des normes professionnelles et capacité d'adaptation aux exigences du secteur public et privé sénégalais. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 7,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est l'importance de la déontologie et de l'éthique dans l'exercice des fonctions de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Garantir la probité, le sens du service public, la confidentialité et la confiance des usagers et partenaires de l'État. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 8,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les institutions et structures de tutelle régissant le secteur de esp dakar au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Les ministères sectoriels compétents, les directions techniques et les ordres professionnels reconnus par la loi. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 9,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment les évolutions technologiques et réglementaires transforment-elles les pratiques de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Digitalisation des processus, gain de rapidité, traçabilité accrue et alignement sur les standards internationaux. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 10,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les responsabilités civiles, administratives ou pénales engagées dans l'exercice de la profession ?",
+      "answer": "Correction certifiée pas à pas : Obligation de diligence, respect des textes en vigueur, sanctions disciplinaires en cas de faute professionnelle. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 11,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les objectifs majeurs et les compétences requises dans le domaine de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Maîtrise rigoureuse des notions de base, respect des normes professionnelles et capacité d'adaptation aux exigences du secteur public et privé sénégalais. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 12,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est l'importance de la déontologie et de l'éthique dans l'exercice des fonctions de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Garantir la probité, le sens du service public, la confidentialité et la confiance des usagers et partenaires de l'État. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 13,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les institutions et structures de tutelle régissant le secteur de esp dakar au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Les ministères sectoriels compétents, les directions techniques et les ordres professionnels reconnus par la loi. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 14,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment les évolutions technologiques et réglementaires transforment-elles les pratiques de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Digitalisation des processus, gain de rapidité, traçabilité accrue et alignement sur les standards internationaux. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 15,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les responsabilités civiles, administratives ou pénales engagées dans l'exercice de la profession ?",
+      "answer": "Correction certifiée pas à pas : Obligation de diligence, respect des textes en vigueur, sanctions disciplinaires en cas de faute professionnelle. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 16,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les objectifs majeurs et les compétences requises dans le domaine de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Maîtrise rigoureuse des notions de base, respect des normes professionnelles et capacité d'adaptation aux exigences du secteur public et privé sénégalais. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 17,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est l'importance de la déontologie et de l'éthique dans l'exercice des fonctions de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Garantir la probité, le sens du service public, la confidentialité et la confiance des usagers et partenaires de l'État. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 18,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les institutions et structures de tutelle régissant le secteur de esp dakar au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Les ministères sectoriels compétents, les directions techniques et les ordres professionnels reconnus par la loi. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 19,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment les évolutions technologiques et réglementaires transforment-elles les pratiques de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Digitalisation des processus, gain de rapidité, traçabilité accrue et alignement sur les standards internationaux. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 20,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les responsabilités civiles, administratives ou pénales engagées dans l'exercice de la profession ?",
+      "answer": "Correction certifiée pas à pas : Obligation de diligence, respect des textes en vigueur, sanctions disciplinaires en cas de faute professionnelle. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 21,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les objectifs majeurs et les compétences requises dans le domaine de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Maîtrise rigoureuse des notions de base, respect des normes professionnelles et capacité d'adaptation aux exigences du secteur public et privé sénégalais. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 22,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est l'importance de la déontologie et de l'éthique dans l'exercice des fonctions de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Garantir la probité, le sens du service public, la confidentialité et la confiance des usagers et partenaires de l'État. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 23,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les institutions et structures de tutelle régissant le secteur de esp dakar au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Les ministères sectoriels compétents, les directions techniques et les ordres professionnels reconnus par la loi. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 24,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment les évolutions technologiques et réglementaires transforment-elles les pratiques de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Digitalisation des processus, gain de rapidité, traçabilité accrue et alignement sur les standards internationaux. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 25,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les responsabilités civiles, administratives ou pénales engagées dans l'exercice de la profession ?",
+      "answer": "Correction certifiée pas à pas : Obligation de diligence, respect des textes en vigueur, sanctions disciplinaires en cas de faute professionnelle. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 26,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les objectifs majeurs et les compétences requises dans le domaine de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Maîtrise rigoureuse des notions de base, respect des normes professionnelles et capacité d'adaptation aux exigences du secteur public et privé sénégalais. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 27,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est l'importance de la déontologie et de l'éthique dans l'exercice des fonctions de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Garantir la probité, le sens du service public, la confidentialité et la confiance des usagers et partenaires de l'État. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 28,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les institutions et structures de tutelle régissant le secteur de esp dakar au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Les ministères sectoriels compétents, les directions techniques et les ordres professionnels reconnus par la loi. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 29,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment les évolutions technologiques et réglementaires transforment-elles les pratiques de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Digitalisation des processus, gain de rapidité, traçabilité accrue et alignement sur les standards internationaux. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 30,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les responsabilités civiles, administratives ou pénales engagées dans l'exercice de la profession ?",
+      "answer": "Correction certifiée pas à pas : Obligation de diligence, respect des textes en vigueur, sanctions disciplinaires en cas de faute professionnelle. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 31,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les objectifs majeurs et les compétences requises dans le domaine de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Maîtrise rigoureuse des notions de base, respect des normes professionnelles et capacité d'adaptation aux exigences du secteur public et privé sénégalais. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 32,
+      "section": "1. Fondamentaux et culture professionnelle — ESP Dakar",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est l'importance de la déontologie et de l'éthique dans l'exercice des fonctions de esp dakar ?",
+      "answer": "Correction certifiée pas à pas : Garantir la probité, le sens du service public, la confidentialité et la confiance des usagers et partenaires de l'État. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 33,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Décrivez la démarche méthodique standard adoptée par les professionnels de ESP Dakar.",
+      "answer": "Correction officielle & méthode : Phase de diagnostic et recueil des données, analyse technique, formulation de propositions et contrôle de qualité final."
+    },
+    {
+      "id": 34,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Quels sont les outils informatiques et logiciels spécialisés indispensables dans ce domaine ?",
+      "answer": "Correction officielle & méthode : Outils bureautiques avancés (tableurs, traitement de texte), logiciels métiers dédiés et bases de données spécialisées."
+    },
+    {
+      "id": 35,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Comment veille-t-on au respect des normes de qualité et de sécurité réglementaires ?",
+      "answer": "Correction officielle & méthode : Application stricte des guides méthodologiques officiels, audits périodiques et fiches de contrôle de conformité."
+    },
+    {
+      "id": 36,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Expliquez le principe de traçabilité des opérations et actes professionnels.",
+      "answer": "Correction officielle & méthode : Enregistrement chronologique systématique, archivage sécurisé et référencement précis de chaque action."
+    },
+    {
+      "id": 37,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Quelles méthodes permettent d'optimiser les délais de traitement des dossiers techniques ?",
+      "answer": "Correction officielle & méthode : Planification par objectifs, priorisation selon l'urgence et automatisation des tâches répétitives."
+    },
+    {
+      "id": 38,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : décrivez la démarche méthodique standard adoptée par les professionnels de esp dakar.",
+      "answer": "Correction certifiée pas à pas : Phase de diagnostic et recueil des données, analyse technique, formulation de propositions et contrôle de qualité final. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 39,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les outils informatiques et logiciels spécialisés indispensables dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Outils bureautiques avancés (tableurs, traitement de texte), logiciels métiers dédiés et bases de données spécialisées. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 40,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment veille-t-on au respect des normes de qualité et de sécurité réglementaires ?",
+      "answer": "Correction certifiée pas à pas : Application stricte des guides méthodologiques officiels, audits périodiques et fiches de contrôle de conformité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 41,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe de traçabilité des opérations et actes professionnels.",
+      "answer": "Correction certifiée pas à pas : Enregistrement chronologique systématique, archivage sécurisé et référencement précis de chaque action. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 42,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles méthodes permettent d'optimiser les délais de traitement des dossiers techniques ?",
+      "answer": "Correction certifiée pas à pas : Planification par objectifs, priorisation selon l'urgence et automatisation des tâches répétitives. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 43,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : décrivez la démarche méthodique standard adoptée par les professionnels de esp dakar.",
+      "answer": "Correction certifiée pas à pas : Phase de diagnostic et recueil des données, analyse technique, formulation de propositions et contrôle de qualité final. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 44,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les outils informatiques et logiciels spécialisés indispensables dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Outils bureautiques avancés (tableurs, traitement de texte), logiciels métiers dédiés et bases de données spécialisées. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 45,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment veille-t-on au respect des normes de qualité et de sécurité réglementaires ?",
+      "answer": "Correction certifiée pas à pas : Application stricte des guides méthodologiques officiels, audits périodiques et fiches de contrôle de conformité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 46,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe de traçabilité des opérations et actes professionnels.",
+      "answer": "Correction certifiée pas à pas : Enregistrement chronologique systématique, archivage sécurisé et référencement précis de chaque action. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 47,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles méthodes permettent d'optimiser les délais de traitement des dossiers techniques ?",
+      "answer": "Correction certifiée pas à pas : Planification par objectifs, priorisation selon l'urgence et automatisation des tâches répétitives. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 48,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : décrivez la démarche méthodique standard adoptée par les professionnels de esp dakar.",
+      "answer": "Correction certifiée pas à pas : Phase de diagnostic et recueil des données, analyse technique, formulation de propositions et contrôle de qualité final. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 49,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les outils informatiques et logiciels spécialisés indispensables dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Outils bureautiques avancés (tableurs, traitement de texte), logiciels métiers dédiés et bases de données spécialisées. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 50,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment veille-t-on au respect des normes de qualité et de sécurité réglementaires ?",
+      "answer": "Correction certifiée pas à pas : Application stricte des guides méthodologiques officiels, audits périodiques et fiches de contrôle de conformité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 51,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe de traçabilité des opérations et actes professionnels.",
+      "answer": "Correction certifiée pas à pas : Enregistrement chronologique systématique, archivage sécurisé et référencement précis de chaque action. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 52,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles méthodes permettent d'optimiser les délais de traitement des dossiers techniques ?",
+      "answer": "Correction certifiée pas à pas : Planification par objectifs, priorisation selon l'urgence et automatisation des tâches répétitives. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 53,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : décrivez la démarche méthodique standard adoptée par les professionnels de esp dakar.",
+      "answer": "Correction certifiée pas à pas : Phase de diagnostic et recueil des données, analyse technique, formulation de propositions et contrôle de qualité final. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 54,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les outils informatiques et logiciels spécialisés indispensables dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Outils bureautiques avancés (tableurs, traitement de texte), logiciels métiers dédiés et bases de données spécialisées. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 55,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment veille-t-on au respect des normes de qualité et de sécurité réglementaires ?",
+      "answer": "Correction certifiée pas à pas : Application stricte des guides méthodologiques officiels, audits périodiques et fiches de contrôle de conformité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 56,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe de traçabilité des opérations et actes professionnels.",
+      "answer": "Correction certifiée pas à pas : Enregistrement chronologique systématique, archivage sécurisé et référencement précis de chaque action. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 57,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles méthodes permettent d'optimiser les délais de traitement des dossiers techniques ?",
+      "answer": "Correction certifiée pas à pas : Planification par objectifs, priorisation selon l'urgence et automatisation des tâches répétitives. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 58,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : décrivez la démarche méthodique standard adoptée par les professionnels de esp dakar.",
+      "answer": "Correction certifiée pas à pas : Phase de diagnostic et recueil des données, analyse technique, formulation de propositions et contrôle de qualité final. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 59,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les outils informatiques et logiciels spécialisés indispensables dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Outils bureautiques avancés (tableurs, traitement de texte), logiciels métiers dédiés et bases de données spécialisées. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 60,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment veille-t-on au respect des normes de qualité et de sécurité réglementaires ?",
+      "answer": "Correction certifiée pas à pas : Application stricte des guides méthodologiques officiels, audits périodiques et fiches de contrôle de conformité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 61,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe de traçabilité des opérations et actes professionnels.",
+      "answer": "Correction certifiée pas à pas : Enregistrement chronologique systématique, archivage sécurisé et référencement précis de chaque action. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 62,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles méthodes permettent d'optimiser les délais de traitement des dossiers techniques ?",
+      "answer": "Correction certifiée pas à pas : Planification par objectifs, priorisation selon l'urgence et automatisation des tâches répétitives. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 63,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : décrivez la démarche méthodique standard adoptée par les professionnels de esp dakar.",
+      "answer": "Correction certifiée pas à pas : Phase de diagnostic et recueil des données, analyse technique, formulation de propositions et contrôle de qualité final. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 64,
+      "section": "2. Méthodologie, outils techniques et normes appliquées",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les outils informatiques et logiciels spécialisés indispensables dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Outils bureautiques avancés (tableurs, traitement de texte), logiciels métiers dédiés et bases de données spécialisées. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 65,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Quels sont les textes législatifs et réglementaires fondamentaux régissant ce secteur au Sénégal ?",
+      "answer": "Correction officielle & méthode : Lois, décrets d'application, arrêtés ministériels et directives communautaires (UEMOA, CEDEAO) applicables."
+    },
+    {
+      "id": 66,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Quels sont les droits et devoirs des agents et praticiens dans l'exercice de leurs missions ?",
+      "answer": "Correction officielle & méthode : Droit à la protection fonctionnelle et à la formation ; devoirs de réserve, d'obéissance hiérarchique et d'intégrité."
+    },
+    {
+      "id": 67,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Comment s'organise le contrôle hiérarchique et juridictionnel sur les actes posés ?",
+      "answer": "Correction officielle & méthode : Contrôle interne de la hiérarchie administrative et contrôle juridictionnel externe (tribunaux administratifs, Cour des comptes)."
+    },
+    {
+      "id": 68,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Quelle est la place du secret professionnel et de la protection des données sensibles ?",
+      "answer": "Correction officielle & méthode : Obligation légale stricte interdisant toute divulgation non autorisée d'informations protégées sous peine de sanctions pénales."
+    },
+    {
+      "id": 69,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Quelles sont les règles régissant la passation des marchés et contrats dans ce domaine ?",
+      "answer": "Correction officielle & méthode : Transparence, égalité de traitement des candidats, mise en concurrence loyale et respect du Code des marchés publics."
+    },
+    {
+      "id": 70,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les textes législatifs et réglementaires fondamentaux régissant ce secteur au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Lois, décrets d'application, arrêtés ministériels et directives communautaires (UEMOA, CEDEAO) applicables. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 71,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les droits et devoirs des agents et praticiens dans l'exercice de leurs missions ?",
+      "answer": "Correction certifiée pas à pas : Droit à la protection fonctionnelle et à la formation ; devoirs de réserve, d'obéissance hiérarchique et d'intégrité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 72,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment s'organise le contrôle hiérarchique et juridictionnel sur les actes posés ?",
+      "answer": "Correction certifiée pas à pas : Contrôle interne de la hiérarchie administrative et contrôle juridictionnel externe (tribunaux administratifs, Cour des comptes). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 73,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la place du secret professionnel et de la protection des données sensibles ?",
+      "answer": "Correction certifiée pas à pas : Obligation légale stricte interdisant toute divulgation non autorisée d'informations protégées sous peine de sanctions pénales. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 74,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les règles régissant la passation des marchés et contrats dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Transparence, égalité de traitement des candidats, mise en concurrence loyale et respect du Code des marchés publics. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 75,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les textes législatifs et réglementaires fondamentaux régissant ce secteur au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Lois, décrets d'application, arrêtés ministériels et directives communautaires (UEMOA, CEDEAO) applicables. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 76,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les droits et devoirs des agents et praticiens dans l'exercice de leurs missions ?",
+      "answer": "Correction certifiée pas à pas : Droit à la protection fonctionnelle et à la formation ; devoirs de réserve, d'obéissance hiérarchique et d'intégrité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 77,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment s'organise le contrôle hiérarchique et juridictionnel sur les actes posés ?",
+      "answer": "Correction certifiée pas à pas : Contrôle interne de la hiérarchie administrative et contrôle juridictionnel externe (tribunaux administratifs, Cour des comptes). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 78,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la place du secret professionnel et de la protection des données sensibles ?",
+      "answer": "Correction certifiée pas à pas : Obligation légale stricte interdisant toute divulgation non autorisée d'informations protégées sous peine de sanctions pénales. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 79,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les règles régissant la passation des marchés et contrats dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Transparence, égalité de traitement des candidats, mise en concurrence loyale et respect du Code des marchés publics. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 80,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les textes législatifs et réglementaires fondamentaux régissant ce secteur au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Lois, décrets d'application, arrêtés ministériels et directives communautaires (UEMOA, CEDEAO) applicables. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 81,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les droits et devoirs des agents et praticiens dans l'exercice de leurs missions ?",
+      "answer": "Correction certifiée pas à pas : Droit à la protection fonctionnelle et à la formation ; devoirs de réserve, d'obéissance hiérarchique et d'intégrité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 82,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment s'organise le contrôle hiérarchique et juridictionnel sur les actes posés ?",
+      "answer": "Correction certifiée pas à pas : Contrôle interne de la hiérarchie administrative et contrôle juridictionnel externe (tribunaux administratifs, Cour des comptes). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 83,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la place du secret professionnel et de la protection des données sensibles ?",
+      "answer": "Correction certifiée pas à pas : Obligation légale stricte interdisant toute divulgation non autorisée d'informations protégées sous peine de sanctions pénales. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 84,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les règles régissant la passation des marchés et contrats dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Transparence, égalité de traitement des candidats, mise en concurrence loyale et respect du Code des marchés publics. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 85,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les textes législatifs et réglementaires fondamentaux régissant ce secteur au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Lois, décrets d'application, arrêtés ministériels et directives communautaires (UEMOA, CEDEAO) applicables. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 86,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les droits et devoirs des agents et praticiens dans l'exercice de leurs missions ?",
+      "answer": "Correction certifiée pas à pas : Droit à la protection fonctionnelle et à la formation ; devoirs de réserve, d'obéissance hiérarchique et d'intégrité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 87,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment s'organise le contrôle hiérarchique et juridictionnel sur les actes posés ?",
+      "answer": "Correction certifiée pas à pas : Contrôle interne de la hiérarchie administrative et contrôle juridictionnel externe (tribunaux administratifs, Cour des comptes). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 88,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la place du secret professionnel et de la protection des données sensibles ?",
+      "answer": "Correction certifiée pas à pas : Obligation légale stricte interdisant toute divulgation non autorisée d'informations protégées sous peine de sanctions pénales. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 89,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les règles régissant la passation des marchés et contrats dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Transparence, égalité de traitement des candidats, mise en concurrence loyale et respect du Code des marchés publics. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 90,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les textes législatifs et réglementaires fondamentaux régissant ce secteur au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Lois, décrets d'application, arrêtés ministériels et directives communautaires (UEMOA, CEDEAO) applicables. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 91,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les droits et devoirs des agents et praticiens dans l'exercice de leurs missions ?",
+      "answer": "Correction certifiée pas à pas : Droit à la protection fonctionnelle et à la formation ; devoirs de réserve, d'obéissance hiérarchique et d'intégrité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 92,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment s'organise le contrôle hiérarchique et juridictionnel sur les actes posés ?",
+      "answer": "Correction certifiée pas à pas : Contrôle interne de la hiérarchie administrative et contrôle juridictionnel externe (tribunaux administratifs, Cour des comptes). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 93,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la place du secret professionnel et de la protection des données sensibles ?",
+      "answer": "Correction certifiée pas à pas : Obligation légale stricte interdisant toute divulgation non autorisée d'informations protégées sous peine de sanctions pénales. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 94,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les règles régissant la passation des marchés et contrats dans ce domaine ?",
+      "answer": "Correction certifiée pas à pas : Transparence, égalité de traitement des candidats, mise en concurrence loyale et respect du Code des marchés publics. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 95,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les textes législatifs et réglementaires fondamentaux régissant ce secteur au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Lois, décrets d'application, arrêtés ministériels et directives communautaires (UEMOA, CEDEAO) applicables. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 96,
+      "section": "3. Droit, réglementation et cadre institutionnel sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les droits et devoirs des agents et praticiens dans l'exercice de leurs missions ?",
+      "answer": "Correction certifiée pas à pas : Droit à la protection fonctionnelle et à la formation ; devoirs de réserve, d'obéissance hiérarchique et d'intégrité. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 97,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Résolvez un calcul de pourcentage d'évolution : une valeur passe de 150 000 à 180 000 FCFA. Taux ?",
+      "answer": "Correction officielle & méthode : Taux d'évolution = (180 000 - 150 000) / 150 000 = 30 000 / 150 000 = +20,0 %."
+    },
+    {
+      "id": 98,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Un budget de 12 000 000 FCFA est réparti entre trois postes selon les ratios 2, 3 et 5. Part du premier ?",
+      "answer": "Correction officielle & méthode : Somme des parts = 10. Part unitaire = 1 200 000 FCFA. Premier poste = 2 × 1 200 000 = 2 400 000 FCFA."
+    },
+    {
+      "id": 99,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Calculez la moyenne pondérée de notes : 14 (coeff 3), 11 (coeff 2) et 16 (coeff 5).",
+      "answer": "Correction officielle & méthode : Total points = (14×3) + (11×2) + (16×5) = 42 + 22 + 80 = 144. Total coefficients = 10. Moyenne = 14,4 / 20."
+    },
+    {
+      "id": 100,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Une tâche technique nécessite 120 heures. Une équipe de 4 techniciens travaille 6h par jour. En combien de jours ?",
+      "answer": "Correction officielle & méthode : Capacité journalière = 4 × 6 = 24 heures par jour. Nombre de jours = 120 / 24 = 5 jours ouvrés."
+    },
+    {
+      "id": 101,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Application d'une remise commerciale de 8 % sur un montant brut de 450 000 FCFA. Montant net ?",
+      "answer": "Correction officielle & méthode : Montant net = 450 000 × (1 - 0,08) = 450 000 × 0,92 = 414 000 FCFA."
+    },
+    {
+      "id": 102,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez un calcul de pourcentage d'évolution : une valeur passe de 150 000 à 180 000 fcfa. taux ?",
+      "answer": "Correction certifiée pas à pas : Taux d'évolution = (180 000 - 150 000) / 150 000 = 30 000 / 150 000 = +20,0 %. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 103,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : un budget de 12 000 000 fcfa est réparti entre trois postes selon les ratios 2, 3 et 5. part du premier ?",
+      "answer": "Correction certifiée pas à pas : Somme des parts = 10. Part unitaire = 1 200 000 FCFA. Premier poste = 2 × 1 200 000 = 2 400 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 104,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : calculez la moyenne pondérée de notes : 14 (coeff 3), 11 (coeff 2) et 16 (coeff 5).",
+      "answer": "Correction certifiée pas à pas : Total points = (14×3) + (11×2) + (16×5) = 42 + 22 + 80 = 144. Total coefficients = 10. Moyenne = 14,4 / 20. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 105,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : une tâche technique nécessite 120 heures. une équipe de 4 techniciens travaille 6h par jour. en combien de jours ?",
+      "answer": "Correction certifiée pas à pas : Capacité journalière = 4 × 6 = 24 heures par jour. Nombre de jours = 120 / 24 = 5 jours ouvrés. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 106,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : application d'une remise commerciale de 8 % sur un montant brut de 450 000 fcfa. montant net ?",
+      "answer": "Correction certifiée pas à pas : Montant net = 450 000 × (1 - 0,08) = 450 000 × 0,92 = 414 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 107,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez un calcul de pourcentage d'évolution : une valeur passe de 150 000 à 180 000 fcfa. taux ?",
+      "answer": "Correction certifiée pas à pas : Taux d'évolution = (180 000 - 150 000) / 150 000 = 30 000 / 150 000 = +20,0 %. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 108,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : un budget de 12 000 000 fcfa est réparti entre trois postes selon les ratios 2, 3 et 5. part du premier ?",
+      "answer": "Correction certifiée pas à pas : Somme des parts = 10. Part unitaire = 1 200 000 FCFA. Premier poste = 2 × 1 200 000 = 2 400 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 109,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : calculez la moyenne pondérée de notes : 14 (coeff 3), 11 (coeff 2) et 16 (coeff 5).",
+      "answer": "Correction certifiée pas à pas : Total points = (14×3) + (11×2) + (16×5) = 42 + 22 + 80 = 144. Total coefficients = 10. Moyenne = 14,4 / 20. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 110,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : une tâche technique nécessite 120 heures. une équipe de 4 techniciens travaille 6h par jour. en combien de jours ?",
+      "answer": "Correction certifiée pas à pas : Capacité journalière = 4 × 6 = 24 heures par jour. Nombre de jours = 120 / 24 = 5 jours ouvrés. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 111,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : application d'une remise commerciale de 8 % sur un montant brut de 450 000 fcfa. montant net ?",
+      "answer": "Correction certifiée pas à pas : Montant net = 450 000 × (1 - 0,08) = 450 000 × 0,92 = 414 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 112,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez un calcul de pourcentage d'évolution : une valeur passe de 150 000 à 180 000 fcfa. taux ?",
+      "answer": "Correction certifiée pas à pas : Taux d'évolution = (180 000 - 150 000) / 150 000 = 30 000 / 150 000 = +20,0 %. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 113,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : un budget de 12 000 000 fcfa est réparti entre trois postes selon les ratios 2, 3 et 5. part du premier ?",
+      "answer": "Correction certifiée pas à pas : Somme des parts = 10. Part unitaire = 1 200 000 FCFA. Premier poste = 2 × 1 200 000 = 2 400 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 114,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : calculez la moyenne pondérée de notes : 14 (coeff 3), 11 (coeff 2) et 16 (coeff 5).",
+      "answer": "Correction certifiée pas à pas : Total points = (14×3) + (11×2) + (16×5) = 42 + 22 + 80 = 144. Total coefficients = 10. Moyenne = 14,4 / 20. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 115,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : une tâche technique nécessite 120 heures. une équipe de 4 techniciens travaille 6h par jour. en combien de jours ?",
+      "answer": "Correction certifiée pas à pas : Capacité journalière = 4 × 6 = 24 heures par jour. Nombre de jours = 120 / 24 = 5 jours ouvrés. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 116,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : application d'une remise commerciale de 8 % sur un montant brut de 450 000 fcfa. montant net ?",
+      "answer": "Correction certifiée pas à pas : Montant net = 450 000 × (1 - 0,08) = 450 000 × 0,92 = 414 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 117,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez un calcul de pourcentage d'évolution : une valeur passe de 150 000 à 180 000 fcfa. taux ?",
+      "answer": "Correction certifiée pas à pas : Taux d'évolution = (180 000 - 150 000) / 150 000 = 30 000 / 150 000 = +20,0 %. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 118,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : un budget de 12 000 000 fcfa est réparti entre trois postes selon les ratios 2, 3 et 5. part du premier ?",
+      "answer": "Correction certifiée pas à pas : Somme des parts = 10. Part unitaire = 1 200 000 FCFA. Premier poste = 2 × 1 200 000 = 2 400 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 119,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : calculez la moyenne pondérée de notes : 14 (coeff 3), 11 (coeff 2) et 16 (coeff 5).",
+      "answer": "Correction certifiée pas à pas : Total points = (14×3) + (11×2) + (16×5) = 42 + 22 + 80 = 144. Total coefficients = 10. Moyenne = 14,4 / 20. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 120,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : une tâche technique nécessite 120 heures. une équipe de 4 techniciens travaille 6h par jour. en combien de jours ?",
+      "answer": "Correction certifiée pas à pas : Capacité journalière = 4 × 6 = 24 heures par jour. Nombre de jours = 120 / 24 = 5 jours ouvrés. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 121,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : application d'une remise commerciale de 8 % sur un montant brut de 450 000 fcfa. montant net ?",
+      "answer": "Correction certifiée pas à pas : Montant net = 450 000 × (1 - 0,08) = 450 000 × 0,92 = 414 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 122,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez un calcul de pourcentage d'évolution : une valeur passe de 150 000 à 180 000 fcfa. taux ?",
+      "answer": "Correction certifiée pas à pas : Taux d'évolution = (180 000 - 150 000) / 150 000 = 30 000 / 150 000 = +20,0 %. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 123,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : un budget de 12 000 000 fcfa est réparti entre trois postes selon les ratios 2, 3 et 5. part du premier ?",
+      "answer": "Correction certifiée pas à pas : Somme des parts = 10. Part unitaire = 1 200 000 FCFA. Premier poste = 2 × 1 200 000 = 2 400 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 124,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : calculez la moyenne pondérée de notes : 14 (coeff 3), 11 (coeff 2) et 16 (coeff 5).",
+      "answer": "Correction certifiée pas à pas : Total points = (14×3) + (11×2) + (16×5) = 42 + 22 + 80 = 144. Total coefficients = 10. Moyenne = 14,4 / 20. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 125,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : une tâche technique nécessite 120 heures. une équipe de 4 techniciens travaille 6h par jour. en combien de jours ?",
+      "answer": "Correction certifiée pas à pas : Capacité journalière = 4 × 6 = 24 heures par jour. Nombre de jours = 120 / 24 = 5 jours ouvrés. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 126,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : application d'une remise commerciale de 8 % sur un montant brut de 450 000 fcfa. montant net ?",
+      "answer": "Correction certifiée pas à pas : Montant net = 450 000 × (1 - 0,08) = 450 000 × 0,92 = 414 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 127,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez un calcul de pourcentage d'évolution : une valeur passe de 150 000 à 180 000 fcfa. taux ?",
+      "answer": "Correction certifiée pas à pas : Taux d'évolution = (180 000 - 150 000) / 150 000 = 30 000 / 150 000 = +20,0 %. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 128,
+      "section": "4. Mathématiques, calculs de gestion et analyse de données",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : un budget de 12 000 000 fcfa est réparti entre trois postes selon les ratios 2, 3 et 5. part du premier ?",
+      "answer": "Correction certifiée pas à pas : Somme des parts = 10. Part unitaire = 1 200 000 FCFA. Premier poste = 2 × 1 200 000 = 2 400 000 FCFA. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 129,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Corrigez l'erreur d'accord : 'Les dossiers que nous avons reçu hier comporte des pièces manquantes.'",
+      "answer": "Correction officielle & méthode : Correction : 'Les dossiers que nous avons reçus hier comportent des pièces manquantes.' (accord participe passé avec COD antécédent, accord verbe avec sujet pluriel)."
+    },
+    {
+      "id": 130,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Rédigez la formule de conclusion officielle d'une lettre administrative adressée à un supérieur.",
+      "answer": "Correction officielle & méthode : « Je vous prie d'agréer, Monsieur le Directeur, l'expression de mon profond respect. »"
+    },
+    {
+      "id": 131,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Quelle est la différence fondamentale entre une note de service et une circulaire administrative ?",
+      "answer": "Correction officielle & méthode : Une note de service donne des instructions ponctuelles internes à un service ; une circulaire diffuse des consignes générales d'interprétation des textes à l'ensemble des agents."
+    },
+    {
+      "id": 132,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Donnez un synonyme soigné de 'mettre en place' dans un rapport administratif.",
+      "answer": "Correction officielle & méthode : Instaurer, implémenter, instituer ou déployer."
+    },
+    {
+      "id": 133,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Conjuguez au subjonctif présent : 'Il est indispensable que le responsable (savoir) anticiper.'",
+      "answer": "Correction officielle & méthode : Correction : 'qu'il sache anticiper'."
+    },
+    {
+      "id": 134,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : corrigez l'erreur d'accord : 'les dossiers que nous avons reçu hier comporte des pièces manquantes.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'Les dossiers que nous avons reçus hier comportent des pièces manquantes.' (accord participe passé avec COD antécédent, accord verbe avec sujet pluriel). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 135,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : rédigez la formule de conclusion officielle d'une lettre administrative adressée à un supérieur.",
+      "answer": "Correction certifiée pas à pas : « Je vous prie d'agréer, Monsieur le Directeur, l'expression de mon profond respect. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 136,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la différence fondamentale entre une note de service et une circulaire administrative ?",
+      "answer": "Correction certifiée pas à pas : Une note de service donne des instructions ponctuelles internes à un service ; une circulaire diffuse des consignes générales d'interprétation des textes à l'ensemble des agents. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 137,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez un synonyme soigné de 'mettre en place' dans un rapport administratif.",
+      "answer": "Correction certifiée pas à pas : Instaurer, implémenter, instituer ou déployer. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 138,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : conjuguez au subjonctif présent : 'il est indispensable que le responsable (savoir) anticiper.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'qu'il sache anticiper'. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 139,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : corrigez l'erreur d'accord : 'les dossiers que nous avons reçu hier comporte des pièces manquantes.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'Les dossiers que nous avons reçus hier comportent des pièces manquantes.' (accord participe passé avec COD antécédent, accord verbe avec sujet pluriel). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 140,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : rédigez la formule de conclusion officielle d'une lettre administrative adressée à un supérieur.",
+      "answer": "Correction certifiée pas à pas : « Je vous prie d'agréer, Monsieur le Directeur, l'expression de mon profond respect. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 141,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la différence fondamentale entre une note de service et une circulaire administrative ?",
+      "answer": "Correction certifiée pas à pas : Une note de service donne des instructions ponctuelles internes à un service ; une circulaire diffuse des consignes générales d'interprétation des textes à l'ensemble des agents. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 142,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez un synonyme soigné de 'mettre en place' dans un rapport administratif.",
+      "answer": "Correction certifiée pas à pas : Instaurer, implémenter, instituer ou déployer. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 143,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : conjuguez au subjonctif présent : 'il est indispensable que le responsable (savoir) anticiper.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'qu'il sache anticiper'. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 144,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : corrigez l'erreur d'accord : 'les dossiers que nous avons reçu hier comporte des pièces manquantes.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'Les dossiers que nous avons reçus hier comportent des pièces manquantes.' (accord participe passé avec COD antécédent, accord verbe avec sujet pluriel). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 145,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : rédigez la formule de conclusion officielle d'une lettre administrative adressée à un supérieur.",
+      "answer": "Correction certifiée pas à pas : « Je vous prie d'agréer, Monsieur le Directeur, l'expression de mon profond respect. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 146,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la différence fondamentale entre une note de service et une circulaire administrative ?",
+      "answer": "Correction certifiée pas à pas : Une note de service donne des instructions ponctuelles internes à un service ; une circulaire diffuse des consignes générales d'interprétation des textes à l'ensemble des agents. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 147,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez un synonyme soigné de 'mettre en place' dans un rapport administratif.",
+      "answer": "Correction certifiée pas à pas : Instaurer, implémenter, instituer ou déployer. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 148,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : conjuguez au subjonctif présent : 'il est indispensable que le responsable (savoir) anticiper.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'qu'il sache anticiper'. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 149,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : corrigez l'erreur d'accord : 'les dossiers que nous avons reçu hier comporte des pièces manquantes.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'Les dossiers que nous avons reçus hier comportent des pièces manquantes.' (accord participe passé avec COD antécédent, accord verbe avec sujet pluriel). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 150,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : rédigez la formule de conclusion officielle d'une lettre administrative adressée à un supérieur.",
+      "answer": "Correction certifiée pas à pas : « Je vous prie d'agréer, Monsieur le Directeur, l'expression de mon profond respect. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 151,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la différence fondamentale entre une note de service et une circulaire administrative ?",
+      "answer": "Correction certifiée pas à pas : Une note de service donne des instructions ponctuelles internes à un service ; une circulaire diffuse des consignes générales d'interprétation des textes à l'ensemble des agents. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 152,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez un synonyme soigné de 'mettre en place' dans un rapport administratif.",
+      "answer": "Correction certifiée pas à pas : Instaurer, implémenter, instituer ou déployer. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 153,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : conjuguez au subjonctif présent : 'il est indispensable que le responsable (savoir) anticiper.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'qu'il sache anticiper'. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 154,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : corrigez l'erreur d'accord : 'les dossiers que nous avons reçu hier comporte des pièces manquantes.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'Les dossiers que nous avons reçus hier comportent des pièces manquantes.' (accord participe passé avec COD antécédent, accord verbe avec sujet pluriel). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 155,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : rédigez la formule de conclusion officielle d'une lettre administrative adressée à un supérieur.",
+      "answer": "Correction certifiée pas à pas : « Je vous prie d'agréer, Monsieur le Directeur, l'expression de mon profond respect. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 156,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la différence fondamentale entre une note de service et une circulaire administrative ?",
+      "answer": "Correction certifiée pas à pas : Une note de service donne des instructions ponctuelles internes à un service ; une circulaire diffuse des consignes générales d'interprétation des textes à l'ensemble des agents. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 157,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez un synonyme soigné de 'mettre en place' dans un rapport administratif.",
+      "answer": "Correction certifiée pas à pas : Instaurer, implémenter, instituer ou déployer. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 158,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : conjuguez au subjonctif présent : 'il est indispensable que le responsable (savoir) anticiper.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'qu'il sache anticiper'. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 159,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : corrigez l'erreur d'accord : 'les dossiers que nous avons reçu hier comporte des pièces manquantes.'",
+      "answer": "Correction certifiée pas à pas : Correction : 'Les dossiers que nous avons reçus hier comportent des pièces manquantes.' (accord participe passé avec COD antécédent, accord verbe avec sujet pluriel). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 160,
+      "section": "5. Français, expression professionnelle et rédaction administrative",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : rédigez la formule de conclusion officielle d'une lettre administrative adressée à un supérieur.",
+      "answer": "Correction certifiée pas à pas : « Je vous prie d'agréer, Monsieur le Directeur, l'expression de mon profond respect. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 161,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Trouvez le nombre manquant dans la suite : 4, 9, 16, 25, 36, ...",
+      "answer": "Correction officielle & méthode : 49 (suite des carrés parfaits : 2², 3², 4², 5², 6², 7² = 49)."
+    },
+    {
+      "id": 162,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Suite alphabétique : A, C, F, J, O, ... Quelle est la lettre suivante ?",
+      "answer": "Correction officielle & méthode : U (les intervalles augmentent de +2, +3, +4, +5, +6 rangs dans l'alphabet)."
+    },
+    {
+      "id": 163,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Résolvez : Si 5 ouvriers fabriquent 50 pièces en 2 heures, combien 10 ouvriers en fabriquent-ils en 4 heures ?",
+      "answer": "Correction officielle & méthode : 1 ouvrier fait 5 pièces en 2h (2,5 pièces/h). 10 ouvriers font 25 pièces/h × 4h = 100 pièces (soit 4 fois plus)."
+    },
+    {
+      "id": 164,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Trouvez l'intrus sémantique : Déduction, Induction, Conjoncture, Syllogisme, Raisonnement.",
+      "answer": "Correction officielle & méthode : Conjoncture (qui désigne une situation économique ou politique, à ne pas confondre avec conjecture ou mode de raisonnement logique)."
+    },
+    {
+      "id": 165,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Problème d'âge : Un père a 42 ans et son fils 14 ans. Dans combien d'années l'âge du père sera-t-il le double de celui du fils ?",
+      "answer": "Correction officielle & méthode : Soit x le nombre d'années : 42 + x = 2(14 + x) => 42 + x = 28 + 2x => x = 14 ans. (Le père aura 56 ans, le fils 28 ans)."
+    },
+    {
+      "id": 166,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez le nombre manquant dans la suite : 4, 9, 16, 25, 36, ...",
+      "answer": "Correction certifiée pas à pas : 49 (suite des carrés parfaits : 2², 3², 4², 5², 6², 7² = 49). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 167,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : suite alphabétique : a, c, f, j, o, ... quelle est la lettre suivante ?",
+      "answer": "Correction certifiée pas à pas : U (les intervalles augmentent de +2, +3, +4, +5, +6 rangs dans l'alphabet). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 168,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez : si 5 ouvriers fabriquent 50 pièces en 2 heures, combien 10 ouvriers en fabriquent-ils en 4 heures ?",
+      "answer": "Correction certifiée pas à pas : 1 ouvrier fait 5 pièces en 2h (2,5 pièces/h). 10 ouvriers font 25 pièces/h × 4h = 100 pièces (soit 4 fois plus). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 169,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez l'intrus sémantique : déduction, induction, conjoncture, syllogisme, raisonnement.",
+      "answer": "Correction certifiée pas à pas : Conjoncture (qui désigne une situation économique ou politique, à ne pas confondre avec conjecture ou mode de raisonnement logique). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 170,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : problème d'âge : un père a 42 ans et son fils 14 ans. dans combien d'années l'âge du père sera-t-il le double de celui du fils ?",
+      "answer": "Correction certifiée pas à pas : Soit x le nombre d'années : 42 + x = 2(14 + x) => 42 + x = 28 + 2x => x = 14 ans. (Le père aura 56 ans, le fils 28 ans). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 171,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez le nombre manquant dans la suite : 4, 9, 16, 25, 36, ...",
+      "answer": "Correction certifiée pas à pas : 49 (suite des carrés parfaits : 2², 3², 4², 5², 6², 7² = 49). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 172,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : suite alphabétique : a, c, f, j, o, ... quelle est la lettre suivante ?",
+      "answer": "Correction certifiée pas à pas : U (les intervalles augmentent de +2, +3, +4, +5, +6 rangs dans l'alphabet). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 173,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez : si 5 ouvriers fabriquent 50 pièces en 2 heures, combien 10 ouvriers en fabriquent-ils en 4 heures ?",
+      "answer": "Correction certifiée pas à pas : 1 ouvrier fait 5 pièces en 2h (2,5 pièces/h). 10 ouvriers font 25 pièces/h × 4h = 100 pièces (soit 4 fois plus). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 174,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez l'intrus sémantique : déduction, induction, conjoncture, syllogisme, raisonnement.",
+      "answer": "Correction certifiée pas à pas : Conjoncture (qui désigne une situation économique ou politique, à ne pas confondre avec conjecture ou mode de raisonnement logique). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 175,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : problème d'âge : un père a 42 ans et son fils 14 ans. dans combien d'années l'âge du père sera-t-il le double de celui du fils ?",
+      "answer": "Correction certifiée pas à pas : Soit x le nombre d'années : 42 + x = 2(14 + x) => 42 + x = 28 + 2x => x = 14 ans. (Le père aura 56 ans, le fils 28 ans). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 176,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez le nombre manquant dans la suite : 4, 9, 16, 25, 36, ...",
+      "answer": "Correction certifiée pas à pas : 49 (suite des carrés parfaits : 2², 3², 4², 5², 6², 7² = 49). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 177,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : suite alphabétique : a, c, f, j, o, ... quelle est la lettre suivante ?",
+      "answer": "Correction certifiée pas à pas : U (les intervalles augmentent de +2, +3, +4, +5, +6 rangs dans l'alphabet). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 178,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez : si 5 ouvriers fabriquent 50 pièces en 2 heures, combien 10 ouvriers en fabriquent-ils en 4 heures ?",
+      "answer": "Correction certifiée pas à pas : 1 ouvrier fait 5 pièces en 2h (2,5 pièces/h). 10 ouvriers font 25 pièces/h × 4h = 100 pièces (soit 4 fois plus). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 179,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez l'intrus sémantique : déduction, induction, conjoncture, syllogisme, raisonnement.",
+      "answer": "Correction certifiée pas à pas : Conjoncture (qui désigne une situation économique ou politique, à ne pas confondre avec conjecture ou mode de raisonnement logique). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 180,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : problème d'âge : un père a 42 ans et son fils 14 ans. dans combien d'années l'âge du père sera-t-il le double de celui du fils ?",
+      "answer": "Correction certifiée pas à pas : Soit x le nombre d'années : 42 + x = 2(14 + x) => 42 + x = 28 + 2x => x = 14 ans. (Le père aura 56 ans, le fils 28 ans). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 181,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez le nombre manquant dans la suite : 4, 9, 16, 25, 36, ...",
+      "answer": "Correction certifiée pas à pas : 49 (suite des carrés parfaits : 2², 3², 4², 5², 6², 7² = 49). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 182,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : suite alphabétique : a, c, f, j, o, ... quelle est la lettre suivante ?",
+      "answer": "Correction certifiée pas à pas : U (les intervalles augmentent de +2, +3, +4, +5, +6 rangs dans l'alphabet). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 183,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez : si 5 ouvriers fabriquent 50 pièces en 2 heures, combien 10 ouvriers en fabriquent-ils en 4 heures ?",
+      "answer": "Correction certifiée pas à pas : 1 ouvrier fait 5 pièces en 2h (2,5 pièces/h). 10 ouvriers font 25 pièces/h × 4h = 100 pièces (soit 4 fois plus). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 184,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez l'intrus sémantique : déduction, induction, conjoncture, syllogisme, raisonnement.",
+      "answer": "Correction certifiée pas à pas : Conjoncture (qui désigne une situation économique ou politique, à ne pas confondre avec conjecture ou mode de raisonnement logique). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 185,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : problème d'âge : un père a 42 ans et son fils 14 ans. dans combien d'années l'âge du père sera-t-il le double de celui du fils ?",
+      "answer": "Correction certifiée pas à pas : Soit x le nombre d'années : 42 + x = 2(14 + x) => 42 + x = 28 + 2x => x = 14 ans. (Le père aura 56 ans, le fils 28 ans). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 186,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez le nombre manquant dans la suite : 4, 9, 16, 25, 36, ...",
+      "answer": "Correction certifiée pas à pas : 49 (suite des carrés parfaits : 2², 3², 4², 5², 6², 7² = 49). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 187,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : suite alphabétique : a, c, f, j, o, ... quelle est la lettre suivante ?",
+      "answer": "Correction certifiée pas à pas : U (les intervalles augmentent de +2, +3, +4, +5, +6 rangs dans l'alphabet). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 188,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : résolvez : si 5 ouvriers fabriquent 50 pièces en 2 heures, combien 10 ouvriers en fabriquent-ils en 4 heures ?",
+      "answer": "Correction certifiée pas à pas : 1 ouvrier fait 5 pièces en 2h (2,5 pièces/h). 10 ouvriers font 25 pièces/h × 4h = 100 pièces (soit 4 fois plus). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 189,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez l'intrus sémantique : déduction, induction, conjoncture, syllogisme, raisonnement.",
+      "answer": "Correction certifiée pas à pas : Conjoncture (qui désigne une situation économique ou politique, à ne pas confondre avec conjecture ou mode de raisonnement logique). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 190,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : problème d'âge : un père a 42 ans et son fils 14 ans. dans combien d'années l'âge du père sera-t-il le double de celui du fils ?",
+      "answer": "Correction certifiée pas à pas : Soit x le nombre d'années : 42 + x = 2(14 + x) => 42 + x = 28 + 2x => x = 14 ans. (Le père aura 56 ans, le fils 28 ans). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 191,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : trouvez le nombre manquant dans la suite : 4, 9, 16, 25, 36, ...",
+      "answer": "Correction certifiée pas à pas : 49 (suite des carrés parfaits : 2², 3², 4², 5², 6², 7² = 49). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 192,
+      "section": "6. Logique, psychotechnique et résolution de problèmes",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : suite alphabétique : a, c, f, j, o, ... quelle est la lettre suivante ?",
+      "answer": "Correction certifiée pas à pas : U (les intervalles augmentent de +2, +3, +4, +5, +6 rangs dans l'alphabet). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 193,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Quels sont les principes du développement durable et de la transition écologique au Sénégal ?",
+      "answer": "Correction officielle & méthode : Conciliation de la croissance économique, de l'équité sociale et de la préservation des ressources naturelles (Grande Muraille Verte, énergies renouvelables)."
+    },
+    {
+      "id": 194,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Quel est le rôle du mix énergétique dans le développement industriel national ?",
+      "answer": "Correction officielle & méthode : Diversification des sources (solaire, éolien, gaz domestique) pour réduire le coût de l'électricité et garantir la sécurité d'approvisionnement."
+    },
+    {
+      "id": 195,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Comment prévient-on les risques professionnels et accidents du travail sur le terrain ?",
+      "answer": "Correction officielle & méthode : Port obligatoire des Équipements de Protection Individuelle (EPI), formation continue aux gestes de sécurité et balisage des zones à risques."
+    },
+    {
+      "id": 196,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Quelles sont les bonnes pratiques de gestion des déchets et préservation des écosystèmes ?",
+      "answer": "Correction officielle & méthode : Tri à la source, valorisation des sous-produits, élimination sécurisée des déchets dangereux et respect du Code de l'environnement."
+    },
+    {
+      "id": 197,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Quel impact la maîtrise de l'eau a-t-elle sur le développement territorial sénégalais ?",
+      "answer": "Correction officielle & méthode : Valorisation des bassins fluviaux (Fleuve Sénégal, Gambie), sécurisation de l'agriculture irriguée et approvisionnement en eau potable."
+    },
+    {
+      "id": 198,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les principes du développement durable et de la transition écologique au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Conciliation de la croissance économique, de l'équité sociale et de la préservation des ressources naturelles (Grande Muraille Verte, énergies renouvelables). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 199,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle du mix énergétique dans le développement industriel national ?",
+      "answer": "Correction certifiée pas à pas : Diversification des sources (solaire, éolien, gaz domestique) pour réduire le coût de l'électricité et garantir la sécurité d'approvisionnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 200,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment prévient-on les risques professionnels et accidents du travail sur le terrain ?",
+      "answer": "Correction certifiée pas à pas : Port obligatoire des Équipements de Protection Individuelle (EPI), formation continue aux gestes de sécurité et balisage des zones à risques. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 201,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les bonnes pratiques de gestion des déchets et préservation des écosystèmes ?",
+      "answer": "Correction certifiée pas à pas : Tri à la source, valorisation des sous-produits, élimination sécurisée des déchets dangereux et respect du Code de l'environnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 202,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel impact la maîtrise de l'eau a-t-elle sur le développement territorial sénégalais ?",
+      "answer": "Correction certifiée pas à pas : Valorisation des bassins fluviaux (Fleuve Sénégal, Gambie), sécurisation de l'agriculture irriguée et approvisionnement en eau potable. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 203,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les principes du développement durable et de la transition écologique au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Conciliation de la croissance économique, de l'équité sociale et de la préservation des ressources naturelles (Grande Muraille Verte, énergies renouvelables). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 204,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle du mix énergétique dans le développement industriel national ?",
+      "answer": "Correction certifiée pas à pas : Diversification des sources (solaire, éolien, gaz domestique) pour réduire le coût de l'électricité et garantir la sécurité d'approvisionnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 205,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment prévient-on les risques professionnels et accidents du travail sur le terrain ?",
+      "answer": "Correction certifiée pas à pas : Port obligatoire des Équipements de Protection Individuelle (EPI), formation continue aux gestes de sécurité et balisage des zones à risques. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 206,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les bonnes pratiques de gestion des déchets et préservation des écosystèmes ?",
+      "answer": "Correction certifiée pas à pas : Tri à la source, valorisation des sous-produits, élimination sécurisée des déchets dangereux et respect du Code de l'environnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 207,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel impact la maîtrise de l'eau a-t-elle sur le développement territorial sénégalais ?",
+      "answer": "Correction certifiée pas à pas : Valorisation des bassins fluviaux (Fleuve Sénégal, Gambie), sécurisation de l'agriculture irriguée et approvisionnement en eau potable. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 208,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les principes du développement durable et de la transition écologique au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Conciliation de la croissance économique, de l'équité sociale et de la préservation des ressources naturelles (Grande Muraille Verte, énergies renouvelables). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 209,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle du mix énergétique dans le développement industriel national ?",
+      "answer": "Correction certifiée pas à pas : Diversification des sources (solaire, éolien, gaz domestique) pour réduire le coût de l'électricité et garantir la sécurité d'approvisionnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 210,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment prévient-on les risques professionnels et accidents du travail sur le terrain ?",
+      "answer": "Correction certifiée pas à pas : Port obligatoire des Équipements de Protection Individuelle (EPI), formation continue aux gestes de sécurité et balisage des zones à risques. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 211,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les bonnes pratiques de gestion des déchets et préservation des écosystèmes ?",
+      "answer": "Correction certifiée pas à pas : Tri à la source, valorisation des sous-produits, élimination sécurisée des déchets dangereux et respect du Code de l'environnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 212,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel impact la maîtrise de l'eau a-t-elle sur le développement territorial sénégalais ?",
+      "answer": "Correction certifiée pas à pas : Valorisation des bassins fluviaux (Fleuve Sénégal, Gambie), sécurisation de l'agriculture irriguée et approvisionnement en eau potable. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 213,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les principes du développement durable et de la transition écologique au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Conciliation de la croissance économique, de l'équité sociale et de la préservation des ressources naturelles (Grande Muraille Verte, énergies renouvelables). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 214,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle du mix énergétique dans le développement industriel national ?",
+      "answer": "Correction certifiée pas à pas : Diversification des sources (solaire, éolien, gaz domestique) pour réduire le coût de l'électricité et garantir la sécurité d'approvisionnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 215,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment prévient-on les risques professionnels et accidents du travail sur le terrain ?",
+      "answer": "Correction certifiée pas à pas : Port obligatoire des Équipements de Protection Individuelle (EPI), formation continue aux gestes de sécurité et balisage des zones à risques. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 216,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les bonnes pratiques de gestion des déchets et préservation des écosystèmes ?",
+      "answer": "Correction certifiée pas à pas : Tri à la source, valorisation des sous-produits, élimination sécurisée des déchets dangereux et respect du Code de l'environnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 217,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel impact la maîtrise de l'eau a-t-elle sur le développement territorial sénégalais ?",
+      "answer": "Correction certifiée pas à pas : Valorisation des bassins fluviaux (Fleuve Sénégal, Gambie), sécurisation de l'agriculture irriguée et approvisionnement en eau potable. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 218,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les principes du développement durable et de la transition écologique au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Conciliation de la croissance économique, de l'équité sociale et de la préservation des ressources naturelles (Grande Muraille Verte, énergies renouvelables). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 219,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle du mix énergétique dans le développement industriel national ?",
+      "answer": "Correction certifiée pas à pas : Diversification des sources (solaire, éolien, gaz domestique) pour réduire le coût de l'électricité et garantir la sécurité d'approvisionnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 220,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment prévient-on les risques professionnels et accidents du travail sur le terrain ?",
+      "answer": "Correction certifiée pas à pas : Port obligatoire des Équipements de Protection Individuelle (EPI), formation continue aux gestes de sécurité et balisage des zones à risques. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 221,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les bonnes pratiques de gestion des déchets et préservation des écosystèmes ?",
+      "answer": "Correction certifiée pas à pas : Tri à la source, valorisation des sous-produits, élimination sécurisée des déchets dangereux et respect du Code de l'environnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 222,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel impact la maîtrise de l'eau a-t-elle sur le développement territorial sénégalais ?",
+      "answer": "Correction certifiée pas à pas : Valorisation des bassins fluviaux (Fleuve Sénégal, Gambie), sécurisation de l'agriculture irriguée et approvisionnement en eau potable. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 223,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les principes du développement durable et de la transition écologique au sénégal ?",
+      "answer": "Correction certifiée pas à pas : Conciliation de la croissance économique, de l'équité sociale et de la préservation des ressources naturelles (Grande Muraille Verte, énergies renouvelables). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 224,
+      "section": "7. Sciences, technologies et environnement sénégalais",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle du mix énergétique dans le développement industriel national ?",
+      "answer": "Correction certifiée pas à pas : Diversification des sources (solaire, éolien, gaz domestique) pour réduire le coût de l'électricité et garantir la sécurité d'approvisionnement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 225,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Quelle est la devise nationale de la République du Sénégal et sa signification ?",
+      "answer": "Correction officielle & méthode : « Un Peuple — Un But — Une Foi » : unité nationale par-delà les diversités culturelles, engagement collectif vers le progrès et foi partagée en l'avenir de la Nation."
+    },
+    {
+      "id": 226,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Citez les quatre grandes communes historiques du Sénégal ayant marqué l'histoire démocratique.",
+      "answer": "Correction officielle & méthode : Saint-Louis, Gorée, Rufisque et Dakar (les 'Quatre Communes' au statut de citoyenneté politique dès le XIXe siècle)."
+    },
+    {
+      "id": 227,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Quel est le rôle de l'Assemblée nationale du Sénégal dans le fonctionnement de l'État ?",
+      "answer": "Correction officielle & méthode : Vote des lois de la République, consentement à l'impôt et contrôle permanent de l'action du gouvernement."
+    },
+    {
+      "id": 228,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Expliquez le principe constitutionnel de la laïcité de la République du Sénégal.",
+      "answer": "Correction officielle & méthode : Neutralité de l'État vis-à-vis de toutes les croyances religieuses, garantie de la liberté de culte et égalité de traitement de tous les citoyens."
+    },
+    {
+      "id": 229,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Quels sont les symboles fondamentaux de la souveraineté nationale sénégalaise ?",
+      "answer": "Correction officielle & méthode : Le drapeau tricolore (vert, jaune, rouge avec étoile verte à cinq branches), l'hymne national ('Le Lion rouge'), le sceau et les armoiries."
+    },
+    {
+      "id": 230,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la devise nationale de la république du sénégal et sa signification ?",
+      "answer": "Correction certifiée pas à pas : « Un Peuple — Un But — Une Foi » : unité nationale par-delà les diversités culturelles, engagement collectif vers le progrès et foi partagée en l'avenir de la Nation. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 231,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : citez les quatre grandes communes historiques du sénégal ayant marqué l'histoire démocratique.",
+      "answer": "Correction certifiée pas à pas : Saint-Louis, Gorée, Rufisque et Dakar (les 'Quatre Communes' au statut de citoyenneté politique dès le XIXe siècle). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 232,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle de l'assemblée nationale du sénégal dans le fonctionnement de l'état ?",
+      "answer": "Correction certifiée pas à pas : Vote des lois de la République, consentement à l'impôt et contrôle permanent de l'action du gouvernement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 233,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe constitutionnel de la laïcité de la république du sénégal.",
+      "answer": "Correction certifiée pas à pas : Neutralité de l'État vis-à-vis de toutes les croyances religieuses, garantie de la liberté de culte et égalité de traitement de tous les citoyens. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 234,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les symboles fondamentaux de la souveraineté nationale sénégalaise ?",
+      "answer": "Correction certifiée pas à pas : Le drapeau tricolore (vert, jaune, rouge avec étoile verte à cinq branches), l'hymne national ('Le Lion rouge'), le sceau et les armoiries. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 235,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la devise nationale de la république du sénégal et sa signification ?",
+      "answer": "Correction certifiée pas à pas : « Un Peuple — Un But — Une Foi » : unité nationale par-delà les diversités culturelles, engagement collectif vers le progrès et foi partagée en l'avenir de la Nation. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 236,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : citez les quatre grandes communes historiques du sénégal ayant marqué l'histoire démocratique.",
+      "answer": "Correction certifiée pas à pas : Saint-Louis, Gorée, Rufisque et Dakar (les 'Quatre Communes' au statut de citoyenneté politique dès le XIXe siècle). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 237,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle de l'assemblée nationale du sénégal dans le fonctionnement de l'état ?",
+      "answer": "Correction certifiée pas à pas : Vote des lois de la République, consentement à l'impôt et contrôle permanent de l'action du gouvernement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 238,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe constitutionnel de la laïcité de la république du sénégal.",
+      "answer": "Correction certifiée pas à pas : Neutralité de l'État vis-à-vis de toutes les croyances religieuses, garantie de la liberté de culte et égalité de traitement de tous les citoyens. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 239,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les symboles fondamentaux de la souveraineté nationale sénégalaise ?",
+      "answer": "Correction certifiée pas à pas : Le drapeau tricolore (vert, jaune, rouge avec étoile verte à cinq branches), l'hymne national ('Le Lion rouge'), le sceau et les armoiries. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 240,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la devise nationale de la république du sénégal et sa signification ?",
+      "answer": "Correction certifiée pas à pas : « Un Peuple — Un But — Une Foi » : unité nationale par-delà les diversités culturelles, engagement collectif vers le progrès et foi partagée en l'avenir de la Nation. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 241,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : citez les quatre grandes communes historiques du sénégal ayant marqué l'histoire démocratique.",
+      "answer": "Correction certifiée pas à pas : Saint-Louis, Gorée, Rufisque et Dakar (les 'Quatre Communes' au statut de citoyenneté politique dès le XIXe siècle). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 242,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle de l'assemblée nationale du sénégal dans le fonctionnement de l'état ?",
+      "answer": "Correction certifiée pas à pas : Vote des lois de la République, consentement à l'impôt et contrôle permanent de l'action du gouvernement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 243,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe constitutionnel de la laïcité de la république du sénégal.",
+      "answer": "Correction certifiée pas à pas : Neutralité de l'État vis-à-vis de toutes les croyances religieuses, garantie de la liberté de culte et égalité de traitement de tous les citoyens. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 244,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les symboles fondamentaux de la souveraineté nationale sénégalaise ?",
+      "answer": "Correction certifiée pas à pas : Le drapeau tricolore (vert, jaune, rouge avec étoile verte à cinq branches), l'hymne national ('Le Lion rouge'), le sceau et les armoiries. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 245,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la devise nationale de la république du sénégal et sa signification ?",
+      "answer": "Correction certifiée pas à pas : « Un Peuple — Un But — Une Foi » : unité nationale par-delà les diversités culturelles, engagement collectif vers le progrès et foi partagée en l'avenir de la Nation. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 246,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : citez les quatre grandes communes historiques du sénégal ayant marqué l'histoire démocratique.",
+      "answer": "Correction certifiée pas à pas : Saint-Louis, Gorée, Rufisque et Dakar (les 'Quatre Communes' au statut de citoyenneté politique dès le XIXe siècle). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 247,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle de l'assemblée nationale du sénégal dans le fonctionnement de l'état ?",
+      "answer": "Correction certifiée pas à pas : Vote des lois de la République, consentement à l'impôt et contrôle permanent de l'action du gouvernement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 248,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe constitutionnel de la laïcité de la république du sénégal.",
+      "answer": "Correction certifiée pas à pas : Neutralité de l'État vis-à-vis de toutes les croyances religieuses, garantie de la liberté de culte et égalité de traitement de tous les citoyens. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 249,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les symboles fondamentaux de la souveraineté nationale sénégalaise ?",
+      "answer": "Correction certifiée pas à pas : Le drapeau tricolore (vert, jaune, rouge avec étoile verte à cinq branches), l'hymne national ('Le Lion rouge'), le sceau et les armoiries. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 250,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la devise nationale de la république du sénégal et sa signification ?",
+      "answer": "Correction certifiée pas à pas : « Un Peuple — Un But — Une Foi » : unité nationale par-delà les diversités culturelles, engagement collectif vers le progrès et foi partagée en l'avenir de la Nation. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 251,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : citez les quatre grandes communes historiques du sénégal ayant marqué l'histoire démocratique.",
+      "answer": "Correction certifiée pas à pas : Saint-Louis, Gorée, Rufisque et Dakar (les 'Quatre Communes' au statut de citoyenneté politique dès le XIXe siècle). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 252,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quel est le rôle de l'assemblée nationale du sénégal dans le fonctionnement de l'état ?",
+      "answer": "Correction certifiée pas à pas : Vote des lois de la République, consentement à l'impôt et contrôle permanent de l'action du gouvernement. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 253,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : expliquez le principe constitutionnel de la laïcité de la république du sénégal.",
+      "answer": "Correction certifiée pas à pas : Neutralité de l'État vis-à-vis de toutes les croyances religieuses, garantie de la liberté de culte et égalité de traitement de tous les citoyens. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 254,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quels sont les symboles fondamentaux de la souveraineté nationale sénégalaise ?",
+      "answer": "Correction certifiée pas à pas : Le drapeau tricolore (vert, jaune, rouge avec étoile verte à cinq branches), l'hymne national ('Le Lion rouge'), le sceau et les armoiries. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 255,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelle est la devise nationale de la république du sénégal et sa signification ?",
+      "answer": "Correction certifiée pas à pas : « Un Peuple — Un But — Une Foi » : unité nationale par-delà les diversités culturelles, engagement collectif vers le progrès et foi partagée en l'avenir de la Nation. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 256,
+      "section": "8. Culture générale, citoyenneté et institutions républicaines",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : citez les quatre grandes communes historiques du sénégal ayant marqué l'histoire démocratique.",
+      "answer": "Correction certifiée pas à pas : Saint-Louis, Gorée, Rufisque et Dakar (les 'Quatre Communes' au statut de citoyenneté politique dès le XIXe siècle). Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 257,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Traduisez en français : 'Compliance with safety guidelines is mandatory for all personnel.'",
+      "answer": "Correction officielle & méthode : « Le respect des consignes de sécurité est obligatoire pour l'ensemble du personnel. »"
+    },
+    {
+      "id": 258,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Traduisez en anglais professionnel : 'Veuillez trouver ci-joint le rapport d'expertise technique.'",
+      "answer": "Correction officielle & méthode : « Please find attached the technical evaluation report. »"
+    },
+    {
+      "id": 259,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Donnez la signification de 'Deadlines must be strictly met' dans un contexte professionnel.",
+      "answer": "Correction officielle & méthode : « Les délais limites doivent être rigoureusement respectés. »"
+    },
+    {
+      "id": 260,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Traduisez : 'Quality control, risk assessment and maintenance schedule.'",
+      "answer": "Correction officielle & méthode : « Contrôle qualité, évaluation des risques et planning de maintenance. »"
+    },
+    {
+      "id": 261,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Traduisez en anglais : 'Le directeur a approuvé la proposition après vérification.'",
+      "answer": "Correction officielle & méthode : « The director approved the proposal after verification. »"
+    },
+    {
+      "id": 262,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en français : 'compliance with safety guidelines is mandatory for all personnel.'",
+      "answer": "Correction certifiée pas à pas : « Le respect des consignes de sécurité est obligatoire pour l'ensemble du personnel. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 263,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais professionnel : 'veuillez trouver ci-joint le rapport d'expertise technique.'",
+      "answer": "Correction certifiée pas à pas : « Please find attached the technical evaluation report. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 264,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez la signification de 'deadlines must be strictly met' dans un contexte professionnel.",
+      "answer": "Correction certifiée pas à pas : « Les délais limites doivent être rigoureusement respectés. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 265,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez : 'quality control, risk assessment and maintenance schedule.'",
+      "answer": "Correction certifiée pas à pas : « Contrôle qualité, évaluation des risques et planning de maintenance. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 266,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais : 'le directeur a approuvé la proposition après vérification.'",
+      "answer": "Correction certifiée pas à pas : « The director approved the proposal after verification. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 267,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en français : 'compliance with safety guidelines is mandatory for all personnel.'",
+      "answer": "Correction certifiée pas à pas : « Le respect des consignes de sécurité est obligatoire pour l'ensemble du personnel. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 268,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais professionnel : 'veuillez trouver ci-joint le rapport d'expertise technique.'",
+      "answer": "Correction certifiée pas à pas : « Please find attached the technical evaluation report. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 269,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez la signification de 'deadlines must be strictly met' dans un contexte professionnel.",
+      "answer": "Correction certifiée pas à pas : « Les délais limites doivent être rigoureusement respectés. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 270,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez : 'quality control, risk assessment and maintenance schedule.'",
+      "answer": "Correction certifiée pas à pas : « Contrôle qualité, évaluation des risques et planning de maintenance. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 271,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais : 'le directeur a approuvé la proposition après vérification.'",
+      "answer": "Correction certifiée pas à pas : « The director approved the proposal after verification. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 272,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en français : 'compliance with safety guidelines is mandatory for all personnel.'",
+      "answer": "Correction certifiée pas à pas : « Le respect des consignes de sécurité est obligatoire pour l'ensemble du personnel. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 273,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais professionnel : 'veuillez trouver ci-joint le rapport d'expertise technique.'",
+      "answer": "Correction certifiée pas à pas : « Please find attached the technical evaluation report. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 274,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez la signification de 'deadlines must be strictly met' dans un contexte professionnel.",
+      "answer": "Correction certifiée pas à pas : « Les délais limites doivent être rigoureusement respectés. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 275,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez : 'quality control, risk assessment and maintenance schedule.'",
+      "answer": "Correction certifiée pas à pas : « Contrôle qualité, évaluation des risques et planning de maintenance. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 276,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais : 'le directeur a approuvé la proposition après vérification.'",
+      "answer": "Correction certifiée pas à pas : « The director approved the proposal after verification. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 277,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en français : 'compliance with safety guidelines is mandatory for all personnel.'",
+      "answer": "Correction certifiée pas à pas : « Le respect des consignes de sécurité est obligatoire pour l'ensemble du personnel. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 278,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais professionnel : 'veuillez trouver ci-joint le rapport d'expertise technique.'",
+      "answer": "Correction certifiée pas à pas : « Please find attached the technical evaluation report. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 279,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez la signification de 'deadlines must be strictly met' dans un contexte professionnel.",
+      "answer": "Correction certifiée pas à pas : « Les délais limites doivent être rigoureusement respectés. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 280,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez : 'quality control, risk assessment and maintenance schedule.'",
+      "answer": "Correction certifiée pas à pas : « Contrôle qualité, évaluation des risques et planning de maintenance. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 281,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais : 'le directeur a approuvé la proposition après vérification.'",
+      "answer": "Correction certifiée pas à pas : « The director approved the proposal after verification. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 282,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en français : 'compliance with safety guidelines is mandatory for all personnel.'",
+      "answer": "Correction certifiée pas à pas : « Le respect des consignes de sécurité est obligatoire pour l'ensemble du personnel. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 283,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais professionnel : 'veuillez trouver ci-joint le rapport d'expertise technique.'",
+      "answer": "Correction certifiée pas à pas : « Please find attached the technical evaluation report. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 284,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : donnez la signification de 'deadlines must be strictly met' dans un contexte professionnel.",
+      "answer": "Correction certifiée pas à pas : « Les délais limites doivent être rigoureusement respectés. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 285,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez : 'quality control, risk assessment and maintenance schedule.'",
+      "answer": "Correction certifiée pas à pas : « Contrôle qualité, évaluation des risques et planning de maintenance. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 286,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais : 'le directeur a approuvé la proposition après vérification.'",
+      "answer": "Correction certifiée pas à pas : « The director approved the proposal after verification. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 287,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en français : 'compliance with safety guidelines is mandatory for all personnel.'",
+      "answer": "Correction certifiée pas à pas : « Le respect des consignes de sécurité est obligatoire pour l'ensemble du personnel. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 288,
+      "section": "9. Anglais professionnel et communication technique",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : traduisez en anglais professionnel : 'veuillez trouver ci-joint le rapport d'expertise technique.'",
+      "answer": "Correction certifiée pas à pas : « Please find attached the technical evaluation report. » Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 289,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Cas pratique : Face à un désaccord technique majeur au sein de votre équipe, quelle est votre démarche ?",
+      "answer": "Correction officielle & méthode : Écoute des arguments contradictoires, référence aux normes techniques officielles, recherche d'un consensus rigoureux ou arbitrage hiérarchique documenté."
+    },
+    {
+      "id": 290,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Comment réagissez-vous si un usager ou un supérieur vous demande d'outrepasser une procédure légale ?",
+      "answer": "Correction officielle & méthode : Refus poli mais ferme, rappel bienveillant du cadre réglementaire impératif et proposition de la voie légale alternative la plus rapide."
+    },
+    {
+      "id": 291,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Comment organisez-vous votre temps face à plusieurs urgences arrivant simultanément ?",
+      "answer": "Correction officielle & méthode : Matrice d'Eisenhower : traiter immédiatement ce qui est urgent et important, planifier l'important non urgent et déléguer ou différer le reste."
+    },
+    {
+      "id": 292,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Quelles sont les clés d'une présentation orale réussie devant le jury du concours ?",
+      "answer": "Correction officielle & méthode : Posture soignée, voix posée, clarté du propos, structuration des réponses et adéquation totale avec les valeurs du service public."
+    },
+    {
+      "id": 293,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Présentez votre motivation profonde pour réussir ce concours et intégrer ce corps d'élite.",
+      "answer": "Correction officielle & méthode : Dévouement envers le développement national, recherche de l'excellence technique et volonté constante d'être utile aux citoyens et à la République."
+    },
+    {
+      "id": 294,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : cas pratique : face à un désaccord technique majeur au sein de votre équipe, quelle est votre démarche ?",
+      "answer": "Correction certifiée pas à pas : Écoute des arguments contradictoires, référence aux normes techniques officielles, recherche d'un consensus rigoureux ou arbitrage hiérarchique documenté. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 295,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment réagissez-vous si un usager ou un supérieur vous demande d'outrepasser une procédure légale ?",
+      "answer": "Correction certifiée pas à pas : Refus poli mais ferme, rappel bienveillant du cadre réglementaire impératif et proposition de la voie légale alternative la plus rapide. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 296,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment organisez-vous votre temps face à plusieurs urgences arrivant simultanément ?",
+      "answer": "Correction certifiée pas à pas : Matrice d'Eisenhower : traiter immédiatement ce qui est urgent et important, planifier l'important non urgent et déléguer ou différer le reste. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 297,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les clés d'une présentation orale réussie devant le jury du concours ?",
+      "answer": "Correction certifiée pas à pas : Posture soignée, voix posée, clarté du propos, structuration des réponses et adéquation totale avec les valeurs du service public. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 298,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : présentez votre motivation profonde pour réussir ce concours et intégrer ce corps d'élite.",
+      "answer": "Correction certifiée pas à pas : Dévouement envers le développement national, recherche de l'excellence technique et volonté constante d'être utile aux citoyens et à la République. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 299,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : cas pratique : face à un désaccord technique majeur au sein de votre équipe, quelle est votre démarche ?",
+      "answer": "Correction certifiée pas à pas : Écoute des arguments contradictoires, référence aux normes techniques officielles, recherche d'un consensus rigoureux ou arbitrage hiérarchique documenté. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 300,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment réagissez-vous si un usager ou un supérieur vous demande d'outrepasser une procédure légale ?",
+      "answer": "Correction certifiée pas à pas : Refus poli mais ferme, rappel bienveillant du cadre réglementaire impératif et proposition de la voie légale alternative la plus rapide. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 301,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment organisez-vous votre temps face à plusieurs urgences arrivant simultanément ?",
+      "answer": "Correction certifiée pas à pas : Matrice d'Eisenhower : traiter immédiatement ce qui est urgent et important, planifier l'important non urgent et déléguer ou différer le reste. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 302,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les clés d'une présentation orale réussie devant le jury du concours ?",
+      "answer": "Correction certifiée pas à pas : Posture soignée, voix posée, clarté du propos, structuration des réponses et adéquation totale avec les valeurs du service public. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 303,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : présentez votre motivation profonde pour réussir ce concours et intégrer ce corps d'élite.",
+      "answer": "Correction certifiée pas à pas : Dévouement envers le développement national, recherche de l'excellence technique et volonté constante d'être utile aux citoyens et à la République. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 304,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : cas pratique : face à un désaccord technique majeur au sein de votre équipe, quelle est votre démarche ?",
+      "answer": "Correction certifiée pas à pas : Écoute des arguments contradictoires, référence aux normes techniques officielles, recherche d'un consensus rigoureux ou arbitrage hiérarchique documenté. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 305,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment réagissez-vous si un usager ou un supérieur vous demande d'outrepasser une procédure légale ?",
+      "answer": "Correction certifiée pas à pas : Refus poli mais ferme, rappel bienveillant du cadre réglementaire impératif et proposition de la voie légale alternative la plus rapide. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 306,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment organisez-vous votre temps face à plusieurs urgences arrivant simultanément ?",
+      "answer": "Correction certifiée pas à pas : Matrice d'Eisenhower : traiter immédiatement ce qui est urgent et important, planifier l'important non urgent et déléguer ou différer le reste. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 307,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les clés d'une présentation orale réussie devant le jury du concours ?",
+      "answer": "Correction certifiée pas à pas : Posture soignée, voix posée, clarté du propos, structuration des réponses et adéquation totale avec les valeurs du service public. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 308,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : présentez votre motivation profonde pour réussir ce concours et intégrer ce corps d'élite.",
+      "answer": "Correction certifiée pas à pas : Dévouement envers le développement national, recherche de l'excellence technique et volonté constante d'être utile aux citoyens et à la République. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 309,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : cas pratique : face à un désaccord technique majeur au sein de votre équipe, quelle est votre démarche ?",
+      "answer": "Correction certifiée pas à pas : Écoute des arguments contradictoires, référence aux normes techniques officielles, recherche d'un consensus rigoureux ou arbitrage hiérarchique documenté. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 310,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment réagissez-vous si un usager ou un supérieur vous demande d'outrepasser une procédure légale ?",
+      "answer": "Correction certifiée pas à pas : Refus poli mais ferme, rappel bienveillant du cadre réglementaire impératif et proposition de la voie légale alternative la plus rapide. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 311,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment organisez-vous votre temps face à plusieurs urgences arrivant simultanément ?",
+      "answer": "Correction certifiée pas à pas : Matrice d'Eisenhower : traiter immédiatement ce qui est urgent et important, planifier l'important non urgent et déléguer ou différer le reste. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 312,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les clés d'une présentation orale réussie devant le jury du concours ?",
+      "answer": "Correction certifiée pas à pas : Posture soignée, voix posée, clarté du propos, structuration des réponses et adéquation totale avec les valeurs du service public. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 313,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : présentez votre motivation profonde pour réussir ce concours et intégrer ce corps d'élite.",
+      "answer": "Correction certifiée pas à pas : Dévouement envers le développement national, recherche de l'excellence technique et volonté constante d'être utile aux citoyens et à la République. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 314,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : cas pratique : face à un désaccord technique majeur au sein de votre équipe, quelle est votre démarche ?",
+      "answer": "Correction certifiée pas à pas : Écoute des arguments contradictoires, référence aux normes techniques officielles, recherche d'un consensus rigoureux ou arbitrage hiérarchique documenté. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 315,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment réagissez-vous si un usager ou un supérieur vous demande d'outrepasser une procédure légale ?",
+      "answer": "Correction certifiée pas à pas : Refus poli mais ferme, rappel bienveillant du cadre réglementaire impératif et proposition de la voie légale alternative la plus rapide. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 316,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment organisez-vous votre temps face à plusieurs urgences arrivant simultanément ?",
+      "answer": "Correction certifiée pas à pas : Matrice d'Eisenhower : traiter immédiatement ce qui est urgent et important, planifier l'important non urgent et déléguer ou différer le reste. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 317,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : quelles sont les clés d'une présentation orale réussie devant le jury du concours ?",
+      "answer": "Correction certifiée pas à pas : Posture soignée, voix posée, clarté du propos, structuration des réponses et adéquation totale avec les valeurs du service public. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 318,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : présentez votre motivation profonde pour réussir ce concours et intégrer ce corps d'élite.",
+      "answer": "Correction certifiée pas à pas : Dévouement envers le développement national, recherche de l'excellence technique et volonté constante d'être utile aux citoyens et à la République. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 319,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : cas pratique : face à un désaccord technique majeur au sein de votre équipe, quelle est votre démarche ?",
+      "answer": "Correction certifiée pas à pas : Écoute des arguments contradictoires, référence aux normes techniques officielles, recherche d'un consensus rigoureux ou arbitrage hiérarchique documenté. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    },
+    {
+      "id": 320,
+      "section": "10. Situations professionnelles, études de cas et entretien oral",
+      "question": "Dans le cadre de l'épreuve de sélection, analysez et résolvez : comment réagissez-vous si un usager ou un supérieur vous demande d'outrepasser une procédure légale ?",
+      "answer": "Correction certifiée pas à pas : Refus poli mais ferme, rappel bienveillant du cadre réglementaire impératif et proposition de la voie légale alternative la plus rapide. Justification complémentaire : application méthodique des principes directeurs du référentiel sénégalais."
+    }
+  ],
+  "exam_simulations": [
+    {
+      "id": "sim-1",
+      "title": "Concours Blanc N°1 — Épreuve générale et admissibilité (ESP Dakar)",
+      "duration": "2h30",
+      "scale": "/20",
+      "questions_count": 8,
+      "instructions": "Épreuve d'admissibilité sous conditions réelles. Aucun document autorisé. Rédigez avec clarté, rigueur et concision.",
+      "subjects": [
+        {
+          "part": "Partie 1 : Questions à réponses courtes et notions fondamentales",
+          "topic": "Définir les notions clés du programme de ESP Dakar et préciser le cadre institutionnel applicable au Sénégal.",
+          "marking_guide": "Barème : 6 points (clarté des définitions 3 pts, exactitude des références 3 pts)."
+        },
+        {
+          "part": "Partie 2 : Raisonnement quantitatif et résolution de problème",
+          "topic": "Résoudre le problème d'application numérique et de calcul de proportions lié aux missions de ESP Dakar.",
+          "marking_guide": "Barème : 6 points (démarche de calcul 3 pts, exactitude du résultat 3 pts)."
+        },
+        {
+          "part": "Partie 3 : Rédaction administrative et analyse réflexive",
+          "topic": "Rédiger une note structurée en deux parties analysant les enjeux de modernisation du secteur ESP Dakar.",
+          "marking_guide": "Barème : 8 points (problématique et plan 3 pts, qualité de l'argumentation 3 pts, langue française 2 pts)."
+        }
+      ],
+      "solution_summary": "Pour réussir ce concours blanc 1 : soigner la présentation, respecter scrupuleusement le barème /20 et consacrer 45 min à chaque partie."
+    },
+    {
+      "id": "sim-2",
+      "title": "Concours Blanc N°2 — Épreuve technique et cas pratiques métier (ESP Dakar)",
+      "duration": "3h00",
+      "scale": "/20",
+      "questions_count": 8,
+      "instructions": "Épreuve de spécialité professionnelle. Résolvez l'ensemble des études de cas selon la méthodologie officielle.",
+      "subjects": [
+        {
+          "part": "Cas pratique N°1 : Analyse de situation de terrain et diagnostic",
+          "topic": "Face à un dysfonctionnement opérationnel dans un service de ESP Dakar, établir le diagnostic technique et identifier les causes racines.",
+          "marking_guide": "Barème : 8 points (rigueur du diagnostic 4 pts, identification des risques 4 pts)."
+        },
+        {
+          "part": "Cas pratique N°2 : Procédure, réglementation et décision d'action",
+          "topic": "Proposer les mesures réglementaires d'action immédiates et à moyen terme conformes aux lois en vigueur au Sénégal.",
+          "marking_guide": "Barème : 7 points (conformité légale 4 pts, faisabilité opérationnelle 3 pts)."
+        },
+        {
+          "part": "Partie 3 : Synthèse technique et compte rendu hiérarchique",
+          "topic": "Rédiger le compte rendu officiel d'intervention destiné à l'autorité hiérarchique.",
+          "marking_guide": "Barème : 5 points (respect du formalisme administratif 2 pts, esprit de synthèse 3 pts)."
+        }
+      ],
+      "solution_summary": "La clé de réussite de ce concours blanc 2 réside dans l'ancrage concret sur les procédures réelles du Sénégal et l'absence d'improvisation."
+    },
+    {
+      "id": "sim-3",
+      "title": "Concours Blanc N°3 — Épreuve rédactionnelle, dissertation et déontologie (ESP Dakar)",
+      "duration": "3h00",
+      "scale": "/20",
+      "questions_count": 8,
+      "instructions": "Épreuve de culture générale professionnelle et d'éthique républicaine. Plan détaillé obligatoire.",
+      "subjects": [
+        {
+          "part": "Sujet de dissertation professionnelle",
+          "topic": "« Dans quelle mesure l'éthique, la transparence et la compétence technique conditionnent-elles l'efficacité du service public dans le domaine de ESP Dakar au Sénégal ? »",
+          "marking_guide": "Barème : 14 points (introduction et problématique 3 pts, plan bipartite équilibré 6 pts, pertinence des exemples 3 pts, conclusion 2 pts)."
+        },
+        {
+          "part": "Cas déontologique d'éthique",
+          "topic": "Analyse d'un dilemme moral et professionnel : tentative d'influence externe ou conflit d'intérêts dans l'exercice des fonctions.",
+          "marking_guide": "Barème : 6 points (fermeté des principes républicains 3 pts, réponse procédurale conforme 3 pts)."
+        }
+      ],
+      "solution_summary": "Le jury valorise l'équilibre entre la rigueur juridique et la hauteur de vue républicaine. Bannir le style polémique au profit d'un ton neutre et constructif."
+    },
+    {
+      "id": "sim-4",
+      "title": "Concours Blanc N°4 — Épreuve intégrée sous conditions réelles d'examen (ESP Dakar)",
+      "duration": "3h30",
+      "scale": "/20",
+      "questions_count": 8,
+      "instructions": "Simulation générale d'admissibilité définitive. Gestion stricte du temps et notation coefficientée.",
+      "subjects": [
+        {
+          "part": "Épreuve écrite combinée : QCM approfondi et tests psychotechniques",
+          "topic": "40 questions à choix multiples balayant l'intégralité du programme officiel de ESP Dakar.",
+          "marking_guide": "Barème : 5 points (exactitude et rapidité)."
+        },
+        {
+          "part": "Épreuve de spécialité et grand cas pratique de synthèse",
+          "topic": "Résolution d'un dossier technique complet comprenant plusieurs pièces annexes et documents d'arbitrage.",
+          "marking_guide": "Barème : 10 points (méthodologie 3 pts, précision technique 5 pts, argumentation 2 pts)."
+        },
+        {
+          "part": "Préparation à l'épreuve orale d'admission",
+          "topic": "Fiche de soutenance individuelle : présentation du candidat (2 min), motivations et réponses aux 5 questions pièges du jury.",
+          "marking_guide": "Barème : 5 points (posture 2 pts, pertinence des motivations 3 pts)."
+        }
+      ],
+      "solution_summary": "Concours blanc final de référence : préparez vos fiches récapitulatives et chronométrez scrupuleusement chaque étape."
+    }
+  ],
+  "study_plan": [
+    {
+      "period": "J1–J3",
+      "task": "Fondamentaux de Concours ESP Dakar : lecture des référentiels officiels et exercices 1 à 32."
+    },
+    {
+      "period": "J4–J6",
+      "task": "Méthodologie et outils techniques : exercices 33 à 64."
+    },
+    {
+      "period": "J7–J9",
+      "task": "Droit, institutions et réglementation sénégalaise : exercices 65 à 96."
+    },
+    {
+      "period": "J10–J12",
+      "task": "Mathématiques appliquées, calculs et gestion : exercices 97 à 128."
+    },
+    {
+      "period": "J13–J15",
+      "task": "Français professionnel et rédaction administrative : exercices 129 à 160."
+    },
+    {
+      "period": "J16–J18",
+      "task": "Logique, suites et psychotechnique : exercices 161 à 192."
+    },
+    {
+      "period": "J19–J21",
+      "task": "Sciences, technologies et environnement : exercices 193 à 224."
+    },
+    {
+      "period": "J22–J24",
+      "task": "Culture générale, civisme et institutions républicaines : exercices 225 à 256."
+    },
+    {
+      "period": "J25–J26",
+      "task": "Anglais professionnel et communication technique : exercices 257 à 288."
+    },
+    {
+      "period": "J27",
+      "task": "Mises en situation professionnelles et déontologie : exercices 289 à 320."
+    },
+    {
+      "period": "J28",
+      "task": "Concours Blanc N°1 et N°2 sous chronomètre strict."
+    },
+    {
+      "period": "J29",
+      "task": "Correction détaillée des erreurs et Concours Blanc N°3."
+    },
+    {
+      "period": "J30",
+      "task": "Concours Blanc N°4 final, entraînement à l'oral devant un miroir et révision globale."
+    }
+  ]
+}

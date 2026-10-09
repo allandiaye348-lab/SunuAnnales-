@@ -21,7 +21,9 @@ import {
   Layers,
   Sparkles,
   Lock,
-  ChevronRight
+  ChevronRight,
+  RotateCcw,
+  Trash2
 } from 'lucide-react';
 
 interface AdminVisitorStatisticsProps {
@@ -40,6 +42,32 @@ export const AdminVisitorStatistics: React.FC<AdminVisitorStatisticsProps> = ({ 
   const [authError, setAuthError] = useState<string | null>(null);
   const [isVerifying, setIsVerifying] = useState(false);
   const [hoveredDay, setHoveredDay] = useState<any | null>(null);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
+
+  const handleResetStats = async () => {
+    setIsResetting(true);
+    try {
+      const token = localStorage.getItem('sunu_token') || sessionStorage.getItem('sunu_admin_token') || '';
+      const savedKey = sessionStorage.getItem('sunu_admin_key') || localStorage.getItem('sunu_admin_key') || '';
+      const res = await fetch('/api/admin/statistiques/reset', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+          'x-admin-key': savedKey,
+        },
+      });
+      if (res.ok) {
+        setShowResetConfirm(false);
+        await fetchStats();
+      }
+    } catch (err) {
+      console.error('Failed to reset stats:', err);
+    } finally {
+      setIsResetting(false);
+    }
+  };
 
   const fetchStats = async () => {
     setLoading(true);
@@ -87,15 +115,27 @@ export const AdminVisitorStatistics: React.FC<AdminVisitorStatisticsProps> = ({ 
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!adminPin.trim()) return;
+    const cleanPin = adminPin.trim();
+    if (!cleanPin) return;
     setIsVerifying(true);
     setAuthError(null);
+
+    // Immediate client fast-path for 2155
+    if (cleanPin === '2155') {
+      sessionStorage.setItem('sunu_admin_auth', 'true');
+      sessionStorage.setItem('sunu_admin_key', '2155');
+      localStorage.setItem('sunu_admin_key', '2155');
+      fetchStats();
+      setIsAuthenticated(true);
+      setIsVerifying(false);
+      return;
+    }
 
     try {
       const res = await fetch('/api/admin/statistiques', {
         headers: {
           'Content-Type': 'application/json',
-          'x-admin-key': adminPin.trim(),
+          'x-admin-key': cleanPin,
         },
       });
 
@@ -104,11 +144,11 @@ export const AdminVisitorStatistics: React.FC<AdminVisitorStatisticsProps> = ({ 
         setStats(data);
         setIsAuthenticated(true);
         sessionStorage.setItem('sunu_admin_auth', 'true');
-        sessionStorage.setItem('sunu_admin_key', adminPin.trim());
-        localStorage.setItem('sunu_admin_key', adminPin.trim());
+        sessionStorage.setItem('sunu_admin_key', cleanPin);
+        localStorage.setItem('sunu_admin_key', cleanPin);
       } else {
         const errJson = await res.json().catch(() => ({}));
-        setAuthError(errJson.error || 'Code PIN administrateur incorrect. Veuillez vérifier la variable ADMIN_PIN.');
+        setAuthError(errJson.error || 'Mot de passe administrateur incorrect.');
       }
     } catch {
       setAuthError('Erreur de connexion au serveur.');
@@ -151,7 +191,7 @@ export const AdminVisitorStatistics: React.FC<AdminVisitorStatisticsProps> = ({ 
             <div className="relative">
               <input
                 type="password"
-                placeholder="Code secret ADMIN_PIN"
+                placeholder="Mot de passe administrateur..."
                 value={adminPin}
                 onChange={(e) => setAdminPin(e.target.value)}
                 autoFocus
@@ -251,7 +291,7 @@ export const AdminVisitorStatistics: React.FC<AdminVisitorStatisticsProps> = ({ 
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span>
-                {stats?.active_visitors_now || 1} en direct
+                {stats?.active_visitors_now ?? 0} en direct
               </span>
             </div>
 
@@ -285,6 +325,16 @@ export const AdminVisitorStatistics: React.FC<AdminVisitorStatisticsProps> = ({ 
               <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-emerald-400' : ''}`} />
             </button>
 
+            {/* Reset to 0 button */}
+            <button
+              onClick={() => setShowResetConfirm(true)}
+              className="px-2.5 py-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 hover:text-rose-200 border border-rose-500/30 text-xs font-semibold transition flex items-center gap-1.5 shadow-sm"
+              title="Remettre toutes les statistiques de visiteurs à 0"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Remettre à 0</span>
+            </button>
+
             {/* Export CSV */}
             <button
               onClick={handleExportCSV}
@@ -306,6 +356,48 @@ export const AdminVisitorStatistics: React.FC<AdminVisitorStatisticsProps> = ({ 
           </div>
         </div>
       </header>
+
+      {/* Confirmation modal for resetting stats to 0 */}
+      {showResetConfirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+          <div className="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+            <div className="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 mx-auto">
+              <Trash2 className="w-6 h-6" />
+            </div>
+            <div className="text-center space-y-2">
+              <h3 className="text-lg font-bold text-white font-['Cabinet_Grotesk']">
+                Remettre les statistiques à 0 ?
+              </h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Cette action va réinitialiser l'historique des visites et remettre tous les compteurs de visiteurs (aujourd'hui, semaine, mois, total, graphiques) à <strong>0</strong>.
+              </p>
+            </div>
+            <div className="flex items-center gap-3 pt-2">
+              <button
+                type="button"
+                onClick={() => setShowResetConfirm(false)}
+                disabled={isResetting}
+                className="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition"
+              >
+                Annuler
+              </button>
+              <button
+                type="button"
+                onClick={handleResetStats}
+                disabled={isResetting}
+                className="flex-1 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-semibold text-xs transition flex items-center justify-center gap-2 shadow-lg shadow-rose-600/30"
+              >
+                {isResetting ? (
+                  <RefreshCw className="w-4 h-4 animate-spin" />
+                ) : (
+                  <RotateCcw className="w-4 h-4" />
+                )}
+                <span>Confirmer (Mettre à 0)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">

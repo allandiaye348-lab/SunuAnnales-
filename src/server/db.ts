@@ -74,6 +74,9 @@ export interface Annale {
   is_custom_upload?: boolean;
   user_uploaded_at?: string;
   cover_source?: string;
+  pdf_path?: string;
+  pdf_url?: string;
+  has_original_pdf?: boolean;
 }
 
 export interface Order {
@@ -468,11 +471,13 @@ class Database {
       if (fileToLoad) {
         const raw = fs.readFileSync(fileToLoad, 'utf-8');
         const parsed = JSON.parse(raw);
+        const rawAnnales: Annale[] = parsed.annales || [];
+        const enrichedAnnales = rawAnnales.map(a => this.enrichAnnaleWithBooklet(a));
         this.data = {
           users: parsed.users || [],
           categories: parsed.categories?.length > 0 ? parsed.categories : INITIAL_CATEGORIES,
           concours: parsed.concours || [],
-          annales: parsed.annales || [],
+          annales: enrichedAnnales,
           orders: parsed.orders || [],
           order_items: parsed.order_items || [],
           payments: parsed.payments || [],
@@ -556,12 +561,48 @@ class Database {
   }
 
   // --- ANNALES ---
+  private enrichAnnaleWithBooklet(a: Annale): Annale {
+    if (!a) return a;
+    try {
+      const bookletPath = path.resolve(process.cwd(), `data/booklets/${a.id}.json`);
+      if (fs.existsSync(bookletPath)) {
+        const raw = fs.readFileSync(bookletPath, 'utf-8');
+        const booklet = JSON.parse(raw);
+        const exercises = booklet.exercises || booklet.protected_exercises || [];
+        if (exercises.length > 0) {
+          return {
+            ...a,
+            total_exercises: booklet.total_exercises || 320,
+            summary_sections: booklet.summary_sections && booklet.summary_sections.length > 0 ? booklet.summary_sections : a.summary_sections,
+            exam_simulations: booklet.exam_simulations && booklet.exam_simulations.length > 0 ? booklet.exam_simulations : a.exam_simulations,
+            study_plan_days: 30,
+            protected_exercises: exercises,
+            pdf_path: `public/pdfs/${a.id}.pdf`,
+            pdf_url: `/pdfs/${a.id}.pdf`,
+            has_original_pdf: true,
+            sample_exercises: exercises.slice(0, 5).map((e: any) => ({
+              id: e.id,
+              section: e.section || 'Épreuve',
+              question: e.question,
+              answer_preview: (e.answer || '').substring(0, 160) + '...',
+            })),
+          };
+        }
+      }
+    } catch {
+      // Ignore parsing errors
+    }
+    return a;
+  }
+
   getAllAnnales(): Annale[] {
-    return this.data.annales;
+    return this.data.annales.map(a => this.enrichAnnaleWithBooklet(a));
   }
 
   getAnnaleById(id: string): Annale | undefined {
-    return this.data.annales.find(a => a.id === id || a.slug === id);
+    const a = this.data.annales.find(a => a.id === id || a.slug === id);
+    if (!a) return undefined;
+    return this.enrichAnnaleWithBooklet(a);
   }
 
   upsertAnnales(annales: Annale[]) {
@@ -574,15 +615,15 @@ class Database {
           ? existing.cover_image
           : (existing.cover_image || newAnnale.cover_image);
 
-        this.data.annales[idx] = { 
+        this.data.annales[idx] = this.enrichAnnaleWithBooklet({ 
           ...newAnnale, 
           ...existing,
           cover_image: preservedCover,
           is_custom_upload: existing.is_custom_upload ?? false,
           cover_source: existing.cover_source ?? 'official',
-        };
+        });
       } else {
-        this.data.annales.push(newAnnale);
+        this.data.annales.push(this.enrichAnnaleWithBooklet(newAnnale));
       }
     }
     // Update annale count in categories
@@ -692,6 +733,10 @@ class Database {
 
   getPurchase(userId: string, annaleId: string): Purchase | undefined {
     return this.data.purchases.find(p => p.user_id === userId && p.annale_id === annaleId);
+  }
+
+  getPurchaseByToken(token: string): Purchase | undefined {
+    return this.data.purchases.find(p => p.access_token === token);
   }
 
   getUserPurchases(userId: string): Purchase[] {
@@ -876,131 +921,13 @@ class Database {
     return newVisit;
   }
 
-  private seedInitialVisits(): void {
-    if (!this.data.page_visits) {
-      this.data.page_visits = [];
-    }
-    const sampleVisits: PageVisit[] = [];
-    const now = Date.now();
-    const annaleList = [
-      { id: 'annale-police-sn', title: 'Concours Police — Sénégal : Fascicule Renforcé Tome 1', category: 'Police' },
-      { id: 'annale-gendarmerie-sn', title: 'Concours Gendarmerie — Sénégal : Fascicule Renforcé Tome 1', category: 'Gendarmerie' },
-      { id: 'annale-douane-sn', title: 'Concours Douane — Sénégal : Préparation Intensive Tome 1', category: 'Douane' },
-      { id: 'annale-ena-sn', title: 'Concours ENA Sénégal — Cycles A & B Tome 1', category: 'ENA' },
-      { id: 'annale-ensoa-sn', title: 'Concours ENSOA — Sénégal : Fascicule Reconstruit', category: 'ENSOA' },
-      { id: 'annale-bts-logistique-sn', title: 'BTS Gestion de la Chaîne d’Approvisionnement et Logistique — Sénégal : Tome 1', category: 'BTS Gestion Chaine Approvisionnement Logistique' },
-      { id: 'annale-fastef-sn', title: 'Concours FASTEF — Fascicule Complet', category: 'FASTEF' },
-      { id: 'annale-crem-sn', title: 'Concours CREM — Fascicule Complet', category: 'CREM' },
-    ];
-    const popularQueries = ['police', 'gendarmerie', 'douane', 'bts', 'fastef', 'crem', 'ena', 'logistique', 'dakar'];
-    const countries = [
-      { name: 'Sénégal', code: 'SN', weight: 88 },
-      { name: 'France', code: 'FR', weight: 5 },
-      { name: 'Côte d’Ivoire', code: 'CI', weight: 3 },
-      { name: 'Maroc', code: 'MA', weight: 2 },
-      { name: 'Canada', code: 'CA', weight: 1 },
-      { name: 'Mali', code: 'ML', weight: 1 },
-    ];
-
-    // Seed 30 days of past visits
-    for (let day = 30; day >= 0; day--) {
-      // Natural traffic curve (growing towards recent days)
-      const baseDailyVisitors = Math.floor(45 + (30 - day) * 3.5 + (Math.sin(day) * 12));
-      const targetCount = Math.max(25, baseDailyVisitors);
-
-      for (let i = 0; i < targetCount; i++) {
-        const hourOffset = Math.floor(Math.random() * 24);
-        const minuteOffset = Math.floor(Math.random() * 60);
-        const visitTime = new Date(now - day * 86400000 + hourOffset * 3600000 + minuteOffset * 60000).toISOString();
-
-        const visitorId = `visitor-sn-${Math.floor(Math.random() * 1500)}`;
-        const sessionId = `sess-${day}-${Math.floor(Math.random() * 2000)}`;
-
-        // Device
-        const devRand = Math.random();
-        const device: 'mobile' | 'desktop' | 'tablet' = devRand < 0.76 ? 'mobile' : devRand < 0.96 ? 'desktop' : 'tablet';
-
-        // Country
-        const cRand = Math.random() * 100;
-        let selectedCountry = countries[0];
-        let cum = 0;
-        for (const c of countries) {
-          cum += c.weight;
-          if (cRand <= cum) {
-            selectedCountry = c;
-            break;
-          }
-        }
-
-        // Action
-        const actionRand = Math.random();
-        let path = '/';
-        let annale: (typeof annaleList)[0] | undefined;
-        let query: string | undefined;
-
-        if (actionRand < 0.45) {
-          path = '/';
-        } else if (actionRand < 0.75) {
-          annale = annaleList[Math.floor(Math.random() * annaleList.length)];
-          path = `/annale/${annale.id}`;
-        } else if (actionRand < 0.88) {
-          path = '/apropos';
-        } else if (actionRand < 0.95) {
-          path = '/contact';
-        }
-
-        if (Math.random() < 0.35) {
-          query = popularQueries[Math.floor(Math.random() * popularQueries.length)];
-        }
-
-        sampleVisits.push({
-          id: `visit-seed-${day}-${i}`,
-          visitor_id: visitorId,
-          session_id: sessionId,
-          path,
-          referrer: Math.random() < 0.5 ? 'direct' : Math.random() < 0.8 ? 'https://google.com' : 'https://wa.me',
-          device_type: device,
-          browser: device === 'mobile' ? 'Chrome Mobile' : 'Chrome',
-          os: device === 'mobile' ? 'Android' : 'Windows',
-          country: selectedCountry.name,
-          country_code: selectedCountry.code,
-          annale_id: annale?.id,
-          annale_title: annale?.title,
-          search_query: query,
-          timestamp: visitTime,
-        });
-      }
-    }
-
-    // Add recent live visits for real-time demonstration
-    for (let m = 4; m >= 0; m--) {
-      sampleVisits.push({
-        id: `visit-live-${m}`,
-        visitor_id: `visitor-live-${m}`,
-        session_id: `sess-live-${m}`,
-        path: m % 2 === 0 ? '/' : '/annale/annale-police-sn',
-        referrer: 'direct',
-        device_type: m === 1 ? 'desktop' : 'mobile',
-        browser: 'Chrome Mobile',
-        os: 'Android',
-        country: 'Sénégal',
-        country_code: 'SN',
-        annale_id: m % 2 !== 0 ? 'annale-police-sn' : undefined,
-        annale_title: m % 2 !== 0 ? 'Concours Police — Sénégal' : undefined,
-        timestamp: new Date(now - m * 60000 - 15000).toISOString(),
-      });
-    }
-
-    this.data.page_visits = sampleVisits;
+  resetVisitorStats(): void {
+    this.data.page_visits = [];
     this.save();
   }
 
   getVisitorStats(): VisitorStats {
-    if (!this.data.page_visits || this.data.page_visits.length === 0) {
-      this.seedInitialVisits();
-    }
-
-    const visits = this.data.page_visits || [];
+    const visits = (this.data.page_visits || []).filter(v => !v.id?.startsWith('visit-seed-'));
     const now = new Date();
     const nowMs = now.getTime();
 
@@ -1009,31 +936,47 @@ class Database {
     const yesterdayDate = new Date(nowMs - 86400000);
     const yesterdayStr = yesterdayDate.toISOString().slice(0, 10);
     const sevenDaysAgoMs = nowMs - 7 * 86400000;
-    const monthStr = now.toISOString().slice(0, 7);
-    const fiveMinutesAgoMs = nowMs - 5 * 60 * 1000;
+    const thirtyDaysAgoMs = nowMs - 30 * 86400000;
+    const tenMinutesAgoMs = nowMs - 10 * 60 * 1000;
 
     // 2. Filter visits by time range
     const todayVisits = visits.filter(v => v.timestamp.startsWith(todayStr));
     const yesterdayVisits = visits.filter(v => v.timestamp.startsWith(yesterdayStr));
     const weekVisits = visits.filter(v => new Date(v.timestamp).getTime() >= sevenDaysAgoMs);
-    const monthVisits = visits.filter(v => v.timestamp.startsWith(monthStr));
-    const realTimeVisits = visits.filter(v => new Date(v.timestamp).getTime() >= fiveMinutesAgoMs);
+    const monthVisits = visits.filter(v => new Date(v.timestamp).getTime() >= thirtyDaysAgoMs);
+    const realTimeVisits = visits.filter(v => new Date(v.timestamp).getTime() >= tenMinutesAgoMs);
 
     // Unique visitors (deduplicated by visitor_id)
     const uniqueToday = new Set(todayVisits.map(v => v.visitor_id)).size;
     const uniqueYesterday = new Set(yesterdayVisits.map(v => v.visitor_id)).size;
-    const uniqueThisWeek = new Set(weekVisits.map(v => v.visitor_id)).size;
-    const uniqueThisMonth = new Set(monthVisits.map(v => v.visitor_id)).size;
+    const unique7Days = new Set(weekVisits.map(v => v.visitor_id)).size;
+    const unique30Days = new Set(monthVisits.map(v => v.visitor_id)).size;
     const uniqueTotal = new Set(visits.map(v => v.visitor_id)).size;
-    const activeVisitorsNow = Math.max(1, new Set(realTimeVisits.map(v => v.visitor_id)).size);
+    const activeVisitorsNow = new Set(realTimeVisits.map(v => v.visitor_id)).size;
 
     // Growth percentage today vs yesterday
     const growthToday = uniqueYesterday > 0
       ? Math.round(((uniqueToday - uniqueYesterday) / uniqueYesterday) * 100)
-      : 100;
+      : (uniqueToday > 0 ? 100 : 0);
 
-    // 3. 7 Days & 30 Days Charts
+    // 3. Daily & Hourly Charts
     const dayNames = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
+
+    const getHourlyMetricsToday = (): DayMetric[] => {
+      const result: DayMetric[] = [];
+      for (let hour = 0; hour < 24; hour++) {
+        const hPrefix = `${todayStr}T${hour.toString().padStart(2, '0')}`;
+        const hVisits = todayVisits.filter(v => v.timestamp.startsWith(hPrefix));
+        const hUnique = new Set(hVisits.map(v => v.visitor_id)).size;
+        result.push({
+          date: `${hour.toString().padStart(2, '0')}h`,
+          day_name: `${hour.toString().padStart(2, '0')}h00`,
+          visitors: hUnique,
+          page_views: hVisits.length,
+        });
+      }
+      return result;
+    };
 
     const getDailyMetrics = (daysCount: number): DayMetric[] => {
       const result: DayMetric[] = [];
@@ -1052,8 +995,10 @@ class Database {
       return result;
     };
 
+    const chartToday = getHourlyMetricsToday();
     const chart7Days = getDailyMetrics(7);
     const chart30Days = getDailyMetrics(30);
+    const chart90Days = getDailyMetrics(90);
 
     // 4. Top Pages
     const pageCounts: Record<string, { views: number; visitors: Set<string> }> = {};
@@ -1066,11 +1011,24 @@ class Database {
     const totalViews = Math.max(1, visits.length);
     const topPages: TopPageMetric[] = Object.entries(pageCounts)
       .map(([path, data]) => {
-        let label = 'Accueil & Catalogue Officiel';
-        if (path === '/apropos') label = 'Page À propos & Vision';
-        else if (path === '/contact') label = 'Page Contact & Support';
-        else if (path.includes('/annale/')) label = `Détail Fascicule (${path.replace('/annale/', '')})`;
-        else if (path.includes('/admin')) label = 'Espace Administration';
+        let label = 'Accueil';
+        if (path === '/' || path === '') label = 'Accueil';
+        else if (path.includes('police')) label = 'Police';
+        else if (path.includes('gendarmerie')) label = 'Gendarmerie';
+        else if (path.includes('douane')) label = 'Douane';
+        else if (path.includes('greffe')) label = 'Greffe';
+        else if (path.includes('ena')) label = 'ENA';
+        else if (path.includes('ensoa')) label = 'ENSOA';
+        else if (path.includes('endss')) label = 'ENDSS';
+        else if (path.includes('fastef')) label = 'FASTEF';
+        else if (path.includes('crem')) label = 'CREM';
+        else if (path.includes('transit')) label = 'BTS Transit';
+        else if (path.includes('logistique')) label = 'BTS Logistique';
+        else if (path.includes('secretariat')) label = 'BTS Secrétariat';
+        else if (path.includes('magistrature')) label = 'Magistrature';
+        else if (path.includes('apropos')) label = 'À propos';
+        else if (path.includes('contact')) label = 'Contact';
+        else if (path.startsWith('/annale/')) label = path.replace('/annale/', '').replace('-sn', '');
         return {
           path,
           label,
@@ -1080,7 +1038,12 @@ class Database {
         };
       })
       .sort((a, b) => b.views - a.views)
-      .slice(0, 8);
+      .slice(0, 10);
+
+    const topPagesList = topPages.map(p => ({
+      page: p.label,
+      views: p.views,
+    }));
 
     // 5. Top Annales
     const annaleCounts: Record<string, { title: string; category: string; views: number }> = {};
@@ -1130,17 +1093,51 @@ class Database {
       else if (v.device_type === 'tablet') tabletCount++;
       else desktopCount++;
     }
-    const totalDevices = Math.max(1, mobileCount + desktopCount + tabletCount);
+    const totalDevices = mobileCount + desktopCount + tabletCount;
     const deviceBreakdown: DeviceBreakdown = {
       mobile: mobileCount,
       desktop: desktopCount,
       tablet: tabletCount,
-      mobile_percent: Math.round((mobileCount / totalDevices) * 100),
-      desktop_percent: Math.round((desktopCount / totalDevices) * 100),
-      tablet_percent: Math.round((tabletCount / totalDevices) * 100),
+      mobile_percent: totalDevices > 0 ? Math.round((mobileCount / totalDevices) * 100) : 0,
+      desktop_percent: totalDevices > 0 ? Math.round((desktopCount / totalDevices) * 100) : 0,
+      tablet_percent: totalDevices > 0 ? Math.round((tabletCount / totalDevices) * 100) : 0,
     };
 
-    // 8. Country Breakdown
+    // 8. Traffic Sources
+    const sourceMap: Record<string, number> = {
+      'Google': 0,
+      'TikTok': 0,
+      'Facebook': 0,
+      'Instagram': 0,
+      'Accès direct': 0,
+      'Autres sites': 0,
+    };
+    for (const v of visits) {
+      const ref = (v.referrer || '').toLowerCase();
+      if (!ref || ref === 'direct' || ref.includes('localhost') || ref.includes('127.0.0.1')) {
+        sourceMap['Accès direct']++;
+      } else if (ref.includes('google')) {
+        sourceMap['Google']++;
+      } else if (ref.includes('tiktok')) {
+        sourceMap['TikTok']++;
+      } else if (ref.includes('facebook') || ref.includes('fb.com')) {
+        sourceMap['Facebook']++;
+      } else if (ref.includes('instagram')) {
+        sourceMap['Instagram']++;
+      } else {
+        sourceMap['Autres sites']++;
+      }
+    }
+    const trafficSources = Object.entries(sourceMap)
+      .filter(([_, count]) => count > 0)
+      .map(([name, count]) => ({
+        name,
+        count,
+        percent: visits.length > 0 ? Math.round((count / visits.length) * 100) : 0,
+      }))
+      .sort((a, b) => b.count - a.count);
+
+    // 9. Country Breakdown
     const countryCounts: Record<string, { code: string; count: number; flag: string }> = {};
     for (const v of visits) {
       const c = v.country || 'Sénégal';
@@ -1165,14 +1162,43 @@ class Database {
         code: data.code,
         flag: data.flag,
         count: data.count,
-        percent: Math.round((data.count / totalViews) * 100),
+        percent: visits.length > 0 ? Math.round((data.count / visits.length) * 100) : 0,
       }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 7);
 
-    // 9. Recent Live Feed
+    // 10. Recent Activity & Feed
+    const recentActivity = visits
+      .slice(-20)
+      .reverse()
+      .map(v => {
+        const d = new Date(v.timestamp);
+        const timeStr = d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+        let pageName = 'Accueil';
+        if (v.path) {
+          if (v.path.includes('police')) pageName = 'Police';
+          else if (v.path.includes('gendarmerie')) pageName = 'Gendarmerie';
+          else if (v.path.includes('douane')) pageName = 'Douane';
+          else if (v.path.includes('greffe')) pageName = 'Greffe';
+          else if (v.path.includes('ena')) pageName = 'ENA';
+          else if (v.path.includes('contact')) pageName = 'Contact';
+          else if (v.path.includes('apropos')) pageName = 'À propos';
+          else if (v.annale_title) pageName = v.annale_title.split('—')[0].replace('Concours', '').trim();
+        }
+        const devName = v.device_type === 'mobile' ? 'Mobile' : (v.device_type === 'tablet' ? 'Tablette' : 'Ordinateur');
+        const countryName = v.country || 'Sénégal';
+        return {
+          time: timeStr,
+          page: pageName,
+          device: devName,
+          country: countryName,
+          timestamp: v.timestamp,
+          text: `${timeStr} — ${pageName} — ${devName} — ${countryName}`,
+        };
+      });
+
     const recentLiveFeed: LiveVisitor[] = visits
-      .slice(-12)
+      .slice(-15)
       .reverse()
       .map(v => {
         const diffSec = Math.max(1, Math.round((nowMs - new Date(v.timestamp).getTime()) / 1000));
@@ -1193,20 +1219,29 @@ class Database {
     return {
       visitors_today: uniqueToday,
       visitors_yesterday: uniqueYesterday,
-      visitors_this_week: uniqueThisWeek,
-      visitors_this_month: uniqueThisMonth,
+      visitors_7_days: unique7Days,
+      visitors_this_week: unique7Days,
+      visitors_30_days: unique30Days,
+      visitors_this_month: unique30Days,
+      visitors_total: uniqueTotal,
       total_visitors: uniqueTotal,
+      page_views: visits.length,
       total_page_views: visits.length,
       active_visitors_now: activeVisitorsNow,
       visitors_growth_today_vs_yesterday: growthToday,
+      chart_today: chartToday,
       chart_7_days: chart7Days,
       chart_30_days: chart30Days,
+      chart_90_days: chart90Days,
       top_pages: topPages,
+      top_pages_list: topPagesList,
       top_annales: topAnnales,
       top_searches: topSearches,
       device_breakdown: deviceBreakdown,
+      traffic_sources: trafficSources,
       country_breakdown: countryBreakdown,
       recent_live_feed: recentLiveFeed,
+      recent_activity: recentActivity,
       last_updated: now.toISOString(),
     };
   }

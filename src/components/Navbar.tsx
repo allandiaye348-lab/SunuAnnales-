@@ -14,8 +14,8 @@ interface NavbarProps {
   onSelectCategory: (cat: string) => void;
   selectedCategory: string;
   categories?: string[];
-  currentTab?: 'accueil' | 'apropos' | 'contact';
-  onSelectTab?: (tab: 'accueil' | 'apropos' | 'contact') => void;
+  currentTab?: string;
+  onSelectTab?: (tab: string) => void;
   onResetPurchases?: () => void;
   onOpenRoutes?: () => void;
   onOpenPortal?: () => void;
@@ -69,6 +69,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   purchasedCount,
   onOpenAuth,
   onLogout,
+  onOpenAdmin,
+  isAdminView,
   onTogglePurchasesFilter,
   filterOnlyPurchased,
   onSelectCategory,
@@ -137,38 +139,28 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
             </div>
 
-            {/* Essential Navigation Links: Accueil • À propos • Contact */}
-            <nav className="flex items-center gap-0.5 sm:gap-1">
+            {/* Essential Navigation Links: Accueil & Admin */}
+            <nav className="flex items-center gap-1 sm:gap-2">
               <button
-                onClick={() => onSelectTab?.('accueil')}
-                className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-semibold transition ${
-                  currentTab === 'accueil'
-                    ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 font-bold'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-900'
-                }`}
+                onClick={() => {
+                  onSelectTab?.('accueil');
+                  onSelectCategory('Tous');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 transition shadow-sm hover:bg-emerald-500/25"
               >
                 Accueil
               </button>
-              <button
-                onClick={() => onSelectTab?.('apropos')}
-                className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-semibold transition ${
-                  currentTab === 'apropos'
-                    ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 font-bold'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-900'
-                }`}
-              >
-                À propos
-              </button>
-              <button
-                onClick={() => onSelectTab?.('contact')}
-                className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-semibold transition ${
-                  currentTab === 'contact'
-                    ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 font-bold'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-900'
-                }`}
-              >
-                Contact
-              </button>
+              {onOpenAdmin && (
+                <button
+                  onClick={onOpenAdmin}
+                  className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-bold text-purple-200 hover:text-white bg-purple-900/60 hover:bg-purple-800/80 border border-purple-600/70 transition flex items-center gap-1.5 shadow-sm"
+                  title="Accéder à l'Espace Administrateur"
+                >
+                  <span className="text-purple-300">🛡️</span>
+                  <span>Admin</span>
+                </button>
+              )}
             </nav>
           </div>
 
@@ -249,7 +241,19 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Right Action buttons */}
-          <div className="flex items-center gap-2.5 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+            {/* Espace Admin Button */}
+            {onOpenAdmin && (
+              <button
+                onClick={onOpenAdmin}
+                className="px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-xs font-bold bg-gradient-to-r from-purple-900 via-indigo-900 to-purple-900 hover:from-purple-800 hover:to-indigo-800 text-white border border-purple-400/60 hover:border-purple-300 flex items-center gap-1.5 transition shadow-lg shadow-purple-950/50 ring-1 ring-purple-500/30 group"
+                title="Accéder au panneau d'administration"
+              >
+                <span className="text-purple-300 group-hover:scale-110 transition-transform">🛡️</span>
+                <span className="font-extrabold tracking-wide">Espace Admin</span>
+              </button>
+            )}
+
             {/* My Purchases shortcut if any */}
             {purchasedCount > 0 && (
               <div className="flex items-center gap-1">

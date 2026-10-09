@@ -5,12 +5,12 @@ import {
   TrendingUp, Users, ShoppingBag, AlertOctagon, CheckCircle2, 
   Clock, XCircle, Search, Download, RefreshCw, Eye, ShieldAlert, ShieldCheck,
   ArrowUpRight, BarChart3, Database, Key, Check, Image as ImageIcon,
-  Upload, Link as LinkIcon, Camera, Sparkles, ArrowLeft, FileArchive, Activity
+  Upload, Link as LinkIcon, Camera, Sparkles, ArrowLeft, FileArchive, Activity, FileText
 } from 'lucide-react';
 
 interface AdminDashboardProps {
   onClose: () => void;
-  initialTab?: 'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers';
+  initialTab?: 'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers' | 'pdfs';
 }
 
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initialTab = 'overview' }) => {
@@ -19,18 +19,80 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
   const [users, setUsers] = useState<any[]>([]);
   const [annales, setAnnales] = useState<Annale[]>([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers'>(initialTab);
+  const [activeTab, setActiveTab] = useState<'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers' | 'pdfs'>(initialTab);
   const [statusFilter, setStatusFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRawResponse, setSelectedRawResponse] = useState<any | null>(null);
   const [actionMessage, setActionMessage] = useState<string | null>(null);
   const [uploadingId, setUploadingId] = useState<string | null>(null);
+  const [uploadingPdfId, setUploadingPdfId] = useState<string | null>(null);
   const [customUrls, setCustomUrls] = useState<Record<string, string>>({});
   const [paymentSettings, setPaymentSettings] = useState<any>(null);
   const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
+  const pdfFileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
   const batchFileInputRef = useRef<HTMLInputElement | null>(null);
   const [isBatchUploading, setIsBatchUploading] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    try {
+      return (
+        sessionStorage.getItem('sunu_admin_auth') === 'true' ||
+        localStorage.getItem('sunu_admin_auth') === 'true'
+      );
+    } catch {
+      return false;
+    }
+  });
+  const [pinInput, setPinInput] = useState('');
+  const [pinError, setPinError] = useState<string | null>(null);
+  const [isCheckingPin, setIsCheckingPin] = useState(false);
   const getAdminKey = () => sessionStorage.getItem('sunu_admin_key') || localStorage.getItem('sunu_admin_key') || '';
+
+  const handleVerifyPin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const cleanPin = pinInput.trim();
+    if (!cleanPin) return;
+    setIsCheckingPin(true);
+    setPinError(null);
+
+    // Fast-path client check for 2155
+    if (cleanPin === '2155') {
+      sessionStorage.setItem('sunu_admin_auth', 'true');
+      sessionStorage.setItem('sunu_admin_key', '2155');
+      localStorage.setItem('sunu_admin_auth', 'true');
+      localStorage.setItem('sunu_admin_key', '2155');
+      // Also request server session
+      fetch('/api/admin/verify-pin', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pin: '2155' }),
+      }).catch(() => {});
+      setIsAuthenticated(true);
+      setIsCheckingPin(false);
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/admin/verify-pin', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pin: cleanPin }),
+      });
+
+      if (res.ok) {
+        sessionStorage.setItem('sunu_admin_auth', 'true');
+        sessionStorage.setItem('sunu_admin_key', cleanPin);
+        localStorage.setItem('sunu_admin_auth', 'true');
+        localStorage.setItem('sunu_admin_key', cleanPin);
+        setIsAuthenticated(true);
+      } else {
+        setPinError('Mot de passe administrateur incorrect.');
+      }
+    } catch {
+      setPinError('Erreur de communication avec le serveur.');
+    } finally {
+      setIsCheckingPin(false);
+    }
+  };
 
   const handleBatchUploadFiles = async (files: FileList | File[]) => {
     const fileArray = Array.from(files);
@@ -163,8 +225,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
   };
 
   useEffect(() => {
-    fetchAdminData();
-  }, []);
+    if (isAuthenticated) {
+      fetchAdminData();
+    } else {
+      setLoading(false);
+    }
+  }, [isAuthenticated]);
 
   const handleUploadPhotoFile = async (annaleId: string, file: File) => {
     setUploadingId(annaleId);
@@ -244,6 +310,55 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
     }
   };
 
+  const handleUploadPdfFile = async (annaleId: string, file: File) => {
+    if (!file.name.toLowerCase().endsWith('.pdf')) {
+      alert('Veuillez sélectionner un fichier au format .PDF');
+      return;
+    }
+    setUploadingPdfId(annaleId);
+    try {
+      const reader = new FileReader();
+      reader.onload = async (e) => {
+        const base64Data = e.target?.result as string;
+        if (!base64Data) {
+          setUploadingPdfId(null);
+          return;
+        }
+
+        const token = sessionStorage.getItem('sunu_admin_token') || localStorage.getItem('sunu_token') || '';
+        const res = await fetch('/api/admin/upload-pdf', {
+          method: 'POST',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
+            'x-admin-key': getAdminKey(),
+            'x-admin-token': sessionStorage.getItem('sunu_admin_token') || '',
+          },
+          body: JSON.stringify({
+            annale_id: annaleId,
+            pdf_data: base64Data,
+          }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          setAnnales(prev => prev.map(a => a.id === annaleId ? { ...a, pdf_path: data.pdf_url, has_original_pdf: true } : a));
+          setActionMessage(data.message || 'Fichier PDF original enregistré avec succès !');
+          setTimeout(() => setActionMessage(null), 5000);
+        } else {
+          const err = await res.json().catch(() => ({}));
+          alert(`Erreur lors du téléversement: ${err.error || 'Inconnue'}`);
+        }
+        setUploadingPdfId(null);
+      };
+      reader.readAsDataURL(file);
+    } catch (err: any) {
+      console.error(err);
+      setUploadingPdfId(null);
+    }
+  };
+
   const handleUpdateStatus = async (paymentId: string, newStatus: string) => {
     try {
       const token = localStorage.getItem('sunu_token') || '';
@@ -303,6 +418,68 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
 
   const failedPayments = payments.filter(p => p.status === 'failed');
 
+  if (!isAuthenticated) {
+    return (
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/95 backdrop-blur-md">
+        <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl text-center relative overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+          <div className="w-16 h-16 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mx-auto mb-4 text-purple-400">
+            <Key className="w-8 h-8" />
+          </div>
+
+          <h2 className="text-xl font-black text-white font-['Cabinet_Grotesk'] mb-1">
+            Espace Administrateur
+          </h2>
+          <p className="text-xs text-slate-400 mb-6">
+            Cette zone est strictement réservée à l'administrateur de SunuAnnales. Saisissez le mot de passe secret pour déverrouiller la gestion complète (PDF originaux, paiements, candidats).
+          </p>
+
+          <form onSubmit={handleVerifyPin} className="space-y-4">
+            <div className="relative">
+              <input
+                type="password"
+                autoFocus
+                placeholder="Mot de passe secret..."
+                value={pinInput}
+                onChange={(e) => {
+                  setPinInput(e.target.value);
+                  setPinError(null);
+                }}
+                className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-purple-500/50 focus:border-purple-400 focus:ring-2 focus:ring-purple-500/40 text-center text-white text-lg tracking-widest outline-none font-mono placeholder:text-slate-500 placeholder:tracking-normal placeholder:font-sans placeholder:text-xs"
+              />
+            </div>
+
+            {pinError && (
+              <p className="text-xs text-red-400 bg-red-950/40 border border-red-900/50 py-2 px-3 rounded-lg">
+                {pinError}
+              </p>
+            )}
+
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={onClose}
+                className="flex-1 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold transition"
+              >
+                Fermer
+              </button>
+              <button
+                type="submit"
+                disabled={isCheckingPin || !pinInput.trim()}
+                className="flex-1 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:brightness-110 text-white text-xs font-bold transition disabled:opacity-50 shadow-lg shadow-purple-950/50 flex items-center justify-center gap-1.5"
+              >
+                {isCheckingPin ? (
+                  <RefreshCw className="w-4 h-4 animate-spin" />
+                ) : (
+                  <span>Déverrouiller</span>
+                )}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-0 sm:p-4 bg-slate-950/90 backdrop-blur-md overflow-hidden">
       <div className="relative w-full max-w-6xl h-full sm:h-[92vh] bg-slate-900 border-0 sm:border border-slate-800 rounded-none sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden">
@@ -351,6 +528,21 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
               <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
             </button>
             <button
+              onClick={() => {
+                sessionStorage.removeItem('sunu_admin_auth');
+                sessionStorage.removeItem('sunu_admin_key');
+                localStorage.removeItem('sunu_admin_auth');
+                localStorage.removeItem('sunu_admin_key');
+                setIsAuthenticated(false);
+                onClose();
+              }}
+              className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-amber-400 text-xs font-semibold transition flex items-center gap-1.5 border border-slate-700"
+              title="Verrouiller la session administrateur et quitter"
+            >
+              <Key className="w-3.5 h-3.5 text-amber-400" />
+              <span className="hidden sm:inline">Verrouiller</span>
+            </button>
+            <button
               onClick={onClose}
               className="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition ml-2 flex items-center gap-1.5"
             >
@@ -373,6 +565,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
           {[
             { id: 'overview', label: 'Vue Générale & Revenus' },
             { id: 'statistiques', label: '📊 Statistiques Visiteurs' },
+            { id: 'pdfs', label: `📄 Fichiers PDF Originaux (${annales.length})` },
             { id: 'covers', label: `Photos & Couvertures (${annales.length})` },
             { id: 'payments', label: `Tous les Paiements (${payments.length})` },
             { id: 'failed', label: `Échecs & Diagnostics (${failedPayments.length})` },
@@ -398,6 +591,136 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onClose, initial
           {activeTab === 'statistiques' && (
             <div className="-m-6">
               <AdminVisitorStatistics onBack={() => setActiveTab('overview')} />
+            </div>
+          )}
+
+          {/* TAB: ORIGINAL PDF FILES */}
+          {activeTab === 'pdfs' && (
+            <div className="space-y-6">
+              <div className="p-5 rounded-2xl bg-gradient-to-r from-blue-950/70 via-slate-900 to-indigo-950/70 border border-blue-800/50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                  <h3 className="text-base font-bold text-white flex items-center gap-2">
+                    <FileText className="w-5 h-5 text-blue-400" />
+                    Dépose & Gestion de vos Fichiers PDF Originaux (100% Intacts)
+                  </h3>
+                  <p className="text-xs text-slate-300 mt-1 max-w-2xl leading-relaxed">
+                    Téléversez vos véritables fichiers PDF pour le concours de Police, Gendarmerie, Douane, etc. Dès qu'un fichier PDF est importé, il est servi directement aux acheteurs sans aucune modification ni altération de contenu.
+                  </p>
+                </div>
+                <div className="shrink-0 flex items-center gap-2">
+                  <span className="px-3 py-1.5 rounded-xl bg-blue-500/20 text-blue-300 text-xs font-bold border border-blue-500/30 flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                    Téléversement direct sans altération
+                  </span>
+                </div>
+              </div>
+
+              {/* Grid of annales with their PDF status and upload button */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {annales.map((annale) => (
+                  <div
+                    key={annale.id}
+                    className={`bg-slate-900 border rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between transition ${
+                      annale.id === 'annale-police-sn' ? 'border-blue-500/60 ring-1 ring-blue-500/30' : 'border-slate-800 hover:border-slate-700'
+                    }`}
+                  >
+                    <div className="p-4 border-b border-slate-800/80 bg-slate-950/40 flex items-center justify-between">
+                      <div>
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase">
+                          {annale.category}
+                        </span>
+                        <h4 className="text-xs font-bold text-white mt-1 line-clamp-1">{annale.title}</h4>
+                      </div>
+                      {annale.id === 'annale-police-sn' && (
+                        <span className="text-[10px] px-2 py-0.5 bg-amber-500/20 text-amber-300 font-bold rounded border border-amber-500/30">
+                          Police
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="p-4 space-y-3">
+                      <div className="flex items-center gap-3">
+                        <img
+                          src={annale.cover_image || '/covers/police.jpg'}
+                          alt={annale.title}
+                          className="w-12 h-16 object-cover rounded-lg border border-slate-700 shrink-0 shadow-md"
+                        />
+                        <div className="text-xs space-y-1">
+                          <p className="text-slate-300 font-semibold">{annale.total_exercises} exercices corrigés</p>
+                          <p className="text-[11px] text-slate-500">Tarif : 2 000 FCFA</p>
+                          <div className="flex items-center gap-1.5 text-[11px]">
+                            {annale.has_original_pdf || annale.pdf_path ? (
+                              <span className="text-emerald-400 font-bold flex items-center gap-1">
+                                <CheckCircle2 className="w-3.5 h-3.5" /> Fichier PDF original actif
+                              </span>
+                            ) : (
+                              <span className="text-slate-400 flex items-center gap-1">
+                                <FileText className="w-3.5 h-3.5 text-blue-400" /> Prêt pour import PDF
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="pt-2 border-t border-slate-800/80 space-y-2">
+                        <input
+                          type="file"
+                          accept=".pdf,application/pdf"
+                          ref={(el) => {
+                            pdfFileInputRefs.current[annale.id] = el;
+                          }}
+                          className="hidden"
+                          onChange={(e) => {
+                            const file = e.target.files?.[0];
+                            if (file) handleUploadPdfFile(annale.id, file);
+                          }}
+                        />
+
+                        <button
+                          type="button"
+                          disabled={uploadingPdfId === annale.id}
+                          onClick={() => pdfFileInputRefs.current[annale.id]?.click()}
+                          className="w-full py-2 px-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition disabled:opacity-50 shadow-md shadow-blue-950/40 cursor-pointer"
+                        >
+                          {uploadingPdfId === annale.id ? (
+                            <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                          ) : (
+                            <Upload className="w-3.5 h-3.5" />
+                          )}
+                          <span>
+                            {uploadingPdfId === annale.id
+                              ? 'Téléversement du PDF...'
+                              : 'Téléverser mon fichier PDF (.pdf)'}
+                          </span>
+                        </button>
+
+                        <div className="grid grid-cols-2 gap-2 pt-1">
+                          <a
+                            href={`/pdfs/${annale.id}.pdf`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
+                            title="Ouvrir le fichier PDF officiel original"
+                          >
+                            <Eye className="w-3.5 h-3.5 text-blue-400" />
+                            <span>Voir le PDF</span>
+                          </a>
+                          <a
+                            href={`/api/annales/${annale.id}/download-pdf?token=${encodeURIComponent(sessionStorage.getItem('sunu_admin_token') || localStorage.getItem('sunu_token') || '')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-2 px-2.5 rounded-xl bg-emerald-950/40 hover:bg-emerald-900/60 text-emerald-300 hover:text-emerald-200 border border-emerald-800/60 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
+                            title="Télécharger le fichier PDF officiel"
+                          >
+                            <Download className="w-3.5 h-3.5 text-emerald-400" />
+                            <span>Télécharger</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 

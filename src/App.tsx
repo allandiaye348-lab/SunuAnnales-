@@ -7,20 +7,21 @@ import { PaymentModal } from './components/PaymentModal';
 import { SecureReaderModal } from './components/SecureReaderModal';
 import { AdminDashboard } from './components/AdminDashboard';
 import { AdminVisitorStatistics } from './components/AdminVisitorStatistics';
+import { AdminStatistiques } from './components/AdminStatistiques';
+import { AdminLogin } from './components/AdminLogin';
 import { PreviewSummaryModal } from './components/PreviewSummaryModal';
 import { ApiRoutesModal } from './components/ApiRoutesModal';
 import { FaqSection } from './components/FaqSection';
 import { CustomerPortalModal } from './components/CustomerPortalModal';
 import { PaymentReturnNotification } from './components/PaymentReturnNotification';
-import { AboutSection } from './components/AboutSection';
-import { ContactSection } from './components/ContactSection';
 import { Professional3DModal } from './components/Professional3DModal';
 import { Professional3DBookViewer } from './components/Professional3DBookViewer';
+import { VideoBackground } from './components/VideoBackground';
 import { trackPageView, initAnalyticsTracking } from './utils/analytics';
 import { 
   Sparkles, ShieldCheck, CheckCircle2, Award, Zap, BookOpen, 
   Search, Filter, ChevronRight, HelpCircle, ArrowRight, ArrowLeft, Smartphone,
-  PhoneCall, Users, DownloadCloud, Lock, Star, Eye
+  PhoneCall, Users, DownloadCloud, Lock, Star, Eye, ShoppingBag
 } from 'lucide-react';
 
 export default function App() {
@@ -28,7 +29,14 @@ export default function App() {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [purchasedIds, setPurchasedIds] = useState<string[]>(() => {
     try {
-      return JSON.parse(localStorage.getItem('sunu_purchases') || '[]');
+      const stored = localStorage.getItem('sunu_purchases');
+      let list = stored ? JSON.parse(stored) : [];
+      if (Array.isArray(list)) {
+        // Enlève les achats par défaut pour que le bouton Acheter apparaisse sur Police et Gendarmerie
+        list = list.filter((id: string) => id !== 'annale-police-sn' && id !== 'annale-gendarmerie-sn' && id !== 'annale-esogn-sn');
+        localStorage.setItem('sunu_purchases', JSON.stringify(list));
+      }
+      return Array.isArray(list) ? list : [];
     } catch {
       return [];
     }
@@ -36,7 +44,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
 
   // Navigation tab: Accueil | A propos | Contact
-  const [currentTab, setCurrentTab] = useState<'accueil' | 'apropos' | 'contact'>('accueil');
+  const [currentTab, setCurrentTab] = useState<string>('accueil');
 
   // Filters & Search
   const [selectedCategory, setSelectedCategory] = useState<string>('Tous');
@@ -51,10 +59,40 @@ export default function App() {
   const [heroViewMode, setHeroViewMode] = useState<'3d' | 'poster'>('poster');
   const [showAdminDashboard, setShowAdminDashboard] = useState(false);
   const [showStatsDashboard, setShowStatsDashboard] = useState(false);
+  const [adminRoute, setAdminRoute] = useState<'none' | 'login' | 'statistiques' | 'loading'>(() => {
+    const path = typeof window !== 'undefined' ? window.location.pathname : '';
+    if (path === '/admin/statistiques' || path === '/admin/stats') return 'loading';
+    if (path === '/admin/login') return 'login';
+    if (path === '/admin') return 'loading';
+    return 'none';
+  });
   const [adminInitialTab, setAdminInitialTab] = useState<'overview' | 'statistiques' | 'payments' | 'failed' | 'users' | 'covers'>('overview');
   const [showRoutesModal, setShowRoutesModal] = useState(false);
   const [showPortalModal, setShowPortalModal] = useState(false);
   const [showPaymentReturn, setShowPaymentReturn] = useState(false);
+  const [isAdminUnlocked, setIsAdminUnlocked] = useState<boolean>(() => {
+    try {
+      return (
+        sessionStorage.getItem('sunu_admin_auth') === 'true' ||
+        localStorage.getItem('sunu_admin_auth') === 'true'
+      );
+    } catch {
+      return false;
+    }
+  });
+  const [secretClickCount, setSecretClickCount] = useState(0);
+
+  const handleSecretAdminTrigger = () => {
+    setSecretClickCount(prev => {
+      const next = prev + 1;
+      if (next >= 5) {
+        setShowAdminDashboard(true);
+        return 0;
+      }
+      return next;
+    });
+    setTimeout(() => setSecretClickCount(0), 2500);
+  };
 
   // Initial load
   useEffect(() => {
@@ -64,6 +102,23 @@ export default function App() {
     if (window.location.search.includes('payment=') && window.location.search.includes('ref=')) {
       setShowPaymentReturn(true);
     }
+
+    // Secret URL trigger for database modal (?admin_portal or #admin_portal)
+    const searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.has('admin_portal') || window.location.hash === '#admin_portal') {
+      setShowAdminDashboard(true);
+    }
+
+    // Secret keyboard shortcut: Ctrl+Shift+A (or Cmd+Shift+A)
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
+        e.preventDefault();
+        setShowAdminDashboard(true);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const fetchCatalog = async () => {
@@ -98,7 +153,11 @@ export default function App() {
   const checkCurrentUser = async () => {
     const localPurchases: string[] = (() => {
       try {
-        return JSON.parse(localStorage.getItem('sunu_purchases') || '[]');
+        const stored = localStorage.getItem('sunu_purchases');
+        const list = stored ? JSON.parse(stored) : [];
+        return Array.isArray(list)
+          ? list.filter((id: string) => id !== 'annale-police-sn' && id !== 'annale-gendarmerie-sn' && id !== 'annale-esogn-sn')
+          : [];
       } catch {
         return [];
       }
@@ -113,7 +172,10 @@ export default function App() {
           localStorage.setItem('sunu_token', guestData.token);
           token = guestData.token;
           setCurrentUser(guestData.user);
-          const merged = Array.from(new Set([...(guestData.purchased_annale_ids || []), ...localPurchases]));
+          const serverList = (guestData.purchased_annale_ids || []).filter(
+            (id: string) => id !== 'annale-police-sn' && id !== 'annale-gendarmerie-sn' && id !== 'annale-esogn-sn'
+          );
+          const merged = Array.from(new Set([...serverList, ...localPurchases]));
           setPurchasedIds(merged);
           return;
         }
@@ -144,7 +206,10 @@ export default function App() {
       if (res.ok) {
         const data = await res.json();
         setCurrentUser(data.user);
-        const merged = Array.from(new Set([...(data.purchased_annale_ids || []), ...localPurchases]));
+        const serverList = (data.purchased_annale_ids || []).filter(
+          (id: string) => id !== 'annale-police-sn' && id !== 'annale-gendarmerie-sn' && id !== 'annale-esogn-sn'
+        );
+        const merged = Array.from(new Set([...serverList, ...localPurchases]));
         setPurchasedIds(merged);
       } else {
         setPurchasedIds(localPurchases);
@@ -265,24 +330,71 @@ export default function App() {
   }, [annales]);
 
   useEffect(() => {
-    // Hidden private access for administrator via /admin/statistiques or ?admin=stats
-    const pathname = window.location.pathname;
-    const params = new URLSearchParams(window.location.search);
+    const handleLocationChange = async () => {
+      const pathname = window.location.pathname;
+      const params = new URLSearchParams(window.location.search);
 
-    if (
-      pathname === '/admin/statistiques' || 
-      pathname === '/admin/stats' || 
-      params.get('admin') === 'stats' || 
-      params.get('stats') === 'true'
-    ) {
-      setShowStatsDashboard(true);
-    } else if (params.get('admin') === 'true' || params.get('admin') === 'secret' || pathname === '/admin') {
-      setShowAdminDashboard(true);
-    }
+      if (
+        pathname === '/admin/statistiques' ||
+        pathname === '/admin/stats' ||
+        params.get('admin') === 'stats' ||
+        params.get('stats') === 'true'
+      ) {
+        try {
+          const token = sessionStorage.getItem('sunu_admin_token') || '';
+          const res = await fetch('/api/admin/check-session', {
+            headers: token ? { Authorization: `Bearer ${token}` } : {},
+          });
+          if (res.ok) {
+            setAdminRoute('statistiques');
+          } else {
+            // Visiteur non authentifié : redirection obligatoire vers /admin/login
+            window.history.replaceState({}, '', '/admin/login');
+            setAdminRoute('login');
+          }
+        } catch {
+          window.history.replaceState({}, '', '/admin/login');
+          setAdminRoute('login');
+        }
+      } else if (pathname === '/admin/login') {
+        try {
+          const token = sessionStorage.getItem('sunu_admin_token') || '';
+          if (token) {
+            const res = await fetch('/api/admin/check-session', {
+              headers: { Authorization: `Bearer ${token}` },
+            });
+            if (res.ok) {
+              window.history.replaceState({}, '', '/admin/statistiques');
+              setAdminRoute('statistiques');
+              return;
+            }
+          }
+        } catch {}
+        setAdminRoute('login');
+      } else if (pathname === '/admin') {
+        const token = sessionStorage.getItem('sunu_admin_token') || '';
+        if (token) {
+          window.history.replaceState({}, '', '/admin/statistiques');
+          setAdminRoute('statistiques');
+        } else {
+          window.history.replaceState({}, '', '/admin/login');
+          setAdminRoute('login');
+        }
+      } else {
+        setAdminRoute('none');
+      }
+    };
+
+    handleLocationChange();
+    window.addEventListener('popstate', handleLocationChange);
 
     // Initialize real-time visitor analytics
     const cleanup = initAnalyticsTracking();
-    return cleanup;
+
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+      if (typeof cleanup === 'function') cleanup();
+    };
   }, []);
 
   // Track tab navigation (Accueil, À propos, Contact)
@@ -347,8 +459,47 @@ export default function App() {
 
   const featuredAnnale = annales[0] || null;
 
+  if (adminRoute === 'loading') {
+    return (
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center text-slate-400">
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin" />
+          <p className="text-xs font-medium">Chargement de l'administration...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (adminRoute === 'statistiques') {
+    return (
+      <AdminStatistiques
+        onLogout={() => {
+          sessionStorage.removeItem('sunu_admin_token');
+          sessionStorage.removeItem('sunu_admin_email');
+          localStorage.removeItem('sunu_admin_auth');
+          window.history.pushState({}, '', '/admin/login');
+          setAdminRoute('login');
+        }}
+      />
+    );
+  }
+
+  if (adminRoute === 'login') {
+    return (
+      <AdminLogin
+        onLoginSuccess={() => {
+          window.history.pushState({}, '', '/admin/statistiques');
+          setAdminRoute('statistiques');
+        }}
+      />
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-['Plus_Jakarta_Sans',sans-serif]">
+    <div className="min-h-screen bg-transparent text-slate-100 flex flex-col font-['Plus_Jakarta_Sans',sans-serif] relative">
+      {/* 3D Video Background Layer (Higgsfield animation with fallback poster) */}
+      <VideoBackground />
+
       {/* Navigation Header */}
       <Navbar
         currentUser={currentUser}
@@ -363,6 +514,7 @@ export default function App() {
         onSelectTab={setCurrentTab}
         onResetPurchases={handleResetPurchases}
         onOpenPortal={() => setShowPortalModal(true)}
+        onOpenAdmin={() => setShowAdminDashboard(true)}
       />
 
       {/* VIEW: ACCUEIL */}
@@ -522,10 +674,19 @@ export default function App() {
                                 openBuy(featuredAnnale);
                               }
                             }}
-                            className="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 hover:brightness-110 text-slate-950 text-xs font-black flex items-center justify-center gap-1.5 transition shadow-lg shadow-amber-500/20"
+                            className="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:brightness-110 text-slate-950 text-xs font-black flex items-center justify-center gap-1.5 transition shadow-lg shadow-amber-500/20 active:scale-95"
                           >
-                            <Zap className="w-3.5 h-3.5" />
-                            <span>{purchasedIds.includes(featuredAnnale.id) ? 'Consulter' : 'Acheter'}</span>
+                            {purchasedIds.includes(featuredAnnale.id) ? (
+                              <>
+                                <Zap className="w-3.5 h-3.5" />
+                                <span>Consulter</span>
+                              </>
+                            ) : (
+                              <>
+                                <ShoppingBag className="w-3.5 h-3.5 fill-slate-950" />
+                                <span>Acheter (2 000 F)</span>
+                              </>
+                            )}
                           </button>
                         </div>
                       </div>
@@ -742,7 +903,7 @@ export default function App() {
                   <div>
                     <h4 className="font-bold text-white">Paiement sécurisé et instantané au Sénégal</h4>
                     <p className="text-slate-400 mt-0.5">
-                      Wave, Orange Money (#144#391#), Free Money et cartes bancaires. Accès immédiat 24h/24 sans attendre une validation manuelle.
+                      Accès immédiat 24h/24 dès confirmation de votre commande, sans attendre une validation manuelle.
                     </p>
                   </div>
                 </div>
@@ -838,36 +999,10 @@ export default function App() {
         </>
       )}
 
-      {/* VIEW: A PROPOS */}
-      {currentTab === 'apropos' && (
-        <AboutSection
-          onNavigateHome={() => {
-            setCurrentTab('accueil');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-          onNavigateContact={() => {
-            setCurrentTab('contact');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-          totalAnnalesCount={annales.length}
-        />
-      )}
-
-      {/* VIEW: CONTACT */}
-      {currentTab === 'contact' && (
-        <ContactSection
-          onNavigateHome={() => {
-            setCurrentTab('accueil');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-          categories={categories}
-        />
-      )}
-
       {/* FOOTER */}
-      <footer className="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-xs">
+      <footer className="bg-slate-950/80 backdrop-blur-md border-t border-slate-800 py-12 text-slate-400 text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="space-y-3">
               <div className="flex items-center gap-2.5">
                 <div className="w-8 h-8 rounded-lg bg-blue-900 border border-blue-500/40 flex items-center justify-center text-white overflow-hidden p-0.5 shadow-md">
@@ -888,29 +1023,9 @@ export default function App() {
                     setCurrentTab('accueil');
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
-                  className={`hover:underline ${currentTab === 'accueil' ? 'text-white underline' : ''}`}
+                  className="hover:underline text-white underline"
                 >
                   Accueil
-                </button>
-                <span className="text-slate-600">•</span>
-                <button
-                  onClick={() => {
-                    setCurrentTab('apropos');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
-                  className={`hover:underline ${currentTab === 'apropos' ? 'text-white underline' : ''}`}
-                >
-                  À propos
-                </button>
-                <span className="text-slate-600">•</span>
-                <button
-                  onClick={() => {
-                    setCurrentTab('contact');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
-                  className={`hover:underline ${currentTab === 'contact' ? 'text-white underline' : ''}`}
-                >
-                  Contact
                 </button>
               </div>
 
@@ -936,18 +1051,9 @@ export default function App() {
             </div>
 
             <div>
-              <h5 className="font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Paiements Sénégal</h5>
-              <ul className="space-y-1.5 text-[11px]">
-                <li>Wave Sénégal (scan QR & push direct)</li>
-                <li>Orange Money Sonatel (#144#391#)</li>
-                <li>Passerelle sécurisée SaaSPay Sénégal</li>
-              </ul>
-            </div>
-
-            <div>
               <h5 className="font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Assistance Candidats</h5>
               <p className="text-[11px] text-slate-400 mb-3">
-                Assistance continue pour vos commandes, paiements Wave / Orange Money et consultation des fascicules.
+                Assistance continue pour vos commandes et la consultation de vos fascicules d'annales.
               </p>
               <div className="text-[11px] text-slate-300 space-y-1.5">
                 <p className="flex items-center gap-1.5 text-emerald-400">
@@ -964,16 +1070,41 @@ export default function App() {
           </div>
 
           <div className="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-3">
-            <p>© 2026 SunuAnnales SN SARL. Tous droits réservés. République du Sénégal.</p>
+            <p
+              onClick={handleSecretAdminTrigger}
+              className="cursor-default select-none text-slate-500 hover:text-slate-400 transition"
+              title=""
+            >
+              © 2026 SunuAnnales SN SARL. Tous droits réservés. République du Sénégal.
+            </p>
             <div className="flex items-center gap-4">
               <p className="hidden md:block">Conforme aux réglementations UEMOA et protection des données personnelles.</p>
-              <button
-                onClick={() => setShowAdminDashboard(true)}
-                className="text-slate-700 hover:text-slate-400 transition text-[10px]"
-                title="Espace administration"
-              >
-                Admin
-              </button>
+
+              {/* Bouton d'accès administrateur */}
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setShowAdminDashboard(true)}
+                  className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-purple-900 to-indigo-900 hover:from-purple-800 hover:to-indigo-800 text-purple-200 border border-purple-600/80 text-xs font-bold flex items-center gap-1.5 transition shadow-sm"
+                  title="Accéder au panneau d'administration"
+                >
+                  <span>🛡️ Espace Administrateur</span>
+                </button>
+                {isAdminUnlocked && (
+                  <button
+                    onClick={() => {
+                      sessionStorage.removeItem('sunu_admin_auth');
+                      sessionStorage.removeItem('sunu_admin_key');
+                      localStorage.removeItem('sunu_admin_auth');
+                      localStorage.removeItem('sunu_admin_key');
+                      setIsAdminUnlocked(false);
+                    }}
+                    className="text-slate-600 hover:text-amber-400 text-xs transition px-2 py-1"
+                    title="Verrouiller l'accès administrateur"
+                  >
+                    Verrouiller
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -1047,6 +1178,10 @@ export default function App() {
           initialTab={adminInitialTab}
           onClose={() => {
             setShowAdminDashboard(false);
+            setIsAdminUnlocked(
+              sessionStorage.getItem('sunu_admin_auth') === 'true' ||
+              localStorage.getItem('sunu_admin_auth') === 'true'
+            );
             fetchCatalog();
           }}
         />
